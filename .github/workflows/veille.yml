@@ -1,0 +1,109 @@
+# Collecte quotidienne des actualités → news.json → déploiement de l'app
+name: Veille quotidienne
+
+on:
+  schedule:
+    # Horaires GitHub en UTC : 6:47 UTC = 8:47 à Paris l'été, 7:47 l'hiver.
+    - cron: "47 6 * * *"
+  workflow_dispatch:
+    inputs:
+      themes:
+        description: "Thèmes à collecter"
+        type: choice
+        options: [tous, ai, games]
+        default: tous
+
+# Jamais deux collectes en même temps (évite les conflits sur news.json)
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      id-token: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Préparer
+        id: prep
+        run: |
+          echo "today=$(TZ=Europe/Paris date +%F)" >> "$GITHUB_OUTPUT"
+          mkdir -p tmp
+          case "${{ inputs.themes || 'tous' }}" in
+            ai)    echo "ai=true"  >> "$GITHUB_OUTPUT"; echo "games=false" >> "$GITHUB_OUTPUT" ;;
+            games) echo "ai=false" >> "$GITHUB_OUTPUT"; echo "games=true"  >> "$GITHUB_OUTPUT" ;;
+            *)     echo "ai=true"  >> "$GITHUB_OUTPUT"; echo "games=true"  >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: Collecte IA
+        id: ai
+        if: steps.prep.outputs.ai == 'true'
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Nous sommes le ${{ steps.prep.outputs.today }} (heure de Paris).
+            Lis le fichier prompts/ai.md et suis ses instructions à la lettre.
+            Ton seul livrable est le fichier tmp/new-ai.json.
+          claude_args: --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
+
+      - name: Collecte jeux vidéo
+        id: games
+        if: steps.prep.outputs.games == 'true'
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Nous sommes le ${{ steps.prep.outputs.today }} (heure de Paris).
+            Lis le fichier prompts/games.md et suis ses instructions à la lettre.
+            Ton seul livrable est le fichier tmp/new-games.json.
+          claude_args: --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
+
+      - name: Fusionner et valider news.json
+        run: python3 scripts/news.py merge --today "${{ steps.prep.outputs.today }}"
+
+      - name: Commiter news.json
+        id: commit
+        run: |
+          if git diff --quiet -- news.json; then
+            echo "Aucun changement dans news.json."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news.json
+          git commit -m "Actus du ${{ steps.prep.outputs.today }}"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Si une collecte a échoué, le run passe en rouge (GitHub vous prévient par e-mail),
+      # mais ce qui a été collecté par l'autre thème est quand même publié.
+      - name: Signaler un échec de collecte
+        if: steps.ai.outcome == 'failure' || steps.games.outcome == 'failure'
+        run: |
+          echo "::error::Collecte IA : ${{ steps.ai.outcome }} — collecte jeux vidéo : ${{ steps.games.outcome }}"
+          exit 1
+
+  deploiement:
+    needs: collecte
+    if: ${{ !cancelled() && needs.collecte.outputs.changed == 'true' }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: main

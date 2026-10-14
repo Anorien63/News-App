@@ -1,0 +1,53 @@
+# Vérifie news.json puis publie l'app sur GitHub Pages.
+# Se lance à chaque push sur main, à la main, ou après la veille quotidienne.
+name: Déploiement de l'app
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        type: string
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  construction:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # après la veille quotidienne : on publie le commit qu'elle vient de pousser
+          ref: ${{ inputs.ref || github.ref }}
+
+      - name: Vérifier news.json
+        run: python3 scripts/news.py check
+
+      - name: Assembler le site
+        run: |
+          mkdir _site
+          cp index.html styles.css app.js sw.js manifest.webmanifest news.json _site/
+          cp -r icons _site/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  publication:
+    needs: construction
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

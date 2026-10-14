@@ -11,9 +11,25 @@ C'est une web app (PWA) : elle s'installe sur l'écran d'accueil depuis Safari, 
 
 ## Comment les actualités arrivent
 
-Une tâche planifiée Claude tourne chaque matin. Elle recherche les actualités du jour,
-réécrit `news.json` et le pousse sur `main`. GitHub Pages publie le fichier en une à deux minutes,
-et l'app le recharge à l'ouverture, au retour dans l'app (après 30 min) et via le bouton d'actualisation.
+Tout passe par GitHub Actions :
+
+1. **`Veille quotidienne`** (`.github/workflows/veille.yml`) tourne chaque matin vers 8 h 47 (heure d'été)
+   / 7 h 47 (heure d'hiver), ou à la main depuis l'onglet **Actions → Veille quotidienne → Run workflow**.
+   - Claude (via `anthropics/claude-code-action`) suit `prompts/ai.md` puis `prompts/games.md`
+     et écrit les nouveaux articles dans `tmp/new-ai.json` et `tmp/new-games.json`.
+   - `scripts/news.py merge` les fusionne dans `news.json` : chaque fichier ne peut ajouter que son thème,
+     les articles mal formés sont écartés, les doublons retirés, les articles de plus de 15 jours supprimés.
+   - Le workflow commite `news.json` puis déclenche le déploiement.
+2. **`Déploiement de l'app`** (`.github/workflows/pages.yml`) vérifie `news.json` (`scripts/news.py check`)
+   puis publie l'app sur GitHub Pages. Il tourne aussi à chaque push sur `main` : un `news.json` cassé
+   bloque la publication, et la version en ligne reste intacte.
+
+L'app recharge `news.json` à l'ouverture, au retour dans l'app (après 30 min) et via le bouton d'actualisation.
+
+**Prérequis côté GitHub** : un secret `ANTHROPIC_API_KEY` *ou* `CLAUDE_CODE_OAUTH_TOKEN`
+(Settings → Secrets and variables → Actions), et Settings → Pages → Source : **GitHub Actions**.
+
+Modifier les consignes de recherche : éditer `prompts/ai.md` ou `prompts/games.md`.
 
 Les articles **enregistrés**, **aimés** et **lus** restent sur l'iPhone (stockage local) ;
 un article enregistré reste disponible même après être sorti du fil.
@@ -60,3 +76,6 @@ Ajouter une thématique : une entrée dans `THEMES` et `TABS` en haut de `app.js
 - `news.json` — les actualités du jour (réécrit par la tâche planifiée)
 - `manifest.webmanifest`, `icons/` — installation sur l'écran d'accueil
 - `sw.js` — ouverture hors ligne (les actus sont toujours redemandées au réseau d'abord)
+- `prompts/` — consignes de recherche suivies par Claude pour chaque thème
+- `scripts/news.py` — fusion et validation de `news.json`
+- `.github/workflows/` — collecte quotidienne et déploiement
