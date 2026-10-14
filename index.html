@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>veille.</title>
+  <meta name="description" content="Votre fil quotidien d'actualités IA et jeux vidéo.">
+  <meta name="theme-color" content="#121214">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="veille.">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#feed">Aller au fil d'actualités</a>
+
+  <header class="app-header">
+    <span class="wordmark" aria-label="veille">veille<span class="wordmark-dot" aria-hidden="true">.</span></span>
+    <button class="icon-btn" id="refresh-btn" type="button" aria-label="Actualiser les actualités">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"></path><path d="M20 4v7h-7"></path></svg>
+    </button>
+  </header>
+
+  <main id="feed" class="feed" tabindex="-1" aria-labelledby="feed-title">
+    <div class="sources" id="sources" role="group" aria-label="Filtrer par source"></div>
+    <div class="feed-head">
+      <h1 id="feed-title">À la une</h1>
+      <p id="feed-status" class="feed-status">Chargement…</p>
+    </div>
+    <div id="offline-banner" class="banner" role="status" hidden></div>
+    <div id="list"></div>
+  </main>
+
+  <section id="detail" class="detail" aria-labelledby="detail-title" hidden></section>
+
+  <div class="toast-region" aria-live="polite" aria-atomic="true">
+    <div id="toast" class="toast" hidden></div>
+  </div>
+
+  <nav class="tabbar" id="tabbar" aria-label="Thématiques"></nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
