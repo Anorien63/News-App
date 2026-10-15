@@ -7,7 +7,11 @@
       "theme": "ai",
       "source": "The Neuron",
       "date": "2026-10-13",
-      "headline": { "pre": "Google lance ", "hl": "Gemini 4 Argon", "post": "" },
+      "headline": {
+        "pre": "Google lance ",
+        "hl": "Gemini 4 Argon",
+        "post": ""
+      },
       "summary": "Le nouveau modèle phare de Google est ouvert aux développeurs, aux entreprises, aux scientifiques et au grand public.",
       "detail": "Selon Reuters, ce lancement s’inscrit dans la volonté de Google de reprendre du terrain face à OpenAI et Anthropic.",
       "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-october-13-2026/"
@@ -17,7 +21,11 @@
       "theme": "ai",
       "source": "Al Jazeera",
       "date": "2026-10-13",
-      "headline": { "pre": "Des IA capables de se ", "hl": "répliquer", "post": " chez vous ?" },
+      "headline": {
+        "pre": "Des IA capables de se ",
+        "hl": "répliquer",
+        "post": " chez vous ?"
+      },
       "summary": "Selon des chercheurs d’Anthropic, de petits modèles pourraient d’ici quelques mois se copier sur des appareils connectés, comme des TV ou des frigos.",
       "detail": "Aucun modèle testé n’y parvient encore de façon fiable, mais les chercheurs s’y attendent d’ici fin 2026 et préviennent qu’une telle IA serait difficile à arrêter, faute d’hôte central. Anthropic indique aussi que ses nouvelles protections contre la distillation ont réduit l’extraction illicite de données de 90 à 99 %.",
       "url": "https://www.aljazeera.com/economy/2026/10/13/ai-could-self-replicate-on-home-devices-within-months-anthropic-says"
@@ -27,7 +35,11 @@
       "theme": "ai",
       "source": "The Neuron",
       "date": "2026-10-13",
-      "headline": { "pre": "Un micro caché dans les bureaux d’", "hl": "OpenAI", "post": "" },
+      "headline": {
+        "pre": "Un micro caché dans les bureaux d’",
+        "hl": "OpenAI",
+        "post": ""
+      },
       "summary": "OpenAI dit avoir découvert un appareil d’enregistrement dans l’un de ses bureaux et l’avoir relié, grâce à ses propres modèles, à un employé.",
       "detail": "L’entreprise a transmis le dossier au FBI.",
       "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-october-13-2026/"
@@ -37,7 +49,11 @@
       "theme": "ai",
       "source": "The Neuron",
       "date": "2026-10-13",
-      "headline": { "pre": "Nicolas Cage dit ", "hl": "non", "post": " à la clause IA d’Amazon" },
+      "headline": {
+        "pre": "Nicolas Cage dit ",
+        "hl": "non",
+        "post": " à la clause IA d’Amazon"
+      },
       "summary": "L’acteur refuse de signer la renonciation liée à l’IA demandée par Amazon, studio derrière Spider-Noir.",
       "detail": "Il se décrit comme « pas un acteur favorable à l’IA ».",
       "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-october-13-2026/"
@@ -48,7 +64,11 @@
       "source": "Sortir à Paris",
       "date": "2026-10-14",
       "dateLabel": "Agenda d’octobre",
-      "headline": { "pre": "", "hl": "Final Fantasy Resonance", "post": " sort le 22 octobre" },
+      "headline": {
+        "pre": "",
+        "hl": "Final Fantasy Resonance",
+        "post": " sort le 22 octobre"
+      },
       "summary": "Le nouveau jeu de Square Enix arrive sur PC, PS5, Xbox Series, Switch et Switch 2.",
       "detail": "",
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne"
@@ -59,7 +79,11 @@
       "source": "Sortir à Paris",
       "date": "2026-10-14",
       "dateLabel": "Agenda d’octobre",
-      "headline": { "pre": "", "hl": "Paris Games Week", "post": " : rendez-vous du 22 au 24 octobre" },
+      "headline": {
+        "pre": "",
+        "hl": "Paris Games Week",
+        "post": " : rendez-vous du 22 au 24 octobre"
+      },
       "summary": "Le salon s’installe au Dôme de Paris, avec trois sessions en soirée.",
       "detail": "",
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne"
@@ -70,7 +94,11 @@
       "source": "Sortir à Paris",
       "date": "2026-10-14",
       "dateLabel": "Agenda d’octobre",
-      "headline": { "pre": "Phantom Blade Zero ", "hl": "décalé", "post": " au 29 octobre" },
+      "headline": {
+        "pre": "Phantom Blade Zero ",
+        "hl": "décalé",
+        "post": " au 29 octobre"
+      },
       "summary": "Repoussé de quelques semaines, le jeu d’action de S-Game sortira sur PC et PS5.",
       "detail": "",
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne"
@@ -81,7 +109,11 @@
       "source": "Sortir à Paris",
       "date": "2026-10-14",
       "dateLabel": "Agenda d’octobre",
-      "headline": { "pre": "", "hl": "Tales of Eternia", "post": " revient remasterisé" },
+      "headline": {
+        "pre": "",
+        "hl": "Tales of Eternia",
+        "post": " revient remasterisé"
+      },
       "summary": "Bandai Namco publie le remaster le 16 octobre sur PC, PS4, PS5, Xbox Series, Switch et Switch 2.",
       "detail": "",
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne"
@@ -92,7 +124,11 @@
       "source": "Sortir à Paris",
       "date": "2026-10-14",
       "dateLabel": "Agenda d’octobre",
-      "headline": { "pre": "", "hl": "Ace Combat 8", "post": " a décollé" },
+      "headline": {
+        "pre": "",
+        "hl": "Ace Combat 8",
+        "post": " a décollé"
+      },
       "summary": "Wings of Theve, de Bandai Namco, est disponible depuis le 2 octobre sur PC, PS5 et Xbox Series.",
       "detail": "",
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne"
