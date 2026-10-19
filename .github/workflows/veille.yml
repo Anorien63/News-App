@@ -41,7 +41,7 @@ jobs:
             *)     echo "ai=true"  >> "$GITHUB_OUTPUT"; echo "games=true"  >> "$GITHUB_OUTPUT" ;;
           esac
 
-      - name: Vérifier la clé API
+      - name: Vérifier la clé API et les crédits
         env:
           KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
@@ -49,7 +49,19 @@ jobs:
             echo "::error::Secret ANTHROPIC_API_KEY introuvable. Ajoutez-le dans Settings → Secrets and variables → Actions → onglet Secrets (nom exact : ANTHROPIC_API_KEY)."
             exit 1
           fi
-          echo "Secret ANTHROPIC_API_KEY présent."
+          # Appel minimal (1 jeton) pour obtenir un message d'erreur clair : clé invalide, crédits épuisés…
+          code=$(curl -sS -o /tmp/check.json -w "%{http_code}" https://api.anthropic.com/v1/messages \
+            -H "x-api-key: $KEY" -H "anthropic-version: 2023-06-01" -H "content-type: application/json" \
+            -d '{"model":"claude-haiku-5-5","max_tokens":1,"messages":[{"role":"user","content":"ok"}]}')
+          msg=$(python3 -c "import json;d=json.load(open('/tmp/check.json'));e=d.get('error') or {};print((e.get('type','')+' : '+e.get('message','')).strip(' :'))" 2>/dev/null)
+          echo "Réponse de l'API : HTTP $code ${msg}"
+          case "$code" in
+            200) echo "Clé valide et crédits disponibles." ;;
+            401) echo "::error::Clé API refusée (HTTP 401) : elle est invalide ou a été révoquée. Recréez-la dans la Claude Console et remplacez le secret. Détail : $msg"; exit 1 ;;
+            400|402|403) echo "::error::Accès refusé (HTTP $code). Cause probable : crédits épuisés ou facturation non configurée dans la Claude Console (Billing). Détail : $msg"; exit 1 ;;
+            429) echo "::error::Limite de débit atteinte (HTTP 429). Détail : $msg"; exit 1 ;;
+            *) echo "::warning::Réponse inattendue (HTTP $code), la collecte est tentée quand même. Détail : $msg" ;;
+          esac
 
       - name: Collecte IA
         id: ai
@@ -61,6 +73,7 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allowed_bots: "claude[bot],github-actions[bot]"
+          display_report: "true"
           prompt: |
             Nous sommes le ${{ steps.prep.outputs.today }} (heure de Paris).
             Lis le fichier prompts/ai.md et suis ses instructions à la lettre.
@@ -76,6 +89,7 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allowed_bots: "claude[bot],github-actions[bot]"
+          display_report: "true"
           prompt: |
             Nous sommes le ${{ steps.prep.outputs.today }} (heure de Paris).
             Lis le fichier prompts/games.md et suis ses instructions à la lettre.
