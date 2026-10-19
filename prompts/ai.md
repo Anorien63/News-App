@@ -43,7 +43,8 @@ réellement évolué (dans ce cas, nouvel article qui dit ce qui a changé).
 
 ## 4. Livrable : `tmp/new-ai.json`
 
-Choisis les 4 à 8 actualités les plus importantes et écris-les avec l'outil Write dans `tmp/new-ai.json`,
+Choisis les 4 à 8 actualités les plus importantes ; pour chacune, lis la page source
+(WebFetch) afin d'écrire un contenu précis, et écris-les avec l'outil Write dans `tmp/new-ai.json`,
 sous forme d'une liste JSON (et rien d'autre dans le fichier) :
 
 ```json
@@ -54,8 +55,9 @@ sous forme d'une liste JSON (et rien d'autre dans le fichier) :
     "source": "Nom du média ou de l'entreprise",
     "date": "AAAA-MM-JJ",
     "headline": { "pre": "Texte avant ", "hl": "Mot-clé", "post": " texte après" },
-    "summary": "1 à 2 phrases factuelles, dans tes mots.",
-    "detail": "1 à 3 phrases de contexte supplémentaire, ou une chaîne vide.",
+    "summary": "2 à 3 phrases factuelles qui résument l'essentiel, dans tes mots.",
+    "detail": "Un paragraphe de 4 à 7 phrases (voir ci-dessous).",
+    "points": ["Point clé n° 1", "Point clé n° 2", "Point clé n° 3"],
     "url": "https://lien-reel-vers-la-source"
   }
 ]
@@ -67,7 +69,16 @@ sous forme d'une liste JSON (et rien d'autre dans le fichier) :
 - `date` : date de publication de la source.
 - `headline` : titre accrocheur en français de 4 à 9 mots au total ; `hl` est le mot-clé affiché en orange
   (modèle, entreprise ou outil) ; `pre` ou `post` peuvent être vides ; pense aux espaces en bordure.
-- `url` : lien réel, jamais inventé ni reconstruit de mémoire.
+- `summary` : 2 à 3 phrases, l'essentiel de l'info, lisible sans ouvrir l'article.
+- `detail` : un vrai paragraphe de 4 à 7 phrases, dans tes mots : le contexte (ce qui s'est passé avant),
+  ce qui est annoncé précisément (chiffres, dates, prix, plateformes, disponibilité), ce qu'on ne sait pas encore,
+  et pourquoi c'est important (impact pour les développeurs, designers ou utilisateurs).
+  Chaque fait vient d'une source que tu as lue ; pas de remplissage ni de formule creuse.
+- `points` : 3 à 5 faits clés très courts (moins de 15 mots chacun), sans répéter le titre.
+- `url` : la page de l'article lui-même (pas une page d'accueil ni un agrégateur quand l'article
+  d'origine existe) : l'image de l'article est récupérée automatiquement sur cette page.
+  N'ajoute jamais de champ `image` toi-même.
+- Lien réel, jamais inventé ni reconstruit de mémoire.
 
 N'invente aucun fait : uniquement ce que disent les sources. Si tu ne trouves rien de fiable, écris `[]`.
 Ne modifie aucun autre fichier, ne lance aucune commande git : la fusion, la validation, le commit et

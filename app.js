@@ -110,7 +110,9 @@
         id: String(it.id), theme: it.theme, source: it.source || 'Source',
         initials: it.initials || initials(it.source), date: it.date, dateLabel: it.dateLabel,
         headline: { pre: h.pre || '', hl: h.hl || '', post: h.post || '' },
-        summary: it.summary || '', detail: it.detail || '', url: it.url || ''
+        summary: it.summary || '', detail: it.detail || '', url: it.url || '',
+        image: /^https:\/\//i.test(it.image || '') ? it.image : '', imageAlt: it.imageAlt || '',
+        points: Array.isArray(it.points) ? it.points.filter(function (x) { return typeof x === 'string' && x.trim(); }) : []
       };
     }).sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
   }
@@ -197,19 +199,35 @@
     return esc(h.pre) + (h.hl ? '<span class="hl">' + esc(h.hl) + '</span>' : '') + esc(h.post);
   }
 
+  var brokenImages = {};   // images qui n'ont pas pu se charger pendant cette session
+  function hasImage(it) { return !!it.image && !brokenImages[it.image]; }
+
+  function coverTopHTML(it, i, total, theme) {
+    return '<div class="cover-top">' + (theme ? '<span class="chip">' + ICON[it.theme].replace('width="26" height="26"', '') + esc(theme.label) + '</span>' : '<span></span>') +
+      '<span class="counter"><span class="sr-only">Actualité </span>' + (i + 1) + '<span aria-hidden="true"> / </span><span class="sr-only"> sur </span>' + total + '</span></div>';
+  }
+
+  function imgHTML(it, cls) {
+    // referrerpolicy : certains sites refusent l'affichage de leurs images quand la page d'origine est indiquée
+    return '<img class="' + cls + '" src="' + esc(it.image) + '" alt="' + esc(it.imageAlt) + '" loading="lazy" decoding="async" referrerpolicy="no-referrer">';
+  }
+
   function postHTML(it, i, total) {
     var theme = THEMES[it.theme];
+    var withImg = hasImage(it);
     var isNew = !state.seen[it.id] && state.tab !== 'saved';
     var saved = !!state.saved[it.id];
     var liked = !!state.liked[it.id];
-    return '<article class="post' + (isNew ? ' is-new' : '') + '" data-id="' + esc(it.id) + '" aria-labelledby="h-' + esc(it.id) + '">' +
+    var cover = withImg
+      ? '<div class="cover cover--image">' + imgHTML(it, 'cover-img') + coverTopHTML(it, i, total, theme) + '</div>' +
+        '<h2 class="headline headline--below" id="h-' + esc(it.id) + '">' + headlineHTML(it.headline) + '</h2>'
+      : '<div class="cover">' + (DECOR[it.theme] || '') + coverTopHTML(it, i, total, theme) +
+        '<h2 class="headline" id="h-' + esc(it.id) + '">' + headlineHTML(it.headline) + '</h2></div>';
+    return '<article class="post' + (isNew ? ' is-new' : '') + '" data-id="' + esc(it.id) + '" data-i="' + i + '" data-total="' + total + '" aria-labelledby="h-' + esc(it.id) + '">' +
       '<div class="post-head"><span class="avatar" aria-hidden="true">' + esc(it.initials) + '</span>' +
       '<div class="post-meta"><span class="post-source">' + esc(it.source) + (isNew ? '<span class="new-tag">Nouveau</span>' : '') + '</span>' +
       '<span class="post-sub">' + esc(theme ? theme.label : '') + (theme ? ' · ' : '') + esc(dateLabel(it)) + '</span></div></div>' +
-      '<div class="cover">' + (DECOR[it.theme] || '') +
-      '<div class="cover-top">' + (theme ? '<span class="chip">' + ICON[it.theme].replace('width="26" height="26"', '') + esc(theme.label) + '</span>' : '<span></span>') +
-      '<span class="counter"><span class="sr-only">Actualité </span>' + (i + 1) + '<span aria-hidden="true"> / </span><span class="sr-only"> sur </span>' + total + '</span></div>' +
-      '<h2 class="headline" id="h-' + esc(it.id) + '">' + headlineHTML(it.headline) + '</h2></div>' +
+      cover +
       '<div class="actions">' +
       '<button type="button" class="action" data-action="like" data-id="' + esc(it.id) + '" aria-pressed="' + liked + '" aria-label="J’aime">' + ICON.heart + '</button>' +
       '<button type="button" class="action" data-action="share" data-id="' + esc(it.id) + '" aria-label="Partager">' + ICON.share + '</button>' +
@@ -291,7 +309,11 @@
       (theme ? '<span class="chip">' + esc(theme.label) + '</span>' : '') +
       '<h2 class="headline" id="detail-title">' + headlineHTML(it.headline) + '</h2>' +
       '<p class="meta">' + esc(it.source) + ' · ' + esc(dateLabel(it)) + '</p>' +
-      '<p class="text">' + esc(it.summary) + '</p>' +
+      (hasImage(it) ? '<figure class="detail-figure">' + imgHTML(it, 'detail-img') +
+        '<figcaption>Image : ' + esc(it.source) + '</figcaption></figure>' : '') +
+      '<p class="text lead">' + esc(it.summary) + '</p>' +
+      (it.points.length ? '<section class="points" aria-labelledby="points-title"><h3 id="points-title">L’essentiel</h3><ul>' +
+        it.points.map(function (pt) { return '<li>' + esc(pt) + '</li>'; }).join('') + '</ul></section>' : '') +
       (it.detail ? '<p class="text">' + esc(it.detail) + '</p>' : '') +
       '<div class="detail-actions">' +
       '<button type="button" class="btn-secondary" data-action="save" data-id="' + esc(it.id) + '" aria-pressed="' + saved + '">' + ICON.bookmark.replace('width="25" height="25"', 'width="20" height="20"') + (saved ? 'Enregistré' : 'Enregistrer') + '</button>' +
@@ -409,6 +431,20 @@
     }
   });
   els.refresh.addEventListener('click', function () { fetchNews(true); });
+
+  // Image introuvable ou bloquée par le site : on revient à la couverture typographique
+  document.addEventListener('error', function (e) {
+    var img = e.target;
+    if (!img || img.tagName !== 'IMG' || !/cover-img|detail-img/.test(img.className)) return;
+    brokenImages[img.getAttribute('src')] = true;
+    if (img.classList.contains('detail-img')) { var fig = img.closest('figure'); if (fig) fig.remove(); return; }
+    var art = img.closest('.post'); if (!art) return;
+    var it = findItem(art.getAttribute('data-id')); if (!it) return;
+    var tmp = document.createElement('div');
+    tmp.innerHTML = postHTML(it, +art.getAttribute('data-i'), +art.getAttribute('data-total'));
+    art.replaceWith(tmp.firstChild);
+    observeSeen();
+  }, true);
   els.detail.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDetail(); });
 
   // Retour sur l'app après un moment : on recharge si la dernière collecte date de plus de 30 min

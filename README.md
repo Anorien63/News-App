@@ -18,7 +18,8 @@ Tout passe par GitHub Actions :
    - Claude (via `anthropics/claude-code-action`) suit `prompts/ai.md` puis `prompts/games.md`
      et écrit les nouveaux articles dans `tmp/new-ai.json` et `tmp/new-games.json`.
    - `scripts/news.py merge` les fusionne dans `news.json` : chaque fichier ne peut ajouter que son thème,
-     les articles mal formés sont écartés, les doublons retirés, les articles de plus de 15 jours supprimés.
+     les articles mal formés sont écartés, les doublons retirés, les articles de plus de 15 jours supprimés,
+     puis il visite la page source de chaque nouvel article pour y récupérer son image d'aperçu officielle.
    - Le workflow commite `news.json` puis déclenche le déploiement.
 2. **`Déploiement de l'app`** (`.github/workflows/pages.yml`) vérifie `news.json` (`scripts/news.py check`)
    puis publie l'app sur GitHub Pages. Il tourne aussi à chaque push sur `main` : un `news.json` cassé
@@ -50,9 +51,12 @@ un article enregistré reste disponible même après être sorti du fil.
       "date": "2026-10-15",
       "dateLabel": "Agenda d’octobre",
       "headline": { "pre": "Texte avant ", "hl": "mot-clé en orange", "post": " texte après" },
-      "summary": "Une ou deux phrases affichées sous la carte.",
-      "detail": "Paragraphe complémentaire affiché dans la vue détail (peut être vide).",
-      "url": "https://lien-vers-l-article-source"
+      "summary": "Deux ou trois phrases affichées sous la carte.",
+      "detail": "Paragraphe de 4 à 7 phrases affiché dans la vue détail (peut être vide).",
+      "points": ["Fait clé n° 1", "Fait clé n° 2", "Fait clé n° 3"],
+      "url": "https://lien-vers-l-article-source",
+      "image": "https://image-d-apercu-de-la-page-source.jpg",
+      "imageAlt": "Description de l'image (si la page en fournit une)"
     }
   ]
 }
@@ -66,9 +70,12 @@ un article enregistré reste disponible même après être sorti du fil.
 | `date` | oui | Date ISO de publication ; le fil est trié dessus (plus récent d'abord). |
 | `dateLabel` | non | Remplace la date affichée (« Agenda d'octobre »…). |
 | `headline` | oui | Titre en trois morceaux ; `hl` s'affiche en orange. |
-| `summary` | oui | Résumé court sous la carte. |
-| `detail` | non | Texte supplémentaire dans la vue détail. |
+| `summary` | oui | Résumé de 2 à 3 phrases sous la carte. |
+| `detail` | non | Paragraphe de contexte (4 à 7 phrases) dans la vue détail. |
+| `points` | non | 3 à 5 faits clés, affichés dans le bloc « L'essentiel » de la vue détail. |
 | `url` | oui | Lien « Lire sur … » vers l'article d'origine. |
+| `image` | non | Image d'aperçu officielle de la page source (`og:image`), en `https`. Ajoutée **uniquement** par `scripts/news.py`, jamais écrite à la main ni par Claude. `""` = la page n'en propose pas. |
+| `imageAlt` | non | Texte alternatif de l'image, repris de la page source quand il existe. |
 
 Ajouter une thématique : une entrée dans `THEMES` et `TABS` en haut de `app.js` (+ une icône dans `ICON`).
 

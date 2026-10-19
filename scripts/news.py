@@ -10,6 +10,8 @@
       - les articles invalides sont écartés (et signalés dans le journal) ;
       - nouveaux articles en tête, doublons retirés (même id, ou même url et même mot-clé : le plus récent gagne) ;
       - articles de plus de 15 jours supprimés, aucune autre limite ;
+      - chaque article sans image reçoit l'image d'aperçu officielle de sa page source
+        (balises og:image / twitter:image), ou "" si la page n'en propose pas ;
       - updatedAt n'est changé que si le contenu a réellement changé.
 """
 import argparse
@@ -18,6 +20,9 @@ import json
 import os
 import re
 import sys
+import urllib.request
+from html.parser import HTMLParser
+from urllib.parse import urljoin
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -28,6 +33,9 @@ MAX_AGE_DAYS = 15
 PARIS = ZoneInfo("Europe/Paris")
 ID_RE = re.compile(r"^\d{4}-\d{2}(-\d{2})?-[a-z0-9]+(-[a-z0-9]+)*$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+HTTPS_RE = re.compile(r"^https://\S+$")
+MAX_IMAGE_LOOKUPS = 60          # pages visitées au plus par fusion
+USER_AGENT = "Mozilla/5.0 (compatible; veille-bot/1.0; +https://github.com/Anorien63/News-App)"
 
 
 def item_problems(it, expected_theme=None):
@@ -63,6 +71,13 @@ def item_problems(it, expected_theme=None):
         p.append("dateLabel doit être du texte")
     if not isinstance(it.get("url"), str) or not re.match(r"^https?://\S+$", it["url"]):
         p.append("url absente ou invalide")
+    if "points" in it and (not isinstance(it["points"], list)
+                           or not all(isinstance(x, str) and x.strip() for x in it["points"])):
+        p.append("points doit être une liste de phrases")
+    if "image" in it and it["image"] != "" and not (isinstance(it["image"], str) and HTTPS_RE.match(it["image"])):
+        p.append("image doit être une adresse https ou une chaîne vide")
+    if "imageAlt" in it and not isinstance(it["imageAlt"], str):
+        p.append("imageAlt doit être du texte")
     return p
 
 
@@ -77,8 +92,80 @@ def clean(it):
     out["headline"] = {"pre": h.get("pre", ""), "hl": h.get("hl", ""), "post": h.get("post", "")}
     out["summary"] = it["summary"].strip()
     out["detail"] = (it.get("detail") or "").strip()
+    points = [x.strip() for x in it.get("points") or [] if isinstance(x, str) and x.strip()]
+    if points:
+        out["points"] = points[:5]
     out["url"] = it["url"].strip()
     return out
+
+
+class _MetaParser(HTMLParser):
+    """Récupère les balises <meta property/name=… content=…> du <head>."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.meta = {}
+
+    def handle_starttag(self, tag, attrs):
+        if tag != "meta":
+            return
+        a = {k.lower(): (v or "") for k, v in attrs}
+        key = (a.get("property") or a.get("name") or "").lower()
+        if key and a.get("content") and key not in self.meta:
+            self.meta[key] = a["content"].strip()
+
+
+def find_image(page_url):
+    """Image d'aperçu officielle de la page (og:image / twitter:image).
+    Renvoie ("", "") si la page n'en propose pas, None si la page n'a pas pu être lue."""
+    try:
+        req = urllib.request.Request(page_url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            if "html" not in (r.headers.get("Content-Type") or "html"):
+                return "", ""
+            raw = r.read(1_500_000)
+            charset = r.headers.get_content_charset() or "utf-8"
+        parser = _MetaParser()
+        parser.feed(raw.decode(charset, errors="replace"))
+    except Exception as e:  # réseau, 403, timeout… : on réessaiera à la prochaine collecte
+        print(f"  page illisible pour l'image : {page_url} ({type(e).__name__})")
+        return None
+    m = parser.meta
+    img = (m.get("og:image:secure_url") or m.get("og:image") or m.get("og:image:url")
+           or m.get("twitter:image") or m.get("twitter:image:src") or "")
+    if not img:
+        return "", ""
+    img = urljoin(page_url, img)
+    if img.startswith("http://"):
+        img = "https://" + img[len("http://"):]
+    if not HTTPS_RE.match(img):
+        return "", ""
+    alt = m.get("og:image:alt") or m.get("twitter:image:alt") or ""
+    return img, alt[:200]
+
+
+def add_images(items, offline=False):
+    """Complète les articles qui n'ont pas encore de champ image (une seule tentative par article)."""
+    if offline:
+        return 0, 0
+    todo = [it for it in items if "image" not in it]
+    cache, found, tried = {}, 0, 0
+    for it in todo:
+        url = it["url"]
+        if url not in cache:
+            if tried >= MAX_IMAGE_LOOKUPS:
+                break
+            cache[url] = find_image(url)
+            tried += 1
+        res = cache[url]
+        if res is None:          # page illisible : pas de champ image, nouvel essai la prochaine fois
+            continue
+        img, alt = res
+        it["image"] = img        # "" = la page ne propose pas d'image (on ne réessaie plus)
+        if alt:
+            it["imageAlt"] = alt
+        found += bool(img)
+    return found, tried
 
 
 def load_news():
@@ -185,6 +272,10 @@ def cmd_merge(args):
     kept_items = [it for it in merged if (item_day(it) is None or item_day(it) >= limit)]
     removed = len(merged) - len(kept_items)
 
+    found, tried = add_images(kept_items, offline=args.no_images)
+    if tried:
+        report.append(f"images : {found} trouvée(s) sur {tried} page(s) visitée(s)")
+
     data["items"] = kept_items
     data["version"] = 1
     changed = json.dumps(kept_items, ensure_ascii=False, sort_keys=True) != before
@@ -211,6 +302,7 @@ def main():
     m = sub.add_parser("merge")
     m.add_argument("--today", default=datetime.now(PARIS).date().isoformat())
     m.add_argument("--new", nargs="*")
+    m.add_argument("--no-images", action="store_true", help="ne pas visiter les pages sources")
     args = ap.parse_args()
     sys.exit(cmd_check(args) if args.cmd == "check" else cmd_merge(args))
 
