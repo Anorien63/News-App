@@ -27,12 +27,8 @@ Tout passe par GitHub Actions :
 L'app recharge `news.json` à l'ouverture, au retour dans l'app (après 30 min) et via le bouton d'actualisation.
 
 **Prérequis** :
-- Claude s'authentifie par **fédération d'identité** (Workload Identity Federation) : aucune clé n'est stockée.
-  Dans la Claude Console, un émetteur `https://token.actions.githubusercontent.com`, un compte de service
-  et une règle de fédération limitée à `repo:Anorien63/News-App:ref:refs/heads/main`.
-- Dans GitHub, Settings → Secrets and variables → Actions → onglet **Variables** :
-  `ANTHROPIC_FEDERATION_RULE_ID` (`fdrl_…`), `ANTHROPIC_ORGANIZATION_ID`, `ANTHROPIC_SERVICE_ACCOUNT_ID` (`svac_…`)
-  et, si besoin, `ANTHROPIC_WORKSPACE_ID` (`wrkspc_…`). Ce sont des identifiants, pas des secrets.
+- Un secret `ANTHROPIC_API_KEY` (clé API de la Claude Console) dans Settings → Secrets and variables → Actions
+  → onglet **Secrets**. La clé reste chez GitHub et n'apparaît jamais dans le code public.
 - Settings → Pages → Source : **GitHub Actions**.
 
 Modifier les consignes de recherche : éditer `prompts/ai.md` ou `prompts/games.md`.

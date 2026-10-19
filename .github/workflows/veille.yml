@@ -41,18 +41,24 @@ jobs:
             *)     echo "ai=true"  >> "$GITHUB_OUTPUT"; echo "games=true"  >> "$GITHUB_OUTPUT" ;;
           esac
 
+      - name: Vérifier la clé API
+        env:
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then
+            echo "::error::Secret ANTHROPIC_API_KEY introuvable. Ajoutez-le dans Settings → Secrets and variables → Actions → onglet Secrets (nom exact : ANTHROPIC_API_KEY)."
+            exit 1
+          fi
+          echo "Secret ANTHROPIC_API_KEY présent."
+
       - name: Collecte IA
         id: ai
         if: steps.prep.outputs.ai == 'true'
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
-          # Fédération d'identité (aucune clé stockée) : identifiants dans
-          # Settings → Secrets and variables → Actions → onglet Variables
-          anthropic_federation_rule_id: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
-          anthropic_organization_id: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
-          anthropic_service_account_id: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
-          anthropic_workspace_id: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          # Clé API Claude, rangée dans Settings → Secrets and variables → Actions → Secrets
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allowed_bots: "claude[bot],github-actions[bot]"
           prompt: |
@@ -67,10 +73,7 @@ jobs:
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_federation_rule_id: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
-          anthropic_organization_id: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
-          anthropic_service_account_id: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
-          anthropic_workspace_id: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allowed_bots: "claude[bot],github-actions[bot]"
           prompt: |
