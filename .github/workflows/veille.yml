@@ -57,9 +57,9 @@ jobs:
           echo "Réponse de l'API : HTTP $code ${msg}"
           case "$code" in
             200) echo "Clé valide et crédits disponibles." ;;
-            401) echo "::error::Clé API refusée (HTTP 401) : elle est invalide ou a été révoquée. Recréez-la dans la Claude Console et remplacez le secret. Détail : $msg"; exit 1 ;;
-            400|402|403) echo "::error::Accès refusé (HTTP $code). Cause probable : crédits épuisés ou facturation non configurée dans la Claude Console (Billing). Détail : $msg"; exit 1 ;;
-            429) echo "::error::Limite de débit atteinte (HTTP 429). Détail : $msg"; exit 1 ;;
+            401) echo "::error title=API Claude : clé refusée (HTTP 401)::$msg"; exit 1 ;;
+            400|402|403) echo "::error title=API Claude : requête refusée (HTTP $code)::$msg"; exit 1 ;;
+            429) echo "::error title=API Claude : limite de débit (HTTP 429)::$msg"; exit 1 ;;
             *) echo "::warning::Réponse inattendue (HTTP $code), la collecte est tentée quand même. Détail : $msg" ;;
           esac
 
