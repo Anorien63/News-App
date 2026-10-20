@@ -34,7 +34,7 @@ PARIS = ZoneInfo("Europe/Paris")
 ID_RE = re.compile(r"^\d{4}-\d{2}(-\d{2})?-[a-z0-9]+(-[a-z0-9]+)*$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 HTTPS_RE = re.compile(r"^https://\S+$")
-MAX_IMAGE_LOOKUPS = 60          # pages visitées au plus par fusion
+MAX_IMAGE_LOOKUPS = 150         # pages visitées au plus par fusion
 USER_AGENT = "Mozilla/5.0 (compatible; veille-bot/1.0; +https://github.com/Anorien63/News-App)"
 
 

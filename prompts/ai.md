@@ -10,7 +10,11 @@ Objectif : les actualités publiées au cours des dernières 24 heures environ (
 heure de Paris ; la date du jour t'est donnée dans la consigne). Vérifie la date de chaque source et
 écarte tout ce qui n'est pas récent.
 
-Thèmes à couvrir (au moins une recherche web distincte par thème) :
+Exhaustivité : ne RIEN rater. Pour chaque thème ci-dessous, fais plusieurs recherches web (au moins 3, sous
+des angles différents : noms des principaux acteurs, termes en français et en anglais, sites spécialisés,
+blogs et comptes officiels), puis continue tant que de nouvelles actualités apparaissent.
+
+Thèmes à couvrir :
 1. LLM et modèles de fondation : nouveaux modèles, versions, benchmarks, annonces des labos (OpenAI,
    Anthropic, Google, Meta, Mistral, xAI, DeepSeek, etc.), open source.
 2. IA et design : génération d'images/vidéo/UI, outils pour designers (Figma, Adobe, Canva, etc.),
@@ -18,8 +22,8 @@ Thèmes à couvrir (au moins une recherche web distincte par thème) :
 3. Génération de code et vibe coding : assistants de code, IDE IA, outils type Cursor, Claude Code,
    Copilot, Lovable, Bolt, v0, Replit, etc.
 4. IA agentique : agents autonomes, frameworks, protocoles (MCP, etc.), produits agents, automatisation.
-5. À noter aussi : autres faits marquants (régulation, levées de fonds, acquisitions), seulement s'ils
-   sont importants.
+5. À noter aussi : tous les autres faits notables (régulation, levées de fonds, acquisitions, partenariats,
+   sécurité).
 
 ## 2. Sources
 
@@ -33,6 +37,10 @@ social, y compris X (Twitter), à une condition : l'information doit être véri
   prouve pas l'identité à lui seul : avec un badge bleu, vérifie aussi que c'est bien le compte officiel
   (lien depuis son site officiel, ou compte reconnu comme tel par la presse). Ignore les comptes sans badge,
   parodiques ou d'agrégation anonymes.
+- Diversité : au plus 3 articles par source (même média ou même compte) dans ce fichier. Au-delà, cite
+  une autre source fiable qui couvre la même information (site ou compte officiel, autre média). Ne
+  supprime jamais une actualité à cause de cette limite : si aucune autre source n'existe, garde-la avec
+  sa source d'origine.
 - Le lien de l'article pointe vers la publication elle-même (pour X, l'URL x.com du post). Si un post X
   n'est pas lisible directement, appuie-toi sur un média qui le cite.
 
@@ -43,8 +51,10 @@ réellement évolué (dans ce cas, nouvel article qui dit ce qui a changé).
 
 ## 4. Livrable : `tmp/new-ai.json`
 
-Choisis les 4 à 8 actualités les plus importantes ; pour chacune, lis la page source
-(WebFetch) afin d'écrire un contenu précis, et écris-les avec l'outil Write dans `tmp/new-ai.json`,
+Retiens TOUTES les actualités pertinentes et vérifiées de la fenêtre, sans plafond : les grandes comme
+les plus secondaires. Une même actualité ne donne qu'un seul article, même si plusieurs médias en parlent.
+Range-les de la plus importante à la moins importante. Pour chacune, lis la page source (WebFetch)
+afin d'écrire un contenu précis, et écris-les avec l'outil Write dans `tmp/new-ai.json`,
 sous forme d'une liste JSON (et rien d'autre dans le fichier) :
 
 ```json

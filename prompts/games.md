@@ -10,7 +10,11 @@ Objectif : les actualités publiées au cours des dernières 48 heures environ (
 jour t'est donnée dans la consigne). Vérifie la date de chaque source et écarte tout ce qui est plus
 ancien, sauf pour donner le contexte d'une info nouvelle.
 
-Thèmes à couvrir (au moins une recherche web distincte par thème) :
+Exhaustivité : ne RIEN rater. Pour chaque thème ci-dessous, fais plusieurs recherches web (au moins 3, sous
+des angles différents : noms des principaux acteurs, termes en français et en anglais, sites spécialisés,
+blogs et comptes officiels), puis continue tant que de nouvelles actualités apparaissent.
+
+Thèmes à couvrir :
 1. Constructeurs de consoles : Xbox/Microsoft, Nintendo, Sony/PlayStation — matériel, stratégie,
    politique commerciale, annonces officielles.
 2. Studios et éditeurs : jeux annoncés ou en développement, dates de sortie, rachats, licenciements,
@@ -39,6 +43,10 @@ y compris X (Twitter), à une condition : l'information doit être vérifiée.
   s'achète et ne prouve pas l'identité à lui seul : avec un badge bleu, vérifie aussi que c'est bien le
   compte officiel (lien depuis son site officiel, ou compte reconnu comme tel par la presse). Ignore les
   comptes sans badge, parodiques ou d'agrégation anonymes.
+- Diversité : au plus 3 articles par source (même média ou même compte) dans ce fichier. Au-delà, cite
+  une autre source fiable qui couvre la même information (site ou compte officiel, autre média). Ne
+  supprime jamais une actualité à cause de cette limite : si aucune autre source n'existe, garde-la avec
+  sa source d'origine.
 - Le lien de l'article pointe vers la publication elle-même (pour X, l'URL x.com du post). Si un post X
   n'est pas lisible directement, appuie-toi sur un média qui le cite.
 
@@ -49,8 +57,10 @@ réellement évolué (dans ce cas, nouvel article qui dit ce qui a changé).
 
 ## 4. Livrable : `tmp/new-games.json`
 
-Choisis les 4 à 8 actualités les plus importantes ; pour chacune, lis la page source
-(WebFetch) afin d'écrire un contenu précis, et écris-les avec l'outil Write dans
+Retiens TOUTES les actualités pertinentes et vérifiées de la fenêtre, sans plafond : les grandes comme
+les plus secondaires. Une même actualité ne donne qu'un seul article, même si plusieurs médias en parlent.
+Range-les de la plus importante à la moins importante. Pour chacune, lis la page source (WebFetch)
+afin d'écrire un contenu précis, et écris-les avec l'outil Write dans
 `tmp/new-games.json`, sous forme d'une liste JSON (et rien d'autre dans le fichier) :
 
 ```json

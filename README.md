@@ -13,8 +13,8 @@ C'est une web app (PWA) : elle s'installe sur l'écran d'accueil depuis Safari, 
 
 Tout passe par GitHub Actions :
 
-1. **`Veille quotidienne`** (`.github/workflows/veille.yml`) tourne chaque matin vers 8 h 47 (heure d'été)
-   / 7 h 47 (heure d'hiver), ou à la main depuis l'onglet **Actions → Veille quotidienne → Run workflow**.
+1. **`Veille quotidienne`** (`.github/workflows/veille.yml`) tourne chaque matin vers 5 h 07 (heure d'été)
+   / 4 h 07 (heure d'hiver), GitHub pouvant retarder le lancement, ou à la main depuis l'onglet **Actions → Veille quotidienne → Run workflow**.
    - Claude (via `anthropics/claude-code-action`) suit `prompts/ai.md` puis `prompts/games.md`
      et écrit les nouveaux articles dans `tmp/new-ai.json` et `tmp/new-games.json`.
    - `scripts/news.py merge` les fusionne dans `news.json` : chaque fichier ne peut ajouter que son thème,
