@@ -1,7 +1,321 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T16:05:21+02:00",
+  "updatedAt": "2026-10-20T14:19:14+02:00",
   "items": [
+    {
+      "id": "2026-10-20-nvidia-nemotron-3-5-agents",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-19",
+      "headline": {
+        "pre": "",
+        "hl": "Nvidia",
+        "post": " lance Nemotron 3.5, des modèles ouverts pour agents"
+      },
+      "summary": "Nvidia a dévoilé trois nouveaux modèles open-weight de la famille Nemotron 3.5, pensés pour faire tourner des agents en entreprise et en local sur PC. Le plus gros, Super VL (120 milliards de paramètres), est déjà disponible.",
+      "detail": "La famille Nemotron de Nvidia couvrait déjà le multimodal, le raisonnement, le code et l'automatisation en entreprise. Le 19 octobre, le groupe a présenté Nemotron 3.5 Super VL, un modèle de 120 milliards de paramètres qui atteindrait, selon Nvidia, une précision proche de Nemotron 3 Ultra en suivi d'instructions et en appel d'outils, avec moins de paramètres. Deux modèles « Bolt » visent le travail agentique en local : Bolt 74B-A9B (74 milliards de paramètres, raisonnement multi-étapes, navigation web), disponible tout de suite, et Bolt E4B, plus petit, attendu plus tard ce mois-ci. Ils doivent tourner sur les PC équipés de la puce RTX Spark et sur les stations DGX Spark, déjà vendus via Microsoft et Dell. Nvidia affirme que Super VL, une fois post-entraîné sur des tâches précises, va plus vite que des modèles d'Anthropic et d'OpenAI, mais ne publie ni scores de benchmark ni méthodologie, et les termes de licence restent flous. Pour les entreprises, l'intérêt est de pouvoir post-entraîner le modèle sur leurs données et l'héberger elles-mêmes ; Skydance, EY, Ramp, CrowdStrike, Perplexity et Salesforce l'utilisent déjà.",
+      "points": [
+        "Super VL : 120 milliards de paramètres, open-weight",
+        "Bolt 74B-A9B disponible, Bolt E4B attendu fin octobre",
+        "Exécution locale sur PC RTX Spark et DGX Spark",
+        "Aucun benchmark chiffré publié par Nvidia"
+      ],
+      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2183848501.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-20-opencode-piratage-cles-api",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-19",
+      "headline": {
+        "pre": "L'agent de code ",
+        "hl": "OpenCode",
+        "post": " piraté, des clés API détournées"
+      },
+      "summary": "Des attaquants ont pénétré OpenCode Console, la plateforme en ligne de l'agent de code open source, et utilisé les clés API stockées par certains utilisateurs. Des développeurs ont reçu des factures OpenAI, Anthropic ou Google de plusieurs centaines de dollars.",
+      "detail": "OpenCode est un agent de code open source souvent comparé à Claude Code et Cursor. L'entreprise a annoncé samedi qu'un ancien système avait été compromis pendant la nuit, touchant 1,4 % des utilisateurs d'OpenCode Console, où certains conservent leurs clés API. Selon le cofondateur Dax Raad, l'application open source et la ligne de commande ne sont pas concernées, car les clés n'y transitent pas par les serveurs d'OpenCode. Des utilisateurs ont signalé des frais non autorisés allant de quelques centaines à plus de 1 000 dollars ; Anthropic et Google ont bloqué les clés exposées, OpenAI rembourse les crédits consommés et OpenCode annonce des remboursements. L'entreprise parle d'une « attaque de distillation à grande échelle » sans expliquer le mode opératoire, ce que des sceptiques contestent. L'équipe raconte aussi que les modèles d'IA qu'elle utilisait pour se défendre ont fini par refuser d'analyser le code malveillant à cause de leurs filtres de sécurité. Conseil pratique : révoquer et régénérer ses clés directement chez chaque fournisseur et surveiller ses alertes de dépenses.",
+      "points": [
+        "1,4 % des utilisateurs d'OpenCode Console touchés",
+        "Frais frauduleux dépassant parfois 1 000 dollars",
+        "Clés bloquées par Anthropic et Google, remboursements OpenAI",
+        "L'application et la CLI ne sont pas concernées"
+      ],
+      "url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/cyberatttack.jpg?w=612"
+    },
+    {
+      "id": "2026-10-20-microsoft-guardian-agents",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-19",
+      "headline": {
+        "pre": "",
+        "hl": "Microsoft",
+        "post": " traite les agents IA comme des menaces internes"
+      },
+      "summary": "Microsoft a présenté Guardian Agents, une fonction qui surveille les agents IA déployés en entreprise. Sa cheffe sécurité affirme que les modèles de pointe « ne peuvent pas être considérés comme fiables ».",
+      "detail": "En juin, Microsoft avait lancé Project Perception, avec des agents « red team », « blue team » et « green team » pour attaquer, détecter puis corriger les failles, en réponse aux modèles capables de piratage. Le 19 octobre, le groupe a ajouté Guardian Agents, qui part d'une autre hypothèse : les agents qu'une entreprise déploie elle-même peuvent se comporter comme des menaces internes. Microsoft Defender sait désormais repérer jusqu'à 60 types d'agents apportés par les salariés, dont Claude Code, Codex et OpenClaw, limiter leurs accès selon la tâche et exiger une validation humaine en cas de décision risquée. Hayete Gallot, responsable de la sécurité, explique que le problème n'est pas la malveillance mais l'imprévisibilité de modèles entraînés à finir leur tâche plutôt qu'à respecter les règles d'une organisation. Ni prix ni date de disponibilité générale n'ont été communiqués. Le message est paradoxal pour un groupe très investi dans OpenAI et Anthropic, mais il pousse les entreprises à séparer l'outil qui surveille les agents de ceux qui les fournissent.",
+      "points": [
+        "Guardian Agents rejoint Project Perception",
+        "Defender détecte jusqu'à 60 types d'agents",
+        "Validation humaine exigée pour les actions risquées",
+        "Prix et disponibilité non précisés"
+      ],
+      "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Networked-AI-swarm-with-glowing-nodes.png?resize=1200,600"
+    },
+    {
+      "id": "2026-10-20-amazon-torchneuron-trainium",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-19",
+      "headline": {
+        "pre": "",
+        "hl": "TorchNeuron",
+        "post": " : Amazon attaque le verrou CUDA de Nvidia"
+      },
+      "summary": "AWS a lancé TorchNeuron, un outil qui permet de faire tourner des applications PyTorch sur ses puces Trainium en changeant une seule ligne de configuration. Amazon veut ainsi réduire la dépendance des développeurs aux GPU Nvidia.",
+      "detail": "Le logiciel CUDA de Nvidia prend très bien en charge PyTorch, ce qui a fait des GPU Nvidia le choix par défaut de nombreux développeurs. TorchNeuron, publié lundi 19 octobre, est adapté de PyTorch : selon Amazon, une application existante peut migrer vers Trainium sans réécriture, avec une simple ligne de configuration modifiée. AWS affirme qu'environ 85 % des applications d'IA sont écrites en PyTorch et promet de contribuer au projet principal pour retirer le code qui le lie à des puces spécifiques. L'entreprise cite Deepgram, qui traiterait 70 % d'audio en plus par dollar après sa migration, un chiffre non vérifié de façon indépendante. Ce type de portabilité existe déjà pour les GPU AMD ou les puces Apple, et on ne sait pas encore quelle génération de Trainium est concernée ni ce que donne la migration sur des projets complexes. Pour les équipes IA, c'est une option de plus pour entraîner et servir leurs modèles hors de l'écosystème Nvidia.",
+      "points": [
+        "Migration PyTorch vers Trainium en une ligne de config",
+        "Contributions prévues au projet PyTorch principal",
+        "Deepgram : +70 % d'audio traité par dollar, selon AWS",
+        "Générations de Trainium supportées non précisées"
+      ],
+      "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205217071.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-20-yelp-agent-vocal-attente",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "Yelp",
+        "post": " appelle les restaurants à votre place"
+      },
+      "summary": "Yelp lance « Check for Me », un agent vocal IA qui téléphone à un restaurant pour connaître le temps d'attente et envoie la réponse par SMS. Son assistant IA gagne aussi la réservation via OpenTable et une mémoire des préférences.",
+      "detail": "Yelp proposait déjà depuis avril 2025 un agent vocal destiné aux restaurants et prestataires de services. La nouvelle fonction « Check for Me » apparaît sur les fiches de restaurants dans l'application : l'utilisateur indique le nombre de convives et son numéro, puis un agent vocal appelle l'établissement et lui transmet le temps d'attente par SMS. L'assistant IA de Yelp intègre aussi OpenTable pour réserver sans quitter l'app, se souvient des préférences et affiche 30 jours d'historique de conversation. Côté professionnels, Smart Lead Reply, un agent qui répond aux clients et qualifie les prospects, coûte 30 dollars par mois. Yelp n'a précisé ni les pays ni la date de déploiement de Check for Me, ni les modèles utilisés. Cette annonce illustre la montée des agents qui passent des appels pour le compte des utilisateurs, avec un risque soulevé par TechCrunch : un agent qui tombe sur l'agent vocal du restaurant.",
+      "points": [
+        "Appel automatique et réponse envoyée par SMS",
+        "Réservation OpenTable intégrée à l'assistant",
+        "Smart Lead Reply à 30 dollars par mois",
+        "Pays et date de déploiement non précisés"
+      ],
+      "url": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Yelp-waitlist.jpg?resize=1200,675"
+    },
+    {
+      "id": "2026-10-20-atelierbench-ia-design-pro",
+      "theme": "ai",
+      "source": "SILVERSIDE et Hyde (communiqué)",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "AtelierBench",
+        "post": " : l'IA pas encore au niveau des designers"
+      },
+      "summary": "Le studio SILVERSIDE et la startup Hyde publient AtelierBench, un benchmark qui teste les modèles d'IA sur de vrais briefs clients. Conclusion : aucun modèle testé n'atteint le niveau attendu d'un professionnel du design.",
+      "detail": "La plupart des benchmarks d'images notent un seul visuel généré à partir d'une courte consigne. AtelierBench, annoncé le 20 octobre par SILVERSIDE, laboratoire d'innovation IA de San Francisco, et Hyde, mesure plutôt si un modèle sait mener un flux de travail de design en plusieurs étapes, si une vraie équipe livrerait le résultat et combien il a coûté. Les modèles se montrent les plus faibles sur la précision, notamment le texte et les logos, et sur la fidélité aux images de référence ; même les meilleurs ratent des détails importants pour une marque. Doubler le budget d'outils n'apporte au mieux que six points d'exécution, et certains dispositifs coûtent plus de 50 % plus cher sans gain de qualité. Le communiqué ne nomme pas les modèles testés et ne donne pas de scores par modèle ; il s'agit d'une publication des auteurs, pas d'une évaluation indépendante. Pour les designers, c'est un rappel que l'IA reste un assistant à superviser sur les livrables de marque.",
+      "points": [
+        "Tests sur de vrais briefs et flux en plusieurs étapes",
+        "Faiblesses majeures : texte, logos, fidélité aux références",
+        "Doubler les outils : six points de gain au maximum",
+        "Modèles testés non nommés dans l'annonce"
+      ],
+      "url": "https://fortune.com/press-releases/silverside-hyde-launch-atelierbench-ai-models-design-standards-2026-10-20/",
+      "image": "https://press-release-generator-production.s3.us-west-1.amazonaws.com/d4uubdyk2omyv62skcn7i73yg356"
+    },
+    {
+      "id": "2026-10-20-anthropic-nscale-nouveau-contrat-45-milliards",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-19",
+      "headline": {
+        "pre": "",
+        "hl": "Anthropic",
+        "post": " et Nscale vers un nouveau contrat géant"
+      },
+      "summary": "Rumeur : selon Bloomberg, qui cite des sources anonymes, Anthropic et Nscale seraient sur le point d'annoncer un nouvel accord de calcul de 45 milliards de dollars. Aucune des deux entreprises ne l'a confirmé.",
+      "detail": "Fin août, Anthropic et Nscale avaient déjà annoncé publiquement un premier accord de puissance de calcul de 45 milliards de dollars, l'un des nombreux contrats géants signés par Anthropic depuis un an. Bloomberg rapporte que les deux sociétés seraient proches d'un second accord du même montant, tout en précisant que les discussions se poursuivent et que les termes peuvent changer. La structure, la durée et la capacité couverte ne sont pas connues, et TechCrunch n'avait pas obtenu de réponse des deux entreprises. Le contexte est celui d'introductions en bourse : Anthropic est toujours attendue en bourse cette année, tandis que Nscale ferait face à des réticences d'investisseurs sur sa valorisation visée de 30 milliards de dollars. L'enjeu est la capacité d'Anthropic à servir une demande croissante pour Claude, alors que certains investisseurs s'inquiètent de dépenses de calcul très supérieures aux profits.",
+      "points": [
+        "Information Bloomberg, non confirmée par les entreprises",
+        "Premier accord de 45 milliards annoncé fin août",
+        "Nscale vise une valorisation de 30 milliards en bourse"
+      ],
+      "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2236544023.jpeg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-20-star-wars-battlefront-3-dice-bungie",
+      "theme": "games",
+      "source": "VGC",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "DICE et Bungie lorgnent sur ",
+        "hl": "Battlefront 3",
+        "post": ""
+      },
+      "summary": "Rumeur : Lucasfilm chercherait toujours un studio pour développer Star Wars Battlefront 3, et DICE serait le favori. Si DICE n'obtenait pas le projet, il pourrait revenir à Bungie, le studio de Sony derrière Destiny et Marathon.",
+      "detail": "La série Battlefront n'a plus connu de nouvel épisode depuis Battlefront II en 2017, développé par DICE et édité par EA, qui avait déclenché une vive polémique autour de ses microtransactions avant leur retrait. Le jeu a pourtant connu un regain spectaculaire en 2025, porté par des campagnes sur Reddit et TikTok, jusqu'à atteindre son record de joueurs simultanés sur Steam. Selon la chronique de rumeurs « Quartermann », publiée dans un ultime numéro d'Electronic Gaming Monthly envoyé aux contributeurs d'un Kickstarter, aucun studio n'aurait encore accepté le projet : DICE serait le mieux placé, Bungie en solution de repli, et tous deux prépareraient un pitch pour Disney. VGC rappelle que d'autres rumeurs de cette même chronique se sont déjà vérifiées, comme le casting de Bill Skarsgård dans Physint de Kojima. Aucun des acteurs concernés (EA, DICE, Bungie, Lucasfilm, Disney) n'a commenté, et l'information reste donc à confirmer.",
+      "points": [
+        "Source : chronique de rumeurs d'un dernier numéro d'EGM",
+        "DICE favori, Bungie en alternative",
+        "Aucun Battlefront depuis 2017",
+        "Aucune réaction officielle d'EA, Lucasfilm ou Disney"
+      ],
+      "url": "https://www.videogameschronicle.com/news/dice-and-bungie-are-reportedly-both-interested-in-developing-star-wars-battlefront-3/",
+      "image": "https://www.videogameschronicle.com/files/2021/01/Battlefront-2-Darth-Maul.jpg"
+    },
+    {
+      "id": "2026-10-20-ps-plus-departs-novembre-gta-rdr2",
+      "theme": "games",
+      "source": "PlayStation LifeStyle",
+      "date": "2026-10-19",
+      "headline": {
+        "pre": "GTA V et RDR2 quittent le ",
+        "hl": "PS Plus",
+        "post": " en novembre"
+      },
+      "summary": "Douze jeux quitteront le catalogue PS Plus Extra et Premium d'ici le 17 novembre 2026, dont Grand Theft Auto V et Red Dead Redemption II. La liste provient des PS Store japonais et asiatique et devrait être quasi identique ailleurs.",
+      "detail": "Le départ de GTA V avait déjà été repéré mi-octobre : il intervient le 17 novembre, deux jours avant la sortie de GTA 6, et certains propriétaires de PS5 reçoivent une notification les invitant à précommander le nouvel épisode. La liste complète ajoute Red Dead Redemption II, Football Manager 26, The Talos Principle 2, Cricket 24 et Rock of Ages 3, ainsi que plusieurs titres retirés seulement dans certaines régions, comme Thank Goodness You're Here, Monster Boy and the Cursed Kingdom ou Hotshot Racing. Les retraits auront lieu au moment de l'arrivée de la sélection de novembre, et Sony met parfois à jour sa section « Dernière chance » en cours de mois. Push Square rappelle que GTA V est déjà passé trois fois par le PS Plus Extra depuis décembre 2023 et que RDR2 enchaîne lui aussi de courts passages, un retour ultérieur est donc probable. Dans les commentaires, une partie des joueurs relance le débat sur la propriété réelle des jeux dématérialisés.",
+      "points": [
+        "12 jeux retirés d'ici le 17 novembre 2026",
+        "GTA V part deux jours avant GTA 6",
+        "Liste issue des PS Store japonais et asiatique",
+        "GTA V déjà passé trois fois par le service"
+      ],
+      "url": "https://playstationlifestyle.net/2026/10/19/games-leaving-ps-plus-extra-premium-november-2026",
+      "image": "https://www.playstationlifestyle.net/wp-content/uploads/sites/9/2024/08/games-leaving-ps-plus-last-chance-to-play.jpg?resize=1200,630"
+    },
+    {
+      "id": "2026-10-20-black-ops-portages-royalties-treyarch",
+      "theme": "games",
+      "source": "VGC",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "Un ancien de Treyarch réclame sa part de ",
+        "hl": "Black Ops",
+        "post": ""
+      },
+      "summary": "Gavin Goslin, ancien level designer de Black Ops 1 et 2, juge « difficile à regarder » le succès des portages PS4/PS5 vendus 40 $, dont les créateurs originaux ne touchent « pas un centime ». Il demande un partage rétroactif des revenus.",
+      "detail": "Activision, filiale de Microsoft, a sorti sans prévenir le 9 juillet 2026 des versions PS4 et PS5 de Call of Duty: Black Ops (2010) et Black Ops 2 (2012), vendues 40 $ en dématérialisé sans nouvelle fonctionnalité. Black Ops 2 a été le jeu le plus vendu aux États-Unis en juillet selon Circana, et Alinea Analytics estime les ventes cumulées des deux titres à environ 11,2 millions d'exemplaires pour quelque 435 millions de dollars sur le seul mois de juillet. Sur LinkedIn, Gavin Goslin explique que ces jeux « impriment de l'argent » grâce à un travail achevé il y a plus de dix ans et que les équipes d'origine devraient percevoir des royalties. Son affirmation selon laquelle les bénéfices iraient aux primes des dirigeants relève toutefois de la supposition. De son côté, le directeur marketing d'Activision, Tyler Bahl, a reconnu que le succès de ces rééditions avait surpris l'éditeur, qui misait sur la nostalgie pour attirer les joueurs vers Modern Warfare 4. Activision n'a pas répondu à la demande de royalties.",
+      "points": [
+        "Portages PS4/PS5 sortis par surprise le 9 juillet",
+        "Environ 11,2 millions de ventes estimées en juillet",
+        "Revenus estimés à 435 millions de dollars en un mois",
+        "Pas de réponse d'Activision sur les royalties"
+      ],
+      "url": "https://www.videogameschronicle.com/news/cod-black-ops-1-and-2-dev-says-its-hard-to-watch-the-new-ports-selling-well-while-the-actual-creators-dont-see-a-dime/",
+      "image": "https://www.videogameschronicle.com/files/2026/10/3592Between_a_drone_and_a_hard_place-2560x1440.jpg"
+    },
+    {
+      "id": "2026-10-20-samson-liquid-swords-fermeture-confirmee",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-19",
+      "headline": {
+        "pre": "",
+        "hl": "Liquid Swords",
+        "post": " confirme la fermeture du studio"
+      },
+      "summary": "Christofer Sundberg, patron de Liquid Swords, a confirmé la fermeture du studio suédois derrière Samson. Le jeu s'est « bien mieux » vendu sur consoles que sur PC, mais cela n'a pas suffi à sauver l'entreprise.",
+      "detail": "Le média suédois Breakit avait révélé que Liquid Swords était en faillite, avec plusieurs mois de salaires impayés et une aide de l'État, tandis qu'un rachat restait l'espoir en interne. Samson: A Tyndalston Story, jeu d'action en monde ouvert solo, était sorti sur PC en avril 2026 dans une version très mal reçue par la critique comme par les joueurs. Le studio a enchaîné les mises à jour et publié une version améliorée sur PS5 le 21 septembre 2026, mais Push Square estime que ce sursaut est arrivé trop tard. Sur les réseaux sociaux, Christofer Sundberg a dit que l'équipe pouvait être fière de son travail et qu'un suivi de Samson était encore en discussion. Aucun chiffre de ventes ni nombre de salariés concernés n'a été communiqué. Les lecteurs se partagent entre sympathie pour les développeurs et rappel des nombreux bugs du lancement.",
+      "points": [
+        "Faillite révélée par Breakit, fermeture désormais confirmée",
+        "Ventes consoles « bien meilleures » que sur PC",
+        "Sortie PS5 le 21 septembre 2026",
+        "Un suivi du jeu encore en discussion"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/samson-dev-confirms-closure-open-worlds-console-sales-were-far-better-than-on-pc",
+      "image": "https://images.pushsquare.com/aba9167b03606/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-20-revamp-playtest-annule-ia",
+      "theme": "games",
+      "source": "VGC",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "ReVamp",
+        "post": " annule son playtest public par peur de l'IA"
+      },
+      "summary": "Digital Sun, studio de Moonlighter, renonce au playtest public de ReVamp sur Steam. Il craint qu'une build publique soit décompilée et clonée grâce à l'IA, puis vendue avant la sortie du jeu.",
+      "detail": "Le studio indépendant de Valence, connu pour Moonlighter, Cataclismo et The Mageseeker, prévoyait d'ouvrir largement un test de ReVamp sur Steam. Il explique que les outils d'IA facilitent désormais la décompilation, le portage et le clonage d'un jeu, et qu'avec un lancement encore lointain de plusieurs mois, publier une grosse build lui semblait « un trop grand risque ». À la place, un playtest plus restreint aura lieu sur son serveur Discord à partir du 29 octobre, et le test public sur Steam est espéré vers janvier. Cette décision intervient juste après l'annonce de la fermeture de decomp.dev, grand site de décompilation de jeux, qui accusait des acteurs malveillants utilisant l'IA de publier des projets avant qu'ils soient prêts. VGC y voit le signe d'une inquiétude croissante dans l'industrie face aux clones générés par IA.",
+      "points": [
+        "Playtest restreint sur Discord dès le 29 octobre",
+        "Test public sur Steam visé vers janvier",
+        "Crainte d'un clone vendu avant la sortie",
+        "Fait suite à la fermeture de decomp.dev"
+      ],
+      "url": "https://www.videogameschronicle.com/news/revamp-developer-cancels-public-playtest-in-case-ai-users-reverse-engineer-it-and-publish-a-clone-first/",
+      "image": "https://www.videogameschronicle.com/files/2026/10/revamp.jpg"
+    },
+    {
+      "id": "2026-10-20-cyberpunk-2077-patch-2-5-redstream",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "Cyberpunk 2077",
+        "post": " prépare un gros patch 2.5"
+      },
+      "summary": "CD Projekt Red publiera le 22 octobre la mise à jour 2.5 de Cyberpunk 2077, liée à la saison 2 de l'anime Edgerunners. Son contenu sera détaillé lors d'un REDstream le mercredi 21 octobre à 17 h (heure de Paris).",
+      "detail": "Cyberpunk 2077 continue de recevoir un suivi régulier, et le jeu a dépassé les 40 millions d'exemplaires vendus. Cette nouvelle mise à jour accompagne la deuxième saison d'Edgerunners, dans laquelle Hideo Kojima fait une apparition. Le billet de blog du studio évoque une personnalisation du cyberware, un nouveau style de jeu à deux armes et d'autres nouveautés, sans plus de précisions pour l'instant. Le REDstream sera diffusé sur YouTube et Twitch et doit présenter l'ensemble des ajouts. Dans les commentaires, les joueurs réclament notamment une vue à la troisième personne, le support des mods sur PS5 et des corrections de bugs persistants.",
+      "points": [
+        "Mise à jour 2.5 le 22 octobre",
+        "REDstream le 21 octobre à 17 h",
+        "Cyberware personnalisable et combat à deux armes annoncés",
+        "Plus de 40 millions de ventes"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/another-huge-cyberpunk-2077-ps5-update-incoming-patch-2-5-revealed-in-livestream-tomorrow",
+      "image": "https://images.pushsquare.com/7b51496b9b293/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-20-assassins-creed-destiny-chine-annule",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-19",
+      "headline": {
+        "pre": "Un ",
+        "hl": "Assassin's Creed",
+        "post": " en Chine annulé l'an dernier"
+      },
+      "summary": "Rumeur : selon MP1st, un Assassin's Creed AAA baptisé Destiny, situé en Chine en 206 av. J.-C., était développé par TiMi Studio Group (Tencent) avant d'être annulé l'an dernier. Des images de prototype ont fuité.",
+      "detail": "Le projet se serait déroulé quelques années après Assassin's Creed Jade, le jeu mobile free-to-play également confié à TiMi, studio de Shenzhen appartenant à Tencent. D'après le rapport de MP1st, Destiny n'aurait pas survécu à la restructuration de TiMi au début de l'année dernière et aurait été annulé peu après. Les éléments ayant fuité montrent une assassin dans une forteresse en flammes par une nuit pluvieuse, ainsi que des animations d'un protagoniste masculin, signe possible d'un duo de héros comme dans Shadows ou d'un choix de personnage comme dans Valhalla. On ignore à quel point le développement était avancé. Ni Ubisoft ni Tencent n'ont réagi, alors qu'Ubisoft poursuit sa restructuration.",
+      "points": [
+        "Projet confié à TiMi Studio Group, filiale de Tencent",
+        "Action située en 206 av. J.-C.",
+        "Annulé après la restructuration de TiMi",
+        "Aucun commentaire d'Ubisoft ni de Tencent"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/rumour-aaa-assassins-creed-game-set-in-china-was-cancelled-just-last-year",
+      "image": "https://images.pushsquare.com/3394c557415d1/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-20-manette-xbox-x25-anniversaire",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "La manette ",
+        "hl": "Xbox",
+        "post": " des 25 ans est arrivée"
+      },
+      "summary": "La manette XBOX Wireless Controller X25 Special Edition, verte et translucide, est lancée pour les 25 ans de la Xbox, à 79,99 $ / 74,99 £ sur le Xbox Store. Ses acheteurs reçoivent un fond d'écran dynamique exclusif.",
+      "detail": "Cette manette fait partie des célébrations des 25 ans de Xbox et reprend le design de la Xbox Series X en édition spéciale X25, dont les prix, dates et précommandes avaient été annoncés en août 2026. Après les premières livraisons, des joueurs ont découvert qu'elle débloque un fond d'écran dynamique réservé à ses possesseurs, avec un grand logo Xbox 25 au centre et un vignettage vert vif, très inspiré de celui de la première Xbox. Xbox avait déjà proposé un fond dynamique et des images de joueur pour cet anniversaire plus tôt dans l'année. Certains acheteurs ont déjà reçu leur manette, tandis que d'autres attendent encore l'expédition de leur précommande. Cette sortie précède l'ID@Xbox Showcase organisé avec IGN ce mardi 20 octobre à 19 h (heure de Paris), annoncé avec 18 jeux et plusieurs premières mondiales.",
+      "points": [
+        "Prix : 79,99 $ / 74,99 £",
+        "Fond d'écran dynamique réservé aux acheteurs",
+        "Design assorti à la Xbox Series X X25",
+        "Certaines précommandes pas encore expédiées"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/xbox-25th-anniversary-controller-comes-with-exclusive-dynamic-background",
+      "image": "https://images.purexbox.com/50d7e4a9b84df/1280x720.jpg"
+    },
     {
       "id": "2026-10-19-disney-recrute-character-ai",
       "theme": "ai",
