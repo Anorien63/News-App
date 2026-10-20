@@ -69,6 +69,7 @@ sous forme d'une liste JSON (et rien d'autre dans le fichier) :
     "headline": { "pre": "Texte avant ", "hl": "Mot-clé", "post": " texte après" },
     "summary": "2 à 3 phrases factuelles qui résument l'essentiel, dans tes mots.",
     "detail": "Un paragraphe de 4 à 7 phrases (voir ci-dessous).",
+    "tags": ["modeles"],
     "points": ["Point clé n° 1", "Point clé n° 2", "Point clé n° 3"],
     "url": "https://lien-reel-vers-la-source"
   }
@@ -82,6 +83,10 @@ sous forme d'une liste JSON (et rien d'autre dans le fichier) :
   est refusé.
 - `headline` : titre accrocheur en français de 4 à 9 mots au total ; `hl` est le mot-clé affiché en orange
   (modèle, entreprise ou outil) ; `pre` ou `post` peuvent être vides ; pense aux espaces en bordure.
+- `tags` : 1 à 3 catégories parmi exactement : `modeles` (LLM, modèles de fondation, benchmarks, open source),
+  `design` (IA et design, génération d'images, vidéo, UI), `code` (génération de code, vibe coding, outils
+  pour développeurs), `agents` (IA agentique, protocoles, automatisation), `business` (levées de fonds,
+  acquisitions, partenariats, régulation, justice, sécurité, emploi). Aucune autre valeur.
 - `summary` : 2 à 3 phrases, l'essentiel de l'info, lisible sans ouvrir l'article.
 - `detail` : un vrai paragraphe de 4 à 7 phrases, dans tes mots : le contexte (ce qui s'est passé avant),
   ce qui est annoncé précisément (chiffres, dates, prix, plateformes, disponibilité), ce qu'on ne sait pas encore,

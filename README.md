@@ -60,6 +60,7 @@ un article enregistré reste disponible même après être sorti du fil.
       "headline": { "pre": "Texte avant ", "hl": "mot-clé en orange", "post": " texte après" },
       "summary": "Deux ou trois phrases affichées sous la carte.",
       "detail": "Paragraphe de 4 à 7 phrases affiché dans la vue détail (peut être vide).",
+      "tags": ["pc", "playstation"],
       "points": ["Fait clé n° 1", "Fait clé n° 2", "Fait clé n° 3"],
       "url": "https://lien-vers-l-article-source",
       "image": "https://image-d-apercu-de-la-page-source.jpg",
@@ -79,12 +80,15 @@ un article enregistré reste disponible même après être sorti du fil.
 | `headline` | oui | Titre en trois morceaux ; `hl` s'affiche en orange. |
 | `summary` | oui | Résumé de 2 à 3 phrases sous la carte. |
 | `detail` | non | Paragraphe de contexte (4 à 7 phrases) dans la vue détail. |
+| `tags` | non | Catégories de l'article (filtres « favoris » du bandeau). IA : `modeles`, `design`, `code`, `agents`, `business`. Jeux vidéo : `pc`, `playstation`, `xbox`, `nintendo`, `mobile`, `industrie`, `evenements`. Plusieurs possibles. |
 | `points` | non | 3 à 5 faits clés, affichés dans le bloc « L'essentiel » de la vue détail. |
 | `url` | oui | Lien « Lire sur … » vers l'article d'origine. |
 | `image` | non | Image d'aperçu officielle de la page source (`og:image`), en `https`. Ajoutée **uniquement** par `scripts/news.py`, jamais écrite à la main ni par Claude. `""` = la page n'en propose pas. |
 | `imageAlt` | non | Texte alternatif de l'image, repris de la page source quand il existe. |
 
 Ajouter une thématique : une entrée dans `THEMES` et `TABS` en haut de `app.js` (+ une icône dans `ICON`).
+Ajouter ou renommer une catégorie : `CATEGORIES` dans `app.js` **et** dans `scripts/news.py`, puis la liste
+des `tags` dans le prompt du thème.
 
 ## Fichiers
 

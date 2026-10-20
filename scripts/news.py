@@ -34,6 +34,11 @@ from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEWS = os.path.join(ROOT, "news.json")
 THEMES = {"ai", "games"}
+# Catégories par thème (même liste que CATEGORIES dans app.js)
+CATEGORIES = {
+    "ai": ["modeles", "design", "code", "agents", "business"],
+    "games": ["pc", "playstation", "xbox", "nintendo", "mobile", "industrie", "evenements"],
+}
 MAX_AGE_DAYS = 7
 PARIS = ZoneInfo("Europe/Paris")
 ID_RE = re.compile(r"^\d{4}-\d{2}(-\d{2})?-[a-z0-9]+(-[a-z0-9]+)*$")
@@ -83,6 +88,14 @@ def item_problems(it, expected_theme=None):
         p.append("image doit être une adresse https ou une chaîne vide")
     if "imageAlt" in it and not isinstance(it["imageAlt"], str):
         p.append("imageAlt doit être du texte")
+    if "tags" in it:
+        allowed = CATEGORIES.get(it.get("theme"), [])
+        if not isinstance(it["tags"], list) or not all(isinstance(t, str) for t in it["tags"]):
+            p.append("tags doit être une liste de catégories")
+        elif not expected_theme:  # contrôle strict de news.json ; à la fusion, clean() écarte les inconnues
+            bad = [t for t in it["tags"] if t not in allowed]
+            if bad:
+                p.append(f"catégories inconnues pour {it.get('theme')} : {', '.join(bad)}")
     return p
 
 
@@ -97,6 +110,15 @@ def clean(it):
     out["headline"] = {"pre": h.get("pre", ""), "hl": h.get("hl", ""), "post": h.get("post", "")}
     out["summary"] = it["summary"].strip()
     out["detail"] = (it.get("detail") or "").strip()
+    allowed = CATEGORIES.get(it["theme"], [])
+    tags = []
+    for t in it.get("tags") or []:
+        t = str(t).strip().lower()
+        if t in allowed and t not in tags:
+            tags.append(t)
+        elif t not in allowed:
+            print(f"::warning::catégorie inconnue « {t} » ignorée pour {it['id']}")
+    out["tags"] = tags
     points = [x.strip() for x in it.get("points") or [] if isinstance(x, str) and x.strip()]
     if points:
         out["points"] = points[:5]

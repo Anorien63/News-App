@@ -14,6 +14,10 @@
       },
       "summary": "Nvidia a dévoilé trois nouveaux modèles open-weight de la famille Nemotron 3.5, pensés pour faire tourner des agents en entreprise et en local sur PC. Le plus gros, Super VL (120 milliards de paramètres), est déjà disponible.",
       "detail": "La famille Nemotron de Nvidia couvrait déjà le multimodal, le raisonnement, le code et l'automatisation en entreprise. Le 19 octobre, le groupe a présenté Nemotron 3.5 Super VL, un modèle de 120 milliards de paramètres qui atteindrait, selon Nvidia, une précision proche de Nemotron 3 Ultra en suivi d'instructions et en appel d'outils, avec moins de paramètres. Deux modèles « Bolt » visent le travail agentique en local : Bolt 74B-A9B (74 milliards de paramètres, raisonnement multi-étapes, navigation web), disponible tout de suite, et Bolt E4B, plus petit, attendu plus tard ce mois-ci. Ils doivent tourner sur les PC équipés de la puce RTX Spark et sur les stations DGX Spark, déjà vendus via Microsoft et Dell. Nvidia affirme que Super VL, une fois post-entraîné sur des tâches précises, va plus vite que des modèles d'Anthropic et d'OpenAI, mais ne publie ni scores de benchmark ni méthodologie, et les termes de licence restent flous. Pour les entreprises, l'intérêt est de pouvoir post-entraîner le modèle sur leurs données et l'héberger elles-mêmes ; Skydance, EY, Ramp, CrowdStrike, Perplexity et Salesforce l'utilisent déjà.",
+      "tags": [
+        "modeles",
+        "agents"
+      ],
       "points": [
         "Super VL : 120 milliards de paramètres, open-weight",
         "Bolt 74B-A9B disponible, Bolt E4B attendu fin octobre",
@@ -35,6 +39,10 @@
       },
       "summary": "Des attaquants ont pénétré OpenCode Console, la plateforme en ligne de l'agent de code open source, et utilisé les clés API stockées par certains utilisateurs. Des développeurs ont reçu des factures OpenAI, Anthropic ou Google de plusieurs centaines de dollars.",
       "detail": "OpenCode est un agent de code open source souvent comparé à Claude Code et Cursor. L'entreprise a annoncé samedi qu'un ancien système avait été compromis pendant la nuit, touchant 1,4 % des utilisateurs d'OpenCode Console, où certains conservent leurs clés API. Selon le cofondateur Dax Raad, l'application open source et la ligne de commande ne sont pas concernées, car les clés n'y transitent pas par les serveurs d'OpenCode. Des utilisateurs ont signalé des frais non autorisés allant de quelques centaines à plus de 1 000 dollars ; Anthropic et Google ont bloqué les clés exposées, OpenAI rembourse les crédits consommés et OpenCode annonce des remboursements. L'entreprise parle d'une « attaque de distillation à grande échelle » sans expliquer le mode opératoire, ce que des sceptiques contestent. L'équipe raconte aussi que les modèles d'IA qu'elle utilisait pour se défendre ont fini par refuser d'analyser le code malveillant à cause de leurs filtres de sécurité. Conseil pratique : révoquer et régénérer ses clés directement chez chaque fournisseur et surveiller ses alertes de dépenses.",
+      "tags": [
+        "code",
+        "business"
+      ],
       "points": [
         "1,4 % des utilisateurs d'OpenCode Console touchés",
         "Frais frauduleux dépassant parfois 1 000 dollars",
@@ -56,6 +64,10 @@
       },
       "summary": "Microsoft a présenté Guardian Agents, une fonction qui surveille les agents IA déployés en entreprise. Sa cheffe sécurité affirme que les modèles de pointe « ne peuvent pas être considérés comme fiables ».",
       "detail": "En juin, Microsoft avait lancé Project Perception, avec des agents « red team », « blue team » et « green team » pour attaquer, détecter puis corriger les failles, en réponse aux modèles capables de piratage. Le 19 octobre, le groupe a ajouté Guardian Agents, qui part d'une autre hypothèse : les agents qu'une entreprise déploie elle-même peuvent se comporter comme des menaces internes. Microsoft Defender sait désormais repérer jusqu'à 60 types d'agents apportés par les salariés, dont Claude Code, Codex et OpenClaw, limiter leurs accès selon la tâche et exiger une validation humaine en cas de décision risquée. Hayete Gallot, responsable de la sécurité, explique que le problème n'est pas la malveillance mais l'imprévisibilité de modèles entraînés à finir leur tâche plutôt qu'à respecter les règles d'une organisation. Ni prix ni date de disponibilité générale n'ont été communiqués. Le message est paradoxal pour un groupe très investi dans OpenAI et Anthropic, mais il pousse les entreprises à séparer l'outil qui surveille les agents de ceux qui les fournissent.",
+      "tags": [
+        "agents",
+        "business"
+      ],
       "points": [
         "Guardian Agents rejoint Project Perception",
         "Defender détecte jusqu'à 60 types d'agents",
@@ -77,6 +89,9 @@
       },
       "summary": "AWS a lancé TorchNeuron, un outil qui permet de faire tourner des applications PyTorch sur ses puces Trainium en changeant une seule ligne de configuration. Amazon veut ainsi réduire la dépendance des développeurs aux GPU Nvidia.",
       "detail": "Le logiciel CUDA de Nvidia prend très bien en charge PyTorch, ce qui a fait des GPU Nvidia le choix par défaut de nombreux développeurs. TorchNeuron, publié lundi 19 octobre, est adapté de PyTorch : selon Amazon, une application existante peut migrer vers Trainium sans réécriture, avec une simple ligne de configuration modifiée. AWS affirme qu'environ 85 % des applications d'IA sont écrites en PyTorch et promet de contribuer au projet principal pour retirer le code qui le lie à des puces spécifiques. L'entreprise cite Deepgram, qui traiterait 70 % d'audio en plus par dollar après sa migration, un chiffre non vérifié de façon indépendante. Ce type de portabilité existe déjà pour les GPU AMD ou les puces Apple, et on ne sait pas encore quelle génération de Trainium est concernée ni ce que donne la migration sur des projets complexes. Pour les équipes IA, c'est une option de plus pour entraîner et servir leurs modèles hors de l'écosystème Nvidia.",
+      "tags": [
+        "code"
+      ],
       "points": [
         "Migration PyTorch vers Trainium en une ligne de config",
         "Contributions prévues au projet PyTorch principal",
@@ -98,6 +113,9 @@
       },
       "summary": "Yelp lance « Check for Me », un agent vocal IA qui téléphone à un restaurant pour connaître le temps d'attente et envoie la réponse par SMS. Son assistant IA gagne aussi la réservation via OpenTable et une mémoire des préférences.",
       "detail": "Yelp proposait déjà depuis avril 2025 un agent vocal destiné aux restaurants et prestataires de services. La nouvelle fonction « Check for Me » apparaît sur les fiches de restaurants dans l'application : l'utilisateur indique le nombre de convives et son numéro, puis un agent vocal appelle l'établissement et lui transmet le temps d'attente par SMS. L'assistant IA de Yelp intègre aussi OpenTable pour réserver sans quitter l'app, se souvient des préférences et affiche 30 jours d'historique de conversation. Côté professionnels, Smart Lead Reply, un agent qui répond aux clients et qualifie les prospects, coûte 30 dollars par mois. Yelp n'a précisé ni les pays ni la date de déploiement de Check for Me, ni les modèles utilisés. Cette annonce illustre la montée des agents qui passent des appels pour le compte des utilisateurs, avec un risque soulevé par TechCrunch : un agent qui tombe sur l'agent vocal du restaurant.",
+      "tags": [
+        "agents"
+      ],
       "points": [
         "Appel automatique et réponse envoyée par SMS",
         "Réservation OpenTable intégrée à l'assistant",
@@ -119,6 +137,10 @@
       },
       "summary": "Le studio SILVERSIDE et la startup Hyde publient AtelierBench, un benchmark qui teste les modèles d'IA sur de vrais briefs clients. Conclusion : aucun modèle testé n'atteint le niveau attendu d'un professionnel du design.",
       "detail": "La plupart des benchmarks d'images notent un seul visuel généré à partir d'une courte consigne. AtelierBench, annoncé le 20 octobre par SILVERSIDE, laboratoire d'innovation IA de San Francisco, et Hyde, mesure plutôt si un modèle sait mener un flux de travail de design en plusieurs étapes, si une vraie équipe livrerait le résultat et combien il a coûté. Les modèles se montrent les plus faibles sur la précision, notamment le texte et les logos, et sur la fidélité aux images de référence ; même les meilleurs ratent des détails importants pour une marque. Doubler le budget d'outils n'apporte au mieux que six points d'exécution, et certains dispositifs coûtent plus de 50 % plus cher sans gain de qualité. Le communiqué ne nomme pas les modèles testés et ne donne pas de scores par modèle ; il s'agit d'une publication des auteurs, pas d'une évaluation indépendante. Pour les designers, c'est un rappel que l'IA reste un assistant à superviser sur les livrables de marque.",
+      "tags": [
+        "design",
+        "modeles"
+      ],
       "points": [
         "Tests sur de vrais briefs et flux en plusieurs étapes",
         "Faiblesses majeures : texte, logos, fidélité aux références",
@@ -140,6 +162,9 @@
       },
       "summary": "Rumeur : selon Bloomberg, qui cite des sources anonymes, Anthropic et Nscale seraient sur le point d'annoncer un nouvel accord de calcul de 45 milliards de dollars. Aucune des deux entreprises ne l'a confirmé.",
       "detail": "Fin août, Anthropic et Nscale avaient déjà annoncé publiquement un premier accord de puissance de calcul de 45 milliards de dollars, l'un des nombreux contrats géants signés par Anthropic depuis un an. Bloomberg rapporte que les deux sociétés seraient proches d'un second accord du même montant, tout en précisant que les discussions se poursuivent et que les termes peuvent changer. La structure, la durée et la capacité couverte ne sont pas connues, et TechCrunch n'avait pas obtenu de réponse des deux entreprises. Le contexte est celui d'introductions en bourse : Anthropic est toujours attendue en bourse cette année, tandis que Nscale ferait face à des réticences d'investisseurs sur sa valorisation visée de 30 milliards de dollars. L'enjeu est la capacité d'Anthropic à servir une demande croissante pour Claude, alors que certains investisseurs s'inquiètent de dépenses de calcul très supérieures aux profits.",
+      "tags": [
+        "business"
+      ],
       "points": [
         "Information Bloomberg, non confirmée par les entreprises",
         "Premier accord de 45 milliards annoncé fin août",
@@ -160,6 +185,9 @@
       },
       "summary": "Rumeur : Lucasfilm chercherait toujours un studio pour développer Star Wars Battlefront 3, et DICE serait le favori. Si DICE n'obtenait pas le projet, il pourrait revenir à Bungie, le studio de Sony derrière Destiny et Marathon.",
       "detail": "La série Battlefront n'a plus connu de nouvel épisode depuis Battlefront II en 2017, développé par DICE et édité par EA, qui avait déclenché une vive polémique autour de ses microtransactions avant leur retrait. Le jeu a pourtant connu un regain spectaculaire en 2025, porté par des campagnes sur Reddit et TikTok, jusqu'à atteindre son record de joueurs simultanés sur Steam. Selon la chronique de rumeurs « Quartermann », publiée dans un ultime numéro d'Electronic Gaming Monthly envoyé aux contributeurs d'un Kickstarter, aucun studio n'aurait encore accepté le projet : DICE serait le mieux placé, Bungie en solution de repli, et tous deux prépareraient un pitch pour Disney. VGC rappelle que d'autres rumeurs de cette même chronique se sont déjà vérifiées, comme le casting de Bill Skarsgård dans Physint de Kojima. Aucun des acteurs concernés (EA, DICE, Bungie, Lucasfilm, Disney) n'a commenté, et l'information reste donc à confirmer.",
+      "tags": [
+        "industrie"
+      ],
       "points": [
         "Source : chronique de rumeurs d'un dernier numéro d'EGM",
         "DICE favori, Bungie en alternative",
@@ -181,6 +209,9 @@
       },
       "summary": "Douze jeux quitteront le catalogue PS Plus Extra et Premium d'ici le 17 novembre 2026, dont Grand Theft Auto V et Red Dead Redemption II. La liste provient des PS Store japonais et asiatique et devrait être quasi identique ailleurs.",
       "detail": "Le départ de GTA V avait déjà été repéré mi-octobre : il intervient le 17 novembre, deux jours avant la sortie de GTA 6, et certains propriétaires de PS5 reçoivent une notification les invitant à précommander le nouvel épisode. La liste complète ajoute Red Dead Redemption II, Football Manager 26, The Talos Principle 2, Cricket 24 et Rock of Ages 3, ainsi que plusieurs titres retirés seulement dans certaines régions, comme Thank Goodness You're Here, Monster Boy and the Cursed Kingdom ou Hotshot Racing. Les retraits auront lieu au moment de l'arrivée de la sélection de novembre, et Sony met parfois à jour sa section « Dernière chance » en cours de mois. Push Square rappelle que GTA V est déjà passé trois fois par le PS Plus Extra depuis décembre 2023 et que RDR2 enchaîne lui aussi de courts passages, un retour ultérieur est donc probable. Dans les commentaires, une partie des joueurs relance le débat sur la propriété réelle des jeux dématérialisés.",
+      "tags": [
+        "playstation"
+      ],
       "points": [
         "12 jeux retirés d'ici le 17 novembre 2026",
         "GTA V part deux jours avant GTA 6",
@@ -202,6 +233,10 @@
       },
       "summary": "Gavin Goslin, ancien level designer de Black Ops 1 et 2, juge « difficile à regarder » le succès des portages PS4/PS5 vendus 40 $, dont les créateurs originaux ne touchent « pas un centime ». Il demande un partage rétroactif des revenus.",
       "detail": "Activision, filiale de Microsoft, a sorti sans prévenir le 9 juillet 2026 des versions PS4 et PS5 de Call of Duty: Black Ops (2010) et Black Ops 2 (2012), vendues 40 $ en dématérialisé sans nouvelle fonctionnalité. Black Ops 2 a été le jeu le plus vendu aux États-Unis en juillet selon Circana, et Alinea Analytics estime les ventes cumulées des deux titres à environ 11,2 millions d'exemplaires pour quelque 435 millions de dollars sur le seul mois de juillet. Sur LinkedIn, Gavin Goslin explique que ces jeux « impriment de l'argent » grâce à un travail achevé il y a plus de dix ans et que les équipes d'origine devraient percevoir des royalties. Son affirmation selon laquelle les bénéfices iraient aux primes des dirigeants relève toutefois de la supposition. De son côté, le directeur marketing d'Activision, Tyler Bahl, a reconnu que le succès de ces rééditions avait surpris l'éditeur, qui misait sur la nostalgie pour attirer les joueurs vers Modern Warfare 4. Activision n'a pas répondu à la demande de royalties.",
+      "tags": [
+        "industrie",
+        "playstation"
+      ],
       "points": [
         "Portages PS4/PS5 sortis par surprise le 9 juillet",
         "Environ 11,2 millions de ventes estimées en juillet",
@@ -223,6 +258,9 @@
       },
       "summary": "Christofer Sundberg, patron de Liquid Swords, a confirmé la fermeture du studio suédois derrière Samson. Le jeu s'est « bien mieux » vendu sur consoles que sur PC, mais cela n'a pas suffi à sauver l'entreprise.",
       "detail": "Le média suédois Breakit avait révélé que Liquid Swords était en faillite, avec plusieurs mois de salaires impayés et une aide de l'État, tandis qu'un rachat restait l'espoir en interne. Samson: A Tyndalston Story, jeu d'action en monde ouvert solo, était sorti sur PC en avril 2026 dans une version très mal reçue par la critique comme par les joueurs. Le studio a enchaîné les mises à jour et publié une version améliorée sur PS5 le 21 septembre 2026, mais Push Square estime que ce sursaut est arrivé trop tard. Sur les réseaux sociaux, Christofer Sundberg a dit que l'équipe pouvait être fière de son travail et qu'un suivi de Samson était encore en discussion. Aucun chiffre de ventes ni nombre de salariés concernés n'a été communiqué. Les lecteurs se partagent entre sympathie pour les développeurs et rappel des nombreux bugs du lancement.",
+      "tags": [
+        "industrie"
+      ],
       "points": [
         "Faillite révélée par Breakit, fermeture désormais confirmée",
         "Ventes consoles « bien meilleures » que sur PC",
@@ -244,6 +282,10 @@
       },
       "summary": "Digital Sun, studio de Moonlighter, renonce au playtest public de ReVamp sur Steam. Il craint qu'une build publique soit décompilée et clonée grâce à l'IA, puis vendue avant la sortie du jeu.",
       "detail": "Le studio indépendant de Valence, connu pour Moonlighter, Cataclismo et The Mageseeker, prévoyait d'ouvrir largement un test de ReVamp sur Steam. Il explique que les outils d'IA facilitent désormais la décompilation, le portage et le clonage d'un jeu, et qu'avec un lancement encore lointain de plusieurs mois, publier une grosse build lui semblait « un trop grand risque ». À la place, un playtest plus restreint aura lieu sur son serveur Discord à partir du 29 octobre, et le test public sur Steam est espéré vers janvier. Cette décision intervient juste après l'annonce de la fermeture de decomp.dev, grand site de décompilation de jeux, qui accusait des acteurs malveillants utilisant l'IA de publier des projets avant qu'ils soient prêts. VGC y voit le signe d'une inquiétude croissante dans l'industrie face aux clones générés par IA.",
+      "tags": [
+        "pc",
+        "industrie"
+      ],
       "points": [
         "Playtest restreint sur Discord dès le 29 octobre",
         "Test public sur Steam visé vers janvier",
@@ -265,6 +307,7 @@
       },
       "summary": "CD Projekt Red publiera le 22 octobre la mise à jour 2.5 de Cyberpunk 2077, liée à la saison 2 de l'anime Edgerunners. Son contenu sera détaillé lors d'un REDstream le mercredi 21 octobre à 17 h (heure de Paris).",
       "detail": "Cyberpunk 2077 continue de recevoir un suivi régulier, et le jeu a dépassé les 40 millions d'exemplaires vendus. Cette nouvelle mise à jour accompagne la deuxième saison d'Edgerunners, dans laquelle Hideo Kojima fait une apparition. Le billet de blog du studio évoque une personnalisation du cyberware, un nouveau style de jeu à deux armes et d'autres nouveautés, sans plus de précisions pour l'instant. Le REDstream sera diffusé sur YouTube et Twitch et doit présenter l'ensemble des ajouts. Dans les commentaires, les joueurs réclament notamment une vue à la troisième personne, le support des mods sur PS5 et des corrections de bugs persistants.",
+      "tags": [],
       "points": [
         "Mise à jour 2.5 le 22 octobre",
         "REDstream le 21 octobre à 17 h",
@@ -286,6 +329,9 @@
       },
       "summary": "Rumeur : selon MP1st, un Assassin's Creed AAA baptisé Destiny, situé en Chine en 206 av. J.-C., était développé par TiMi Studio Group (Tencent) avant d'être annulé l'an dernier. Des images de prototype ont fuité.",
       "detail": "Le projet se serait déroulé quelques années après Assassin's Creed Jade, le jeu mobile free-to-play également confié à TiMi, studio de Shenzhen appartenant à Tencent. D'après le rapport de MP1st, Destiny n'aurait pas survécu à la restructuration de TiMi au début de l'année dernière et aurait été annulé peu après. Les éléments ayant fuité montrent une assassin dans une forteresse en flammes par une nuit pluvieuse, ainsi que des animations d'un protagoniste masculin, signe possible d'un duo de héros comme dans Shadows ou d'un choix de personnage comme dans Valhalla. On ignore à quel point le développement était avancé. Ni Ubisoft ni Tencent n'ont réagi, alors qu'Ubisoft poursuit sa restructuration.",
+      "tags": [
+        "industrie"
+      ],
       "points": [
         "Projet confié à TiMi Studio Group, filiale de Tencent",
         "Action située en 206 av. J.-C.",
@@ -307,6 +353,9 @@
       },
       "summary": "La manette XBOX Wireless Controller X25 Special Edition, verte et translucide, est lancée pour les 25 ans de la Xbox, à 79,99 $ / 74,99 £ sur le Xbox Store. Ses acheteurs reçoivent un fond d'écran dynamique exclusif.",
       "detail": "Cette manette fait partie des célébrations des 25 ans de Xbox et reprend le design de la Xbox Series X en édition spéciale X25, dont les prix, dates et précommandes avaient été annoncés en août 2026. Après les premières livraisons, des joueurs ont découvert qu'elle débloque un fond d'écran dynamique réservé à ses possesseurs, avec un grand logo Xbox 25 au centre et un vignettage vert vif, très inspiré de celui de la première Xbox. Xbox avait déjà proposé un fond dynamique et des images de joueur pour cet anniversaire plus tôt dans l'année. Certains acheteurs ont déjà reçu leur manette, tandis que d'autres attendent encore l'expédition de leur précommande. Cette sortie précède l'ID@Xbox Showcase organisé avec IGN ce mardi 20 octobre à 19 h (heure de Paris), annoncé avec 18 jeux et plusieurs premières mondiales.",
+      "tags": [
+        "xbox"
+      ],
       "points": [
         "Prix : 79,99 $ / 74,99 £",
         "Fond d'écran dynamique réservé aux acheteurs",
@@ -328,6 +377,9 @@
       },
       "summary": "Disney s'engage à faire une offre d'embauche à au moins 60 salariés de Character.AI, la majorité de l'effectif de la start-up de chatbots en faillite. Selon le dossier judiciaire, la grande majorité a déjà accepté.",
       "detail": "Character.AI a déposé le bilan la semaine dernière, en invoquant des coûts élevés et des risques liés aux procès et aux enquêtes réglementaires, notamment sur la sécurité des enfants. La start-up avait déjà indiqué que Disney rachèterait une partie de ses actifs pour 20 millions de dollars. Le dossier, repéré par Bloomberg, chiffre à environ 60 millions de dollars par an la rémunération des salariés recrutés. Il s'agit d'une offre « stalking horse » : un autre acquéreur peut encore surenchérir, et le montant final n'est pas connu. Le lien est d'autant plus fort que Karandeep Anand, ancien PDG de Character.AI, est devenu en septembre le premier directeur technique de Disney. L'opération montre comment les grands groupes récupèrent les talents de l'IA grand public quand une start-up s'effondre.",
+      "tags": [
+        "business"
+      ],
       "points": [
         "Au moins 60 salariés concernés, environ 60 M$ de salaires annuels",
         "Character.AI en faillite depuis la semaine dernière",
@@ -349,6 +401,10 @@
       },
       "summary": "Selon des données publiées par Upstarts Media, les transactions passées par des agents IA via Link, le service de paiement de Stripe, ont été multipliées par 38 en septembre, et le volume payé par 20. Stripe ne donne aucun chiffre absolu.",
       "detail": "Link fournit à l'agent un numéro de carte distinct à 16 chiffres plutôt que la vraie carte de l'utilisateur, qui peut fixer des plafonds de dépense. Environ 70 agents étaient branchés au moment de l'analyse ; ils seraient environ 200 aujourd'hui selon Dan Hill, responsable de Link, dont Muse de Meta et Grok Bot. La plupart dépensent autour de 100 dollars par achat, mais certains réservent des vols ou achètent des meubles pour plusieurs milliers de dollars. Le commerce de détail pèse 36 % des transactions et 32 % du volume, devant le voyage (28 % du volume). La croissance part d'une base faible et Stripe refuse de publier les montants, ce qui empêche de mesurer le phénomène. Anthropic et OpenAI utilisent Link, mais pas encore pour des achats faits par leurs agents ; PayPal et Shop Pay sont cités comme concurrents.",
+      "tags": [
+        "agents",
+        "business"
+      ],
       "points": [
         "Transactions d'agents ×38 et volume ×20 en septembre",
         "Environ 200 agents connectés à Link",
@@ -370,6 +426,10 @@
       },
       "summary": "D'après le Financial Times, Anthropic consulte des cabinets d'avocats pour définir des normes de négociation équitables, avant que des agents IA ne négocient prix, réclamations ou contrats au nom des utilisateurs.",
       "detail": "Lors de ses propres expériences, Anthropic a constaté que les modèles les plus puissants obtiennent de meilleures affaires, ce qui pourrait creuser les inégalités entre utilisateurs selon l'agent dont ils disposent. L'entreprise recrute aussi des « Conceptual Reasoning Fellows », dont des juristes, pour quatre mois et une rémunération de 100 000 à 167 000 dollars. Ils testeront le jugement de Claude en droit, philosophie, économie ou science politique. La difficulté de fond : contrairement aux maths ou au code, ces domaines offrent peu de réponses vérifiables pour entraîner un modèle. Le chercheur Justin Curl reconnaît qu'en droit, la qualité est « notoirement difficile à définir ». Aucune norme ni calendrier n'a encore été publié.",
+      "tags": [
+        "agents",
+        "business"
+      ],
       "points": [
         "Révélé par le Financial Times",
         "Les modèles plus forts décrochent de meilleurs accords",
@@ -391,6 +451,9 @@
       },
       "summary": "Après Munich, le tribunal régional d'Aix-la-Chapelle considère à son tour que les réponses générées par l'IA de Google sont ses propres déclarations, dont il est responsable. Il lui interdit de diffuser trois textes faux visant un médecin.",
       "detail": "Fin mai, le tribunal de Munich avait jugé Google responsable de résumés AI Overviews qui associaient à tort deux éditeurs à des escroqueries ; l'affaire s'est finalement close par une transaction. Le 24 septembre, le tribunal d'Aix-la-Chapelle a rendu une ordonnance en urgence, sans entendre Google, en faveur d'un professeur de neuroradiologie : « AI Mode » lui attribuait une agression sexuelle commise en réalité par un autre ancien professeur. Google avait refusé de retirer ces contenus malgré une mise en demeure. L'entreprise risque jusqu'à 250 000 euros d'amende par infraction et peut encore contester la décision, qui n'est pas définitive. Si une juridiction supérieure confirmait que ces réponses sont un contenu original, c'est le modèle de la recherche par IA qui serait fragilisé en Allemagne.",
+      "tags": [
+        "business"
+      ],
       "points": [
         "Deuxième décision allemande après Munich",
         "Jusqu'à 250 000 € d'amende par infraction",
@@ -412,6 +475,10 @@
       },
       "summary": "Une équipe de quatre agents propulsés par Gemini 4 Argon a vaincu l'Ender Dragon et terminé Minecraft en 27 h 14 min, sans aide humaine. Les auteurs parlent d'une première.",
       "detail": "Les chercheurs (Maxence Faldor, Satinder Singh et Roberta Raileanu, dans un article publié sur arXiv) ont lâché les agents dans un monde aléatoire en difficulté facile, sans rôles attribués ni outils écrits pour le jeu. Ils contrôlaient leurs personnages via la bibliothèque open source Mineflayer et se coordonnaient par le chat et une mémoire partagée. Ils se sont répartis le travail, ont récupéré les objets de coéquipiers morts et consigné leurs erreurs. Bilan : 2 783 programmes JavaScript écrits, 229 messages échangés et 605 morts, pour un coût estimé à 1 620 dollars au tarif standard de Gemini 4 Argon prévu en 2027. On ignore si le résultat est reproductible sur plusieurs essais. Pour les auteurs, tenir un plan cohérent sur des milliers d'étapes dépendantes est proche de ce qu'exigent les longues tâches de code multi-agents.",
+      "tags": [
+        "agents",
+        "modeles"
+      ],
       "points": [
         "27 h 14 min pour battre l'Ender Dragon",
         "2 783 programmes écrits, 605 morts",
@@ -433,6 +500,10 @@
       },
       "summary": "Un rapport interne d'Anthropic montre que la part des juniors parmi les embauches techniques est passée de 27 % à 9 % depuis début 2025. En août, ses agents IA travaillaient six fois plus d'heures que leurs utilisateurs humains.",
       "detail": "Dans les équipes techniques, la part des juniors est tombée de 21 % à 14 %, et les offres de postes juniors chutent depuis décembre 2025. Le temps de travail des agents a dépassé celui des humains en mars 2026 ; le ratio atteint 19 pour 1 dans la recherche. Les ingénieurs produisent jusqu'à cinq fois plus de commits qu'il y a six mois, et le code écrit par les agents n'est pas annulé plus souvent que le code écrit à la main. Anthropic reconnaît des biais : les salariés les plus dynamiques ont adopté les agents en premier, et l'étude ne porte que sur une entreprise très orientée IA. Le rapport note aussi que la gestion des agents occupe désormais 22 % des sessions et que le temps de réunion a augmenté de 20 %. Pour les développeurs débutants, c'est un signal concret de la façon dont les agents de code changent l'embauche.",
+      "tags": [
+        "agents",
+        "business"
+      ],
       "points": [
         "Juniors : 9 % des embauches techniques, contre 27 %",
         "Agents : six fois plus d'heures que les humains",
@@ -454,6 +525,9 @@
       },
       "summary": "Nintendo reconnaît avoir « sous-estimé » la demande pour la Switch 2 édition spéciale des 40 ans de Zelda. L'entreprise promet des réassorts, sans calendrier précis.",
       "detail": "Révélée il y a environ un mois, la Switch 2 édition spéciale 40e anniversaire de Zelda accompagne le remake de The Legend of Zelda: Ocarina of Time, attendu le 5 novembre 2026 (69,99 $ en physique, 59,99 $ en dématérialisé aux États-Unis). Les précommandes ont été perturbées par des pénuries et la console apparaît puis disparaît chez plusieurs revendeurs européens depuis plusieurs semaines. Interrogé par la chaîne YouTube Coelho no Japão, Bill van Zyll, vice-président de Nintendo pour l'Amérique latine, admet que la demande a été sous-estimée et parle d'un « phénomène mondial », l'Amérique du Nord se distinguant particulièrement. Il assure que Nintendo travaille au réapprovisionnement du matériel et des logiciels spéciaux, mais que « cela prendra un peu de temps ». Aucune date ni aucun volume n'ont été communiqués. Nintendo Life s'étonne que Nintendo n'ait pas anticipé l'engouement, vu le succès des éditions spéciales de la première Switch ; ses lecteurs, eux, craignent surtout les revendeurs à la sauvette.",
+      "tags": [
+        "nintendo"
+      ],
       "points": [
         "Bill van Zyll (Nintendo Amérique latine) parle d'un « phénomène mondial »",
         "Réassorts promis, sans date ni volumes annoncés",
@@ -475,6 +549,9 @@
       },
       "summary": "Housemarque déploie gratuitement la mise à jour Zenith de Saros sur PS5. Elle ajoute un New Game Plus, un mode Boss Rush et de nouvelles options d'accessibilité.",
       "detail": "Successeur spirituel de Returnal, Saros, le jeu de tir à la troisième personne de Housemarque, a été très bien accueilli : VGC lui a attribué 5 étoiles et l'a qualifié de « l'un des jeux first-party les plus mémorables de la PS5 ». La mise à jour Zenith, présentée sur le PlayStation Blog par le responsable du design Abebe Tinari, est gratuite et en cours de déploiement. Elle ajoute un New Game Plus pour les joueurs ayant terminé le jeu, ainsi qu'un mode « Overlord Rush » qui regroupe les boss en séries de trois au maximum, la dernière série, « Totality », réunissant tous les boss. Côté accessibilité, on peut désormais ralentir les projectiles et activer un tir automatique, qui se déclenche dès que l'arme vise un ennemi mais ne gère pas le rechargement. Selon Abebe Tinari, Saros figure parmi les jeux d'action les mieux notés de 2026.",
+      "tags": [
+        "playstation"
+      ],
       "points": [
         "Mise à jour gratuite, disponible dès maintenant sur PS5",
         "Mode Overlord Rush : la série « Totality » réunit tous les boss",
@@ -496,6 +573,9 @@
       },
       "summary": "Le compte officiel de Cyberpunk: Edgerunners a confirmé sur X qu'Hideo Kojima reprend le rôle d'Hideyoshi Oshima dans la saison 2. Il prête lui-même sa voix au personnage, et la série arrive sur Netflix le 20 octobre.",
       "detail": "Hideo Kojima, créateur de Metal Gear et de Death Stranding, apparaissait déjà dans Cyberpunk 2077 sous les traits d'Oshima, un producteur de « braindance » qu'on peut croiser au bar de l'hôtel pendant la mission « The Heist ». Le compte officiel de Cyberpunk: Edgerunners a annoncé sur X qu'il « revient en tant qu'Hideyoshi Oshima » dans la deuxième saison de l'anime, avec sa propre voix. Le braindance est la technologie de l'univers Cyberpunk qui permet d'enregistrer puis de revivre les sensations, émotions et pensées d'une autre personne. La saison 2 sera diffusée sur Netflix à partir du mardi 20 octobre 2026. VGC rappelle que Kojima avait signé dès 1988 Snatcher, un visual novel cyberpunk, bien avant son succès avec Metal Gear Solid.",
+      "tags": [
+        "industrie"
+      ],
       "points": [
         "Annonce faite par le compte officiel Cyberpunk: Edgerunners sur X",
         "Kojima double lui-même son personnage",
@@ -517,6 +597,9 @@
       },
       "summary": "Decomp.dev, l'un des principaux sites de suivi des projets de décompilation de jeux, ferme progressivement. Son créateur accuse certains usages de l'IA d'avoir « cassé l'aspect communautaire ».",
       "detail": "Decomp.dev recense les projets de décompilation de jeux et affiche leur progression. Ces projets, légaux car ils n'utilisent aucun élément protégé et exigent que les joueurs fournissent leurs propres ROM, permettent ensuite des portages améliorés (fréquence d'images plus élevée, écran large, mods). Son créateur, @encounter, explique sur la page d'accueil que l'IA n'est pas le problème en soi et qu'elle peut accélérer nettement le travail. En revanche, des « acteurs malveillants » récupèrent des décompilations en cours, les forkent et les terminent à l'IA pour publier à la hâte des portages « à moitié finis ». Les barres de progression, censées motiver les développeurs, sont devenues selon lui un classement qui récompense ces portages bâclés. L'index principal est désactivé et aucun nouveau projet ne peut être ajouté, mais les pages et l'historique des projets existants restent consultables. Le débat agite la scène : le responsable d'un portage PC de Banjo-Kazooie a récemment pris ses distances avec un portage de Banjo-Tooie assisté par IA, qu'il qualifie de « course vers le bas ».",
+      "tags": [
+        "industrie"
+      ],
       "points": [
         "Index principal désactivé, plus d'ajout de nouveaux projets",
         "Les pages des projets existants restent en ligne",
@@ -538,6 +621,9 @@
       },
       "summary": "Plusieurs jeux Xbox physiques récents arrivent sans le sticker de sécurité qui scellait le boîtier. Microsoft n'a fait aucun commentaire, mais recrute en parallèle un poste dédié au lancement des jeux physiques.",
       "detail": "Le distributeur nord-américain VGP Video Games Plus a signalé le 16 octobre sur X que Dragon's Dogma 2, Planet Zoo et Clive Barker's Hellraiser: Revival étaient livrés sans scellé, évoquant une nouvelle « initiative d'emballage ». D'autres joueurs ont fait le même constat pour Valor Mortis, Onimusha: Way of the Sword et Castlevania: Belmont's Curse, même si un exemplaire de ce dernier portait encore son scellé, preuve que le changement n'est pas encore généralisé. Microsoft ne s'est pas exprimé. Au même moment, l'entreprise publie sur LinkedIn une offre de « Xbox Games Supply Strategist » chargé de « coordonner le lancement des jeux Xbox physiques sur toutes les plateformes », sans jamais mentionner le disque. Le contexte est tendu : PlayStation a annoncé la fin des sorties sur disque à partir de 2028, et Xbox étudierait encore la présence d'un lecteur sur Project Helix, sa prochaine console. Dans un sondage de Pure Xbox, 77 % des lecteurs disent jeter le scellé.",
+      "tags": [
+        "xbox"
+      ],
       "points": [
         "Changement repéré par le distributeur VGP Video Games Plus",
         "Aucune déclaration officielle de Microsoft",
@@ -559,6 +645,9 @@
       },
       "summary": "Douglas Reilly, vice-président de Lucasfilm, assure qu'il n'est pas nécessaire d'être un éditeur du top 5 pour faire un grand jeu Star Wars. Des partenaires « grands et petits » vont « surprendre » les joueurs.",
       "detail": "Dans une interview à The Game Business, Douglas Reilly explique que Lucasfilm a élargi l'éventail des studios avec lesquels il travaille sur la licence Star Wars. Il promet des collaborations avec des partenaires « grands et petits » qui surprendront une fois annoncées, tout en précisant que Lucasfilm privilégie en général les équipes expérimentées. Cette stratégie a déjà porté ses fruits en 2026 : Star Wars: Zero Company, jeu tactique sorti fin août et premier projet de Bit Reactor, et Star Wars: Galactic Racer, premier jeu de Fuse Games (fondé par des anciens de Burnout et Need for Speed), ont été salués par la critique et se sont bien vendus. Restent en développement un troisième Star Wars Jedi chez Respawn, Star Wars: Fate of the Old Republic du nouveau studio de Casey Hudson, ainsi que Star Wars Eclipse et le remake de Knights of the Old Republic. Aucun nouveau titre ni partenaire n'a été nommé.",
+      "tags": [
+        "industrie"
+      ],
       "points": [
         "Lucasfilm ouvre la licence à des studios plus modestes",
         "Zero Company et Galactic Racer, deux succès récents",
@@ -580,6 +669,9 @@
       },
       "summary": "Le film Street Fighter a pris la tête du box-office mondial ce week-end avec 51,1 millions de dollars à l'international, selon Deadline. C'est correct, mais en dessous des 70 millions espérés pour un budget de 82 millions.",
       "detail": "Distribué par Paramount et cofinancé par Legendary et Capcom, le film Street Fighter sortait ce week-end. D'après Deadline, il a rapporté 51,1 millions de dollars à l'international et pris la première place du box-office mondial, alors que les plus optimistes tablaient plutôt sur 70 millions. Son budget de production atteint 82 millions de dollars, hors marketing : le chemin vers la rentabilité reste long. L'accueil critique est mitigé, avec 42 % de critiques positives sur Rotten Tomatoes contre 79 % côté public. Push Square le juge volontairement criard et porté sur l'humour potache, mais amusant. Tout dépendra désormais de la tenue des entrées dans les semaines à venir ; aucune date de sortie en streaming n'a été annoncée.",
+      "tags": [
+        "industrie"
+      ],
       "points": [
         "51,1 M$ à l'international, première place mondiale",
         "Budget de 82 M$, hors marketing",
@@ -601,6 +693,9 @@
       },
       "summary": "Anthropic crée l'Anthropic Public Benefit Fund et lui consacre 5 % de ses actions, sous réserve de l'accord des actionnaires ; le conseil pourra ajouter 2 % à chaque hausse de 50 % de la valorisation au-delà d'un seuil.",
       "detail": "Le fonds, une LLC détenue à 100 %, pourra financer des associations ou verser directement de l'argent à certaines populations, par exemple face aux effets de l'IA sur l'emploi. Il ne pourra servir ni au lobbying ni aux dons politiques. Avec les promesses des cofondateurs et des salariés, environ 20 % du capital serait ainsi destiné au bien public.",
+      "tags": [
+        "business"
+      ],
       "url": "https://www.anthropic.com/news/public-benefit-fund",
       "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/85648c93880ac27347f8e6a4008650a65c12ede8-1200x630.jpg",
       "imageAlt": "Anthropic logo"
@@ -617,6 +712,9 @@
       },
       "summary": "DeepSeek met à jour son modèle open source V4.1 Flash (version 1017), qu'il dit meilleur sur ses benchmarks avec des réponses plus courtes, donc moins chères et plus rapides. Le prix de l'API ne change pas.",
       "detail": "Le labo annonce par exemple 77,0 sur DeepSWE v1.1 et 42,3 sur Terminal-Bench 4.0. Il ouvre aussi aux développeurs son moteur de recherche web interne, via des API Search et Fetch.",
+      "tags": [
+        "modeles"
+      ],
       "url": "https://api-docs.deepseek.com/updates/",
       "image": "https://api-docs.deepseek.com/img/deepseek-social-card.jpeg"
     },
@@ -632,6 +730,10 @@
       },
       "summary": "Amjad Masad, le patron de Replit, a annoncé que les modèles d'OpenAI remplacent ceux d'Anthropic par défaut dans Replit Agent. Il invoque le coût, le partenariat et les performances.",
       "detail": "Claude reste disponible pour les clients. Ce week-end, Masad a précisé à TechCrunch que Replit « reste agnostique » vis-à-vis des modèles, OpenAI devenant son « partenaire privilégié ». Une source proche du dossier affirme que le partenariat avec Anthropic tient toujours.",
+      "tags": [
+        "code",
+        "modeles"
+      ],
       "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "image": "https://techcrunch.com/wp-content/uploads/2026/10/replit-ceo-masad.jpg?resize=1200,800"
     },
@@ -647,6 +749,10 @@
       },
       "summary": "Au salon Money20/20, World (le projet cofondé par Sam Altman) a présenté une offre pour la finance qui comprend World ID for Agents : une personne pourra déléguer à un agent IA la preuve qu'elle est bien humaine.",
       "detail": "L'offre comprend aussi World ID for Zoom, un outil de détection des deepfakes en visio désormais disponible pour tous. Aucune banque cliente n'est nommée et aucun prix n'a été annoncé.",
+      "tags": [
+        "agents",
+        "business"
+      ],
       "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869"
     },
     {
@@ -661,6 +767,9 @@
       },
       "summary": "Rumeur : trois identifiants de modèles inconnus, aurora-red-alpha, aurora-green-alpha et aurora-blue-alpha, seraient apparus dans l'API d'OpenAI sans annonce ni documentation.",
       "detail": "Ils ont été repérés via un post sur X et OpenAI n'a fait aucun commentaire. Seul aurora-red-alpha renverrait des erreurs de capacité, signe qu'il serait déjà branché côté serveur.",
+      "tags": [
+        "modeles"
+      ],
       "url": "https://cryptobriefing.com/openai-aurora-alpha-models-api/",
       "image": "https://static.cryptobriefing.com/wp-content/uploads/2026/10/17231759/library-openai-quietly-lists-three-aurora-alpha-models-in-its-ap-800x450.png"
     },
@@ -676,6 +785,9 @@
       },
       "summary": "Le tribunal de Stockholm a prononcé le 12 octobre la faillite du studio suédois fondé par Christofer Sundberg (co-créateur de Just Cause), six mois après la sortie de Samson.",
       "detail": "Près de 30 développeurs n'étaient plus payés depuis août et seront indemnisés par l'État suédois. L'administrateur judiciaire met en vente le studio et ses actifs, dont Samson (51 % sur Metacritic), avec une date limite des offres fixée au 21 octobre.",
+      "tags": [
+        "industrie"
+      ],
       "url": "https://kotaku.com/samson-developer-and-publisher-liquid-swords-goes-bankrupt-6-months-after-release-2000747049",
       "image": "https://kotaku.com/app/uploads/2026/04/Game-Page-Featured_Samson-A-Tyndalston-Story-Inits-1200x675.jpg"
     },
@@ -691,6 +803,9 @@
       },
       "summary": "Rumeur : selon l'insider KeplerL2, la RAM et le stockage de la PlayStation 6 coûteraient à eux seuls plus de 680 dollars par console, un chiffre qui devrait baisser une fois le design finalisé.",
       "detail": "Sony n'a fait aucun commentaire. La pénurie de mémoire liée aux data centers d'IA fait craindre une console à plus de 1 000 dollars : des analystes évoquent une sortie repoussée à 2028, et la PS5 Pro est déjà passée à 899 dollars.",
+      "tags": [
+        "playstation"
+      ],
       "url": "https://www.videogameschronicle.com/news/playstation-6s-memory-costs-alone-exceed-680-per-console-its-claimed/",
       "image": "https://www.videogameschronicle.com/files/2024/09/playstation-30th-annivesary-pre-orders.jpg"
     },
@@ -706,6 +821,9 @@
       },
       "summary": "Les crédits de Call of Duty: Modern Warfare 4 comportent un écran « In memoriam – Vince Zampella », comme l'a montré Geoff Keighley sur X : le jeu est dédié au co-fondateur d'Infinity Ward.",
       "detail": "Mort dans un accident de voiture en décembre 2025, Zampella avait mené Call of Duty jusqu'à Modern Warfare 2 avant de fonder Respawn (Titanfall, Apex Legends), puis de diriger la licence Battlefield chez EA.",
+      "tags": [
+        "industrie"
+      ],
       "url": "https://www.videogameschronicle.com/news/call-of-duty-modern-warfare-4-pays-tribute-to-late-cod-co-creator-and-infinity-ward-co-founder-vince-zampella/",
       "image": "https://www.videogameschronicle.com/files/2025/12/Vince-Zampella.jpg"
     },
@@ -721,6 +839,9 @@
       },
       "summary": "Deep Rock Galactic, LEGO Star Wars : La Saga Skywalker, Wartales, Wildgate, Dead Static Drive, Lara Croft and the Temple of Osiris, Day of the Tentacle Remastered et Full Throttle Remastered quittent le service.",
       "detail": "Les deux classiques de Double Fine partent parce que le studio est redevenu indépendant de Microsoft. La plupart de ces jeux sont remisés d'au moins 20 % pour les abonnés avant leur départ.",
+      "tags": [
+        "xbox"
+      ],
       "url": "https://www.purexbox.com/news/2026/10/eight-games-are-leaving-xbox-game-pass-in-late-october-2026",
       "image": "https://images.purexbox.com/dd0ba2c575657/1280x720.jpg"
     },
@@ -736,6 +857,12 @@
       },
       "summary": "Telltale annonce que la version Switch a besoin de plus de temps et sortira plus tard, sans nouvelle date. Les versions PlayStation, Xbox et PC sortent toujours le 29 octobre.",
       "detail": "",
+      "tags": [
+        "nintendo",
+        "pc",
+        "playstation",
+        "xbox"
+      ],
       "url": "https://www.nintendolife.com/news/2026/10/the-wolf-among-us-remastered-has-been-delayed-for-switch",
       "image": "https://images.nintendolife.com/3768f6736f5ca/1280x720.jpg"
     },
@@ -751,6 +878,9 @@
       },
       "summary": "Massive Monster annonce une version Switch 2 de son jeu, vendue au même prix que sur Switch 1.",
       "detail": "Ceux qui possèdent déjà le jeu sur Switch 1 pourront passer gratuitement à la version Switch 2.",
+      "tags": [
+        "nintendo"
+      ],
       "url": "https://www.nintendolife.com/news/2026/10/cult-of-the-lamb-summons-a-switch-2-version-free-upgrade-path-confirmed",
       "image": "https://images.nintendolife.com/105fa42933e8e/1280x720.jpg"
     },
@@ -766,6 +896,9 @@
       },
       "summary": "Dans le nouveau rapport d'activité de Konami, Hideki Hayakawa, président de Konami Digital Entertainment, estime que l'IA générative ne bouleversera pas le marché et que la « réaction chimique » entre les équipes reste irremplaçable.",
       "detail": "Konami est revenu aux productions AAA avec les licences Silent Hill, Metal Gear et Castlevania, et vise désormais un Silent Hill par an.",
+      "tags": [
+        "industrie"
+      ],
       "url": "https://www.videogameschronicle.com/news/konami-boss-says-ai-cant-replace-the-human-chemistry-behind-great-games/",
       "image": "https://www.videogameschronicle.com/files/2026/08/Metal-Gear-Solid-Collection-Vol-2-13.jpg"
     },
@@ -782,6 +915,12 @@
       },
       "summary": "Le nouveau jeu de Square Enix arrive sur PC, PS5, Xbox Series, Switch et Switch 2.",
       "detail": "",
+      "tags": [
+        "pc",
+        "playstation",
+        "xbox",
+        "nintendo"
+      ],
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
       "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
     },
@@ -798,6 +937,9 @@
       },
       "summary": "Le salon s’installe au Dôme de Paris, avec trois sessions en soirée.",
       "detail": "",
+      "tags": [
+        "evenements"
+      ],
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
       "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
     },
@@ -814,6 +956,10 @@
       },
       "summary": "Repoussé de quelques semaines, le jeu d’action de S-Game sortira sur PC et PS5.",
       "detail": "",
+      "tags": [
+        "pc",
+        "playstation"
+      ],
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
       "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
     },
@@ -830,6 +976,12 @@
       },
       "summary": "Bandai Namco publie le remaster le 16 octobre sur PC, PS4, PS5, Xbox Series, Switch et Switch 2.",
       "detail": "",
+      "tags": [
+        "pc",
+        "playstation",
+        "xbox",
+        "nintendo"
+      ],
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
       "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
     },
@@ -846,6 +998,11 @@
       },
       "summary": "Wings of Theve, de Bandai Namco, est disponible depuis le 2 octobre sur PC, PS5 et Xbox Series.",
       "detail": "",
+      "tags": [
+        "pc",
+        "playstation",
+        "xbox"
+      ],
       "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
       "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
     }

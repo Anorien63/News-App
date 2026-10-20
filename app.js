@@ -10,6 +10,7 @@
     ai: '<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path class="fillable" d="M11 3.5l1.9 5.1L18 10.5l-5.1 1.9L11 17.5l-1.9-5.1L4 10.5l5.1-1.9z"/><path class="fillable" d="M18.5 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>',
     games: '<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g class="thick"><path d="M6 8h12a4 4 0 0 1 4 4v3.5a2.5 2.5 0 0 1-4.5 1.5L16 15H8l-1.5 2A2.5 2.5 0 0 1 2 15.5V12a4 4 0 0 1 4-4z"/><path d="M7 10.5v3.5M5.25 12.25h3.5"/><path d="M16 11h.01M18 13.5h.01"/></g></svg>',
     saved: '<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path class="fillable" d="M6 3.5h12v17l-6-4.5-6 4.5z"/></svg>',
+    check: '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
     heart: '<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-10.2A4.2 4.2 0 0 1 12 7.2a4.2 4.2 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></svg>',
     share: '<svg aria-hidden="true" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 10.5 13.5"/><path d="M21 3l-6.5 18-4-7.5L3 9.5z"/></svg>',
     bookmark: '<svg aria-hidden="true" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>',
@@ -27,6 +28,28 @@
     ai: { label: 'IA', title: 'Intelligence artificielle' },
     games: { label: 'Jeux vidéo', title: 'Jeux vidéo' }
   };
+  /* Catégories (identifiants uniques, toutes thématiques confondues) — même liste que scripts/news.py */
+  var CATEGORIES = {
+    ai: [
+      { id: 'modeles', label: 'Modèles', short: 'LLM' },
+      { id: 'design', label: 'Design', short: 'DES' },
+      { id: 'code', label: 'Code', short: '</>' },
+      { id: 'agents', label: 'Agents', short: 'AG' },
+      { id: 'business', label: 'Business', short: 'BIZ' }
+    ],
+    games: [
+      { id: 'pc', label: 'PC', short: 'PC' },
+      { id: 'playstation', label: 'PlayStation', short: 'PS' },
+      { id: 'xbox', label: 'Xbox', short: 'XB' },
+      { id: 'nintendo', label: 'Nintendo', short: 'NS' },
+      { id: 'mobile', label: 'Mobile', short: 'MOB' },
+      { id: 'industrie', label: 'Industrie', short: 'IND' },
+      { id: 'evenements', label: 'Événements', short: 'EVT' }
+    ]
+  };
+  var CAT_BY_ID = {};
+  Object.keys(CATEGORIES).forEach(function (t) { CATEGORIES[t].forEach(function (c) { CAT_BY_ID[c.id] = c; }); });
+
   var TABS = [
     { id: 'home', label: 'Accueil', title: 'À la une' },
     { id: 'ai', label: 'IA', title: THEMES.ai.title },
@@ -44,7 +67,7 @@
 
   var state = {
     tab: load('veille.tab', 'home'),
-    source: 'all',
+    fav: load('veille.favCats', []).filter(function (id) { return !!CAT_BY_ID[id]; }), // catégories favorites, gardées sur l'iPhone
     items: [],
     updatedAt: null,
     loading: true,
@@ -111,6 +134,7 @@
         initials: it.initials || initials(it.source), date: it.date, dateLabel: it.dateLabel,
         headline: { pre: h.pre || '', hl: h.hl || '', post: h.post || '' },
         summary: it.summary || '', detail: it.detail || '', url: it.url || '',
+        tags: Array.isArray(it.tags) ? it.tags.filter(function (t) { return !!CAT_BY_ID[t]; }) : [],
         image: /^https:\/\//i.test(it.image || '') ? it.image : '', imageAlt: it.imageAlt || '',
         points: Array.isArray(it.points) ? it.points.filter(function (x) { return typeof x === 'string' && x.trim(); }) : []
       };
@@ -180,19 +204,46 @@
     }).join('');
   }
 
-  function renderSources(base) {
-    var seen = {}; var list = [];
-    base.forEach(function (it) { if (!seen[it.source]) { seen[it.source] = 1; list.push(it); } });
-    if (list.length < 2) { els.sources.hidden = true; els.sources.innerHTML = ''; return; }
+  /* Catégories proposées dans l'onglet courant */
+  function tabCats(tab, base) {
+    if (tab === 'ai' || tab === 'games') return CATEGORIES[tab];
+    if (tab === 'saved') {
+      var themes = {};
+      base.forEach(function (it) { themes[it.theme] = 1; });
+      return [].concat(themes.ai ? CATEGORIES.ai : [], themes.games ? CATEGORIES.games : []);
+    }
+    return CATEGORIES.ai.concat(CATEGORIES.games);
+  }
+  function activeCats(cats) {
+    return cats.filter(function (c) { return state.fav.indexOf(c.id) !== -1; }).map(function (c) { return c.id; });
+  }
+  function catLabels(ids) { return ids.map(function (id) { return CAT_BY_ID[id].label; }).join(', '); }
+
+  function renderCats(base, cats, active) {
+    if (!cats.length) { els.sources.hidden = true; els.sources.innerHTML = ''; return; }
     els.sources.hidden = false;
-    var chips = [{ key: 'all', label: 'Tout', initials: 'Tout' }].concat(list.map(function (it) {
-      return { key: it.source, label: it.source, initials: it.initials };
+    var chips = [{ id: '', label: 'Tout', short: 'Tout', pressed: !active.length, count: base.length }].concat(cats.map(function (c) {
+      return { id: c.id, label: c.label, short: c.short, pressed: active.indexOf(c.id) !== -1,
+        count: base.filter(function (it) { return it.tags.indexOf(c.id) !== -1; }).length };
     }));
     els.sources.innerHTML = chips.map(function (c) {
-      return '<button type="button" class="source" data-action="source" data-key="' + esc(c.key) + '" aria-pressed="' + (state.source === c.key) + '">' +
-        '<span class="source-ring" aria-hidden="true"><span class="source-avatar">' + esc(c.initials) + '</span></span>' +
-        '<span class="source-label">' + esc(c.label) + '</span></button>';
+      var aria = c.label + ', ' + plural(c.count, 'actualité', 'actualités') + (c.id ? ' — catégorie favorite' : '');
+      return '<button type="button" class="source" data-action="' + (c.id ? 'cat' : 'cat-clear') + '" data-key="' + esc(c.id || 'tout') + '" aria-pressed="' + c.pressed + '" aria-label="' + esc(aria) + '">' +
+        '<span class="source-ring" aria-hidden="true"><span class="source-avatar">' + esc(c.short) + '</span>' +
+        (c.id ? '<span class="source-check">' + ICON.check + '</span>' : '') + '</span>' +
+        '<span class="source-label" aria-hidden="true">' + esc(c.label) + '</span></button>';
     }).join('');
+  }
+
+  function toggleCat(id) {
+    var i = state.fav.indexOf(id);
+    if (i === -1) state.fav.push(id); else state.fav.splice(i, 1);
+    save('veille.favCats', state.fav);
+  }
+  function clearCats() {
+    var cats = tabCats(state.tab, itemsForTab(state.tab)).map(function (c) { return c.id; });
+    state.fav = state.fav.filter(function (id) { return cats.indexOf(id) === -1; });
+    save('veille.favCats', state.fav);
   }
 
   function headlineHTML(h) {
@@ -226,7 +277,8 @@
     return '<article class="post' + (isNew ? ' is-new' : '') + '" data-id="' + esc(it.id) + '" data-i="' + i + '" data-total="' + total + '" aria-labelledby="h-' + esc(it.id) + '">' +
       '<div class="post-head"><span class="avatar" aria-hidden="true">' + esc(it.initials) + '</span>' +
       '<div class="post-meta"><span class="post-source">' + esc(it.source) + (isNew ? '<span class="new-tag">Nouveau</span>' : '') + '</span>' +
-      '<span class="post-sub">' + esc(theme ? theme.label : '') + (theme ? ' · ' : '') + esc(dateLabel(it)) + '</span></div></div>' +
+      '<span class="post-sub">' + esc(theme ? theme.label : '') + (theme ? ' · ' : '') +
+        (it.tags.length ? esc(catLabels(it.tags)) + ' · ' : '') + esc(dateLabel(it)) + '</span></div></div>' +
       cover +
       '<div class="actions">' +
       '<button type="button" class="action" data-action="like" data-id="' + esc(it.id) + '" aria-pressed="' + liked + '" aria-label="J’aime">' + ICON.heart + '</button>' +
@@ -257,13 +309,24 @@
   function renderInner() {
     var tab = TABS.find(function (t) { return t.id === state.tab; });
     var base = itemsForTab(state.tab);
-    if (state.source !== 'all' && !base.some(function (it) { return it.source === state.source; })) state.source = 'all';
-    var list = state.source === 'all' ? base : base.filter(function (it) { return it.source === state.source; });
+    var cats = tabCats(state.tab, base);
+    var active = activeCats(cats);
+    // Les favoris d'un thème ne filtrent que les articles de ce thème : sans favori IA, toute l'IA reste visible
+    var activeByTheme = {};
+    active.forEach(function (id) {
+      Object.keys(CATEGORIES).forEach(function (t) {
+        if (CATEGORIES[t].some(function (c) { return c.id === id; })) (activeByTheme[t] = activeByTheme[t] || []).push(id);
+      });
+    });
+    var list = base.filter(function (it) {
+      var want = activeByTheme[it.theme];
+      return !want || it.tags.some(function (t) { return want.indexOf(t) !== -1; });
+    });
 
     els.title.textContent = tab.title;
     document.title = tab.title + ' · veille.';
     renderTabs();
-    renderSources(base);
+    renderCats(base, cats, active);
 
     var n = list.length;
     if (state.loading && !state.items.length) {
@@ -271,7 +334,8 @@
     } else if (state.tab === 'saved') {
       els.status.textContent = n ? plural(n, 'article enregistré', 'articles enregistrés') + ' · disponibles hors ligne' : 'Aucun article';
     } else {
-      els.status.textContent = plural(n, 'actualité', 'actualités') + (state.updatedAt ? ' · ' + updatedLabel(state.updatedAt) : '');
+      els.status.textContent = plural(n, 'actualité', 'actualités') +
+        (active.length ? ' · ' + catLabels(active) : (state.updatedAt ? ' · ' + updatedLabel(state.updatedAt) : ''));
     }
 
     if (state.offline) {
@@ -283,6 +347,9 @@
 
     if (state.loading && !state.items.length) {
       els.list.innerHTML = '<div class="skeleton" aria-hidden="true"><div class="sk-line" style="width:40%"></div><div class="sk-cover"></div><div class="sk-line" style="width:85%"></div><div class="sk-line" style="width:60%"></div></div>';
+    } else if (!n && active.length && base.length) {
+      els.list.innerHTML = '<div class="empty"><h2>Rien dans vos catégories ici</h2><p>Aucune actualité pour ' + esc(catLabels(active)) +
+        ' dans cet onglet pour l’instant.</p><button type="button" class="btn-primary" data-action="cat-clear">Tout afficher</button></div>';
     } else if (!n) {
       els.list.innerHTML = state.tab === 'saved'
         ? '<div class="empty">' + ICON.bookmark.replace('stroke="currentColor"', 'stroke="#FFB27A"') +
@@ -307,7 +374,8 @@
     els.detail.innerHTML =
       '<div class="detail-bar"><button type="button" class="back" data-action="close">' + ICON.chevronLeft + 'Retour</button></div>' +
       '<div class="detail-body">' +
-      (theme ? '<span class="chip">' + esc(theme.label) + '</span>' : '') +
+      '<div class="chip-row">' + (theme ? '<span class="chip">' + esc(theme.label) + '</span>' : '') +
+        it.tags.map(function (t) { return '<span class="chip chip--tag">' + esc(CAT_BY_ID[t].label) + '</span>'; }).join('') + '</div>' +
       '<h2 class="headline" id="detail-title">' + headlineHTML(it.headline) + '</h2>' +
       '<p class="meta">' + esc(it.source) + ' · ' + esc(dateLabel(it)) + '</p>' +
       (hasImage(it) ? '<figure class="detail-figure">' + imgHTML(it, 'detail-img') +
@@ -412,7 +480,7 @@
   function pickTab(id) {
     if (state.openId) { state.openId = null; }
     if (state.tab === id) { scrollToTop(true); renderDetail(); return; } // re-toucher l'onglet = remonter en haut
-    state.tab = id; state.source = 'all';
+    state.tab = id;
     save('veille.tab', id);
     render();
     scrollToTop(false);
@@ -423,10 +491,8 @@
     var id = btn.getAttribute('data-id');
     switch (btn.getAttribute('data-action')) {
       case 'tab': pickTab(id); break;
-      case 'source':
-        var key = btn.getAttribute('data-key');
-        state.source = state.source === key ? 'all' : key;
-        render(); scrollToTop(false); break;
+      case 'cat': toggleCat(btn.getAttribute('data-key')); render(); scrollToTop(false); break;
+      case 'cat-clear': clearCats(); render(); scrollToTop(false); break;
       case 'like': toggleLike(id, btn); break;
       case 'save': toggleSave(id); break;
       case 'share': share(id); break;
