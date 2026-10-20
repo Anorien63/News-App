@@ -300,6 +300,7 @@
 
   function renderDetail() {
     var it = state.openId ? findItem(state.openId) : null;
+    document.body.classList.toggle('detail-open', !!it);
     if (!it) { els.detail.hidden = true; els.detail.innerHTML = ''; return; }
     var theme = THEMES[it.theme];
     var saved = !!state.saved[it.id];
@@ -344,7 +345,7 @@
         }
       });
       return changed;
-    }, { root: els.feed, threshold: 0.6 });
+    }, { threshold: 0.6 });
     els.list.querySelectorAll('.post').forEach(function (p) { observer.observe(p); });
   }
   function pruneSeen(seen) {
@@ -391,6 +392,11 @@
       navigator.clipboard.writeText(it.url || location.href).then(function () { toast('Lien copié'); }, function () { toast('Copie impossible'); });
     }
   }
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function scrollToTop(smooth) {
+    window.scrollTo({ top: 0, behavior: smooth && !reduceMotion ? 'smooth' : 'auto' });
+  }
+
   var lastOpener = null;
   function openDetail(id, opener) {
     lastOpener = opener || null;
@@ -405,11 +411,11 @@
   }
   function pickTab(id) {
     if (state.openId) { state.openId = null; }
-    if (state.tab === id) { els.feed.scrollTop = 0; renderDetail(); return; } // re-toucher l'onglet = remonter en haut
+    if (state.tab === id) { scrollToTop(true); renderDetail(); return; } // re-toucher l'onglet = remonter en haut
     state.tab = id; state.source = 'all';
     save('veille.tab', id);
     render();
-    els.feed.scrollTop = 0;
+    scrollToTop(false);
   }
 
   document.addEventListener('click', function (e) {
@@ -420,7 +426,7 @@
       case 'source':
         var key = btn.getAttribute('data-key');
         state.source = state.source === key ? 'all' : key;
-        render(); els.feed.scrollTop = 0; break;
+        render(); scrollToTop(false); break;
       case 'like': toggleLike(id, btn); break;
       case 'save': toggleSave(id); break;
       case 'share': share(id); break;
@@ -431,6 +437,11 @@
     }
   });
   els.refresh.addEventListener('click', function () { fetchNews(true); });
+  // toucher le logo = remonter en haut du fil (en plus du toucher sur la barre d'état de l'iPhone)
+  document.getElementById('top-btn').addEventListener('click', function () {
+    if (state.openId) closeDetail();
+    scrollToTop(true);
+  });
 
   // Image introuvable ou bloquée par le site : on revient à la couverture typographique
   document.addEventListener('error', function (e) {
