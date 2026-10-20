@@ -25,7 +25,7 @@ Tout passe par GitHub Actions :
    - Claude (via `anthropics/claude-code-action`) suit `prompts/ai.md` puis `prompts/games.md`
      et écrit les nouveaux articles dans `tmp/new-ai.json` et `tmp/new-games.json`.
    - `scripts/news.py merge` les fusionne dans `news.json` : chaque fichier ne peut ajouter que son thème,
-     les articles mal formés sont écartés, les doublons retirés, les articles de plus de 15 jours supprimés,
+     les articles mal formés sont écartés, les doublons retirés, les articles de plus de 7 jours supprimés,
      puis il visite la page source de chaque nouvel article pour y récupérer son image d'aperçu officielle.
    - Le workflow commite `news.json` puis déclenche le déploiement.
 2. **`Déploiement de l'app`** (`.github/workflows/pages.yml`) vérifie `news.json` (`scripts/news.py check`)

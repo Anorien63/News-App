@@ -14,7 +14,7 @@
         la fenêtre de collecte sont acceptés (contrôle au jour près ; l'heure est vérifiée par Claude) ;
       - les articles invalides sont écartés (et signalés dans le journal) ;
       - nouveaux articles en tête, doublons retirés (même id, ou même url et même mot-clé : le plus récent gagne) ;
-      - articles de plus de 15 jours supprimés, aucune autre limite ;
+      - articles de plus de 7 jours supprimés, aucune autre limite ;
       - chaque article sans image reçoit l'image d'aperçu officielle de sa page source
         (balises og:image / twitter:image), ou "" si la page n'en propose pas ;
       - updatedAt n'est changé que si le contenu a réellement changé.
@@ -34,7 +34,7 @@ from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEWS = os.path.join(ROOT, "news.json")
 THEMES = {"ai", "games"}
-MAX_AGE_DAYS = 15
+MAX_AGE_DAYS = 7
 PARIS = ZoneInfo("Europe/Paris")
 ID_RE = re.compile(r"^\d{4}-\d{2}(-\d{2})?-[a-z0-9]+(-[a-z0-9]+)*$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -276,8 +276,9 @@ def cmd_merge(args):
         stories.add(key)
         merged.append(it)
 
-    # articles de plus de 15 jours supprimés
-    limit = today - timedelta(days=MAX_AGE_DAYS)
+    # articles de plus de 7 jours supprimés
+    # on garde exactement MAX_AGE_DAYS jours : aujourd'hui et les MAX_AGE_DAYS - 1 jours précédents
+    limit = today - timedelta(days=MAX_AGE_DAYS - 1)
     kept_items = [it for it in merged if (item_day(it) is None or item_day(it) >= limit)]
     removed = len(merged) - len(kept_items)
 

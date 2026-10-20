@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T14:19:14+02:00",
+  "updatedAt": "2026-10-20T15:17:31+02:00",
   "items": [
     {
       "id": "2026-10-20-nvidia-nemotron-3-5-agents",
@@ -768,64 +768,6 @@
       "detail": "Konami est revenu aux productions AAA avec les licences Silent Hill, Metal Gear et Castlevania, et vise désormais un Silent Hill par an.",
       "url": "https://www.videogameschronicle.com/news/konami-boss-says-ai-cant-replace-the-human-chemistry-behind-great-games/",
       "image": "https://www.videogameschronicle.com/files/2026/08/Metal-Gear-Solid-Collection-Vol-2-13.jpg"
-    },
-    {
-      "id": "2026-10-13-google-gemini-4-argon",
-      "theme": "ai",
-      "source": "The Neuron",
-      "date": "2026-10-13",
-      "headline": {
-        "pre": "Google lance ",
-        "hl": "Gemini 4 Argon",
-        "post": ""
-      },
-      "summary": "Le nouveau modèle phare de Google est ouvert aux développeurs, aux entreprises, aux scientifiques et au grand public.",
-      "detail": "Selon Reuters, ce lancement s’inscrit dans la volonté de Google de reprendre du terrain face à OpenAI et Anthropic.",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-october-13-2026/"
-    },
-    {
-      "id": "2026-10-13-anthropic-auto-replication",
-      "theme": "ai",
-      "source": "Al Jazeera",
-      "date": "2026-10-13",
-      "headline": {
-        "pre": "Des IA capables de se ",
-        "hl": "répliquer",
-        "post": " chez vous ?"
-      },
-      "summary": "Selon des chercheurs d’Anthropic, de petits modèles pourraient d’ici quelques mois se copier sur des appareils connectés, comme des TV ou des frigos.",
-      "detail": "Aucun modèle testé n’y parvient encore de façon fiable, mais les chercheurs s’y attendent d’ici fin 2026 et préviennent qu’une telle IA serait difficile à arrêter, faute d’hôte central. Anthropic indique aussi que ses nouvelles protections contre la distillation ont réduit l’extraction illicite de données de 90 à 99 %.",
-      "url": "https://www.aljazeera.com/economy/2026/10/13/ai-could-self-replicate-on-home-devices-within-months-anthropic-says",
-      "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-09T211004Z_976748305_RC29LNA6BXUH_RTRMADP_3_ANTHROPIC-PHILADELPHIA-1791854253_8f87dd-1791854986.jpg?resize=1200%2C630&quality=80",
-      "imageAlt": "AI could self-replicate on home devices within ‘months’, Anthropic says"
-    },
-    {
-      "id": "2026-10-13-openai-micro-cache",
-      "theme": "ai",
-      "source": "The Neuron",
-      "date": "2026-10-13",
-      "headline": {
-        "pre": "Un micro caché dans les bureaux d’",
-        "hl": "OpenAI",
-        "post": ""
-      },
-      "summary": "OpenAI dit avoir découvert un appareil d’enregistrement dans l’un de ses bureaux et l’avoir relié, grâce à ses propres modèles, à un employé.",
-      "detail": "L’entreprise a transmis le dossier au FBI.",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-october-13-2026/"
-    },
-    {
-      "id": "2026-10-13-nicolas-cage-clause-ia",
-      "theme": "ai",
-      "source": "The Neuron",
-      "date": "2026-10-13",
-      "headline": {
-        "pre": "Nicolas Cage dit ",
-        "hl": "non",
-        "post": " à la clause IA d’Amazon"
-      },
-      "summary": "L’acteur refuse de signer la renonciation liée à l’IA demandée par Amazon, studio derrière Spider-Noir.",
-      "detail": "Il se décrit comme « pas un acteur favorable à l’IA ».",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-october-13-2026/"
     },
     {
       "id": "2026-10-final-fantasy-resonance",
