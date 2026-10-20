@@ -100,7 +100,12 @@ jobs:
             Fenêtre de collecte : du ${{ steps.prep.outputs.ai_start }} au ${{ steps.prep.outputs.now }} (heure de Paris).
             Lis le fichier prompts/ai.md et suis ses instructions à la lettre.
             Ton seul livrable est le fichier tmp/new-ai.json.
-          claude_args: --model claude-sonnet-5-5 --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
+          # --disallowedTools retire ces outils de ce que Claude voit : il ne peut même plus tenter
+          # de les appeler (fini les appels refusés qui coûtent des jetons pour rien).
+          claude_args: >-
+            --model claude-sonnet-5-5
+            --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
+            --disallowedTools Bash,Edit,MultiEdit,NotebookEdit,Task
 
       - name: Collecte jeux vidéo
         id: games
@@ -117,7 +122,12 @@ jobs:
             Fenêtre de collecte : du ${{ steps.prep.outputs.games_start }} au ${{ steps.prep.outputs.now }} (heure de Paris).
             Lis le fichier prompts/games.md et suis ses instructions à la lettre.
             Ton seul livrable est le fichier tmp/new-games.json.
-          claude_args: --model claude-sonnet-5-5 --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
+          # --disallowedTools retire ces outils de ce que Claude voit : il ne peut même plus tenter
+          # de les appeler (fini les appels refusés qui coûtent des jetons pour rien).
+          claude_args: >-
+            --model claude-sonnet-5-5
+            --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
+            --disallowedTools Bash,Edit,MultiEdit,NotebookEdit,Task
 
       - name: Fusionner et valider news.json
         run: >-
