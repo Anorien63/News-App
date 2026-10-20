@@ -7,6 +7,7 @@
   python3 scripts/news.py merge --today AAAA-MM-JJ [--new tmp/new-ai.json ...]
       Fusionne les nouveaux articles produits par Claude dans news.json :
       - chaque fichier tmp/new-<theme>.json ne peut ajouter que des articles de son thème ;
+      - avec --day AAAA-MM-JJ, seuls les nouveaux articles publiés ce jour-là sont acceptés ;
       - les articles invalides sont écartés (et signalés dans le journal) ;
       - nouveaux articles en tête, doublons retirés (même id, ou même url et même mot-clé : le plus récent gagne) ;
       - articles de plus de 15 jours supprimés, aucune autre limite ;
@@ -246,6 +247,8 @@ def cmd_merge(args):
         kept = 0
         for it in raw if isinstance(raw, list) else []:
             probs = item_problems(it, expected_theme=theme)
+            if not probs and args.day and it["date"] != args.day:
+                probs = [f"publié le {it['date']}, hors du jour couvert ({args.day})"]
             if probs:
                 print(f"::warning::article {theme} écarté ({it.get('id', '?') if isinstance(it, dict) else '?'}) : {'; '.join(probs)}")
                 continue
@@ -302,6 +305,7 @@ def main():
     m = sub.add_parser("merge")
     m.add_argument("--today", default=datetime.now(PARIS).date().isoformat())
     m.add_argument("--new", nargs="*")
+    m.add_argument("--day", help="n'accepter que les nouveaux articles publiés ce jour-là (AAAA-MM-JJ)")
     m.add_argument("--no-images", action="store_true", help="ne pas visiter les pages sources")
     args = ap.parse_args()
     sys.exit(cmd_check(args) if args.cmd == "check" else cmd_merge(args))

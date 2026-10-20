@@ -35,6 +35,8 @@ jobs:
         id: prep
         run: |
           echo "today=$(TZ=Europe/Paris date +%F)" >> "$GITHUB_OUTPUT"
+          # Fenêtre de collecte : la veille entière (J-1), heure de Paris
+          echo "day=$(TZ=Europe/Paris date -d yesterday +%F)" >> "$GITHUB_OUTPUT"
           mkdir -p tmp
           case "${{ inputs.themes || 'tous' }}" in
             ai)    echo "ai=true"  >> "$GITHUB_OUTPUT"; echo "games=false" >> "$GITHUB_OUTPUT" ;;
@@ -77,6 +79,7 @@ jobs:
           display_report: "true"
           prompt: |
             Nous sommes le ${{ steps.prep.outputs.today }} (heure de Paris).
+            Jour à couvrir (J-1) : le ${{ steps.prep.outputs.day }}, de 0 h à 23 h 59, heure de Paris.
             Lis le fichier prompts/ai.md et suis ses instructions à la lettre.
             Ton seul livrable est le fichier tmp/new-ai.json.
           claude_args: --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
@@ -93,12 +96,13 @@ jobs:
           display_report: "true"
           prompt: |
             Nous sommes le ${{ steps.prep.outputs.today }} (heure de Paris).
+            Jour à couvrir (J-1) : le ${{ steps.prep.outputs.day }}, de 0 h à 23 h 59, heure de Paris.
             Lis le fichier prompts/games.md et suis ses instructions à la lettre.
             Ton seul livrable est le fichier tmp/new-games.json.
           claude_args: --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
 
       - name: Fusionner et valider news.json
-        run: python3 scripts/news.py merge --today "${{ steps.prep.outputs.today }}"
+        run: python3 scripts/news.py merge --today "${{ steps.prep.outputs.today }}" --day "${{ steps.prep.outputs.day }}"
 
       - name: Commiter news.json
         id: commit

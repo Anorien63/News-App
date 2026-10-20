@@ -6,9 +6,10 @@ il n'y a pas de message à envoyer, ton seul livrable est le fichier `tmp/new-ga
 
 ## 1. Recherche
 
-Objectif : les actualités publiées au cours des dernières 48 heures environ (heure de Paris ; la date du
-jour t'est donnée dans la consigne). Vérifie la date de chaque source et écarte tout ce qui est plus
-ancien, sauf pour donner le contexte d'une info nouvelle.
+Objectif : uniquement les actualités publiées la veille, c'est-à-dire le jour J-1 entier, de 0 h à
+23 h 59 (heure de Paris). La date de ce jour t'est donnée dans la consigne. Vérifie la date de
+publication de chaque source et écarte tout ce qui a été publié avant ou après ce jour (des faits plus anciens peuvent servir de contexte dans `detail`, mais
+l'actualité elle-même doit dater de ce jour).
 
 Exhaustivité : ne RIEN rater. Pour chaque thème ci-dessous, fais plusieurs recherches web (au moins 3, sous
 des angles différents : noms des principaux acteurs, termes en français et en anglais, sites spécialisés,
@@ -82,7 +83,7 @@ afin d'écrire un contenu précis, et écris-les avec l'outil Write dans
 - `id` : date du jour + slug en minuscules, sans accents, mots séparés par des tirets ; unique.
 - `theme` : toujours `"games"`.
 - `source` : pour un post X, le nom du compte suivi de « sur X » (ex. « PlayStation sur X »).
-- `date` : date de publication de la source.
+- `date` : date de publication de la source ; elle doit être celle du jour J-1, sinon l'article est refusé.
 - `headline` : titre accrocheur en français de 4 à 9 mots au total ; `hl` est le mot-clé affiché en orange
   (jeu, studio, console ou plateforme) ; `pre` ou `post` peuvent être vides ; pense aux espaces en bordure.
 - `summary` : 2 à 3 phrases, l'essentiel de l'info, lisible sans ouvrir l'article.
