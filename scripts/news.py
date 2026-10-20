@@ -4,6 +4,9 @@
   python3 scripts/news.py check
       Vérifie news.json (format, champs obligatoires, doublons). Code de sortie 1 en cas d'erreur.
 
+  python3 scripts/news.py index --theme ai --out tmp/deja-publies-ai.txt
+      Écrit la liste compacte (date | source | titre | lien) des articles déjà publiés d'un thème.
+
   python3 scripts/news.py merge --today AAAA-MM-JJ [--new tmp/new-ai.json ...]
       Fusionne les nouveaux articles produits par Claude dans news.json :
       - chaque fichier tmp/new-<theme>.json ne peut ajouter que des articles de son thème ;
@@ -301,6 +304,21 @@ def cmd_merge(args):
     return cmd_check(args)
 
 
+def cmd_index(args):
+    """Liste compacte des articles déjà publiés d'un thème, pour éviter les doublons sans lire news.json."""
+    data = load_news()
+    rows = [it for it in data["items"] if isinstance(it, dict) and it.get("theme") == args.theme]
+    os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
+    with open(args.out, "w", encoding="utf-8") as f:
+        f.write(f"# Articles « {args.theme} » déjà dans l'app ({len(rows)}) : date | source | titre | lien\n")
+        for it in rows:
+            h = it.get("headline") or {}
+            title = (h.get("pre", "") + h.get("hl", "") + h.get("post", "")).strip()
+            f.write(f"{it.get('date', '')} | {it.get('source', '')} | {title} | {it.get('url', '')}\n")
+    print(f"{args.out} : {len(rows)} article(s)")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -312,8 +330,11 @@ def main():
                    help="début de la fenêtre par thème, ex. ai=2026-10-19 games=2026-10-19")
     m.add_argument("--until", help="dernier jour accepté (AAAA-MM-JJ), en général aujourd'hui")
     m.add_argument("--no-images", action="store_true", help="ne pas visiter les pages sources")
+    ix = sub.add_parser("index")
+    ix.add_argument("--theme", required=True, choices=sorted(THEMES))
+    ix.add_argument("--out", required=True)
     args = ap.parse_args()
-    sys.exit(cmd_check(args) if args.cmd == "check" else cmd_merge(args))
+    sys.exit({"check": cmd_check, "merge": cmd_merge, "index": cmd_index}[args.cmd](args))
 
 
 if __name__ == "__main__":

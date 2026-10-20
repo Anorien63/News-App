@@ -53,6 +53,9 @@ jobs:
             echo "Fenêtre $T : du $START au $NOW"
           done
           mkdir -p tmp
+          # Liste compacte des articles déjà publiés, lue par Claude à la place de news.json (bien plus léger)
+          python3 scripts/news.py index --theme ai --out tmp/deja-publies-ai.txt
+          python3 scripts/news.py index --theme games --out tmp/deja-publies-games.txt
           case "${{ inputs.themes || 'tous' }}" in
             ai)    echo "ai=true"  >> "$GITHUB_OUTPUT"; echo "games=false" >> "$GITHUB_OUTPUT" ;;
             games) echo "ai=false" >> "$GITHUB_OUTPUT"; echo "games=true"  >> "$GITHUB_OUTPUT" ;;
@@ -97,7 +100,7 @@ jobs:
             Fenêtre de collecte : du ${{ steps.prep.outputs.ai_start }} au ${{ steps.prep.outputs.now }} (heure de Paris).
             Lis le fichier prompts/ai.md et suis ses instructions à la lettre.
             Ton seul livrable est le fichier tmp/new-ai.json.
-          claude_args: --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
+          claude_args: --model claude-sonnet-5-5 --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
 
       - name: Collecte jeux vidéo
         id: games
@@ -114,7 +117,7 @@ jobs:
             Fenêtre de collecte : du ${{ steps.prep.outputs.games_start }} au ${{ steps.prep.outputs.now }} (heure de Paris).
             Lis le fichier prompts/games.md et suis ses instructions à la lettre.
             Ton seul livrable est le fichier tmp/new-games.json.
-          claude_args: --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
+          claude_args: --model claude-sonnet-5-5 --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
 
       - name: Fusionner et valider news.json
         run: >-

@@ -20,6 +20,8 @@ Tout passe par GitHub Actions :
      - run manuel : depuis le dernier run réussi du thème jusqu'au lancement.
      L'heure de chaque run réussi est notée dans `collecte.json` ; le script refuse les articles
      publiés hors de la fenêtre.
+   - Pour limiter les coûts, Claude (modèle Sonnet) lit une liste compacte des articles déjà publiés
+     (`tmp/deja-publies-<thème>.txt`, générée par `scripts/news.py index`) plutôt que `news.json`.
    - Claude (via `anthropics/claude-code-action`) suit `prompts/ai.md` puis `prompts/games.md`
      et écrit les nouveaux articles dans `tmp/new-ai.json` et `tmp/new-games.json`.
    - `scripts/news.py merge` les fusionne dans `news.json` : chaque fichier ne peut ajouter que son thème,

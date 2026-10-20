@@ -46,8 +46,10 @@ social, y compris X (Twitter), à une condition : l'information doit être véri
 
 ## 3. Ne pas se répéter
 
-Lis `news.json` : n'ajoute pas une actualité déjà présente (même sujet, même lien), sauf si elle a
-réellement évolué (dans ce cas, nouvel article qui dit ce qui a changé).
+Lis `tmp/deja-publies-ai.txt` (une ligne par article déjà dans l'app : date | source | titre | lien) :
+n'ajoute pas une actualité déjà présente (même sujet, même lien), sauf si elle a réellement évolué
+(dans ce cas, nouvel article qui dit ce qui a changé). Ne lis pas `news.json` : ce fichier est volumineux
+et la liste suffit.
 
 ## 4. Livrable : `tmp/new-ai.json`
 
@@ -92,5 +94,7 @@ sous forme d'une liste JSON (et rien d'autre dans le fichier) :
 - Lien réel, jamais inventé ni reconstruit de mémoire.
 
 N'invente aucun fait : uniquement ce que disent les sources. Si tu ne trouves rien de fiable, écris `[]`.
-Ne modifie aucun autre fichier, ne lance aucune commande git : la fusion, la validation, le commit et
-le déploiement sont faits automatiquement après toi.
+Tu n'as pas accès au terminal : n'essaie jamais d'utiliser Bash ni de lancer une commande (python, git…),
+ces appels sont refusés et coûtent pour rien. Tes outils sont WebSearch, WebFetch, Read, Grep, Glob et Write.
+Ne modifie aucun autre fichier : la fusion, la validation, le commit et le déploiement sont faits
+automatiquement après toi.
