@@ -34,9 +34,24 @@ jobs:
       - name: Préparer
         id: prep
         run: |
-          echo "today=$(TZ=Europe/Paris date +%F)" >> "$GITHUB_OUTPUT"
-          # Fenêtre de collecte : la veille entière (J-1), heure de Paris
-          echo "day=$(TZ=Europe/Paris date -d yesterday +%F)" >> "$GITHUB_OUTPUT"
+          export TZ=Europe/Paris
+          NOW=$(date +%Y-%m-%dT%H:%M:%S%:z)
+          echo "today=$(date +%F)" >> "$GITHUB_OUTPUT"
+          echo "now=$NOW" >> "$GITHUB_OUTPUT"
+          # Fenêtre de collecte, par thème :
+          #  - run planifié : depuis la veille à 0 h (J-1) jusqu'au lancement du run ;
+          #  - run manuel   : depuis le dernier run réussi du thème (collecte.json) jusqu'au lancement.
+          DEFAULT_START=$(date -d "yesterday 00:00" +%Y-%m-%dT%H:%M:%S%:z)
+          for T in ai games; do
+            START="$DEFAULT_START"
+            if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -f collecte.json ]; then
+              LAST=$(python3 -c "import json; print(json.load(open('collecte.json')).get('$T', ''))")
+              [ -n "$LAST" ] && START="$LAST"
+            fi
+            echo "${T}_start=$START" >> "$GITHUB_OUTPUT"
+            echo "${T}_since=${START:0:10}" >> "$GITHUB_OUTPUT"
+            echo "Fenêtre $T : du $START au $NOW"
+          done
           mkdir -p tmp
           case "${{ inputs.themes || 'tous' }}" in
             ai)    echo "ai=true"  >> "$GITHUB_OUTPUT"; echo "games=false" >> "$GITHUB_OUTPUT" ;;
@@ -79,7 +94,7 @@ jobs:
           display_report: "true"
           prompt: |
             Nous sommes le ${{ steps.prep.outputs.today }} (heure de Paris).
-            Jour à couvrir (J-1) : le ${{ steps.prep.outputs.day }}, de 0 h à 23 h 59, heure de Paris.
+            Fenêtre de collecte : du ${{ steps.prep.outputs.ai_start }} au ${{ steps.prep.outputs.now }} (heure de Paris).
             Lis le fichier prompts/ai.md et suis ses instructions à la lettre.
             Ton seul livrable est le fichier tmp/new-ai.json.
           claude_args: --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
@@ -96,25 +111,59 @@ jobs:
           display_report: "true"
           prompt: |
             Nous sommes le ${{ steps.prep.outputs.today }} (heure de Paris).
-            Jour à couvrir (J-1) : le ${{ steps.prep.outputs.day }}, de 0 h à 23 h 59, heure de Paris.
+            Fenêtre de collecte : du ${{ steps.prep.outputs.games_start }} au ${{ steps.prep.outputs.now }} (heure de Paris).
             Lis le fichier prompts/games.md et suis ses instructions à la lettre.
             Ton seul livrable est le fichier tmp/new-games.json.
           claude_args: --allowedTools WebSearch,WebFetch,Read,Write,Glob,Grep
 
       - name: Fusionner et valider news.json
-        run: python3 scripts/news.py merge --today "${{ steps.prep.outputs.today }}" --day "${{ steps.prep.outputs.day }}"
+        run: >-
+          python3 scripts/news.py merge --today "${{ steps.prep.outputs.today }}"
+          --since "ai=${{ steps.prep.outputs.ai_since }}" "games=${{ steps.prep.outputs.games_since }}"
+          --until "${{ steps.prep.outputs.today }}"
 
-      - name: Commiter news.json
+      # Heure de ce run, par thème, uniquement si la collecte du thème a réussi :
+      # le prochain run manuel repartira de là.
+      - name: Enregistrer l'heure de collecte
+        env:
+          NOW: ${{ steps.prep.outputs.now }}
+          AI_OK: ${{ steps.ai.outcome == 'success' }}
+          GAMES_OK: ${{ steps.games.outcome == 'success' }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          path = "collecte.json"
+          try:
+              data = json.load(open(path, encoding="utf-8"))
+          except (OSError, ValueError):
+              data = {}
+          for theme, ok in (("ai", os.environ["AI_OK"]), ("games", os.environ["GAMES_OK"])):
+              if ok == "true":
+                  data[theme] = os.environ["NOW"]
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(data, f, ensure_ascii=False, indent=2)
+              f.write("\n")
+          print(data)
+          PY
+
+      - name: Commiter news.json et collecte.json
         id: commit
         run: |
+          git add collecte.json
           if git diff --quiet -- news.json; then
             echo "Aucun changement dans news.json."
             echo "changed=false" >> "$GITHUB_OUTPUT"
+            if ! git diff --cached --quiet; then
+              git config user.name "github-actions[bot]"
+              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+              git commit -m "Heure de collecte du ${{ steps.prep.outputs.today }}"
+              git push origin HEAD:main
+            fi
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add news.json
+          git add news.json collecte.json
           git commit -m "Actus du ${{ steps.prep.outputs.today }}"
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"

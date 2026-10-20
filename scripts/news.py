@@ -7,7 +7,8 @@
   python3 scripts/news.py merge --today AAAA-MM-JJ [--new tmp/new-ai.json ...]
       Fusionne les nouveaux articles produits par Claude dans news.json :
       - chaque fichier tmp/new-<theme>.json ne peut ajouter que des articles de son thème ;
-      - avec --day AAAA-MM-JJ, seuls les nouveaux articles publiés ce jour-là sont acceptés ;
+      - avec --since theme=AAAA-MM-JJ et --until AAAA-MM-JJ, seuls les nouveaux articles publiés dans
+        la fenêtre de collecte sont acceptés (contrôle au jour près ; l'heure est vérifiée par Claude) ;
       - les articles invalides sont écartés (et signalés dans le journal) ;
       - nouveaux articles en tête, doublons retirés (même id, ou même url et même mot-clé : le plus récent gagne) ;
       - articles de plus de 15 jours supprimés, aucune autre limite ;
@@ -228,6 +229,7 @@ def cmd_merge(args):
     data = load_news()
     before = json.dumps(data["items"], ensure_ascii=False, sort_keys=True)
 
+    window_since = dict(x.split("=", 1) for x in args.since if "=" in x and x.split("=", 1)[1])
     files = args.new or sorted(glob.glob(os.path.join(ROOT, "tmp", "new-*.json")))
     fresh, report = [], []
     for path in files:
@@ -247,8 +249,9 @@ def cmd_merge(args):
         kept = 0
         for it in raw if isinstance(raw, list) else []:
             probs = item_problems(it, expected_theme=theme)
-            if not probs and args.day and it["date"] != args.day:
-                probs = [f"publié le {it['date']}, hors du jour couvert ({args.day})"]
+            since = window_since.get(theme)
+            if not probs and since and not (since <= it["date"] <= (args.until or "9999-12-31")):
+                probs = [f"publié le {it['date']}, hors de la fenêtre de collecte ({since} → {args.until})"]
             if probs:
                 print(f"::warning::article {theme} écarté ({it.get('id', '?') if isinstance(it, dict) else '?'}) : {'; '.join(probs)}")
                 continue
@@ -305,7 +308,9 @@ def main():
     m = sub.add_parser("merge")
     m.add_argument("--today", default=datetime.now(PARIS).date().isoformat())
     m.add_argument("--new", nargs="*")
-    m.add_argument("--day", help="n'accepter que les nouveaux articles publiés ce jour-là (AAAA-MM-JJ)")
+    m.add_argument("--since", nargs="*", default=[],
+                   help="début de la fenêtre par thème, ex. ai=2026-10-19 games=2026-10-19")
+    m.add_argument("--until", help="dernier jour accepté (AAAA-MM-JJ), en général aujourd'hui")
     m.add_argument("--no-images", action="store_true", help="ne pas visiter les pages sources")
     args = ap.parse_args()
     sys.exit(cmd_check(args) if args.cmd == "check" else cmd_merge(args))

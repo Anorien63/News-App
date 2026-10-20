@@ -15,8 +15,11 @@ Tout passe par GitHub Actions :
 
 1. **`Veille quotidienne`** (`.github/workflows/veille.yml`) tourne chaque matin vers 5 h 07 (heure d'été)
    / 4 h 07 (heure d'hiver), GitHub pouvant retarder le lancement, ou à la main depuis l'onglet **Actions → Veille quotidienne → Run workflow**.
-   - Fenêtre : la veille entière (J-1, de 0 h à 23 h 59, heure de Paris) ; le script refuse les articles
-     publiés un autre jour.
+   - Fenêtre de collecte (heure de Paris) :
+     - run planifié : depuis la veille à 0 h (J-1) jusqu'au lancement du run ;
+     - run manuel : depuis le dernier run réussi du thème jusqu'au lancement.
+     L'heure de chaque run réussi est notée dans `collecte.json` ; le script refuse les articles
+     publiés hors de la fenêtre.
    - Claude (via `anthropics/claude-code-action`) suit `prompts/ai.md` puis `prompts/games.md`
      et écrit les nouveaux articles dans `tmp/new-ai.json` et `tmp/new-games.json`.
    - `scripts/news.py merge` les fusionne dans `news.json` : chaque fichier ne peut ajouter que son thème,
