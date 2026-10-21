@@ -1,5 +1,5 @@
 /* Service worker : l'app s'ouvre hors ligne, les actus sont toujours redemandées au réseau d'abord. */
-const CACHE = 'veille-v6';
+const CACHE = 'veille-v7';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest', 'icons/apple-touch-icon.png', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', (e) => {
@@ -34,14 +34,15 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // reste de l'app : cache d'abord, mis à jour en arrière-plan
+  // reste de l'app (HTML, CSS, JS, icônes) : réseau d'abord, pour que chaque nouvelle version
+  // s'affiche dès l'ouverture suivante ; la copie locale ne sert que hors connexion.
+  // cache: 'no-cache' revalide auprès de GitHub Pages au lieu de réutiliser une copie HTTP de 10 min.
   e.respondWith(
-    caches.match(e.request).then((cached) => {
-      const network = fetch(e.request).then((res) => {
+    fetch(e.request, { cache: 'no-cache' })
+      .then((res) => {
         if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); }
         return res;
-      }).catch(() => cached);
-      return cached || network;
-    })
+      })
+      .catch(() => caches.match(e.request))
   );
 });
