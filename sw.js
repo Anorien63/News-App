@@ -1,5 +1,5 @@
 /* Service worker : l'app s'ouvre hors ligne, les actus sont toujours redemandées au réseau d'abord. */
-const CACHE = 'veille-v5';
+const CACHE = 'veille-v6';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest', 'icons/apple-touch-icon.png', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', (e) => {

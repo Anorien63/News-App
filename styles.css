@@ -154,10 +154,12 @@ a { color: var(--accent-soft); }
 .detail {
   position: fixed; left: 0; right: 0; z-index: 20;
   top: 0; bottom: calc(var(--safe-bottom) + var(--nav-h));
-  padding-top: var(--safe-top);
   background: var(--bg); overflow-y: auto; overscroll-behavior: contain;
 }
-.detail-bar { position: sticky; top: 0; height: var(--header-h); display: flex; align-items: center; padding: 0 6px; background: var(--bg); border-bottom: 1px solid #1F1F23; z-index: 1; }
+/* Le bandeau « Retour » occupe tout le haut de l'écran, barre d'état comprise, avec un fond opaque :
+   le texte qui défile ne passe plus derrière l'heure et la batterie. */
+.detail-bar { position: sticky; top: 0; height: var(--header-h); padding: var(--safe-top) 6px 0;
+  display: flex; align-items: center; background: var(--bg); border-bottom: 1px solid #1F1F23; z-index: 1; }
 .back { display: flex; align-items: center; gap: 2px; min-height: 44px; padding: 0 10px 0 4px; color: var(--accent-soft); font-size: 1rem; }
 .detail-body { padding: 20px 20px 32px; display: flex; flex-direction: column; gap: 16px; }
 .detail-body .chip { align-self: flex-start; }
