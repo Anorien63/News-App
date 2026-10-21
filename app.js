@@ -487,7 +487,17 @@
   }
 
   document.addEventListener('click', function (e) {
-    var btn = e.target.closest('[data-action]'); if (!btn) return;
+    var btn = e.target.closest('[data-action]');
+    if (!btn) {
+      // Toucher n'importe où sur la carte (image, titre, résumé…) ouvre le détail.
+      // Les boutons J'aime / Partager / Enregistrer gardent leur propre action, et la rangée qui les
+      // contient est exclue pour éviter une ouverture accidentelle à côté d'un bouton.
+      var card = e.target.closest('.post');
+      if (card && !e.target.closest('.actions') && !e.target.closest('a')) {
+        openDetail(card.getAttribute('data-id'), card.querySelector('.more'));
+      }
+      return;
+    }
     var id = btn.getAttribute('data-id');
     switch (btn.getAttribute('data-action')) {
       case 'tab': pickTab(id); break;
@@ -525,6 +535,9 @@
   els.detail.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDetail(); });
 
   // Retour sur l'app après un moment : on recharge si la dernière collecte date de plus de 30 min
+  // iOS n'applique :active (retour visuel au toucher) que si un écouteur touchstart existe
+  document.addEventListener('touchstart', function () {}, { passive: true });
+
   document.addEventListener('visibilitychange', function () {
     if (document.visibilityState === 'visible' && Date.now() - state.lastFetch > 30 * 60 * 1000) fetchNews(false);
   });
