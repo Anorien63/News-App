@@ -1,7 +1,522 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T15:17:31+02:00",
+  "updatedAt": "2026-10-21T10:33:48+02:00",
   "items": [
+    {
+      "id": "2026-10-21-deepseek-interdit-agences-federales",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "Les États-Unis chassent ",
+        "hl": "DeepSeek",
+        "post": " des agences fédérales"
+      },
+      "summary": "Les États-Unis ont ordonné aux agences fédérales civiles de ne plus acheter les produits de DeepSeek et de les retirer de leurs systèmes. La mesure couvre aussi les services tiers construits avec sa technologie. Pékin dénonce une extension excessive de la notion de sécurité nationale.",
+      "detail": "Selon TechCrunch, qui cite un avis du Department of Homeland Security publié au Federal Register, les agences civiles doivent cesser tout nouvel achat et retirer DeepSeek de leurs systèmes existants. Une loi de décembre 2025 limitait déjà son usage dans les systèmes de renseignement ; l'ordre étend ces restrictions à l'ensemble des agences civiles. Le DHS avance que des données d'utilisateurs gouvernementaux pourraient être accessibles aux autorités chinoises en vertu du droit chinois, mais l'article ne présente aucune preuve publique de tels accès. Les agences peuvent demander des exceptions, sans que les critères soient détaillés. Le porte-parole chinois Mao Ning a répondu que Pékin s'oppose à la politisation des questions technologiques. On ignore les délais de retrait, le nombre d'agences visées et la liste des produits tiers concernés. Pour les éditeurs qui intègrent des modèles DeepSeek, l'enjeu est de savoir si leurs offres deviendront inutilisables par l'administration américaine.",
+      "tags": [
+        "business",
+        "modeles"
+      ],
+      "points": [
+        "Ordre du DHS publié au Federal Register",
+        "Couvre aussi les services tiers bâtis avec DeepSeek",
+        "Exceptions possibles sur demande des agences",
+        "Pékin s'oppose à la politisation de la tech",
+        "Délais de retrait non précisés"
+      ],
+      "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2195703830.jpg?w=1024"
+    },
+    {
+      "id": "2026-10-21-anthropic-projet-loi-securite-ia",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "Anthropic",
+        "post": " propose une loi pour bloquer des modèles dangereux"
+      },
+      "summary": "Anthropic fait circuler au Congrès un projet de loi fédéral sur la sécurité de l'IA. Un modèle pourrait être bloqué en cas de risque imminent pour plus de 50 personnes ou plus d'un milliard de dollars de dégâts. Le blocage passerait par un juge de Washington D.C.",
+      "detail": "Révélé par Politico le 16 octobre, le texte reprend l'« Advanced AI Framework » qu'Anthropic défend depuis juin auprès des élus fédéraux et des États, avec des seuils proches de la loi californienne SB 53. Des évaluateurs indépendants, enregistrés auprès du département du Commerce et payables par les laboratoires sans lien avec leurs résultats, analyseraient les modèles. S'ils identifient un risque catastrophique imminent (arme biologique, contournement des contrôles du développeur, cyberattaque), ils ont 72 heures pour alerter le Commerce, qui doit demander à un juge d'ordonner l'arrêt de la diffusion. Aucune agence ne pourrait bloquer seule un modèle. On ne sait pas si le texte a été déposé, par qui, ni quelles sont ses chances ; l'indépendance réelle des évaluateurs et la définition d'« imminent » restent floues. Cela contraste avec la réticence habituelle des laboratoires envers une supervision publique obligatoire.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Seuils : plus de 50 morts possibles ou 1 Md$ de dégâts",
+        "Évaluateurs indépendants enregistrés au département du Commerce",
+        "Alerte sous 72 heures, arrêt ordonné par un juge",
+        "Statut législatif du texte inconnu"
+      ],
+      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2282033342.jpg?w=1024"
+    },
+    {
+      "id": "2026-10-21-gpt-6-cobol-fortran",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "GPT-6",
+        "post": " progresse sur COBOL et Fortran"
+      },
+      "summary": "OpenAI affirme que ses derniers modèles gèrent bien mieux les langages rares comme COBOL et Fortran. GPT-6.1 Sol atteint 97,9 % sur un benchmark de migration de COBOL à effort de raisonnement élevé. Ces résultats viennent d'OpenAI, sans vérification indépendante.",
+      "detail": "Ces langages ont peu de code d'entraînement, alors que, selon IBM cité par The Decoder, COBOL soutient plus de 40 % des systèmes bancaires en ligne. Sur MultiLangBench (publié sur GitHub), où le modèle doit construire un moteur de base de données compatible SQLite en 20 langages, GPT-6 Astra au raisonnement maximal atteint 87,4 % de réussite contre environ 38 % pour GPT-5.6 Terra. GPT-6 Luna obtient 40,3 % contre 37,9 %, à un coût nettement inférieur. Sur la migration de COBOL vers C++, Java, Kotlin, Python ou Rust, GPT-6.1 Sol passe à 86,6 % à faible effort, contre 5,4 % pour GPT-5.6 Sol, et à 97,9 % à effort élevé. L'article ne précise ni les tarifs, ni la disponibilité, ni la définition exacte du taux de réussite. Pour les équipes qui maintiennent des systèmes hérités, c'est un signal que la modernisation assistée par IA devient envisageable.",
+      "tags": [
+        "modeles",
+        "code"
+      ],
+      "points": [
+        "GPT-6 Astra : 87,4 % sur MultiLangBench (20 langages)",
+        "GPT-6.1 Sol : 97,9 % en migration COBOL, effort élevé",
+        "Contre 5,4 % pour GPT-5.6 Sol à faible effort",
+        "Résultats publiés par OpenAI, non vérifiés"
+      ],
+      "url": "https://the-decoder.com/openai-says-gpt-6-is-much-better-with-legacy-programming-languages-such-as-cobol-and-fortran/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_safety.png"
+    },
+    {
+      "id": "2026-10-21-mistral-voxtral-3",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "Mistral",
+        "post": " lance Voxtral 3 pour agents vocaux"
+      },
+      "summary": "Mistral AI présente Voxtral 3, une pile complète pour agents vocaux en temps réel : transcription, synthèse vocale et SDK basé sur LiveKit. La transcription démarre à 0,0035 $ la minute et peut tourner sur site ou via des API hébergées dans l'UE.",
+      "detail": "La famille comprend Voxtral Small Transcribe 3 pour la reconnaissance vocale et Voxtral Mini TTS 3 pour la synthèse. Le tout fonctionne dans un pipeline en streaming qui écoute, raisonne, appelle des outils et parle, par exemple pour prendre un rendez-vous ou consulter une facture. La transcription couvre plus de 50 langues, la synthèse plus de 35 langues et 50 dialectes avec adaptation émotionnelle. Les entreprises peuvent déployer sur leur propre infrastructure ou via des API hébergées dans l'UE pour garder la maîtrise des données. L'article ne donne ni le prix de la synthèse, ni le modèle de langage utilisé pour le raisonnement, ni licence ou benchmarks. L'offre place Mistral face à OpenAI et ElevenLabs sur les agents vocaux, avec l'argument de la souveraineté des données.",
+      "tags": [
+        "agents",
+        "modeles"
+      ],
+      "points": [
+        "Transcription dans plus de 50 langues",
+        "Synthèse vocale : plus de 35 langues, 50 dialectes",
+        "Dès 0,0035 $/min pour la transcription",
+        "Déploiement sur site ou API hébergées dans l'UE"
+      ],
+      "url": "https://the-decoder.com/mistral-ai-launches-voxtral-3-a-full-voice-agent-stack-that-listens-thinks-and-talks-in-real-time/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/06/mistral-logo-wall-nano-banana-pro-scaled.jpg"
+    },
+    {
+      "id": "2026-10-21-openai-rachete-orchestra-bio",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "OpenAI",
+        "post": " rachète Orchestra Bio pour la biotech"
+      },
+      "summary": "OpenAI acquiert Orchestra Bio, startup d'agents IA pour la gestion opérationnelle de la découverte de médicaments. L'équipe et la technologie rejoignent Rosalind et Rosalind Workbench. Le montant n'est pas divulgué.",
+      "detail": "Annoncée le 20 octobre sur le site d'OpenAI, l'opération concerne une startup d'environ quatre ans dont les agents aident les biotechs à suivre les finances ou à résoudre des problèmes de planification d'essais cliniques. Orchestra avait levé environ 20 millions de dollars selon des informations de 2025, notamment auprès d'Andreessen Horowitz, Atria et 8VC. OpenAI intègre son équipe à Rosalind, son modèle pour les sciences du vivant, et à Rosalind Workbench, qui aide à planifier des expériences et analyser les résultats. OpenAI affirme que Moderna et Novo Nordisk figurent parmi les clients de Rosalind, ce que l'article n'a pas vérifié. Prix, effectifs concernés, calendrier d'intégration et avenir des produits existants restent inconnus. Le rachat illustre la montée des laboratoires d'IA dans des secteurs verticaux comme la pharma, au risque d'absorber ou de concurrencer les startups.",
+      "tags": [
+        "business",
+        "agents"
+      ],
+      "points": [
+        "Annonce faite le 20 octobre 2026",
+        "Orchestra : environ 20 M$ levés avant le rachat",
+        "Intégré à Rosalind et Rosalind Workbench",
+        "Prix de l'acquisition non divulgué"
+      ],
+      "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/pills-GettyImages-157287767.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-21-google-torchtpu-open-source",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "Google ouvre ",
+        "hl": "TorchTPU",
+        "post": " face à Nvidia"
+      },
+      "summary": "Google annonce que TorchTPU, qui exécute PyTorch sur ses TPU, est disponible en open source. Il l'accompagne d'une « TPU agent suite » pour migrer le code. C'est la deuxième offensive en deux jours contre le verrou logiciel de Nvidia, après Amazon.",
+      "detail": "TorchTPU permet de lancer des applications PyTorch sur les TPU et Google Cloud par un simple changement de configuration, sans réécriture. Google a aussi mis à jour LiteRT et affirme avoir travaillé avec Meta, Hugging Face, Inferact (vLLM) et RadixArk (SGLang) pour la compatibilité. La veille, Amazon avait présenté TorchNeuron pour porter des applications vers sa puce Trainium. PyTorch, créé par Meta en 2016 et confié à la Linux Foundation en 2022, serait utilisé par environ 85 % des applications d'IA, chiffre non sourcé par l'article. Performances, coûts, adoption et réaction de Nvidia ne sont pas connus, et TechCrunch ne s'attend pas à un abandon massif des GPU Nvidia. Pour les développeurs, l'enjeu est de pouvoir changer de puce sans réécrire leurs modèles.",
+      "tags": [
+        "code",
+        "business"
+      ],
+      "points": [
+        "Exécute PyTorch sur TPU sans réécriture du code",
+        "Nouvel outil « TPU agent suite » pour migrer",
+        "Compatibilité travaillée avec Meta, Hugging Face, vLLM, SGLang",
+        "Suit TorchNeuron d'Amazon, annoncé la veille"
+      ],
+      "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2215577882.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-21-chatgpt-conversations-verrouillees",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "ChatGPT",
+        "post": " permet de verrouiller vos conversations"
+      },
+      "summary": "OpenAI déploie les Locked Chats : des conversations protégées par code PIN à quatre chiffres, Face ID ou Touch ID. Elles vont dans une section séparée, avec leur propre mémoire. Ce n'est pas un chiffrement de bout en bout.",
+      "detail": "La fonction vise les situations où d'autres personnes voient l'écran, comme une conversation personnelle ou la préparation d'une surprise. Les conversations verrouillées sont exclues de l'historique, des épingles et de la recherche, mais restent accessibles à tout moment, contrairement aux Temporary Chats. Si la Mémoire est activée, la section a la sienne : ses messages n'alimentent pas la mémoire générale et inversement. Réinitialiser le code PIN supprime définitivement les contenus protégés. OpenAI précise l'absence de chiffrement de bout en bout, une durée de conservation inchangée et que le réglage « Improve the model for everyone » n'est pas modifié. Le déploiement commence le 20 octobre pour les offres Free, Go, Plus, Pro, Business, Enterprise et Edu, hors ChatGPT for Healthcare ; son calendrier complet n'est pas connu.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Code PIN à 4 chiffres, Face ID ou Touch ID",
+        "Section « Locked Chats » avec mémoire séparée",
+        "Pas de chiffrement de bout en bout",
+        "Déploiement dès le 20 octobre, tous les plans sauf Healthcare"
+      ],
+      "url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-21-deepseek-deepinfer-open-source",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "DeepSeek",
+        "post": " ouvre DeepInfer, son moteur d'inférence"
+      },
+      "summary": "DeepSeek publie en open source DeepInfer, le moteur d'inférence qui fait tourner V4.1-Flash, son modèle le plus rapide et le moins cher. Il est sous licence Apache 2.0. L'entreprise promet de publier aussi le code de ses prochains modèles.",
+      "detail": "DeepInfer, framework interne de DeepSeek, s'appuie sur vLLM avec des noyaux de calcul optimisés, une exécution distribuée sur plusieurs puces et des techniques de génération plus rapides. Le dépôt GitHub deepseek-ai/DeepInfer est accompagné de deepseek-recipe, qui reproduit le traitement des tokens de l'API officielle pour les déploiements auto-hébergés. DeepSeek dit vouloir aider la communauté à réduire les coûts de calcul et la consommation d'énergie. L'article ne donne aucun chiffre de performance, de latence ou de coût. The Decoder y voit une possible motivation politique dans la rivalité sino-américaine, et une pression sur OpenAI et Anthropic. La sortie intervient le jour même de l'interdiction de DeepSeek dans les agences fédérales américaines.",
+      "tags": [
+        "modeles",
+        "code"
+      ],
+      "points": [
+        "Licence Apache 2.0, dépôt deepseek-ai/DeepInfer",
+        "Sert V4.1-Flash, modèle le plus rapide de DeepSeek",
+        "Basé sur vLLM avec noyaux optimisés",
+        "Aucun chiffre de performance publié"
+      ],
+      "url": "https://the-decoder.com/deepseek-open-sources-the-inference-engine-that-powers-its-fastest-and-cheapest-ai-model/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/08/deepseek_deepseek_logo.png"
+    },
+    {
+      "id": "2026-10-21-figma-mcp-imparfait-config-inde",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "Figma",
+        "post": " élargit MCP tout en le critiquant"
+      },
+      "summary": "À sa première conférence Config en Inde, Figma annonce 20 nouveaux partenaires MCP. Son cofondateur Dylan Field juge pourtant le protocole imparfait et favorable aux grands labos d'IA.",
+      "detail": "Parmi les partenaires cités figurent Amp, ClickUp, Linear, Notion, Mistral, OpenCode, Junie de JetBrains et Meta Muse. Le 30 septembre, Dylan Field avait demandé sur X pourquoi Anthropic, créateur du standard, n'exposait pas ses propres ressources, comme les artifacts, via MCP. Il a ajouté que Figma prévoyait de prendre en charge Pi, outil open source dont un cocréateur de MCP regrettait l'absence. Lors d'un point presse, il a estimé que MCP « n'est pas un protocole parfait » et laisse une marge d'amélioration. Il reconnaît aussi que plus Figma expose de données, plus le risque d'abus augmente. La date de la prise en charge de Pi, la liste complète des partenaires et la réponse d'Anthropic ne sont pas connues.",
+      "tags": [
+        "design",
+        "agents"
+      ],
+      "points": [
+        "20 nouveaux partenaires MCP annoncés à Config Inde",
+        "Field : MCP avantage surtout les grands labos",
+        "Support de Pi prévu par Figma, sans date",
+        "Risque d'abus croissant avec les données exposées"
+      ],
+      "url": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1233645802.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-21-otter-ai-leve-320-millions",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "Otter.ai",
+        "post": " lève 320 millions de dollars"
+      },
+      "summary": "Otter.ai lève 320 M$ auprès du Customer Value Fund de General Catalyst, qui finance sans dilution du capital. L'outil de notes de réunion revendique 40 millions d'utilisateurs et plus de 100 M$ de revenu annuel récurrent.",
+      "detail": "Le fonds se rémunère selon les résultats des dépenses marketing, sans diluer les actionnaires. Otter prévoit d'investir dans la croissance entreprise, l'expansion internationale et le produit. Sa base est passée de 25 à 40 millions d'utilisateurs en un an, et son ARR a dépassé 100 M$. Elle avait levé environ 50 M$ au total selon PitchBook, la dernière fois en 2021. Elle teste un « prebrief » envoyé avant une réunion et « Live Assist » pour interroger l'IA pendant l'appel, face à Fireflies, Granola, Read AI ou Fathom (racheté par Superhuman). Valorisation, conditions de remboursement et rentabilité ne sont pas communiquées.",
+      "tags": [
+        "business",
+        "agents"
+      ],
+      "points": [
+        "320 M$ du Customer Value Fund de General Catalyst",
+        "40 millions d'utilisateurs contre 25 millions un an plus tôt",
+        "Plus de 100 M$ d'ARR",
+        "Valorisation non communiquée"
+      ],
+      "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/04/Otter-feat.jpg?resize=1200,675"
+    },
+    {
+      "id": "2026-10-21-elevenlabs-eleven-realtime",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "ElevenLabs",
+        "post": " sort deux modèles voix temps réel"
+      },
+      "summary": "ElevenLabs lance Eleven Realtime, deux modèles speech-to-speech, Mini et Max, pour les conversations IA en temps réel. Max affiche 98,8 % sur Big Bench Audio avec 0,57 seconde de réponse, selon l'entreprise.",
+      "detail": "Mini vise des conversations naturelles à moindre coût et sait distinguer la fin d'une prise de parole d'un simple « mm-hmm ». Max cible les tâches complexes comme le support client. Les deux sont accessibles via la plateforme ElevenAgents et une API Realtime compatible OpenAI, facturés à la minute plus des tokens, Max étant plus cher. ElevenLabs affirme qu'aucun modèle du classement Artificial Analysis n'est à la fois plus rapide et plus précis, affirmation non vérifiée. Tarifs exacts, langues et performances de Mini ne sont pas communiqués. La compatibilité avec l'API d'OpenAI facilite la migration des développeurs d'agents vocaux.",
+      "tags": [
+        "modeles",
+        "agents"
+      ],
+      "points": [
+        "Deux modèles : Eleven Realtime Mini et Max",
+        "Max : 98,8 % sur Big Bench Audio, 0,57 s",
+        "API Realtime compatible OpenAI",
+        "Tarifs détaillés non précisés"
+      ],
+      "url": "https://the-decoder.com/elevenlabs-releases-two-new-speech-to-speech-models-designed-for-real-time-ai-conversations/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/elevenlabs.png"
+    },
+    {
+      "id": "2026-10-21-xbox-suppressions-postes-novembre-janvier",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "",
+        "hl": "Xbox",
+        "post": " prépare de nouvelles coupes d'effectifs"
+      },
+      "summary": "Selon un portrait de la patronne d'Xbox Asha Sharma publié par Fortune, Microsoft va supprimer encore des postes en octobre, puis en novembre et en janvier. Environ 1 868 emplois ont déjà disparu sur 3 200 prévus.",
+      "detail": "Push Square relaie un portrait de la PDG d'Xbox, Asha Sharma, publié par Fortune le 20 octobre. D'après ce texte, 1 868 postes ont déjà été supprimés et 3 200 sont prévus au total, avec de nouvelles vagues ce mois-ci, en novembre et en janvier. Fortune rapporte aussi que Halo est désormais supervisé par Activision et qu'Obsidian a été rattaché à Bethesda. Le portrait avance que Gears of War: E-Day se serait vendu à environ 311 000 exemplaires sur Xbox et PC, et qu'une réorganisation du Game Pass est attendue. Des employés actuels et anciens estiment que Xbox pourrait être préparée à une vente, une scission, l'entrée d'investisseurs ou un statut de filiale ; Xbox a publiquement démenti de tels plans. Dans les commentaires, de nombreux lecteurs critiquent la gestion de Microsoft et l'incertitude pour les équipes, tandis que d'autres défendent Asha Sharma.",
+      "tags": [
+        "xbox",
+        "industrie"
+      ],
+      "points": [
+        "1 868 emplois déjà supprimés sur 3 200 prévus",
+        "Nouvelles coupes en octobre, novembre et janvier",
+        "Halo passe sous Activision, Obsidian sous Bethesda",
+        "Xbox dément tout projet de vente ou de scission"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/xbox-to-slash-even-more-jobs-this-month-with-further-cuts-in-november-and-january",
+      "image": "https://images.pushsquare.com/5cf12c91da5ad/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-21-prochaine-xbox-2028-prix-1800-dollars",
+      "theme": "games",
+      "source": "VGC",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "Rumeur : la prochaine ",
+        "hl": "Xbox",
+        "post": " en 2028, jusqu'à 1 800 $"
+      },
+      "summary": "Rumeur : d'après Fortune, la console Project Helix viserait les fêtes 2028 avec un prix interne de 1 200 à 1 800 $, sauf subvention. Une console portable de nouvelle génération serait prévue pour fin 2027.",
+      "detail": "VGC rapporte, sans les confirmer, des informations de Fortune tirées d'un portrait de la PDG d'Xbox, Asha Sharma. Project Helix, qui doit faire tourner les jeux Xbox et PC, serait ciblée pour les fêtes de fin d'année 2028, avec un prix projeté en interne entre 1 200 et 1 800 dollars à moins que Microsoft ne subventionne le coût. Une portable de nouvelle génération est évoquée pour les fêtes 2027. Fortune décrit un désaccord logiciel : les dirigeants de Windows voulaient une version allégée de Windows Home, quand l'équipe de Sharma préférait son propre logiciel pour de meilleures performances. Le Game Pass serait aussi remanié, avec des options à la carte comme le cloud gaming ou le multijoueur. L'analyste Joost van Dreunen estime auprès de GamesIndustry.biz que « plus de mille dollars est le plancher » pour les prochaines consoles, dans un contexte de pénurie de composants.",
+      "tags": [
+        "xbox"
+      ],
+      "points": [
+        "Project Helix visée pour les fêtes 2028",
+        "Prix interne estimé entre 1 200 et 1 800 $",
+        "Portable de nouvelle génération pour fin 2027",
+        "Game Pass à la carte en préparation"
+      ],
+      "url": "https://www.videogameschronicle.com/news/report-claims-next-xbox-is-targeting-2028-and-could-cost-between-1200-and-1800/",
+      "image": "https://www.videogameschronicle.com/files/2026/05/Screenshot-2026-05-06-175204-e1778086879954.jpg"
+    },
+    {
+      "id": "2026-10-21-ea-sports-fight-night-retour",
+      "theme": "games",
+      "source": "VGC",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "EA Sports ressuscite sa série de boxe ",
+        "hl": "Fight Night",
+        "post": ""
+      },
+      "summary": "EA Sports a officialisé le retour de Fight Night, sa série de boxe absente depuis 2011. Ni date de sortie ni plateformes ne sont communiquées.",
+      "detail": "EA Sports a annoncé sur les réseaux sociaux : « À tous ceux qui sont restés dans notre coin : Fight Night revient. » La série a compté cinq jeux entre 2004 et 2011, tous notés dans le haut des années 80 sur Metacritic, le dernier étant Fight Night Champion. EA s'est ensuite concentré sur sa série UFC, avec cinq opus entre 2014 et 2026, car les licences d'image des boxeurs étaient devenues compliquées et coûteuses. L'annonce arrive peu après la finalisation du rachat d'EA par le fonds saoudien PIF, et l'Arabie saoudite est très impliquée dans la boxe de haut niveau. On ne sait rien du développement, du gameplay ni des plateformes visées. Fans et monde de la boxe réclament ce retour depuis longtemps : le promoteur Eddie Hearn disait déjà en 2020 l'avoir proposé à EA.",
+      "tags": [
+        "industrie"
+      ],
+      "points": [
+        "Dernier épisode : Fight Night Champion en 2011",
+        "Aucune date de sortie ni plateforme annoncée",
+        "Annonce juste après la vente d'EA au fonds PIF"
+      ],
+      "url": "https://www.videogameschronicle.com/news/ea-sports-is-officially-reviving-its-fight-night-boxing-series/",
+      "image": "https://www.videogameschronicle.com/files/2020/07/Fury-Joshua-UFC.jpg"
+    },
+    {
+      "id": "2026-10-21-cyberpunk-2077-patch-2-5-fuite-details",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "Le patch 2.5 de ",
+        "hl": "Cyberpunk 2077",
+        "post": " fuite avant l'heure"
+      },
+      "summary": "Le contenu du patch 2.5 de Cyberpunk 2077, attendu le 22 octobre, a fuité avant la présentation officielle. Il apporterait des mods sur console, de nouvelles quêtes et un curseur de champ de vision.",
+      "detail": "CD Projekt Red devait dévoiler le patch 2.5 lors d'une REDstream le 21 octobre à 17 h (CEST), pour une sortie le 22 octobre. Un créateur de contenu a publié son analyse en avance avant de passer sa vidéo en privé, donc ces détails restent officieusement tant que le studio ne les confirme pas. Selon la fuite, le patch ajoute deux quêtes secondaires, un perk permettant de manier deux pistolets ou revolvers, une station de radio Edgerunners, cinq « Glamdocs » pour personnaliser les cyberwares de bras et de mains, et cinq tenues. Les consoles recevraient le support des mods via mod.io, comme The Witcher 3 Remastered, avec désactivation des trophées sur la sauvegarde concernée. S'y ajoutent un curseur de FOV sur console, un correctif du HDR sur PS5, un classement des sauvegardes par partie et des filtres d'inventaire. L'article vise surtout la PS5 et ne précise pas explicitement les autres plateformes.",
+      "tags": [
+        "playstation"
+      ],
+      "points": [
+        "Sortie attendue le 22 octobre 2026",
+        "Support des mods sur console via mod.io",
+        "Curseur de FOV et correctif HDR sur PS5",
+        "Deux quêtes, un perk et une radio Edgerunners"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/cyberpunk-2077-ps5-patch-2-5-leaks-get-the-big-details-and-updates-here",
+      "image": "https://images.pushsquare.com/7b51496b9b293/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-21-showcase-id-xbox-huit-jeux-game-pass",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "Showcase ID@",
+        "hl": "Xbox",
+        "post": " : huit jeux rejoignent le Game Pass"
+      },
+      "summary": "Le showcase ID@Xbox d'octobre a annoncé huit jeux pour le Game Pass, dont Mouthwashing le 29 octobre en surprise. Les sorties s'échelonnent d'octobre 2026 à l'été 2027.",
+      "detail": "Pure Xbox détaille les huit titres annoncés pour le Game Pass lors du showcase indépendant du 20 octobre. Scramble Knights Online, un RPG d'action en ligne léger, sort le 26 octobre, et Mouthwashing, un horreur spatial qui n'était pas dans la liste d'octobre du Game Pass, arrive le 29 octobre. A Game About Digging A Hole Together, un jeu coopératif minimaliste, est prévu le 4 décembre. Croak, un platformer en 2D, vise mars 2027 et Drill Keeper, un roguelike de deckbuilding, l'été 2027. Red Kiss et No, I'm Not A Human sont attendus en 2027, tandis que Mr Magpie's Harmless Card Game n'a pas de date. L'article ne précise pas les plateformes au-delà du Game Pass.",
+      "tags": [
+        "xbox",
+        "evenements"
+      ],
+      "points": [
+        "Scramble Knights Online sort le 26 octobre",
+        "Mouthwashing arrive le 29 octobre, en surprise",
+        "A Game About Digging A Hole Together : 4 décembre",
+        "Croak, Drill Keeper, Red Kiss attendus en 2027"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/xbox-announces-eight-titles-coming-to-game-pass-at-octobers-indie-showcase",
+      "image": "https://images.purexbox.com/ff31b967be743/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-21-sony-aurait-rachete-kena",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "Rumeur : Sony aurait racheté la licence ",
+        "hl": "Kena",
+        "post": ""
+      },
+      "summary": "Rumeur : une vidéo promotionnelle PlayStation mentionne Sony Interactive Entertainment comme propriétaire de la marque Kena: Scars of Kosmora. Ni Sony ni Ember Lab n'ont confirmé un rachat.",
+      "detail": "Une vidéo mettant en scène la chanteuse Lisa, ambassadrice PlayStation, présente plusieurs jeux PS Studios, dont Kena: Scars of Kosmora. Les mentions légales indiquent « ©Sony Interactive Entertainment LLC » et que le titre est une marque de Sony, un détail repéré sur Reddit. Push Square a constaté que la plupart des fiches nomment encore Ember Lab comme détenteur des droits, et juge « tirée par les cheveux » l'idée que Sony ait racheté le studio lui-même. Rien n'est confirmé, et les fiches pourraient simplement être obsolètes. Le média rappelle que Sony cherche souvent la propriété complète de ses jeux publiés, citant Death Stranding et Physint. Scars of Kosmora est attendu en 2027 sur PS5.",
+      "tags": [
+        "playstation",
+        "industrie"
+      ],
+      "points": [
+        "Mention de Sony comme propriétaire de la marque dans un teaser",
+        "Aucune confirmation de Sony ni d'Ember Lab",
+        "Scars of Kosmora attendu en 2027 sur PS5"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/a-new-playstation-promo-suggests-sonys-bought-the-kena-ip-from-ember-lab",
+      "image": "https://images.pushsquare.com/5d4b32f9fa808/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-21-riders-republic-switch-2-decembre",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "",
+        "hl": "Riders Republic",
+        "post": " arrive sur Switch 2 le 9 décembre"
+      },
+      "summary": "Ubisoft a annoncé Riders Republic sur Switch 2 pour le 9 décembre 2026. Un mode hors ligne arrive à la même date.",
+      "detail": "L'annonce a été faite pendant un livestream pour les 5 ans du jeu, sorti en 2021 sur PS4, PS5 et Xbox Series X|S. Cet open world de sports extrêmes se déroule dans des parcs nationaux américains, dont Bryce Canyon, Yosemite Valley et Mammoth Mountain. Il propose VTT, BMX, skateboard, snowboard, trottinette et wingsuit, en solo ou avec des amis, ainsi que des courses PvP à plus de 50 joueurs. Un mode « Offline Play » sort le même jour, un changement notable pour un jeu pensé en ligne. Le prix n'est pas indiqué dans l'article.",
+      "tags": [
+        "nintendo"
+      ],
+      "points": [
+        "Sortie le 9 décembre 2026 sur Switch 2",
+        "Mode hors ligne ajouté à la même date",
+        "Courses PvP à plus de 50 joueurs",
+        "Prix non communiqué"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/10/ubisofts-extreme-sports-playground-riders-republic-launches-on-switch-2-this-december",
+      "image": "https://images.nintendolife.com/817a121549b3e/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-21-wwe-2k26-street-fighter-pack",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "",
+        "hl": "WWE 2K26",
+        "post": " accueille Street Fighter le 28 octobre"
+      },
+      "summary": "WWE 2K26 propose le 28 octobre un pack payant croisant catcheurs et personnages de Street Fighter. Cinq superstars incarnent Ryu, M. Bison, Cammy, Blanka et Ken.",
+      "detail": "Le Elite Pack s'inspire des figurines Elite Collection WWE x Street Fighter de Mattel, et non du film. The Rock devient M. Bison, Rey Mysterio Ryu, Bianca Belair Cammy, Ultimate Warrior Blanka et Dominik Mysterio Ken. Chacun reçoit une prise signature, comme le Shinku Hadoken, le Psycho Crusher ou le Shoryuken. Le pack ajoute aussi 15 éléments de personnalisation inspirés de Ryu, Akuma, Vega ou Chun-Li. Il s'agit d'un DLC payant autonome, dont l'article ne donne ni le prix ni la liste exacte des plateformes ; il traite de la version Switch 2.",
+      "tags": [
+        "nintendo"
+      ],
+      "points": [
+        "Sortie le 28 octobre 2026",
+        "Cinq catcheurs transformés en héros de Street Fighter",
+        "15 éléments de personnalisation inclus",
+        "DLC payant, prix non indiqué"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/10/wwe-2k26-collides-with-street-fighter-in-first-ever-collab-next-week",
+      "image": "https://images.nintendolife.com/7f260e8ad67bb/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-21-shrek-2-remastered-10-novembre",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "",
+        "hl": "Shrek 2 Remastered",
+        "post": " fixe sa date au 10 novembre"
+      },
+      "summary": "Aspyr sortira Shrek 2 Remastered le 10 novembre 2026 sur Xbox Series X|S. La date a été donnée au showcase ID@Xbox.",
+      "detail": "La date a été révélée lors du showcase ID@Xbox du 20 octobre, avec une bande-annonce de gameplay. D'après la fiche du Xbox Store, le jeu est reconstruit avec de meilleures textures, une interface améliorée, une résolution 4K et des cinématiques retravaillées. Il ajoute un mode photo et un mode triche. On peut jouer en solo ou en coopération jusqu'à quatre dans des lieux du film comme Far Far Away, le marais de Shrek ou le château de Fiona. Le prix n'est pas précisé. Push Square évoque aussi une sortie PS5 en novembre.",
+      "tags": [
+        "xbox",
+        "playstation"
+      ],
+      "points": [
+        "Sortie le 10 novembre 2026 sur Xbox Series X|S",
+        "Développé par Aspyr Media",
+        "Coopération jusqu'à quatre joueurs",
+        "4K, mode photo et mode triche"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/shrek-2-remastered-gets-official-november-release-date-for-xbox-series-xs",
+      "image": "https://images.purexbox.com/ec4fdb64ccb14/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-21-fsr-4-1-xbox-series-rog-ally",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-20",
+      "headline": {
+        "pre": "AMD FSR 4.1 arrive sur ",
+        "hl": "Xbox",
+        "post": " Series et ROG Ally"
+      },
+      "summary": "AMD et Xbox ont annoncé FSR 4.1 pour les Xbox Series X|S et les portables ROG Xbox Ally. Aucune date précise n'est donnée, seulement « bientôt ».",
+      "detail": "Le directeur général d'AMD Jack Huynh a annoncé la technologie, qui touchera aussi les cartes Radeon RX 6000 et plusieurs processeurs Ryzen 9 Gorgon et Strix. Le CTO d'Xbox, Scott Van Vliet, a indiqué qu'elle serait optimisée pour les ROG Xbox Ally X et X20 et qu'elle arrive « bientôt » sur Series S et X, sans calendrier. FSR calcule l'image à plus basse résolution puis l'améliore par apprentissage automatique pour gagner en qualité et en performances. Selon Van Vliet, ce n'est « que le début » : le partenariat se poursuivra avec Project Helix, qui utilisera « FSR Diamond ».",
+      "tags": [
+        "xbox"
+      ],
+      "points": [
+        "FSR 4.1 « bientôt » sur Xbox Series X|S",
+        "Optimisé pour les ROG Xbox Ally X et X20",
+        "Project Helix utilisera « FSR Diamond »"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/amd-fsr-4-1-announced-for-xbox-series-xs-and-rog-xbox-handhelds",
+      "image": "https://images.purexbox.com/d203e8464082c/1280x720.jpg"
+    },
     {
       "id": "2026-10-20-nvidia-nemotron-3-5-agents",
       "theme": "ai",
@@ -901,110 +1416,6 @@
       ],
       "url": "https://www.videogameschronicle.com/news/konami-boss-says-ai-cant-replace-the-human-chemistry-behind-great-games/",
       "image": "https://www.videogameschronicle.com/files/2026/08/Metal-Gear-Solid-Collection-Vol-2-13.jpg"
-    },
-    {
-      "id": "2026-10-final-fantasy-resonance",
-      "theme": "games",
-      "source": "Sortir à Paris",
-      "date": "2026-10-14",
-      "dateLabel": "Agenda d’octobre",
-      "headline": {
-        "pre": "",
-        "hl": "Final Fantasy Resonance",
-        "post": " sort le 22 octobre"
-      },
-      "summary": "Le nouveau jeu de Square Enix arrive sur PC, PS5, Xbox Series, Switch et Switch 2.",
-      "detail": "",
-      "tags": [
-        "pc",
-        "playstation",
-        "xbox",
-        "nintendo"
-      ],
-      "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
-      "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
-    },
-    {
-      "id": "2026-10-paris-games-week",
-      "theme": "games",
-      "source": "Sortir à Paris",
-      "date": "2026-10-14",
-      "dateLabel": "Agenda d’octobre",
-      "headline": {
-        "pre": "",
-        "hl": "Paris Games Week",
-        "post": " : rendez-vous du 22 au 24 octobre"
-      },
-      "summary": "Le salon s’installe au Dôme de Paris, avec trois sessions en soirée.",
-      "detail": "",
-      "tags": [
-        "evenements"
-      ],
-      "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
-      "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
-    },
-    {
-      "id": "2026-10-phantom-blade-zero",
-      "theme": "games",
-      "source": "Sortir à Paris",
-      "date": "2026-10-14",
-      "dateLabel": "Agenda d’octobre",
-      "headline": {
-        "pre": "Phantom Blade Zero ",
-        "hl": "décalé",
-        "post": " au 29 octobre"
-      },
-      "summary": "Repoussé de quelques semaines, le jeu d’action de S-Game sortira sur PC et PS5.",
-      "detail": "",
-      "tags": [
-        "pc",
-        "playstation"
-      ],
-      "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
-      "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
-    },
-    {
-      "id": "2026-10-tales-of-eternia-remastered",
-      "theme": "games",
-      "source": "Sortir à Paris",
-      "date": "2026-10-14",
-      "dateLabel": "Agenda d’octobre",
-      "headline": {
-        "pre": "",
-        "hl": "Tales of Eternia",
-        "post": " revient remasterisé"
-      },
-      "summary": "Bandai Namco publie le remaster le 16 octobre sur PC, PS4, PS5, Xbox Series, Switch et Switch 2.",
-      "detail": "",
-      "tags": [
-        "pc",
-        "playstation",
-        "xbox",
-        "nintendo"
-      ],
-      "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
-      "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
-    },
-    {
-      "id": "2026-10-ace-combat-8",
-      "theme": "games",
-      "source": "Sortir à Paris",
-      "date": "2026-10-14",
-      "dateLabel": "Agenda d’octobre",
-      "headline": {
-        "pre": "",
-        "hl": "Ace Combat 8",
-        "post": " a décollé"
-      },
-      "summary": "Wings of Theve, de Bandai Namco, est disponible depuis le 2 octobre sur PC, PS5 et Xbox Series.",
-      "detail": "",
-      "tags": [
-        "pc",
-        "playstation",
-        "xbox"
-      ],
-      "url": "https://www.sortiraparis.com/loisirs/gaming/articles/261729-jeux-video-octobre-sorties-gaming-automne",
-      "image": "https://cdn.sortiraparis.com/images/80/112186/1229354-musee-mo5-musee-du-jeu-video-explorez-l-histoire-du-gaming-a-arcueil-94.jpg"
     }
   ]
 }
