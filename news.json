@@ -1,7 +1,475 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T10:33:48+02:00",
+  "updatedAt": "2026-10-22T10:35:52+02:00",
   "items": [
+    {
+      "id": "2026-10-21-php-failles-critiques-ia",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Des IA découvrent deux failles critiques dans ",
+        "hl": "PHP",
+        "post": ""
+      },
+      "summary": "La NSA a publié une alerte sur deux failles critiques de PHP, présentes depuis la version 5. Elles ont été trouvées avec l'aide de GPT-5.6 Sol et de Gemini 4 Argon, par des équipes d'OpenAI (via Calif) et de Wiz.",
+      "detail": "Le mercredi 21 octobre, la NSA a émis une alerte sur deux vulnérabilités critiques de PHP, et la fondation PHP a publié des correctifs. Les failles touchent toutes les versions depuis PHP 5 (2004) et permettent d'accéder au système de fichiers du serveur ou à la base de données de l'application. PHP fait tourner environ 70 % des sites selon W3Techs, soit plus de 33 millions de sites d'après certaines estimations. La société Calif, mandatée dans l'initiative « Patch the Planet » d'OpenAI, a trouvé l'une des failles avec GPT-5.6 Sol, tandis que l'équipe Wiz (Google) en a trouvé plusieurs avec son agent Wiz Atlas, Gemini 4 Argon et GPT-5.6 Sol. OpenAI affirme qu'aucune exploitation malveillante n'a été signalée, mais Wiz prévient que les LLM pourraient aider les attaquants à adapter des exploits. Les identifiants CVE, le détail technique et le nombre exact de sites vulnérables ne sont pas précisés. La NSA recommande de mettre hors ligne les sites qui ne peuvent pas être corrigés tout de suite ; la version recommandée est PHP 8.5.12.",
+      "tags": [
+        "business",
+        "agents"
+      ],
+      "points": [
+        "Alerte de la NSA le 21 octobre sur deux failles PHP critiques",
+        "Toutes les versions depuis PHP 5 (2004) sont concernées",
+        "Trouvées avec GPT-5.6 Sol, Gemini 4 Argon et l'agent Wiz Atlas",
+        "Version recommandée : PHP 8.5.12",
+        "OpenAI ne signale aucune exploitation malveillante"
+      ],
+      "url": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
+      "image": "https://techcrunch.com/wp-content/uploads/2021/12/GettyImages-460689215.jpg?resize=1200,801"
+    },
+    {
+      "id": "2026-10-21-google-cloud-modeles-openai",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Google Cloud propose désormais les modèles d'",
+        "hl": "OpenAI",
+        "post": ""
+      },
+      "summary": "Google Cloud ajoute GPT-6 Astra, GPT-6.1 Sol et GPT-6 Luna à ses côtés de Gemini et Claude. Il devient ainsi le seul grand fournisseur cloud à proposer les trois familles.",
+      "detail": "Google Cloud réunit désormais sur une même plateforme les modèles de Google, d'Anthropic et d'OpenAI. Trois modèles OpenAI sont concernés : GPT-6 Astra pour les tâches exigeantes comme le code et la recherche, GPT-6.1 Sol comme alternative moins chère aux performances annoncées comme similaires, et GPT-6 Luna, rapide et économique. L'accès se fait en préversion privée pour certains clients entreprises, avec des inscriptions ouvertes, et les modèles doivent aussi arriver dans Gemini for Business et Google Antigravity. Tout est facturé sur une seule facture Google Cloud et compte dans les contrats existants ; Google assure que les données clients ne servent pas à l'entraînement. Les tarifs, la durée de la préversion et la date de disponibilité générale ne sont pas communiqués. L'article souligne une tension interne : le calcul vendu aux clients cloud renforce les concurrents de l'équipe Gemini.",
+      "tags": [
+        "modeles",
+        "business"
+      ],
+      "points": [
+        "Trois modèles : GPT-6 Astra, GPT-6.1 Sol et GPT-6 Luna",
+        "Préversion privée pour des clients entreprises",
+        "Facturation unique via Google Cloud",
+        "Tarifs et date de disponibilité générale inconnus"
+      ],
+      "url": "https://the-decoder.com/google-cloud-now-offers-openai-models-alongside-gemini-and-claude-becoming-the-only-major-provider-with-all-three/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/05/google_logo_wall.png"
+    },
+    {
+      "id": "2026-10-21-meta-muse-10-millions-utilisateurs",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "",
+        "hl": "Muse",
+        "post": " de Meta dépasse 10 millions d'utilisateurs"
+      },
+      "summary": "Lors des résultats du troisième trimestre, Meta a annoncé que son application d'IA Muse compte plus de 10 millions d'utilisateurs. Les achats via l'agent sont l'un des usages principaux, et Meta prévoit de prélever un pourcentage sur ces ventes.",
+      "detail": "Le 21 octobre, Mark Zuckerberg a confirmé le chiffre de 10 millions d'utilisateurs, déjà estimé la veille par Sensor Tower à partir des téléchargements américains ; la base exacte du chiffre n'est pas détaillée. Environ 25 % des personnes ayant configuré Muse l'utilisent chaque jour, et plus d'un quart des utilisateurs engagés qui achètent via l'agent ont un panier moyen supérieur à 200 $. Muse restera gratuit pour la plupart, Meta prenant un pourcentage sur les achats, tandis que les utilisateurs avancés paieront pour les meilleurs modèles ou plus de jetons. Meta met en avant Muse Secure VM et annonce Muse Confidential VM, censé l'empêcher d'accéder au contenu des utilisateurs. Zuckerberg vise une amélioration de plus de 10 fois de l'efficacité des coûts de calcul l'an prochain, Muse étant aujourd'hui très coûteux à faire tourner. Le taux de commission, les prix des offres payantes et les dates de lancement de Confidential VM et du « Muse network » ne sont pas précisés.",
+      "tags": [
+        "agents",
+        "business"
+      ],
+      "points": [
+        "Plus de 10 millions d'utilisateurs selon Meta",
+        "Environ 25 % des utilisateurs configurés l'utilisent chaque jour",
+        "Commission prévue sur les achats via l'agent",
+        "Muse Confidential VM annoncé, sans date"
+      ],
+      "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/meta-muse-finger-on-app-GettyImages-2293791808.jpg?w=1024"
+    },
+    {
+      "id": "2026-10-21-recursive-flint-modele-code-portable",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Recursive lance ",
+        "hl": "Flint",
+        "post": ", un modèle de code pour portable"
+      },
+      "summary": "La startup Recursive de Richard Socher publie Flint, un modèle de code open source de 40 milliards de paramètres qui tourne sur un ordinateur portable. Elle affirme qu'il a été largement conçu par une IA.",
+      "detail": "Recursive, fondée en 2025 et sortie de la discrétion en mai 2026 avec 650 millions de dollars levés, dévoile son premier modèle. Flint est un mélange d'experts de 40 milliards de paramètres dont 2,5 milliards actifs par tâche, gratuit sur Hugging Face sous licence Apache 2.0. Selon l'entreprise, il atteint environ 131 tokens par seconde sur un MacBook Pro M4 Pro contre 58 à 69 pour des modèles comparables, et surpasse les modèles de moins de 50 milliards de paramètres sur SWE-Bench Verified. Un système de recherche automatisé, l'Eureka Machine, aurait participé à presque toutes les étapes, dont une quantification qui a réduit le modèle de 71 % presque sans perte. Recursive reconnaît que Flint demande plus de guidage que les grands assistants payants. Les scores détaillés et une évaluation indépendante complète manquent, seul un test de Wired étant cité.",
+      "tags": [
+        "modeles",
+        "code"
+      ],
+      "points": [
+        "MoE de 40 Md de paramètres, 2,5 Md actifs",
+        "Licence Apache 2.0, téléchargeable sur Hugging Face",
+        "Environ 131 tokens/s sur MacBook Pro M4 Pro (chiffre Recursive)",
+        "Demande plus de guidage que les assistants payants"
+      ],
+      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2157738833.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-21-inception-mercury-3-diffusion",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "",
+        "hl": "Mercury 3",
+        "post": " : un LLM à diffusion très rapide"
+      },
+      "summary": "Inception lance Mercury 3, un modèle de langage à diffusion qui, selon ses tests internes, bat GPT-6 Luna et Claude Haiku 5.5 sur 8 benchmarks sur 12. Il atteint 1 068 tokens par seconde.",
+      "detail": "Mercury 3 affine un brouillon de réponse complet en plusieurs passes au lieu d'écrire mot par mot. D'après Inception, il obtient 76,84 sur IFBench (15 points de plus que GPT-6 Luna) et 51,08 sur SWE-Bench Atlas contre environ 33 pour GPT-6 Luna et Claude Haiku 5.5, qui garde l'avantage sur DeepSWE. Il génère 1 068 tokens/s sur GPU Nvidia, soit 4 à 8 fois plus vite, avec un contexte d'un million de tokens. Le prix est de 0,20 $ (entrée) et 0,70 $ (sortie) par million de tokens, avec 50 % de remise au lancement sans date de fin. Il est disponible sur la plateforme d'Inception, OpenRouter, Baseten et Vercel, avec une API compatible OpenAI. Aucun test indépendant n'existe encore et le nombre exact de paramètres n'est pas communiqué.",
+      "tags": [
+        "modeles"
+      ],
+      "points": [
+        "Gagne 8 benchmarks sur 12 selon Inception",
+        "1 068 tokens/s sur GPU Nvidia",
+        "0,20 $ / 0,70 $ par million de tokens, remise de 50 % au lancement",
+        "Disponible via OpenRouter, Baseten et Vercel",
+        "Aucun test indépendant à ce jour"
+      ],
+      "url": "https://the-decoder.com/inceptions-mercury-3-diffusion-model-claims-to-beat-gpt-6-luna-and-claude-haiku-5-5-at-a-fraction-of-the-wait/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/inception.png"
+    },
+    {
+      "id": "2026-10-21-walmart-agent-gateway-mcp",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Walmart ouvre son ",
+        "hl": "Agent Gateway",
+        "post": " aux agents IA"
+      },
+      "summary": "Pendant qu'Amazon bloque les agents d'achat, Walmart lance un serveur MCP, l'Agent Gateway, pour que des agents approuvés cherchent et achètent pour les clients. Des profils d'agents arrivent le mois prochain.",
+      "detail": "Le PDG John Furner a fait l'annonce au Masters of Scale Summit pour Walmart et Sam's Club. L'Agent Gateway permet aux agents approuvés de chercher dans l'inventaire et d'acheter sans accéder aux informations personnelles ni à l'historique d'achats. Les Agent Profiles, prévus le mois prochain, donnent à chaque agent un profil dont les achats sont visibles séparément ; l'utilisateur choisit entre une approbation à chaque transaction ou un plafond de dépenses. L'accès est ouvert à tout titulaire d'un compte Walmart, sans Walmart+. Les agents ne peuvent pas dépasser l'intention du client ni voir les données de paiement, et ceux qui ne respectent pas ces règles seront bloqués. Walmart travaille déjà avec l'agent Muse de Meta et propose des intégrations avec ChatGPT et Gemini. Aucun chiffre d'adoption, calendrier de l'Agent Gateway ni critère d'approbation des agents n'est donné.",
+      "tags": [
+        "agents",
+        "business"
+      ],
+      "points": [
+        "Nouveau serveur MCP côté Walmart et Sam's Club",
+        "Agent Profiles prévus le mois prochain",
+        "Approbation par achat ou plafond de dépenses",
+        "Les agents non conformes seront bloqués"
+      ],
+      "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+      "image": "https://techcrunch.com/wp-content/uploads/2018/01/gettyimages-903923942.jpeg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-21-mistral-nvidia-physics-ai",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Mistral et ",
+        "hl": "Nvidia",
+        "post": " misent sur l'IA physique industrielle"
+      },
+      "summary": "Mistral et Nvidia s'associent pour accélérer simulation et conception industrielle avec de l'IA physique. Mistral Large 4, d'environ 1 000 milliards de paramètres, doit sortir en open-weight fin octobre.",
+      "detail": "Selon l'annonce de Mistral, l'alliance combine Mistral Large 4, la physics AI de Mistral, les bibliothèques CUDA-X et Warp et Omniverse, pour relier conception, simulation et entraînement dans un même flux, avec l'aérospatiale, l'automobile et les semi-conducteurs en ligne de mire. Les deux sociétés prévoient des benchmarks publics et des jeux de données ouverts pour évaluer modèles de physique et agents travaillant avec des logiciels d'ingénierie. Mistral Large 4 a été entraîné sur 3 800 GPU Grace Blackwell en Europe, et Mistral vise 1 gigawatt de calcul d'ici 2030. Un modèle de fondation ouvert est aussi préparé dans la Nemotron Coalition. La date exacte du modèle, la licence, les résultats chiffrés et les conditions commerciales restent inconnus.",
+      "tags": [
+        "modeles",
+        "business"
+      ],
+      "points": [
+        "Mistral Large 4 : environ 1 000 Md de paramètres",
+        "Sortie open-weight prévue fin octobre",
+        "Cibles : aérospatiale, automobile, semi-conducteurs",
+        "Objectif de 1 GW de calcul d'ici 2030"
+      ],
+      "url": "https://the-decoder.com/mistral-and-nvidia-want-to-speed-up-industrial-design-with-physics-ai/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/Mistral-Nvidia-partnership.webp"
+    },
+    {
+      "id": "2026-10-21-hassabis-agi-deux-trois-ans",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Hassabis voit l'",
+        "hl": "AGI",
+        "post": " dans deux à trois ans"
+      },
+      "summary": "Demis Hassabis raccourcit son estimation de l'AGI à deux à trois ans, contre trois à cinq ans plus tôt cette année. Il propose aussi un conseil de surveillance des modèles avant leur sortie.",
+      "detail": "Selon The Decoder, qui cite le Wall Street Journal, Hassabis juge que l'AGI, un système égalant toute la gamme cognitive du cerveau humain, pourrait arriver dans deux à trois ans. Il évoque un « test d'Einstein » : un système entraîné uniquement sur des connaissances antérieures à 1901 pourrait-il retrouver les articles de 1905 ? Il compare l'AGI à dix fois la révolution industrielle, dix fois plus vite. Il propose un conseil de surveillance financé par l'industrie mais sous contrôle gouvernemental, chargé d'évaluer les modèles avant leur sortie, et estime qu'une mauvaise régulation serait pire que l'absence de régulation. Ni la composition du conseil, ni les critères du test d'Einstein, ni le fondement de l'estimation ne sont précisés.",
+      "tags": [
+        "business",
+        "modeles"
+      ],
+      "points": [
+        "AGI estimée à 2 à 3 ans, contre 3 à 5 ans auparavant",
+        "Proposition de conseil d'évaluation avant sortie des modèles",
+        "Test d'Einstein : retrouver les travaux de 1905 depuis les savoirs d'avant 1901"
+      ],
+      "url": "https://the-decoder.com/deepmind-founder-hassabis-shortens-agi-timeline-from-five-to-two-to-three-years/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/07/deepmind_hassabis.png"
+    },
+    {
+      "id": "2026-10-22-ea-ferme-bioware-mass-effect",
+      "theme": "games",
+      "source": "VGC",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "EA ferme ",
+        "hl": "BioWare",
+        "post": " et annule Mass Effect"
+      },
+      "summary": "EA met fin à BioWare, le studio fondé en 1995, et arrête le développement du prochain Mass Effect. Selon Bloomberg, environ 400 postes sont supprimés chez EA, dont une cinquantaine chez BioWare.",
+      "detail": "BioWare a annoncé la nouvelle sur ses réseaux sociaux le 21 octobre : le studio ferme et le développement initial du prochain projet Mass Effect s'arrête. Fondé en 1995 par Ray Muzyka et Greg Zeschuk puis racheté par EA en 2007, le studio avait déjà été réduit l'an dernier, alors que le directeur du jeu assurait aux fans que le projet continuait. Selon Bloomberg, qui a vu une lettre interne signée du COO David Tinson et du Chief Studios Officer Cam Weber, EA supprime environ 400 emplois, soit 3 % de ses effectifs. Le rachat d'EA par le fonds saoudien PIF (55 milliards de dollars, finalisé deux mois plus tôt) laisserait environ 18 milliards de dollars de dette, pour environ 1,8 milliard d'intérêts par an. EA affirme continuer d'investir dans les jeux de sport, Apex Legends, Battlefield, le prochain Star Wars Jedi et Marvel's Iron Man. Le sort de la série Dragon Age n'est pas précisé, et les premières réactions de lecteurs évoquent surtout la tristesse de voir disparaître un studio historique.",
+      "tags": [
+        "industrie"
+      ],
+      "points": [
+        "BioWare, fondé en 1995, ferme définitivement",
+        "Le prochain Mass Effect est annulé",
+        "Environ 400 postes supprimés chez EA, dont ~50 chez BioWare",
+        "Rachat d'EA à 55 Md$ par le PIF, dette d'environ 18 Md$"
+      ],
+      "url": "https://www.videogameschronicle.com/news/ea-is-closing-bioware-and-cancelling-the-next-mass-effect/",
+      "image": "https://www.videogameschronicle.com/files/2021/06/Mass-Effect-Legendary-Edition-art.jpg"
+    },
+    {
+      "id": "2026-10-22-ea-plan-restructuration-400-postes",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-22",
+      "headline": {
+        "pre": "EA dévoile son plan après ",
+        "hl": "400",
+        "post": " suppressions de postes"
+      },
+      "summary": "Une note interne rapportée par Bloomberg détaille les priorités d'EA après la fermeture de BioWare : sports, Apex Legends, Star Wars Jedi, Iron Man et Battlefield. Le projet Sims « Lotus » est annulé au profit d'« Evergreen », et l'équipe Skate est réduite.",
+      "detail": "EA est passée sous contrôle privé en août 2026 après un rachat à effet de levier de 55 milliards de dollars mené par le PIF, avec Silver Lake et Affinity Partners. Environ 18 milliards de dollars de dette ont été transférés sur les comptes d'EA, et selon Bloomberg ces coupes permettraient d'économiser jusqu'à 700 millions de dollars de coûts de R&D. Outre BioWare, l'équipe de Skate subit des réductions d'effectifs et Project Lotus, un projet Les Sims, est annulé au profit de Project Evergreen. La note affirme que les sports (dont EA FC) et Apex Legends restent prioritaires, que le prochain Star Wars Jedi et un jeu Marvel avec Iron Man sont maintenus et que Battlefield a reçu le feu vert. Respawn et DICE collaboreront sur un nouveau projet qui serait probablement un Star Wars Battlefront. Dans les commentaires, de nombreux lecteurs disent boycotter EA et redoutent un virage vers le free-to-play et la monétisation agressive.",
+      "tags": [
+        "industrie"
+      ],
+      "points": [
+        "Project Lotus (Sims) annulé, remplacé par Project Evergreen",
+        "Apex Legends, EA FC, Star Wars Jedi et Iron Man maintenus",
+        "Jusqu'à 700 M$ d'économies de R&D selon Bloomberg",
+        "Respawn et DICE collaborent sur un nouveau projet"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/10/ea-outlines-future-development-plans-as-it-prepares-to-cut-around-400-jobs",
+      "image": "https://images.nintendolife.com/58aa8fc3966d8/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-22-battlefront-3-respawn-dice",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Rumeur : ",
+        "hl": "Battlefront 3",
+        "post": " chez Respawn et DICE"
+      },
+      "summary": "Rumeur : selon Variety et plusieurs sources, Respawn et DICE s'associent pour un nouveau Star Wars Battlefront. Cela contredit la piste Bungie évoquée plus tôt dans la semaine, et EA n'a rien confirmé.",
+      "detail": "Plus tôt dans la semaine, une rumeur évoquait un Battlefront 3 que Lucasfilm confierait à Bungie ou à DICE. Le nouveau récit vient de Variety, qui cite plusieurs sources proches d'EA : les studios Respawn (Apex Legends) et DICE (Battlefield) travailleraient ensemble sur ce jeu. La note interne d'EA signée Cam Weber et David Tinson dit seulement que les deux studios vont « collaborer sur un futur projet », sans nommer Battlefront. Le calendrier, les plateformes, le contenu et même le titre restent inconnus. L'annonce intervient le jour des 400 suppressions de postes et de la fermeture de BioWare, ce qui rend le contexte incertain. Les lecteurs sont partagés : certains regrettent l'absence de Bungie, d'autres se réjouissent de retrouver les équipes de Battlefront 2.",
+      "tags": [
+        "industrie"
+      ],
+      "points": [
+        "Information de Variety, non confirmée par EA",
+        "Respawn et DICE réunis, et non plus Bungie",
+        "La note interne parle d'un « futur projet » sans le nommer",
+        "Aucune date ni plateforme connues"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/star-wars-battlefront-3-in-dev-at-dice-and-respawn-multiple-sources-say",
+      "image": "https://images.pushsquare.com/8dcc1dda75fd2/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-22-cyberpunk-2077-patch-2-5-notes",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-22",
+      "headline": {
+        "pre": "Le patch 2.5 de ",
+        "hl": "Cyberpunk 2077",
+        "post": " détaillé"
+      },
+      "summary": "CD Projekt RED publie les notes complètes du patch 2.5, gratuit, disponible le 22 octobre sur PC, PS5 et Xbox Series. Switch 2 et Mac suivront dans les jours qui viennent.",
+      "detail": "Après la fuite et l'annonce du livestream, les notes officielles confirment un patch gratuit centré sur Edgerunners 2. Il ajoute la quête secondaire Clampdown (qui se déroule avant Edgerunners 2), un ensemble inspiré de King, la radio HKGN 102.0 FM, la quête Welcome to Paradise et 12 nouvelles cartes de tarot. Le patch apporte aussi le support des mods multiplateformes via mod.io sur PC, Mac, PS5, Xbox Series et Switch 2, ainsi qu'un nouveau perk Double Trouble pour manier deux pistolets. Côté technique : DLSS 4.5 avec Multi Frame Generation jusqu'à 6X, FSR 4, MetalFX, un curseur de FOV sur consoles et des optimisations PS5 Pro. Les sauvegardes modifiées ne débloquent ni trophées ni succès sur console, et une erreur « Save failed » est corrigée sur Switch 2. La date précise des versions Switch 2 et Mac n'est pas communiquée.",
+      "tags": [
+        "pc",
+        "playstation",
+        "xbox",
+        "nintendo"
+      ],
+      "points": [
+        "Disponible le 22 octobre sur PC, PS5 et Xbox Series",
+        "Switch 2 et Mac « dans les jours qui suivent »",
+        "Quête Clampdown, radio HKGN et 12 cartes de tarot",
+        "Mods multiplateformes via mod.io et DLSS 4.5"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/10/cyberpunk-2077-edgerunners-2-update-2-5-officially-revealed-here-are-the-full-patch-notes",
+      "image": "https://images.nintendolife.com/ee2d1b6c4e3bc/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-22-xbox-game-pass-a-la-carte",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Rumeur : un ",
+        "hl": "Game Pass",
+        "post": " à la carte se prépare"
+      },
+      "summary": "Rumeur : selon Fortune, Xbox prévoit une refonte majeure du Game Pass avec des options à la carte (jeux console, cloud, multijoueur). Microsoft n'a rien confirmé.",
+      "detail": "L'information vient d'un article de Fortune daté du 20 octobre sur la PDG de Xbox, qui cite des personnes au fait de la stratégie, donc des sources anonymes. Les add-ons évoqués concerneraient les jeux console uniquement, le cloud gaming et le multijoueur, dans une structure à plusieurs niveaux. Aucun prix ni calendrier n'est donné, et Pure Xbox juge la formulation très vague. Le site rapproche cette rumeur des limites de temps sur le cloud gaming annoncées officiellement en septembre 2026, où du temps supplémentaire serait payant. Dans les commentaires, beaucoup de lecteurs craignent de payer plus cher pour un contenu équivalent et s'interrogent sur le jeu day one comme option premium. D'autres réclament une offre bon marché limitée au multijoueur, et on ignore ce qu'il adviendra des abonnements Ultimate existants.",
+      "tags": [
+        "xbox"
+      ],
+      "points": [
+        "Source : Fortune, via des sources anonymes",
+        "Options citées : jeux console, cloud, multijoueur",
+        "Aucun prix ni date communiqués",
+        "Microsoft n'a pas confirmé"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/report-xbox-planning-major-overhaul-of-game-pass-with-a-la-carte-options",
+      "image": "https://images.purexbox.com/204a29bed7dd9/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-22-xbox-cloud-playtime-tarifs",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Xbox teste ",
+        "hl": "Cloud Playtime",
+        "post": " en packs d'heures"
+      },
+      "summary": "Xbox teste auprès d'Insiders des packs d'heures de cloud gaming payants, sans abonnement Game Pass : 10 h pour 3,99 $, 25 h pour 7,99 $, 50 h pour 11,99 $. Tout le monde pourra payer pour le cloud en novembre.",
+      "detail": "Cloud Playtime est une nouvelle façon de payer le Cloud Gaming Xbox sans Game Pass, actuellement testée par certains membres du programme Xbox Insiders. Les packs servent à jouer à des jeux free-to-play compatibles et à des jeux déjà possédés. Par rapport à la version gratuite financée par la publicité, ils promettent des files d'attente plus courtes, une meilleure qualité de streaming et des heures conservées jusqu'à leur utilisation. Les prix sont présentés comme introductifs et peuvent changer au lancement. Pure Xbox suppose que ces packs pourraient aussi servir aux abonnés Game Pass qui dépassent les nouvelles limites de cloud, mais ce n'est pas confirmé. Plusieurs lecteurs jugent le modèle cher, car il faut déjà posséder le jeu, et le comparent à GeForce Now ou PS Plus Premium.",
+      "tags": [
+        "xbox"
+      ],
+      "points": [
+        "10 h à 3,99 $, 25 h à 7,99 $, 50 h à 11,99 $",
+        "Test réservé à certains Xbox Insiders",
+        "Prix introductifs, susceptibles de changer",
+        "Ouverture à tous annoncée pour novembre"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/three-price-tiers-revealed-as-xbox-rolls-out-cloud-playtime-to-insiders",
+      "image": "https://images.purexbox.com/651912b823977/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-22-xbox-valorisee-100-milliards",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Rumeur : des fonds valorisent ",
+        "hl": "Xbox",
+        "post": " à 100 Md$"
+      },
+      "summary": "Rumeur : selon The Information, des fonds de capital-investissement ont valorisé Xbox entre 100 et 150 milliards de dollars lors de discussions brèves et exploratoires. Aucune négociation formelle n'aurait eu lieu avec Microsoft.",
+      "detail": "Pure Xbox n'a eu accès qu'à un bref résumé de l'article payant de The Information, relayé sur X par Wario64. Selon ce résumé, un groupe de fonds a envisagé un rachat d'Xbox, mais les échanges n'auraient jamais dépassé le stade exploratoire. Dans Fortune, la PDG Asha Sharma répète que Xbox « n'est pas à vendre » et restera un élément important de Microsoft très longtemps. Le même article rapporte que des employés actuels et anciens pensent que Xbox se prépare à une vente, une scission, un investissement extérieur ou une filiale. Judson Althoff a minimisé ces craintes en disant qu'on ne confierait pas l'activité à l'un des meilleurs leaders si on comptait la vendre. Les lecteurs doutent qu'un seul acheteur puisse l'acquérir et imaginent plutôt une vente par morceaux (Activision Blizzard King, Bethesda).",
+      "tags": [
+        "xbox",
+        "industrie"
+      ],
+      "points": [
+        "Valorisation de 100 à 150 Md$ selon The Information",
+        "Discussions « de courte durée », jamais formalisées",
+        "Asha Sharma : Xbox « n'est pas à vendre »",
+        "Aucune confirmation de Microsoft sur les discussions"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/report-xbox-valued-at-over-usd100-billion-by-private-equity-firms-in-short-lived-discussions",
+      "image": "https://images.purexbox.com/10a79ee1d04db/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-22-phantom-blade-zero-version-physique",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-22",
+      "headline": {
+        "pre": "",
+        "hl": "Phantom Blade Zero",
+        "post": " aura une version physique en 2027"
+      },
+      "summary": "S-GAME annonce, à la fin de la bande-annonce de lancement, une version physique de Phantom Blade Zero sur PS5 pour 2027, en trois éditions. Le jeu sort en numérique le 29 octobre 2026.",
+      "detail": "L'information apparaît dans un petit message final de la nouvelle bande-annonce. Trois éditions sont prévues : Standard, Deluxe et Ultimate, cette dernière avec un boîtier en acier de collection. La date précise et les prix physiques ne sont pas communiqués ; en numérique, le jeu coûte 59,99 $ (54,99 £), la Deluxe ajoutant 10 $. Le jeu occupe jusqu'à 134 Go sur PS5, soit plus qu'un Blu-ray, donc la version physique nécessitera deux disques ou un téléchargement complémentaire. Le journaliste note que l'image de fin de trailer ne montre qu'un seul disque, sans que cela prouve quoi que ce soit. Il précise que certains joueurs PlayStation considéraient le jeu comme perdu faute d'édition physique.",
+      "tags": [
+        "playstation"
+      ],
+      "points": [
+        "Sortie physique PS5 prévue en 2027",
+        "Éditions Standard, Deluxe et Ultimate (boîtier acier)",
+        "Sortie numérique le 29 octobre 2026",
+        "Jusqu'à 134 Go : disque supplémentaire ou téléchargement"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/phantom-blade-zero-physical-version-set-for-2027-3-ps5-editions-revealed",
+      "image": "https://images.pushsquare.com/c8caed9539628/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-22-casque-ps5-pulse-19-novembre",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Le casque ",
+        "hl": "PS5 Pulse",
+        "post": " sort avec GTA 6"
+      },
+      "summary": "Le nouveau casque PlayStation Pulse sortira le 19 novembre, en même temps que GTA 6, à 99,99 $/€. Les précommandes ouvrent le 29 octobre sur PS Direct.",
+      "detail": "Annoncé par Sony sur le blog PlayStation le 15 septembre, ce casque revu succède au Pulse Elite. Il existe en blanc et en noir minuit, avec des pilotes planaires plus grands, une connexion PS Link avec la PS5 et la PS Portal, du Bluetooth et un micro avec réduction de bruit assistée par IA. Les précommandes démarrent à 10 h (heure locale) le 29 octobre sur PS Direct, et il sera aussi vendu chez des revendeurs partenaires non précisés. Le prix est de 99,99 $, 89,99 £ ou 99,99 €. Le Pulse Edge, haut de gamme avec micro-perche amovible, est annoncé pour 2027 à un prix nettement supérieur. Les commentaires sont partagés : certains rapportent des serre-têtes en plastique fragiles sur les anciens Pulse, d'autres jugent 99 $ intéressant face aux 149 $ du Pulse Elite.",
+      "tags": [
+        "playstation"
+      ],
+      "points": [
+        "Sortie le 19 novembre, jour de GTA 6",
+        "99,99 $ / 89,99 £ / 99,99 €",
+        "Précommandes le 29 octobre sur PS Direct",
+        "Pulse Edge haut de gamme attendu en 2027"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/sonys-revamped-ps5-pulse-headset-launches-alongside-gta-6-on-19th-november",
+      "image": "https://images.pushsquare.com/b4b76355c836b/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-22-pegi-16-loot-boxes",
+      "theme": "games",
+      "source": "VGC",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Le ",
+        "hl": "PEGI",
+        "post": " relève à 16 ans les jeux à loot boxes"
+      },
+      "summary": "Le PEGI commence à classer PEGI 16 les jeux avec objets aléatoires payants, dont EA Sports FC et Pokémon Go. Les mises à jour se déploient tout au long d'octobre.",
+      "detail": "Connor Hinde, responsable de la politique du PEGI, l'a confirmé sur LinkedIn. Les jeux numériques existants classés PEGI 3, 7 ou 12 avec objets aléatoires payants passent à PEGI 16, la règle par défaut annoncée plus tôt en 2026 pouvant aller jusqu'à PEGI 18 dans certains cas. Les NFT ou mécanismes blockchain sont classés PEGI 18, et les offres limitées dans le temps PEGI 12 minimum. L'article cite aussi EA Sports FC, Pokémon Trading Card Game Pocket, Mario Kart Tour et Zenless Zone Zero. Depuis juin 2026, les nouveaux jeux sont jugés avec des critères élargis sur les « risques interactifs », désormais appliqués aux produits existants par la Games Rating Authority. Cette évolution aligne le PEGI sur l'USK allemand, qui avait fait des changements similaires en 2023. L'article ne rapporte aucune réaction d'éditeurs ni de joueurs.",
+      "tags": [
+        "industrie"
+      ],
+      "points": [
+        "Objets aléatoires payants : PEGI 16 par défaut",
+        "EA Sports FC et Pokémon Go reclassés",
+        "NFT et blockchain : PEGI 18",
+        "Déploiement tout au long d'octobre 2026"
+      ],
+      "url": "https://www.videogameschronicle.com/news/ea-sports-fc-and-pokemon-go-age-ratings-bumped-to-16-in-pegi-loot-box-crackdown/",
+      "image": "https://www.videogameschronicle.com/files/2019/07/pokemon-go-phone.jpg"
+    },
+    {
+      "id": "2026-10-22-boutique-pokemon-permanente-londres",
+      "theme": "games",
+      "source": "VGC",
+      "date": "2026-10-21",
+      "headline": {
+        "pre": "Une boutique ",
+        "hl": "Pokémon",
+        "post": " permanente ouvrira à Londres"
+      },
+      "summary": "The Pokémon Company annonce un magasin Pokémon permanent à Londres d'ici 2029, le premier d'une série hors d'Asie. L'adresse n'est pas dévoilée.",
+      "detail": "Le magasin ne portera pas le nom « Pokémon Center », contrairement aux boutiques japonaises et aux pop-ups d'événements. L'article ne précise ni le nombre ni les villes des autres boutiques prévues. Un Pokémon Center a déjà existé hors d'Asie, à New York entre 2001 et 2005, avant de devenir le Nintendo Store. Londres s'explique par le site de vente Pokémon Center britannique, son centre logistique et les championnats européens au ExCeL, dont les créneaux de pop-up se vendent des semaines à l'avance. Gaku Susai, de The Pokémon Company International, espère un lieu où « tout le monde peut se retrouver » et se sentir membre d'une communauté. L'emplacement exact reste à annoncer.",
+      "tags": [
+        "industrie"
+      ],
+      "points": [
+        "Ouverture à Londres prévue d'ici 2029",
+        "Premier d'une série de boutiques hors d'Asie",
+        "Ne s'appellera pas « Pokémon Center »",
+        "Emplacement exact non communiqué"
+      ],
+      "url": "https://www.videogameschronicle.com/news/a-permanent-pokemon-retail-store-is-coming-to-london-the-first-of-several-outside-asia/",
+      "image": "https://www.videogameschronicle.com/files/2022/08/FaX5KgzWYAEFfyr.jpg"
+    },
     {
       "id": "2026-10-21-deepseek-interdit-agences-federales",
       "theme": "ai",
