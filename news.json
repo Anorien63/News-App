@@ -1,7 +1,299 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-25T09:23:28+01:00",
+  "updatedAt": "2026-10-26T09:50:19+01:00",
   "items": [
+    {
+      "id": "2026-10-26-anthropic-agent-unique-subagents",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "Anthropic : un seul ",
+        "hl": "agent",
+        "post": " vaut mieux que des sous-agents"
+      },
+      "summary": "Anthropic recommande aux entreprises de tester le regroupement de plusieurs sous-agents en un agent principal qui charge le contexte à la demande. Selon son équipe Applied AI, cela améliore souvent qualité, coût et latence avec les modèles récents.",
+      "detail": "Anthropic s'appuie sur des retours de plusieurs déploiements en entreprise, non nommés, pour conseiller de simplifier les architectures multi-agents. Les modèles récents (Opus 5.5, Fable 5.1) savent gérer des plans complexes dans une seule boucle, ce qui rend les sous-agents moins nécessaires. Dans une comparaison citée, l'agent unique allait environ deux fois plus vite, mais le détail de l'essai (tâche, échantillon, métriques) n'est pas publié. Anthropic a aussi réduit de plus de 80 % le prompt système de Claude Code en chargeant compétences et outils à la demande. Un kit de migration est disponible sur GitHub (anthropics/single-agent-loop-kit), avec une mise en garde : fusionner un sous-agent a cassé un processus dans un test de support client. Les sous-agents restent utiles en cas de dégradation du contexte, de tâches parallèles ou de choix d'outils difficile au-delà de 30 à 50 définitions. Une étude de Vals va dans le même sens : les équipes d'agents sont plus rapides mais pas meilleures.",
+      "tags": [
+        "agents",
+        "code"
+      ],
+      "points": [
+        "Prompt système de Claude Code réduit de plus de 80 %",
+        "Agent unique environ deux fois plus rapide dans un cas cité",
+        "Kit de migration publié sur GitHub",
+        "Sous-agents utiles pour tâches parallèles ou contexte saturé"
+      ],
+      "url": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/claude_claude_baby_logos.png"
+    },
+    {
+      "id": "2026-10-26-nvidia-flora-annotation-robots",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "Nvidia ouvre ",
+        "hl": "Flora",
+        "post": " pour annoter les vidéos de robots"
+      },
+      "summary": "Nvidia publie Flora, un moteur ouvert qui annote des vidéos d'entraînement de robots. Il coûte environ 0,72 $ par heure de vidéo contre 88,49 $ pour GPT-6 Astra, selon les tests de Nvidia.",
+      "detail": "Flora combine trois modèles Qwen3.5 affinés (9B et deux 27B) pour segmenter les actions, les décrire et juger la réussite des tâches sur une échelle de 1 à 5. Nvidia l'utilise déjà pour entraîner ses modèles GR00T, avec jusqu'à 200 000 heures de vidéo annotées par jour sur 512 GPU GB300. Les modèles sont disponibles sur Hugging Face. Sur 50 vidéos, Flora atteint 57,1 % de qualité contre 53,7 % pour GPT-6 Astra, et détecte 53,3 % des étapes ratées là où aucun concurrent ne dépasse 11,7 %. Les coûts sont des projections fondées sur 10 $ par heure de GPU, et les résultats viennent de Nvidia elle-même. Flora se positionne comme alternative ouverte aux services commerciaux comme celui de Scale AI.",
+      "tags": [
+        "modeles",
+        "business"
+      ],
+      "points": [
+        "Trois modèles Qwen3.5 affinés, disponibles sur Hugging Face",
+        "0,72 $ par heure de vidéo contre 88,49 $ pour GPT-6 Astra",
+        "Jusqu'à 200 000 heures annotées par jour chez Nvidia",
+        "Résultats issus des tests de Nvidia uniquement"
+      ],
+      "url": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/nvidia-flora-hero-robot-hands.jpg"
+    },
+    {
+      "id": "2026-10-26-grok-odyssey-video-ia",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "Grok publie sept minutes de son ",
+        "hl": "Odyssey",
+        "post": " généré par IA"
+      },
+      "summary": "Grok a diffusé le 23 octobre le premier épisode, de sept minutes, de son adaptation de l'Odyssée réalisée avec Grok Imagine. Le résultat est plus convaincant que prévu selon TechCrunch, mais jugé pauvre en artistique et en dialogues.",
+      "detail": "Environ trois mois après l'annonce d'Elon Musk d'une version « historiquement exacte » de l'Odyssée, Grok a publié l'« Épisode 1 » sur le compte Grok Imagine. La série est réalisée avec Wonder Studios et le réalisateur Dev Walker. Elle répond au film de Christopher Nolan sorti en juillet 2026, que Musk avait critiqué pour son casting. Le journaliste estime que certaines scènes pourraient passer pour de vrais acteurs, mais relève une voix off pesante et des dialogues raides. On ignore si un long métrage complet sortira, si d'autres épisodes sont prévus, ainsi que le budget et le processus de production.",
+      "tags": [
+        "design"
+      ],
+      "points": [
+        "Épisode 1 de sept minutes publié le 23 octobre",
+        "Réalisé avec Wonder Studios et Dev Walker",
+        "Sortie d'un film complet non confirmée"
+      ],
+      "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-26-jack-clark-auto-amelioration-2027",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "Jack Clark avance l'IA auto-améliorante à ",
+        "hl": "2027",
+        "post": ""
+      },
+      "summary": "Le cofondateur d'Anthropic juge désormais possible une IA qui s'améliore seule dès 2027, contre 2028 auparavant. Il s'appuie sur TasteVal, un benchmark où Opus 5.5 égale les experts avec 2,3 fois moins de calcul.",
+      "detail": "TasteVal, créé par P-Zero Research, mesure deux aspects du « goût de recherche » : concevoir des expériences et interpréter les résultats. Huit tâches ont été confiées à un agent de code sur un GPU H100, comparé à 24 experts d'OpenAI, Google DeepMind, Nvidia et Microsoft Research. Opus 5.5 obtient un multiplicateur de calcul de 2,3 (intervalle 1,15 à 4,37), pour un coût d'environ un trentième d'une tentative d'expert. Ce multiplicateur aurait doublé environ tous les trois mois depuis décembre 2025. Les auteurs préviennent que le benchmark peut surestimer les progrès : tâches faciles à vérifier, aucun chercheur de tout premier plan, et rien ne prouve que les IA s'améliorent déjà seules. Clark est par ailleurs cofondateur de l'entreprise dont le modèle domine le test.",
+      "tags": [
+        "modeles"
+      ],
+      "points": [
+        "Opus 5.5 : multiplicateur de calcul de 2,3 face aux experts",
+        "Doublement environ tous les trois mois depuis décembre 2025",
+        "Clark passait de 2028 à 2027 pour l'auto-amélioration",
+        "Les auteurs reconnaissent des risques de surestimation"
+      ],
+      "url": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/tasteval_and_rsi.png"
+    },
+    {
+      "id": "2026-10-26-apollo-ia-zero-gain-financier",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "Apollo : l'",
+        "hl": "IA",
+        "post": " ne rapporte rien hors tech"
+      },
+      "summary": "L'économiste en chef d'Apollo, Torsten Slok, affirme que l'IA n'a produit aucun gain financier mesurable pour les grandes entreprises américaines hors du secteur technologique. Marges et revenu par employé restent stables.",
+      "detail": "Slok analyse le « S&P 493 », soit le S&P 500 sans Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia et Tesla. Il n'y voit aucune hausse des marges ni du revenu par salarié, et conclut à un « zéro retour financier » hors tech. Selon lui, ces firmes peinent à transformer une intelligence de moins en moins chère en revenus, car les affaires reposent aussi sur le jugement, la confiance et la responsabilité. TechCrunch rappelle que d'autres études n'ont pas non plus trouvé de gains de productivité significatifs. Les chiffres précis, la période mesurée et la date de la note ne sont pas détaillés, et on ne sait pas si le constat reflète un simple décalage.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Analyse du S&P 500 hors sept géants de la tech",
+        "Marges et revenu par employé stables",
+        "Note d'Apollo, chiffres détaillés non précisés"
+      ],
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1308803174.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-25-ps5-ventes-septembre-hausse",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "La ",
+        "hl": "PS5",
+        "post": " grimpe de 22 % aux États-Unis"
+      },
+      "summary": "Selon les chiffres Circana de septembre 2026, les ventes de PS5 aux États-Unis progressent de 22 % en unités sur un an. Xbox recule de 27 %, son pire mois de septembre.",
+      "detail": "Push Square revient sur les données américaines de septembre 2026 relayées par l'analyste Mat Piscatella (Circana). La PS5 est la seule console en croissance : +22 % en unités et +43 % en dollars, avec un prix de vente moyen de 646 $ après les récentes hausses de prix. Elle devance la Switch 2 en unités et affiche sa meilleure part des ventes en dollars depuis mai 2025. Xbox chute de 27 % sur un an, son pire septembre jamais enregistré. L'article souligne que ce résultat survient après un mois délicat pour l'image de PlayStation (appel au boycott « blackout », annulation du projet Physint, State of Play mal reçu), mais Circana n'a observé aucun changement notable du nombre de joueurs lié au blackout. Piscatella attribue la hausse surtout à Marvel's Wolverine, meilleure vente du mois, avec NBA 2K27 et GTA 6 en renfort probable. Les chiffres ne couvrent que les États-Unis.",
+      "tags": [
+        "playstation",
+        "xbox",
+        "nintendo"
+      ],
+      "points": [
+        "PS5 : +22 % en unités, +43 % en dollars",
+        "Prix de vente moyen de la PS5 : 646 $",
+        "Xbox : -27 %, pire septembre de son histoire",
+        "Marvel's Wolverine, meilleure vente du mois"
+      ],
+      "url": "https://www.pushsquare.com/features/ps5-answers-bleakest-month-with-a-22percent-upswing-in-sales",
+      "image": "https://images.pushsquare.com/da8e33caf2657/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-25-ps5-jailbreak-firmware-critiques",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "Lutte anti-jailbreak : la ",
+        "hl": "PS5",
+        "post": " critiquée"
+      },
+      "summary": "Sony multiplie les mises à jour système pour contrer les jailbreaks de la PS5, et certains jeux physiques récents exigent le dernier firmware pour se lancer. Cela provoque une nouvelle vague de critiques en ligne.",
+      "detail": "Push Square explique que Sony publie des mises à jour plus fréquemment en réponse aux piratages qui ont ouvert la console. Certains jeux sur disque récents nécessitent désormais le firmware le plus récent, ce qui irrite des utilisateurs sur les réseaux sociaux, qui accusent Sony d'ajouter des restrictions. La polémique s'ajoute à la décision de Sony d'arrêter la fabrication de disques, qui doit prendre effet en 2028. Le média rappelle que l'exigence d'une mise à jour pour un disque n'est pas nouvelle et existe depuis l'ère PS3 ; le disque permet souvent d'installer la mise à jour, qui peut aussi être téléchargée depuis le site de PlayStation. Dans les commentaires, l'avis est partagé entre soutien à la lutte contre le piratage et inquiétude pour les régions où les achats ou mises à jour numériques sont limités. L'auteur estime que les mises à jour devraient devenir plus fréquentes.",
+      "tags": [
+        "playstation"
+      ],
+      "points": [
+        "Sony accélère les mises à jour système face aux jailbreaks",
+        "Certains jeux sur disque exigent le dernier firmware",
+        "Fin de la fabrication de disques prévue en 2028",
+        "Commentaires partagés entre anti-piratage et droits des propriétaires"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/ps5s-war-against-jailbreaks-triggers-fresh-wave-of-criticism",
+      "image": "https://images.pushsquare.com/00478f01b8ee1/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-25-shenmue-3-enhanced-report-2027",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "",
+        "hl": "Shenmue 3",
+        "post": " Enhanced repoussé à début 2027"
+      },
+      "summary": "La réédition PS5 de Shenmue 3, prévue en 2026, est repoussée à début 2027. Une newsletter de l'éditeur, relayée par le site Shenmue Dojo, évoque le temps nécessaire pour bien faire les choses.",
+      "detail": "Shenmue 3 Enhanced, réédition PS5 du jeu de Ys Net publiée par ININ Games, était attendue en 2026. Push Square rapporte que le retard a été confirmé dans une newsletter, citée par le site de fans Shenmue Dojo, qui indique que le développement prend du temps pour que tout soit parfait et promet davantage de détails bientôt. La fiche du jeu affiche désormais 2027 pour les États-Unis et l'Europe. Par rapport à l'original sur PS4, cette version ajoute un système d'endurance optionnel et une caméra revue. La fiche mentionne aussi des versions Switch et Switch 2, mais l'article ne précise pas l'impact du report sur elles. Les lecteurs se montrent plutôt compréhensifs, certains espérant des options de mise à niveau pour les propriétaires du jeu.",
+      "tags": [
+        "playstation"
+      ],
+      "points": [
+        "Sortie PS5 repoussée de 2026 à début 2027",
+        "Annonce via une newsletter relayée par Shenmue Dojo",
+        "Stamina optionnelle et caméra revue",
+        "Plus de détails promis prochainement"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/shenmue-3-revival-postponed-as-ps5-re-release-is-delayed-to-early-2027",
+      "image": "https://images.pushsquare.com/90fa4e4d2a34e/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-25-game-pass-fin-octobre-six-jeux",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "Six jeux rejoignent le ",
+        "hl": "Game Pass",
+        "post": " fin octobre"
+      },
+      "summary": "Six titres arrivent dans le Game Pass d'ici la fin du mois, dont Final Fantasy VII Remake Intergrade le 29 octobre. Tous sont disponibles sur Xbox Series X|S, PC et cloud.",
+      "detail": "Pure Xbox liste les derniers ajouts d'octobre. Scramble Knights Online, un action-RPG de type MMO léger, arrive le 26 octobre, suivi le 27 de The Seance of Blake Manor, une enquête surnaturelle dans l'Irlande de 1897 très bien notée sur Steam. Le 29 octobre débarquent Final Fantasy VII Remake Intergrade (avec l'aventure supplémentaire de Yuffie), Mouthwashing (horreur à bord d'un cargo spatial, avis « Overwhelmingly Positive » sur Steam), Plants vs. Zombies: Replanted et Terrible Lizards, un jeu d'horreur et de parkour. L'article ne précise pas quelle formule d'abonnement donne accès à chaque titre.",
+      "tags": [
+        "xbox",
+        "pc"
+      ],
+      "points": [
+        "Scramble Knights Online : 26 octobre",
+        "The Seance of Blake Manor : 27 octobre",
+        "FF VII Remake Intergrade, Mouthwashing, PvZ Replanted : 29 octobre",
+        "Disponibles sur Xbox Series X|S, PC et cloud"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/six-xbox-game-pass-titles-are-confirmed-for-the-final-few-days-of-october",
+      "image": "https://images.purexbox.com/8e5dd051c6179/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-25-xbox-shocktober-soldes-90-pourcent",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "Soldes Shocktober : plus de 40 jeux à -90 % sur ",
+        "hl": "Xbox",
+        "post": ""
+      },
+      "summary": "Le Xbox Shocktober Sale 2026 propose des dizaines de jeux à -90 %, dont Tomb Raider: Definitive Edition à 1,99 $. Pure Xbox ne précise pas les dates de la promotion.",
+      "detail": "Pure Xbox détaille la promotion Shocktober de la boutique Xbox. Parmi les -90 % figurent Tomb Raider: Definitive Edition (1,99 $), Tomb Raider: Anniversary (1,99 $), Dying Light Essentials Edition (2,49 $), Dead Island – Series Bundle (8,99 $) et The Outlast Trials: Deluxe Edition (4,99 $, un plus bas historique). Mortal Kombat 11 Ultimate, Borderlands 3, Battlefield 2042 Elite Edition et Suicide Squad: Kill The Justice League Deluxe sont aussi concernés. À -85 % on trouve notamment Alan Wake Remastered, Dead Rising 4 et Metro Redux Bundle, et à -80 % Resident Evil 2, Mortal Kombat 1: Definitive Edition et Tomb Raider I-VI Remastered. Le titre de l'article parle de plus de 40 jeux, le texte de plus de 50. Les dates de début et de fin ne sont pas indiquées.",
+      "tags": [
+        "xbox"
+      ],
+      "points": [
+        "Plus de 40 jeux à -90 %",
+        "Tomb Raider: Definitive Edition à 1,99 $",
+        "Outlast Trials Deluxe à 4,99 $, plus bas historique",
+        "Dates de la promotion non précisées"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/40plus-games-are-reduced-by-90percent-in-the-xbox-shocktober-sale-2026",
+      "image": "https://images.purexbox.com/3e5e6b8e2011b/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-25-darkest-dungeon-2-switch-2",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "",
+        "hl": "Darkest Dungeon II",
+        "post": " a son édition Switch 2"
+      },
+      "summary": "Darkest Dungeon II est disponible en édition Switch 2, avec 60 images par seconde et le support de la souris Joy-Con 2. Une mise à niveau à 2,99 $ existe pour les possesseurs de la version Switch.",
+      "detail": "Nintendo Life annonce la sortie de Darkest Dungeon II – Nintendo Switch 2 Edition, proposée à 42,98 $ / 36,24 £. Les joueurs qui possèdent la version Switch sortie en 2024 peuvent acheter un pack de mise à niveau à 2,99 $ / 2,24 £. L'édition vise jusqu'à 1080p en mode portable et 1440p sur TV, à 60 FPS, avec des options de conduite et de combat rapides et le contrôle à la souris via les Joy-Con 2. La version Switch d'origine est en promotion dans certaines régions. Un commentateur fait remarquer que le jeu de base plus le DLC, puis la mise à niveau, revient moins cher que l'édition complète, ce qui n'est pas une offre officielle. L'article place cette sortie dans une série d'éditions Switch 2 de jeux Switch.",
+      "tags": [
+        "nintendo"
+      ],
+      "points": [
+        "Édition Switch 2 à 42,98 $ / 36,24 £",
+        "Mise à niveau à 2,99 $ pour les propriétaires",
+        "Jusqu'à 1440p sur TV, 60 FPS",
+        "Souris Joy-Con 2 prise en charge"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/10/forward-now-into-oblivions-inky-embrace-darkest-dungeon-ii-now-has-a-switch-2-edition",
+      "image": "https://images.nintendolife.com/9303f13453b74/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-25-tomb-raider-30-ans-aspyr",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-25",
+      "headline": {
+        "pre": "",
+        "hl": "Tomb Raider",
+        "post": " fête ses 30 ans avec Aspyr"
+      },
+      "summary": "La série Tomb Raider célèbre ses 30 ans cette semaine, avec une vidéo d'Aspyr et des promotions sur Switch 2. Tomb Raider: Legacy of Atlantis est attendu en février.",
+      "detail": "Nintendo Life relaie la vidéo anniversaire d'Aspyr, qui met en avant les jeux et collections que son équipe a ressuscités. Shadow of the Tomb Raider: Definitive Edition est sorti par surprise sur Switch 2, avec une date d'eShop au 22 octobre 2026, et le jeu comme la compilation de la trilogie sont à -10 %. D'autres titres, dont Tomb Raider: Definitive Edition et Rise of the Tomb Raider, ainsi que les collections rétro d'Aspyr, sont aussi remisés. Côté futur, Tomb Raider: Legacy of Atlantis, relecture du premier jeu par Crystal Dynamics, Flying Wild Hog et Amazon Game Studios, sortira en février prochain notamment sur Switch 2. Crystal Dynamics développe par ailleurs Tomb Raider: Catalyst, prévu pour 2028. Les commentateurs divergent sur les anciens épisodes, certains jugeant la trilogie Survivor la meilleure porte d'entrée.",
+      "tags": [
+        "nintendo",
+        "industrie"
+      ],
+      "points": [
+        "Les 30 ans de la série tombent cette semaine",
+        "Shadow of the Tomb Raider DE sur Switch 2 depuis le 22 octobre",
+        "Legacy of Atlantis attendu en février",
+        "Tomb Raider: Catalyst prévu en 2028"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/10/video-the-tomb-raider-series-celebrates-its-30th-anniversary-this-week",
+      "image": "https://images.nintendolife.com/1cd4c130bbb2c/1280x720.jpg"
+    },
     {
       "id": "2026-10-25-openai-isolation-agents-cache-cpu",
       "theme": "ai",
@@ -2218,105 +2510,6 @@
       "image": "https://images.purexbox.com/d203e8464082c/1280x720.jpg"
     },
     {
-      "id": "2026-10-20-nvidia-nemotron-3-5-agents",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "",
-        "hl": "Nvidia",
-        "post": " lance Nemotron 3.5, des modèles ouverts pour agents"
-      },
-      "summary": "Nvidia a dévoilé trois nouveaux modèles open-weight de la famille Nemotron 3.5, pensés pour faire tourner des agents en entreprise et en local sur PC. Le plus gros, Super VL (120 milliards de paramètres), est déjà disponible.",
-      "detail": "La famille Nemotron de Nvidia couvrait déjà le multimodal, le raisonnement, le code et l'automatisation en entreprise. Le 19 octobre, le groupe a présenté Nemotron 3.5 Super VL, un modèle de 120 milliards de paramètres qui atteindrait, selon Nvidia, une précision proche de Nemotron 3 Ultra en suivi d'instructions et en appel d'outils, avec moins de paramètres. Deux modèles « Bolt » visent le travail agentique en local : Bolt 74B-A9B (74 milliards de paramètres, raisonnement multi-étapes, navigation web), disponible tout de suite, et Bolt E4B, plus petit, attendu plus tard ce mois-ci. Ils doivent tourner sur les PC équipés de la puce RTX Spark et sur les stations DGX Spark, déjà vendus via Microsoft et Dell. Nvidia affirme que Super VL, une fois post-entraîné sur des tâches précises, va plus vite que des modèles d'Anthropic et d'OpenAI, mais ne publie ni scores de benchmark ni méthodologie, et les termes de licence restent flous. Pour les entreprises, l'intérêt est de pouvoir post-entraîner le modèle sur leurs données et l'héberger elles-mêmes ; Skydance, EY, Ramp, CrowdStrike, Perplexity et Salesforce l'utilisent déjà.",
-      "tags": [
-        "modeles",
-        "agents"
-      ],
-      "points": [
-        "Super VL : 120 milliards de paramètres, open-weight",
-        "Bolt 74B-A9B disponible, Bolt E4B attendu fin octobre",
-        "Exécution locale sur PC RTX Spark et DGX Spark",
-        "Aucun benchmark chiffré publié par Nvidia"
-      ],
-      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-      "image": "https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2183848501.jpg?resize=1200,800"
-    },
-    {
-      "id": "2026-10-20-opencode-piratage-cles-api",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "L'agent de code ",
-        "hl": "OpenCode",
-        "post": " piraté, des clés API détournées"
-      },
-      "summary": "Des attaquants ont pénétré OpenCode Console, la plateforme en ligne de l'agent de code open source, et utilisé les clés API stockées par certains utilisateurs. Des développeurs ont reçu des factures OpenAI, Anthropic ou Google de plusieurs centaines de dollars.",
-      "detail": "OpenCode est un agent de code open source souvent comparé à Claude Code et Cursor. L'entreprise a annoncé samedi qu'un ancien système avait été compromis pendant la nuit, touchant 1,4 % des utilisateurs d'OpenCode Console, où certains conservent leurs clés API. Selon le cofondateur Dax Raad, l'application open source et la ligne de commande ne sont pas concernées, car les clés n'y transitent pas par les serveurs d'OpenCode. Des utilisateurs ont signalé des frais non autorisés allant de quelques centaines à plus de 1 000 dollars ; Anthropic et Google ont bloqué les clés exposées, OpenAI rembourse les crédits consommés et OpenCode annonce des remboursements. L'entreprise parle d'une « attaque de distillation à grande échelle » sans expliquer le mode opératoire, ce que des sceptiques contestent. L'équipe raconte aussi que les modèles d'IA qu'elle utilisait pour se défendre ont fini par refuser d'analyser le code malveillant à cause de leurs filtres de sécurité. Conseil pratique : révoquer et régénérer ses clés directement chez chaque fournisseur et surveiller ses alertes de dépenses.",
-      "tags": [
-        "code",
-        "business"
-      ],
-      "points": [
-        "1,4 % des utilisateurs d'OpenCode Console touchés",
-        "Frais frauduleux dépassant parfois 1 000 dollars",
-        "Clés bloquées par Anthropic et Google, remboursements OpenAI",
-        "L'application et la CLI ne sont pas concernées"
-      ],
-      "url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/cyberatttack.jpg?w=612"
-    },
-    {
-      "id": "2026-10-20-microsoft-guardian-agents",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "",
-        "hl": "Microsoft",
-        "post": " traite les agents IA comme des menaces internes"
-      },
-      "summary": "Microsoft a présenté Guardian Agents, une fonction qui surveille les agents IA déployés en entreprise. Sa cheffe sécurité affirme que les modèles de pointe « ne peuvent pas être considérés comme fiables ».",
-      "detail": "En juin, Microsoft avait lancé Project Perception, avec des agents « red team », « blue team » et « green team » pour attaquer, détecter puis corriger les failles, en réponse aux modèles capables de piratage. Le 19 octobre, le groupe a ajouté Guardian Agents, qui part d'une autre hypothèse : les agents qu'une entreprise déploie elle-même peuvent se comporter comme des menaces internes. Microsoft Defender sait désormais repérer jusqu'à 60 types d'agents apportés par les salariés, dont Claude Code, Codex et OpenClaw, limiter leurs accès selon la tâche et exiger une validation humaine en cas de décision risquée. Hayete Gallot, responsable de la sécurité, explique que le problème n'est pas la malveillance mais l'imprévisibilité de modèles entraînés à finir leur tâche plutôt qu'à respecter les règles d'une organisation. Ni prix ni date de disponibilité générale n'ont été communiqués. Le message est paradoxal pour un groupe très investi dans OpenAI et Anthropic, mais il pousse les entreprises à séparer l'outil qui surveille les agents de ceux qui les fournissent.",
-      "tags": [
-        "agents",
-        "business"
-      ],
-      "points": [
-        "Guardian Agents rejoint Project Perception",
-        "Defender détecte jusqu'à 60 types d'agents",
-        "Validation humaine exigée pour les actions risquées",
-        "Prix et disponibilité non précisés"
-      ],
-      "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Networked-AI-swarm-with-glowing-nodes.png?resize=1200,600"
-    },
-    {
-      "id": "2026-10-20-amazon-torchneuron-trainium",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "",
-        "hl": "TorchNeuron",
-        "post": " : Amazon attaque le verrou CUDA de Nvidia"
-      },
-      "summary": "AWS a lancé TorchNeuron, un outil qui permet de faire tourner des applications PyTorch sur ses puces Trainium en changeant une seule ligne de configuration. Amazon veut ainsi réduire la dépendance des développeurs aux GPU Nvidia.",
-      "detail": "Le logiciel CUDA de Nvidia prend très bien en charge PyTorch, ce qui a fait des GPU Nvidia le choix par défaut de nombreux développeurs. TorchNeuron, publié lundi 19 octobre, est adapté de PyTorch : selon Amazon, une application existante peut migrer vers Trainium sans réécriture, avec une simple ligne de configuration modifiée. AWS affirme qu'environ 85 % des applications d'IA sont écrites en PyTorch et promet de contribuer au projet principal pour retirer le code qui le lie à des puces spécifiques. L'entreprise cite Deepgram, qui traiterait 70 % d'audio en plus par dollar après sa migration, un chiffre non vérifié de façon indépendante. Ce type de portabilité existe déjà pour les GPU AMD ou les puces Apple, et on ne sait pas encore quelle génération de Trainium est concernée ni ce que donne la migration sur des projets complexes. Pour les équipes IA, c'est une option de plus pour entraîner et servir leurs modèles hors de l'écosystème Nvidia.",
-      "tags": [
-        "code"
-      ],
-      "points": [
-        "Migration PyTorch vers Trainium en une ligne de config",
-        "Contributions prévues au projet PyTorch principal",
-        "Deepgram : +70 % d'audio traité par dollar, selon AWS",
-        "Générations de Trainium supportées non précisées"
-      ],
-      "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205217071.jpg?resize=1200,800"
-    },
-    {
       "id": "2026-10-20-yelp-agent-vocal-attente",
       "theme": "ai",
       "source": "TechCrunch",
@@ -2366,29 +2559,6 @@
       "image": "https://press-release-generator-production.s3.us-west-1.amazonaws.com/d4uubdyk2omyv62skcn7i73yg356"
     },
     {
-      "id": "2026-10-20-anthropic-nscale-nouveau-contrat-45-milliards",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "",
-        "hl": "Anthropic",
-        "post": " et Nscale vers un nouveau contrat géant"
-      },
-      "summary": "Rumeur : selon Bloomberg, qui cite des sources anonymes, Anthropic et Nscale seraient sur le point d'annoncer un nouvel accord de calcul de 45 milliards de dollars. Aucune des deux entreprises ne l'a confirmé.",
-      "detail": "Fin août, Anthropic et Nscale avaient déjà annoncé publiquement un premier accord de puissance de calcul de 45 milliards de dollars, l'un des nombreux contrats géants signés par Anthropic depuis un an. Bloomberg rapporte que les deux sociétés seraient proches d'un second accord du même montant, tout en précisant que les discussions se poursuivent et que les termes peuvent changer. La structure, la durée et la capacité couverte ne sont pas connues, et TechCrunch n'avait pas obtenu de réponse des deux entreprises. Le contexte est celui d'introductions en bourse : Anthropic est toujours attendue en bourse cette année, tandis que Nscale ferait face à des réticences d'investisseurs sur sa valorisation visée de 30 milliards de dollars. L'enjeu est la capacité d'Anthropic à servir une demande croissante pour Claude, alors que certains investisseurs s'inquiètent de dépenses de calcul très supérieures aux profits.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "Information Bloomberg, non confirmée par les entreprises",
-        "Premier accord de 45 milliards annoncé fin août",
-        "Nscale vise une valorisation de 30 milliards en bourse"
-      ],
-      "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2236544023.jpeg?resize=1200,800"
-    },
-    {
       "id": "2026-10-20-star-wars-battlefront-3-dice-bungie",
       "theme": "games",
       "source": "VGC",
@@ -2411,30 +2581,6 @@
       ],
       "url": "https://www.videogameschronicle.com/news/dice-and-bungie-are-reportedly-both-interested-in-developing-star-wars-battlefront-3/",
       "image": "https://www.videogameschronicle.com/files/2021/01/Battlefront-2-Darth-Maul.jpg"
-    },
-    {
-      "id": "2026-10-20-ps-plus-departs-novembre-gta-rdr2",
-      "theme": "games",
-      "source": "PlayStation LifeStyle",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "GTA V et RDR2 quittent le ",
-        "hl": "PS Plus",
-        "post": " en novembre"
-      },
-      "summary": "Douze jeux quitteront le catalogue PS Plus Extra et Premium d'ici le 17 novembre 2026, dont Grand Theft Auto V et Red Dead Redemption II. La liste provient des PS Store japonais et asiatique et devrait être quasi identique ailleurs.",
-      "detail": "Le départ de GTA V avait déjà été repéré mi-octobre : il intervient le 17 novembre, deux jours avant la sortie de GTA 6, et certains propriétaires de PS5 reçoivent une notification les invitant à précommander le nouvel épisode. La liste complète ajoute Red Dead Redemption II, Football Manager 26, The Talos Principle 2, Cricket 24 et Rock of Ages 3, ainsi que plusieurs titres retirés seulement dans certaines régions, comme Thank Goodness You're Here, Monster Boy and the Cursed Kingdom ou Hotshot Racing. Les retraits auront lieu au moment de l'arrivée de la sélection de novembre, et Sony met parfois à jour sa section « Dernière chance » en cours de mois. Push Square rappelle que GTA V est déjà passé trois fois par le PS Plus Extra depuis décembre 2023 et que RDR2 enchaîne lui aussi de courts passages, un retour ultérieur est donc probable. Dans les commentaires, une partie des joueurs relance le débat sur la propriété réelle des jeux dématérialisés.",
-      "tags": [
-        "playstation"
-      ],
-      "points": [
-        "12 jeux retirés d'ici le 17 novembre 2026",
-        "GTA V part deux jours avant GTA 6",
-        "Liste issue des PS Store japonais et asiatique",
-        "GTA V déjà passé trois fois par le service"
-      ],
-      "url": "https://playstationlifestyle.net/2026/10/19/games-leaving-ps-plus-extra-premium-november-2026",
-      "image": "https://www.playstationlifestyle.net/wp-content/uploads/sites/9/2024/08/games-leaving-ps-plus-last-chance-to-play.jpg?resize=1200,630"
     },
     {
       "id": "2026-10-20-black-ops-portages-royalties-treyarch",
@@ -2460,30 +2606,6 @@
       ],
       "url": "https://www.videogameschronicle.com/news/cod-black-ops-1-and-2-dev-says-its-hard-to-watch-the-new-ports-selling-well-while-the-actual-creators-dont-see-a-dime/",
       "image": "https://www.videogameschronicle.com/files/2026/10/3592Between_a_drone_and_a_hard_place-2560x1440.jpg"
-    },
-    {
-      "id": "2026-10-20-samson-liquid-swords-fermeture-confirmee",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "",
-        "hl": "Liquid Swords",
-        "post": " confirme la fermeture du studio"
-      },
-      "summary": "Christofer Sundberg, patron de Liquid Swords, a confirmé la fermeture du studio suédois derrière Samson. Le jeu s'est « bien mieux » vendu sur consoles que sur PC, mais cela n'a pas suffi à sauver l'entreprise.",
-      "detail": "Le média suédois Breakit avait révélé que Liquid Swords était en faillite, avec plusieurs mois de salaires impayés et une aide de l'État, tandis qu'un rachat restait l'espoir en interne. Samson: A Tyndalston Story, jeu d'action en monde ouvert solo, était sorti sur PC en avril 2026 dans une version très mal reçue par la critique comme par les joueurs. Le studio a enchaîné les mises à jour et publié une version améliorée sur PS5 le 21 septembre 2026, mais Push Square estime que ce sursaut est arrivé trop tard. Sur les réseaux sociaux, Christofer Sundberg a dit que l'équipe pouvait être fière de son travail et qu'un suivi de Samson était encore en discussion. Aucun chiffre de ventes ni nombre de salariés concernés n'a été communiqué. Les lecteurs se partagent entre sympathie pour les développeurs et rappel des nombreux bugs du lancement.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Faillite révélée par Breakit, fermeture désormais confirmée",
-        "Ventes consoles « bien meilleures » que sur PC",
-        "Sortie PS5 le 21 septembre 2026",
-        "Un suivi du jeu encore en discussion"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/samson-dev-confirms-closure-open-worlds-console-sales-were-far-better-than-on-pc",
-      "image": "https://images.pushsquare.com/aba9167b03606/1280x720.jpg"
     },
     {
       "id": "2026-10-20-revamp-playtest-annule-ia",
@@ -2533,30 +2655,6 @@
       "image": "https://images.pushsquare.com/7b51496b9b293/1280x720.jpg"
     },
     {
-      "id": "2026-10-20-assassins-creed-destiny-chine-annule",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "Un ",
-        "hl": "Assassin's Creed",
-        "post": " en Chine annulé l'an dernier"
-      },
-      "summary": "Rumeur : selon MP1st, un Assassin's Creed AAA baptisé Destiny, situé en Chine en 206 av. J.-C., était développé par TiMi Studio Group (Tencent) avant d'être annulé l'an dernier. Des images de prototype ont fuité.",
-      "detail": "Le projet se serait déroulé quelques années après Assassin's Creed Jade, le jeu mobile free-to-play également confié à TiMi, studio de Shenzhen appartenant à Tencent. D'après le rapport de MP1st, Destiny n'aurait pas survécu à la restructuration de TiMi au début de l'année dernière et aurait été annulé peu après. Les éléments ayant fuité montrent une assassin dans une forteresse en flammes par une nuit pluvieuse, ainsi que des animations d'un protagoniste masculin, signe possible d'un duo de héros comme dans Shadows ou d'un choix de personnage comme dans Valhalla. On ignore à quel point le développement était avancé. Ni Ubisoft ni Tencent n'ont réagi, alors qu'Ubisoft poursuit sa restructuration.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Projet confié à TiMi Studio Group, filiale de Tencent",
-        "Action située en 206 av. J.-C.",
-        "Annulé après la restructuration de TiMi",
-        "Aucun commentaire d'Ubisoft ni de Tencent"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/rumour-aaa-assassins-creed-game-set-in-china-was-cancelled-just-last-year",
-      "image": "https://images.pushsquare.com/3394c557415d1/1280x720.jpg"
-    },
-    {
       "id": "2026-10-20-manette-xbox-x25-anniversaire",
       "theme": "games",
       "source": "Pure Xbox",
@@ -2579,217 +2677,6 @@
       ],
       "url": "https://www.purexbox.com/news/2026/10/xbox-25th-anniversary-controller-comes-with-exclusive-dynamic-background",
       "image": "https://images.purexbox.com/50d7e4a9b84df/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-19-stripe-link-achats-agents",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "Les achats par agents IA décollent chez ",
-        "hl": "Stripe",
-        "post": ""
-      },
-      "summary": "Selon des données publiées par Upstarts Media, les transactions passées par des agents IA via Link, le service de paiement de Stripe, ont été multipliées par 38 en septembre, et le volume payé par 20. Stripe ne donne aucun chiffre absolu.",
-      "detail": "Link fournit à l'agent un numéro de carte distinct à 16 chiffres plutôt que la vraie carte de l'utilisateur, qui peut fixer des plafonds de dépense. Environ 70 agents étaient branchés au moment de l'analyse ; ils seraient environ 200 aujourd'hui selon Dan Hill, responsable de Link, dont Muse de Meta et Grok Bot. La plupart dépensent autour de 100 dollars par achat, mais certains réservent des vols ou achètent des meubles pour plusieurs milliers de dollars. Le commerce de détail pèse 36 % des transactions et 32 % du volume, devant le voyage (28 % du volume). La croissance part d'une base faible et Stripe refuse de publier les montants, ce qui empêche de mesurer le phénomène. Anthropic et OpenAI utilisent Link, mais pas encore pour des achats faits par leurs agents ; PayPal et Shop Pay sont cités comme concurrents.",
-      "tags": [
-        "agents",
-        "business"
-      ],
-      "points": [
-        "Transactions d'agents ×38 et volume ×20 en septembre",
-        "Environ 200 agents connectés à Link",
-        "Panier typique : environ 100 dollars",
-        "Aucun montant absolu communiqué par Stripe"
-      ],
-      "url": "https://the-decoder.com/stripe-says-ai-agent-purchases-are-adding-up-but-it-wont-share-the-numbers/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/08/stripe_logo_wall.png"
-    },
-    {
-      "id": "2026-10-19-switch-2-zelda-ruptures-stock",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "La ",
-        "hl": "Switch 2 Zelda",
-        "post": " victime de son succès"
-      },
-      "summary": "Nintendo reconnaît avoir « sous-estimé » la demande pour la Switch 2 édition spéciale des 40 ans de Zelda. L'entreprise promet des réassorts, sans calendrier précis.",
-      "detail": "Révélée il y a environ un mois, la Switch 2 édition spéciale 40e anniversaire de Zelda accompagne le remake de The Legend of Zelda: Ocarina of Time, attendu le 5 novembre 2026 (69,99 $ en physique, 59,99 $ en dématérialisé aux États-Unis). Les précommandes ont été perturbées par des pénuries et la console apparaît puis disparaît chez plusieurs revendeurs européens depuis plusieurs semaines. Interrogé par la chaîne YouTube Coelho no Japão, Bill van Zyll, vice-président de Nintendo pour l'Amérique latine, admet que la demande a été sous-estimée et parle d'un « phénomène mondial », l'Amérique du Nord se distinguant particulièrement. Il assure que Nintendo travaille au réapprovisionnement du matériel et des logiciels spéciaux, mais que « cela prendra un peu de temps ». Aucune date ni aucun volume n'ont été communiqués. Nintendo Life s'étonne que Nintendo n'ait pas anticipé l'engouement, vu le succès des éditions spéciales de la première Switch ; ses lecteurs, eux, craignent surtout les revendeurs à la sauvette.",
-      "tags": [
-        "nintendo"
-      ],
-      "points": [
-        "Bill van Zyll (Nintendo Amérique latine) parle d'un « phénomène mondial »",
-        "Réassorts promis, sans date ni volumes annoncés",
-        "Ocarina of Time sur Switch 2 sort le 5 novembre",
-        "Le public craint la spéculation des revendeurs"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/nintendo-underestimated-zelda-switch-2-console-sales-but-promises-restocks-are-on-the-way",
-      "image": "https://images.nintendolife.com/7520d42cdb4f6/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-19-saros-mise-a-jour-zenith",
-      "theme": "games",
-      "source": "VGC",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "",
-        "hl": "Saros",
-        "post": " s'offre un New Game Plus gratuit"
-      },
-      "summary": "Housemarque déploie gratuitement la mise à jour Zenith de Saros sur PS5. Elle ajoute un New Game Plus, un mode Boss Rush et de nouvelles options d'accessibilité.",
-      "detail": "Successeur spirituel de Returnal, Saros, le jeu de tir à la troisième personne de Housemarque, a été très bien accueilli : VGC lui a attribué 5 étoiles et l'a qualifié de « l'un des jeux first-party les plus mémorables de la PS5 ». La mise à jour Zenith, présentée sur le PlayStation Blog par le responsable du design Abebe Tinari, est gratuite et en cours de déploiement. Elle ajoute un New Game Plus pour les joueurs ayant terminé le jeu, ainsi qu'un mode « Overlord Rush » qui regroupe les boss en séries de trois au maximum, la dernière série, « Totality », réunissant tous les boss. Côté accessibilité, on peut désormais ralentir les projectiles et activer un tir automatique, qui se déclenche dès que l'arme vise un ennemi mais ne gère pas le rechargement. Selon Abebe Tinari, Saros figure parmi les jeux d'action les mieux notés de 2026.",
-      "tags": [
-        "playstation"
-      ],
-      "points": [
-        "Mise à jour gratuite, disponible dès maintenant sur PS5",
-        "Mode Overlord Rush : la série « Totality » réunit tous les boss",
-        "Tir automatique et ralentissement des projectiles",
-        "VGC lui avait attribué 5 étoiles"
-      ],
-      "url": "https://www.videogameschronicle.com/news/saross-free-new-game-plus-update-is-out-now-including-a-boss-rush-mode/",
-      "image": "https://www.videogameschronicle.com/files/2025/12/saros-screenshot-07-en-14feb25.webp"
-    },
-    {
-      "id": "2026-10-19-kojima-cyberpunk-edgerunners-2",
-      "theme": "games",
-      "source": "VGC",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "Hideo ",
-        "hl": "Kojima",
-        "post": " rejoint Cyberpunk: Edgerunners 2"
-      },
-      "summary": "Le compte officiel de Cyberpunk: Edgerunners a confirmé sur X qu'Hideo Kojima reprend le rôle d'Hideyoshi Oshima dans la saison 2. Il prête lui-même sa voix au personnage, et la série arrive sur Netflix le 20 octobre.",
-      "detail": "Hideo Kojima, créateur de Metal Gear et de Death Stranding, apparaissait déjà dans Cyberpunk 2077 sous les traits d'Oshima, un producteur de « braindance » qu'on peut croiser au bar de l'hôtel pendant la mission « The Heist ». Le compte officiel de Cyberpunk: Edgerunners a annoncé sur X qu'il « revient en tant qu'Hideyoshi Oshima » dans la deuxième saison de l'anime, avec sa propre voix. Le braindance est la technologie de l'univers Cyberpunk qui permet d'enregistrer puis de revivre les sensations, émotions et pensées d'une autre personne. La saison 2 sera diffusée sur Netflix à partir du mardi 20 octobre 2026. VGC rappelle que Kojima avait signé dès 1988 Snatcher, un visual novel cyberpunk, bien avant son succès avec Metal Gear Solid.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Annonce faite par le compte officiel Cyberpunk: Edgerunners sur X",
-        "Kojima double lui-même son personnage",
-        "Saison 2 sur Netflix dès le 20 octobre 2026",
-        "Oshima apparaissait déjà dans Cyberpunk 2077"
-      ],
-      "url": "https://www.videogameschronicle.com/news/after-making-a-cameo-appearance-in-cyberpunk-2077-hideo-kojima-is-coming-to-cyberpunk-edgerunners-2/",
-      "image": "https://www.videogameschronicle.com/files/2026/10/kojima-cyberpunk.jpg"
-    },
-    {
-      "id": "2026-10-19-decomp-dev-ferme-ia",
-      "theme": "games",
-      "source": "VGC",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "L'IA pousse ",
-        "hl": "decomp.dev",
-        "post": " à fermer"
-      },
-      "summary": "Decomp.dev, l'un des principaux sites de suivi des projets de décompilation de jeux, ferme progressivement. Son créateur accuse certains usages de l'IA d'avoir « cassé l'aspect communautaire ».",
-      "detail": "Decomp.dev recense les projets de décompilation de jeux et affiche leur progression. Ces projets, légaux car ils n'utilisent aucun élément protégé et exigent que les joueurs fournissent leurs propres ROM, permettent ensuite des portages améliorés (fréquence d'images plus élevée, écran large, mods). Son créateur, @encounter, explique sur la page d'accueil que l'IA n'est pas le problème en soi et qu'elle peut accélérer nettement le travail. En revanche, des « acteurs malveillants » récupèrent des décompilations en cours, les forkent et les terminent à l'IA pour publier à la hâte des portages « à moitié finis ». Les barres de progression, censées motiver les développeurs, sont devenues selon lui un classement qui récompense ces portages bâclés. L'index principal est désactivé et aucun nouveau projet ne peut être ajouté, mais les pages et l'historique des projets existants restent consultables. Le débat agite la scène : le responsable d'un portage PC de Banjo-Kazooie a récemment pris ses distances avec un portage de Banjo-Tooie assisté par IA, qu'il qualifie de « course vers le bas ».",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Index principal désactivé, plus d'ajout de nouveaux projets",
-        "Les pages des projets existants restent en ligne",
-        "En cause : des forks finis à l'IA et des portages bâclés",
-        "Le créateur reconnaît que l'IA peut accélérer la décompilation"
-      ],
-      "url": "https://www.videogameschronicle.com/news/one-of-the-biggest-game-decompilation-sites-is-closing-because-ai-has-broken-the-community-aspect/",
-      "image": "https://www.videogameschronicle.com/files/2026/01/Screenshot-2026-01-26-133923.jpg"
-    },
-    {
-      "id": "2026-10-19-xbox-scelles-jeux-physiques",
-      "theme": "games",
-      "source": "Pure Xbox",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "",
-        "hl": "Xbox",
-        "post": " abandonne les scellés de ses boîtes"
-      },
-      "summary": "Plusieurs jeux Xbox physiques récents arrivent sans le sticker de sécurité qui scellait le boîtier. Microsoft n'a fait aucun commentaire, mais recrute en parallèle un poste dédié au lancement des jeux physiques.",
-      "detail": "Le distributeur nord-américain VGP Video Games Plus a signalé le 16 octobre sur X que Dragon's Dogma 2, Planet Zoo et Clive Barker's Hellraiser: Revival étaient livrés sans scellé, évoquant une nouvelle « initiative d'emballage ». D'autres joueurs ont fait le même constat pour Valor Mortis, Onimusha: Way of the Sword et Castlevania: Belmont's Curse, même si un exemplaire de ce dernier portait encore son scellé, preuve que le changement n'est pas encore généralisé. Microsoft ne s'est pas exprimé. Au même moment, l'entreprise publie sur LinkedIn une offre de « Xbox Games Supply Strategist » chargé de « coordonner le lancement des jeux Xbox physiques sur toutes les plateformes », sans jamais mentionner le disque. Le contexte est tendu : PlayStation a annoncé la fin des sorties sur disque à partir de 2028, et Xbox étudierait encore la présence d'un lecteur sur Project Helix, sa prochaine console. Dans un sondage de Pure Xbox, 77 % des lecteurs disent jeter le scellé.",
-      "tags": [
-        "xbox"
-      ],
-      "points": [
-        "Changement repéré par le distributeur VGP Video Games Plus",
-        "Aucune déclaration officielle de Microsoft",
-        "Offre d'emploi pour coordonner les sorties physiques Xbox",
-        "Le lecteur de disque de Project Helix reste incertain"
-      ],
-      "url": "https://www.purexbox.com/news/2026/10/xbox-appears-to-be-ditching-security-seals-from-new-physical-releases",
-      "image": "https://images.purexbox.com/f36709f21042e/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-19-lucasfilm-star-wars-surprises",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "Lucasfilm promet des jeux ",
-        "hl": "Star Wars",
-        "post": " surprises"
-      },
-      "summary": "Douglas Reilly, vice-président de Lucasfilm, assure qu'il n'est pas nécessaire d'être un éditeur du top 5 pour faire un grand jeu Star Wars. Des partenaires « grands et petits » vont « surprendre » les joueurs.",
-      "detail": "Dans une interview à The Game Business, Douglas Reilly explique que Lucasfilm a élargi l'éventail des studios avec lesquels il travaille sur la licence Star Wars. Il promet des collaborations avec des partenaires « grands et petits » qui surprendront une fois annoncées, tout en précisant que Lucasfilm privilégie en général les équipes expérimentées. Cette stratégie a déjà porté ses fruits en 2026 : Star Wars: Zero Company, jeu tactique sorti fin août et premier projet de Bit Reactor, et Star Wars: Galactic Racer, premier jeu de Fuse Games (fondé par des anciens de Burnout et Need for Speed), ont été salués par la critique et se sont bien vendus. Restent en développement un troisième Star Wars Jedi chez Respawn, Star Wars: Fate of the Old Republic du nouveau studio de Casey Hudson, ainsi que Star Wars Eclipse et le remake de Knights of the Old Republic. Aucun nouveau titre ni partenaire n'a été nommé.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Lucasfilm ouvre la licence à des studios plus modestes",
-        "Zero Company et Galactic Racer, deux succès récents",
-        "Aucun nouveau projet ni partenaire nommé pour l'instant",
-        "Star Wars Jedi 3 et Fate of the Old Republic toujours en chantier"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/star-wars-games-primed-to-continue-hot-streak-with-surprise-titles",
-      "image": "https://images.pushsquare.com/fc28cb6b45c95/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-19-film-street-fighter-box-office",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "Le film ",
-        "hl": "Street Fighter",
-        "post": " démarre en tête, sans exploser"
-      },
-      "summary": "Le film Street Fighter a pris la tête du box-office mondial ce week-end avec 51,1 millions de dollars à l'international, selon Deadline. C'est correct, mais en dessous des 70 millions espérés pour un budget de 82 millions.",
-      "detail": "Distribué par Paramount et cofinancé par Legendary et Capcom, le film Street Fighter sortait ce week-end. D'après Deadline, il a rapporté 51,1 millions de dollars à l'international et pris la première place du box-office mondial, alors que les plus optimistes tablaient plutôt sur 70 millions. Son budget de production atteint 82 millions de dollars, hors marketing : le chemin vers la rentabilité reste long. L'accueil critique est mitigé, avec 42 % de critiques positives sur Rotten Tomatoes contre 79 % côté public. Push Square le juge volontairement criard et porté sur l'humour potache, mais amusant. Tout dépendra désormais de la tenue des entrées dans les semaines à venir ; aucune date de sortie en streaming n'a été annoncée.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "51,1 M$ à l'international, première place mondiale",
-        "Budget de 82 M$, hors marketing",
-        "Rotten Tomatoes : 42 % pour la critique, 79 % pour le public",
-        "Coproduit par Legendary et Capcom, distribué par Paramount"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/street-fighter-movie-cracks-over-usd50m-at-box-office-in-opening-weekend",
-      "image": "https://images.pushsquare.com/3b360257225fc/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-19-modern-warfare-4-hommage-zampella",
-      "theme": "games",
-      "source": "VGC",
-      "date": "2026-10-19",
-      "headline": {
-        "pre": "",
-        "hl": "Modern Warfare 4",
-        "post": " rend hommage à Vince Zampella"
-      },
-      "summary": "Les crédits de Call of Duty: Modern Warfare 4 comportent un écran « In memoriam – Vince Zampella », comme l'a montré Geoff Keighley sur X : le jeu est dédié au co-fondateur d'Infinity Ward.",
-      "detail": "Mort dans un accident de voiture en décembre 2025, Zampella avait mené Call of Duty jusqu'à Modern Warfare 2 avant de fonder Respawn (Titanfall, Apex Legends), puis de diriger la licence Battlefield chez EA.",
-      "tags": [
-        "industrie"
-      ],
-      "url": "https://www.videogameschronicle.com/news/call-of-duty-modern-warfare-4-pays-tribute-to-late-cod-co-creator-and-infinity-ward-co-founder-vince-zampella/",
-      "image": "https://www.videogameschronicle.com/files/2025/12/Vince-Zampella.jpg"
     }
   ]
 }
