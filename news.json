@@ -1,7 +1,546 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T10:38:03+01:00",
+  "updatedAt": "2026-10-29T10:54:35+01:00",
   "items": [
+    {
+      "id": "2026-10-29-gemini-4-carbon",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Google lance ",
+        "hl": "Gemini 4 Carbon",
+        "post": " deux semaines après Argon"
+      },
+      "summary": "Google DeepMind publie Gemini 4 Carbon, deux semaines après Gemini 4 Argon. Le modèle prend la première place de l'Intelligence Index v5 d'Artificial Analysis avec 59 points, devant Claude Opus 5.5. Le déploiement est progressif et d'abord réservé à des experts en cybersécurité.",
+      "detail": "Gemini 4 Carbon arrive seulement deux semaines après Argon et vise les tâches d'ingénierie longues, qui peuvent durer plusieurs jours en autonomie. Sur l'Artificial Analysis Intelligence Index v5, il obtient 59 points contre 50 pour Argon et passe devant Claude Opus 5.5. Il est en tête de la Text Arena (1 528 points) et deuxième de l'Agent Arena. En codage agentique, il reste derrière Opus 5.5 (62 points au Coding Agent Index). Son taux d'hallucinations passe de 4 % à 11 %, et Vals AI relève des tâches bien plus lentes en finance, fiscalité et recherche juridique. Le tarif d'introduction reste de 2 $ en entrée et 10 $ en sortie par million de tokens, avec une remise de 50 % jusqu'à fin 2026. L'accès est d'abord limité à des experts en cybersécurité, puis aux partenaires du programme Fairwind, et l'ouverture aux développeurs et aux consommateurs n'a pas de date.",
+      "tags": [
+        "modeles"
+      ],
+      "points": [
+        "Intelligence Index v5 : 59 points contre 50 pour Argon",
+        "Première place de la Text Arena avec 1 528 points",
+        "Prix : 2 $ / 10 $ par million de tokens, remise de 50 %",
+        "Accès d'abord limité aux experts en cybersécurité"
+      ],
+      "url": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_argon-2.png"
+    },
+    {
+      "id": "2026-10-29-anthropic-pirate-cathedral",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Des agents IA piratent ",
+        "hl": "Anthropic",
+        "post": " via des outils tiers"
+      },
+      "summary": "La startup Cathedral a utilisé des agents IA pour accéder à des systèmes internes d'Anthropic, via des logiciels tiers, dans le cadre du bug bounty. Anthropic confirme un accès limité à des systèmes de ventes, RH et IT, sans exposition des conversations, du code ni des poids des modèles.",
+      "detail": "Cathedral, une startup de cybersécurité fondée par d'anciens employés du DOGE, a lancé des agents IA contre Anthropic dans le cadre de son programme de bug bounty. Elle est passée par des logiciels tiers de gestion commerciale et administrative plutôt que par les systèmes principaux. Anthropic reconnaît un accès à un ensemble limité de systèmes de ventes, RH et IT, avec des coordonnées de clients et des données de comptes de base. L'entreprise affirme que les conversations avec Claude, le code source et les poids n'ont pas été exposés, a coupé les accès le jour même et prévenu les autorités fédérales. Les deux parties s'opposent sur la durée (moins de douze heures selon Cathedral, plusieurs jours selon Anthropic), sur le nombre de failles et sur le respect des règles du programme. L'étendue réelle des données consultées reste inconnue. L'affaire pointe le risque des applications tierces intégrées chez les laboratoires d'IA.",
+      "tags": [
+        "business",
+        "agents"
+      ],
+      "points": [
+        "Cathedral a agi dans le cadre du bug bounty d'Anthropic",
+        "Accès limité aux systèmes de ventes, RH et IT",
+        "Anthropic dit que code, poids et conversations sont intacts",
+        "Désaccord sur la durée et le respect des règles"
+      ],
+      "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/claude_hack-1200x670.png"
+    },
+    {
+      "id": "2026-10-29-microsoft-openai-10-milliards",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Microsoft tire 10 Md$ de revenus d'",
+        "hl": "OpenAI",
+        "post": ""
+      },
+      "summary": "Microsoft a enregistré environ 10 milliards de dollars de revenus liés à OpenAI au trimestre clos le 30 septembre, selon un dépôt réglementaire. Cela représente près de 11 % de son chiffre d'affaires trimestriel de 92,3 Md$.",
+      "detail": "Ces chiffres viennent d'un dépôt réglementaire de Microsoft pour le premier trimestre de son exercice fiscal 2027. Les revenus liés à OpenAI, partage de revenus compris, atteignent environ 10 Md$, contre 24,1 Md$ sur tout l'exercice 2026, soit un rythme proche de 40 Md$ par an. Les créances de Microsoft sur OpenAI passent de 6 à 7,2 Md$. Sa participation dans OpenAI est de 24 % en septembre, contre 25 % en juin, sans explication de cette dilution. Selon un accord d'avril 2026, OpenAI doit partager ses revenus avec Microsoft jusqu'en 2030, avec un plafond, tout en pouvant utiliser des clouds concurrents. La répartition entre partage de revenus et services Azure n'est pas précisée. Les deux groupes se concurrencent de plus en plus tout en restant très liés financièrement.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Environ 10 Md$ de revenus liés à OpenAI sur le trimestre",
+        "Près de 11 % des 92,3 Md$ de chiffre d'affaires",
+        "Participation de Microsoft : 24 % en septembre",
+        "Partage de revenus prévu jusqu'en 2030, avec plafond"
+      ],
+      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/07/GettyImages-2153474575.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-29-google-android-agents-tiers",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Google ouvre ",
+        "hl": "Android Studio",
+        "post": " aux agents de code tiers"
+      },
+      "summary": "Lors de l'Android Dev Summit, Google annonce que plus de 40 agents de code externes, dont Claude Agent, Codex et Antigravity, fonctionnent dans Android Studio via le protocole ACP. Google présente aussi de nouvelles API Gemini pour les applications et les agents.",
+      "detail": "Dans Android Studio Rabbit 2, la fonction « Bring Your Own Agent » donne aux agents externes l'accès aux outils de l'IDE : structure du projet, émulateur et Logcat. Google ajoute Android Bench 2.0, qui évalue les modèles sur des projets de plusieurs jours, ainsi que Change Review et un assistant de migration de XML vers Jetpack Compose. L'Android CLI devient un plugin officiel pour Claude Code, Codex et Antigravity ; selon les tests de Google, les tâches d'interface y sont 77 % plus rapides. Côté applications, une Agentic API en alpha repose sur Gemini Nano 4, et l'API AppFunctions en bêta utilise MCP. Plus de 50 partenaires, dont Adobe, Peloton et Experian, sont déjà intégrés à l'app Gemini via la Connected Apps Platform, avec un déploiement dans la recherche prévu dans les prochaines semaines. Google annonce enfin les lunettes XREAL AURA à 1 099 $, en précommande aux États-Unis, au Canada et en Corée du Sud, avec des expéditions à partir de mi-novembre.",
+      "tags": [
+        "code",
+        "agents"
+      ],
+      "points": [
+        "Plus de 40 agents externes pris en charge via ACP",
+        "Android CLI en plugin pour Claude Code, Codex et Antigravity",
+        "Agentic API en alpha, basée sur Gemini Nano 4",
+        "Lunettes XREAL AURA à 1 099 $, expédition mi-novembre"
+      ],
+      "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/05/Android-Robot-Logo-Background-Nano-Banana-Pro.jpg"
+    },
+    {
+      "id": "2026-10-29-openai-devday-berlin-dots-europe",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "OpenAI promet ",
+        "hl": "Dots",
+        "post": " en Europe dans quelques semaines"
+      },
+      "summary": "Au DevDay Exchange de Berlin, OpenAI annonce un déploiement plus large de Dots en Europe dans quelques semaines, après des discussions avec les régulateurs. L'entreprise y mise surtout sur sa plateforme pour fidéliser développeurs et entreprises.",
+      "detail": "Selon Romain Huet, responsable de l'expérience développeur, Dots sera déployé plus largement en Europe après des échanges avec les régulateurs. Les comptes Pro personnels de l'EEE, de Suisse et du Royaume-Uni n'y ont pas encore accès, alors que certains comptes professionnels le peuvent déjà. OpenAI indique que les utilisateurs hebdomadaires de Codex en Allemagne ont été multipliés par vingt depuis janvier, sans chiffres absolus. L'entreprise précise que Sora a été arrêté en mars pour des raisons de ressources et qu'elle n'a pas de modèle comprenant les séquences vidéo. La stratégie passe par l'Agents API, qui gère l'infrastructure des agents, et par des plugins et applications web, avec 1,2 milliard d'utilisateurs hebdomadaires de ChatGPT en argument. Le runtime Codex Harness reste open source, mais l'usage des services gérés rendrait un changement d'écosystème difficile.",
+      "tags": [
+        "agents",
+        "business"
+      ],
+      "points": [
+        "Dots en Europe élargi dans quelques semaines",
+        "Utilisateurs de Codex en Allemagne multipliés par vingt depuis janvier",
+        "Agents API : OpenAI gère l'infrastructure des agents",
+        "Sora arrêté en mars, retour non exclu"
+      ],
+      "url": "https://the-decoder.com/openai-teases-dots-for-europe-but-its-berlin-devday-was-really-about-building-a-platform/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/OpenAI-DevDay-Exchange-2026.png"
+    },
+    {
+      "id": "2026-10-29-anthropic-smart-reports",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Anthropic montre ce que rapportent les dépenses ",
+        "hl": "Claude",
+        "post": ""
+      },
+      "summary": "Anthropic lance des outils de reporting, les Smart Reports, qui montrent aux entreprises ce que leurs dépenses en tokens leur apportent. L'entreprise propose aussi des budgets groupés pour les équipes.",
+      "detail": "Les managers peuvent voir, sur une période donnée, le travail d'une équipe, ce qu'elle a produit, son coût et les blocages de ses workflows. Les données viennent d'analyses internes et d'enquêtes auprès des employés, et Anthropic dit ne pas les utiliser par défaut pour entraîner ses modèles. Les rapports contiennent des recommandations, et les budgets groupés servent à mieux piloter les dépenses. Anthropic a partagé avec ses investisseurs un bénéfice d'exploitation au deuxième trimestre et une rétention nette de 900 %. Un rapport de Jellyfish indique que les outils basés sur ses modèles représentent près d'un tiers des modifications de code proposées en revue, avec des dépenses multipliées par dix depuis janvier. L'article ne précise ni les formules concernées, ni les tarifs, ni la date de disponibilité.",
+      "tags": [
+        "business",
+        "code"
+      ],
+      "points": [
+        "Smart Reports : travail, coût et blocages par équipe",
+        "Budgets groupés pour gérer les dépenses en tokens",
+        "Rétention nette du chiffre d'affaires de 900 %",
+        "Disponibilité et tarifs non précisés"
+      ],
+      "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/claude-enterprise-social-smartreports-five-beats-gray200-animated-1080x608-v032.gif?w=1080"
+    },
+    {
+      "id": "2026-10-29-google-pubs-mode-ia-monde",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Google déploie les pubs d'",
+        "hl": "AI Mode",
+        "post": " dans le monde"
+      },
+      "summary": "À l'occasion des résultats du troisième trimestre d'Alphabet, Google étend les publicités d'AI Mode aux marchés internationaux. La croissance de la recherche ralentit à +12 %, tandis que Google Cloud progresse de 103 %.",
+      "detail": "Philipp Schindler présente cette extension comme la première monétisation mondiale d'AI Mode, et Google étend aussi les publicités multi-tours aux États-Unis. Alphabet annonce 127,6 Md$ de chiffre d'affaires, en hausse de 25 %. Les revenus de Search progressent de 12 %, contre 17 % au deuxième trimestre et 19 % au premier. Google Cloud atteint 30,7 Md$ (+103 %), et l'action recule d'environ 8 % après la publication. Selon Google, les requêtes d'AI Mode sont trois fois plus longues que les recherches classiques, et une sur cinq utilise la voix, l'image ou des documents. L'application Gemini a atteint 1 milliard d'utilisateurs mensuels dans le trimestre.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Publicités d'AI Mode étendues à l'international",
+        "Revenus de Search : +12 %, contre +17 % au T2",
+        "Google Cloud : 30,7 Md$, soit +103 %",
+        "Application Gemini à 1 milliard d'utilisateurs mensuels"
+      ],
+      "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/google-logo.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-10-29-artificial-analysis-index-v5",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Le nouvel indice d'",
+        "hl": "Artificial Analysis",
+        "post": " creuse l'écart open source"
+      },
+      "summary": "Artificial Analysis refond son Intelligence Index en version 5, dont 60 % reposent désormais sur des tests privés. Kimi K3.1 Pro passe de la 4e à la 9e place et l'écart entre modèles ouverts et fermés passe de 3 à 12 points.",
+      "detail": "La nouvelle version de l'indice vise à limiter le « benchmaxxing », c'est-à-dire l'entraînement sur les questions connues des tests, avec 60 % de jeux de test privés pour la première fois. Kimi K3.1 Pro, meilleur modèle ouvert, se retrouve derrière huit modèles fermés, et Grok 4.7 perd 12 points. Nathan Lambert estime que le benchmaxxing n'explique qu'en partie ces écarts : les gains viennent souvent d'environnements d'apprentissage par renforcement proches des tests. Les tests fermés empêchent aussi les observateurs de repérer des erreurs de questions, et Artificial Analysis a dû corriger des questions défectueuses. Pour les développeurs, le classement des modèles ouverts devient moins flatteur qu'avec l'ancien indice.",
+      "tags": [
+        "modeles"
+      ],
+      "points": [
+        "60 % de l'indice repose sur des tests privés",
+        "Kimi K3.1 Pro tombe de la 4e à la 9e place",
+        "Écart open / fermé : de 3 à 12 points",
+        "Grok 4.7 perd 12 points"
+      ],
+      "url": "https://the-decoder.com/new-artificial-analysis-index-widens-the-gap-between-open-and-closed-models/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/kimi_k31pro-1200x715.png"
+    },
+    {
+      "id": "2026-10-29-claude-for-legal-verification",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "",
+        "hl": "Claude",
+        "post": " for Legal vérifie désormais les sources"
+      },
+      "summary": "Anthropic enrichit Claude for Legal, dans Claude Enterprise, avec des artifacts interactifs et des modèles prédéfinis. Le modèle vérifie les citations et rattache chaque affirmation à sa source avant relecture par un avocat.",
+      "detail": "L'offre, lancée en mai, gagne des vues d'ensemble et des tableaux interactifs pour vérifier des citations, comparer des législations, gérer des dossiers, suivre des projets de loi et contrôler des contrats selon des règles internes. Des paramètres intégrés appliquent les règles de protection des données et maintiennent les barrières d'information entre équipes. Plus de 60 intégrations, dont Bloomberg Law, permettent de connecter ses propres bases sans import manuel. Goodwin, Harvey, Foley & Lardner et PwC proposent aussi leurs outils sur la plateforme. L'article ne donne ni tarifs, ni calendrier de déploiement, ni zones géographiques.",
+      "tags": [
+        "business",
+        "agents"
+      ],
+      "points": [
+        "Vérification des citations avant relecture par un avocat",
+        "Plus de 60 intégrations, dont Bloomberg Law",
+        "Barrières d'information entre équipes intégrées",
+        "Tarifs et calendrier non précisés"
+      ],
+      "url": "https://the-decoder.com/claude-for-legal-now-verifies-sources-automatically-then-hands-the-file-to-a-lawyer/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/claude_Legal-1.png"
+    },
+    {
+      "id": "2026-10-29-nvidia-nemotron-3-5-transcribe",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Nvidia ouvre ",
+        "hl": "Nemotron 3.5 Transcribe",
+        "post": ""
+      },
+      "summary": "Nvidia publie Nemotron 3.5 Transcribe, un modèle de transcription à poids ouverts de 30 milliards de paramètres. Il gère 40 langues, la traduction et jusqu'à 8 locuteurs.",
+      "detail": "Le modèle transcrit 40 langues et traduit 31 langues vers l'anglais et depuis l'anglais. Il traite des enregistrements d'une heure maximum et distingue jusqu'à 8 locuteurs, avec les réunions d'entreprise et la transcription médicale comme cibles. Nvidia affirme qu'il surpasse ses concurrents sur plusieurs benchmarks, dont l'Open ASR Leaderboard de Hugging Face. Il peut tourner sur une seule puce, du Jetson AGX Thor aux puces Blackwell. Il ne fonctionne que sur des enregistrements, pas sur des flux en direct. Nvidia publie aussi la version 2 du jeu de données Granary, et le modèle est disponible sur Hugging Face. La licence exacte n'est pas précisée dans l'article.",
+      "tags": [
+        "modeles"
+      ],
+      "points": [
+        "30 milliards de paramètres, poids ouverts",
+        "40 langues transcrites, 31 traduites",
+        "Jusqu'à 8 locuteurs sur 1 heure d'audio",
+        "Enregistrements uniquement, pas de flux en direct"
+      ],
+      "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/AI-on-the-tongue.png?resize=1200,600"
+    },
+    {
+      "id": "2026-10-29-chrome-autofill-gmail",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "L'autofill IA de ",
+        "hl": "Chrome",
+        "post": " puise dans Gmail"
+      },
+      "summary": "Google ajoute à Chrome un remplissage automatique par IA qui peut utiliser les informations de votre Gmail pour compléter des formulaires. La fonction est facultative et d'abord prévue pour les utilisateurs américains.",
+      "detail": "Chrome peut proposer des données comme un numéro de confirmation de vol, un identifiant d'adhésion, un suivi de colis, un numéro de commande, une adresse, un téléphone ou une carte bancaire. La fonction étend « Personal Intelligence », qui relie déjà les applications Google à Gemini. Elle s'active dans les paramètres de Chrome, et Google dit chiffrer les données sensibles. Elle concerne Chrome sur ordinateur ainsi que Gemini in Chrome sur iOS et Android. Aucune date précise de déploiement n'est donnée.",
+      "tags": [
+        "agents"
+      ],
+      "points": [
+        "Chrome remplit les formulaires avec des données de Gmail",
+        "Activation facultative dans les paramètres",
+        "Déploiement annoncé pour les utilisateurs américains",
+        "Pas de date précise"
+      ],
+      "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/autofill-ai-chrome.jpg?resize=1200,643"
+    },
+    {
+      "id": "2026-10-29-gta-6-details-south-park",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-29",
+      "headline": {
+        "pre": "De nouveaux détails sur ",
+        "hl": "GTA 6",
+        "post": " avant son lancement"
+      },
+      "summary": "Du gameplay de GTA 6 est apparu dans un épisode de South Park et 13 nouvelles captures ont été dévoilées. Des détails sur la carte, la police ou la relation entre Jason et Lucia ont aussi filtré. Le jeu sort le 19 novembre 2026 sur PS5.",
+      "detail": "À quelques semaines du lancement, GTA 6 revient dans l'actualité avec une série de nouveautés. Un épisode de South Park montre du gameplay, avec un présentateur télé dont la voix serait celle de Tish Hicks, déjà entendue dans la bande-annonce de GTA 5. Treize captures d'écran inédites ont également été publiées. D'après Edge et GamesRadar, la carte serait à peu près aussi grande que celles de GTA 4, GTA 5 et Red Dead Redemption 2 réunies, avec des trains et des bus fonctionnels, une mécanique d'odeurs et des PNJ dont le comportement varie selon la région. On peut alterner à tout moment entre Jason et Lucia, dont la relation est mesurée sur une échelle à quatre niveaux. Push Square indique une sortie le 19 novembre 2026 sur PS5, à 79,99 $ ou 69,99 £. Dans les commentaires, des lecteurs apprécient cette approche plus orientée simulation, proche de RDR2, tout en avouant une certaine lassitude face au flot d'infos.",
+      "tags": [
+        "playstation",
+        "industrie"
+      ],
+      "points": [
+        "Sortie le 19 novembre 2026 sur PS5",
+        "Gameplay vu dans un épisode de South Park",
+        "13 nouvelles captures d'écran",
+        "Carte aussi grande que GTA 4, 5 et RDR2 réunis",
+        "Prix listé : 79,99 $ / 69,99 £"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/new-gta-6-gameplay-screenshots-details-revealed-as-ps5-launch-nears",
+      "image": "https://images.pushsquare.com/98426c4608c94/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-29-indie-world-octobre-23-jeux",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Indie World : 23 jeux pour ",
+        "hl": "Switch 2",
+        "post": " et Switch"
+      },
+      "summary": "Nintendo a présenté 23 jeux indépendants lors de son Indie World du 28 octobre. Sword of the Sea arrive dès le 29 octobre sur Switch 2, Witchbrook le 28 janvier 2027.",
+      "detail": "Le showcase annoncé la veille a duré une quinzaine de minutes et a présenté 23 titres, chacun avec une bande-annonce. Côté sorties proches, Bao Bao's Cozy Cleaning Services est disponible immédiatement sur Switch, Sword of the Sea sort le 29 octobre sur Switch 2, Raccoin: Chaos Max Edition et Tanuki: Pon's Summer le 10 novembre, et Spirit Crossing le 16 novembre. Début 2027, on retrouvera Slime Rancher 2 (janvier, Switch 2), Everything Is Crab (26 janvier), Witchbrook (28 janvier), My Arms Are Longer Now (11 mars) et Super Battle Golf (25 mars). Haunted Paws est attendu en mai 2027 et Threads of Time à l'été 2027. Plusieurs jeux, dont Winds of Viridia, City of None, Tenjutsu et R.E.P.O., ne sont datés que de 2027. Aucune date plus précise n'a été donnée pour ces derniers.",
+      "tags": [
+        "nintendo",
+        "evenements"
+      ],
+      "points": [
+        "23 jeux présentés en 15 minutes environ",
+        "Sword of the Sea sort le 29 octobre sur Switch 2",
+        "Witchbrook prévu le 28 janvier 2027",
+        "Slime Rancher 2 arrive en janvier 2027 sur Switch 2"
+      ],
+      "url": "https://www.nintendolife.com/guides/nintendo-indie-world-showcase-october-2026-every-announcement-game-reveal-and-trailer",
+      "image": "https://images.nintendolife.com/937fcfe1489cc/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-29-ps-plus-essential-novembre",
+      "theme": "games",
+      "source": "Video Game Chronicle",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Dead Island 2 au menu du ",
+        "hl": "PS Plus",
+        "post": " de novembre"
+      },
+      "summary": "Sony a dévoilé les trois jeux PS Plus Essential de novembre : Dead Island 2, Tomb Raider 4-6 Remastered et Monster Train 2. Ils sont à récupérer du 3 au 30 novembre.",
+      "detail": "Le programme mensuel du PS Plus Essential est connu pour novembre 2026. Dead Island 2, un jeu d'action horrifique en monde ouvert, est proposé sur PS5 et PS4. Tomb Raider 4-6 Remastered regroupe La Dernière Révélation, Les Chroniques et L'Ange des ténèbres dans des versions améliorées, également sur PS5 et PS4. Monster Train 2, un jeu de deck-building en solo, n'est disponible que sur PS5. Les jeux sont à ajouter à sa bibliothèque du 3 au 30 novembre et restent jouables tant que l'abonnement est actif. Les jeux d'octobre (F1 25, Hunt: Showdown 1896 et Earth Defense Force: World Brothers 2) restent récupérables jusqu'au 3 novembre. L'article ne rapporte pas encore de réaction de la communauté.",
+      "tags": [
+        "playstation"
+      ],
+      "points": [
+        "Dead Island 2 sur PS5 et PS4",
+        "Tomb Raider 4-6 Remastered sur PS5 et PS4",
+        "Monster Train 2 uniquement sur PS5",
+        "À récupérer du 3 au 30 novembre"
+      ],
+      "url": "https://www.videogameschronicle.com/news/novembers-three-free-ps-plus-essential-monthly-games-include-dead-island-2-and-tomb-raider-4-6-remastered/",
+      "image": "https://www.videogameschronicle.com/files/2023/08/dead-island-2-a.jpg"
+    },
+    {
+      "id": "2026-10-29-exodus-40-minutes-gameplay",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "40 minutes de gameplay pour ",
+        "hl": "Exodus",
+        "post": " et son nouveau visage"
+      },
+      "summary": "Archetype Entertainment a publié plus de 40 minutes de gameplay d'Exodus, avec le héros Jun remodelé après les critiques. Le jeu est attendu le 7 avril 2027.",
+      "detail": "Exodus est un RPG d'action de science-fiction signé Archetype Entertainment, édité par Wizards of the Coast, souvent décrit comme un quasi-successeur spirituel de Mass Effect. La vidéo montre une mission du début du jeu, avec dialogues, exploration et combats, et illustre les voies Paladin (gentil) et Immortel (impitoyable) qui changent le déroulement des événements. Le visage de Jun, le héros masculin, a été remodelé à la suite des critiques des fans. Push Square cite le 7 avril 2027 comme date de sortie sur PS5. L'auteur juge la qualité élevée, surtout les combats, mais doute que le jeu égale les personnages de Mass Effect. Dans un sondage de 290 votes, 82 % des lecteurs le trouvent prometteur ou génial. Certains commentateurs saluent les vétérans de BioWare, d'autres critiquent le visage, l'absence d'éditeur de personnage ou l'influence de Hasbro.",
+      "tags": [
+        "playstation",
+        "industrie"
+      ],
+      "points": [
+        "Plus de 40 minutes de gameplay dévoilées",
+        "Sortie annoncée le 7 avril 2027",
+        "Le visage de Jun a été refait",
+        "Deux voies : Paladin ou Immortel"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/as-mass-effect-expires-exodus-reveals-40-minutes-of-gameplay-with-the-protagonists-new-face",
+      "image": "https://images.pushsquare.com/a03585d0a9f57/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-29-steam-valve-visibilite-ia",
+      "theme": "games",
+      "source": "Video Game Chronicle",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Valve refuse de filtrer l'IA sur ",
+        "hl": "Steam",
+        "post": ""
+      },
+      "summary": "Lors d'un événement à Séoul, deux responsables de Steam ont dit travailler sur la visibilité des jeux mais ne pas vouloir interdire les jeux créés avec l'IA. Les développeurs se plaignent de clones et de mails d'extorsion.",
+      "detail": "Tom Giardino et Marc Wilkinson, de l'équipe business de Steam, répondaient aux questions de développeurs lors d'un événement Steam Indie Connect en Corée du Sud, rapporté d'abord par Inven. Les développeurs se disent noyés par le volume de sorties et l'essor de l'IA, certains évoquant des mails menaçant de publier des clones générés par IA contre paiement. Giardino a répondu que Valve ne veut pas jouer les « gardiens » des outils utilisés, que l'extorsion relève de la police et que Steam préfère améliorer la découverte des jeux originaux plutôt que retirer des copies. Wilkinson a expliqué que lors des deux premiers jours de Steam Next Fest, les jeux apparaissent au hasard avant que les recommandations personnalisées prennent le relais, pour garantir une exposition équitable. Il admet que cela donne de la visibilité à des jeux de faible qualité et affirme qu'un « nombre significatif » de personnes travaillent sur le problème. Sur les réseaux, des joueurs se plaignent de la domination de jeux de mauvaise qualité pendant l'événement.",
+      "tags": [
+        "pc",
+        "industrie"
+      ],
+      "points": [
+        "Valve ne filtrera pas les jeux selon l'usage de l'IA",
+        "Next Fest : exposition aléatoire pendant deux jours",
+        "Des développeurs reçoivent des mails d'extorsion",
+        "Un « nombre significatif » de personnes travaillent sur la visibilité"
+      ],
+      "url": "https://www.videogameschronicle.com/news/valve-has-a-significant-number-working-on-steams-visibility-dilemma-but-says-it-wont-gatekeep-games-made-with-ai/",
+      "image": "https://www.videogameschronicle.com/files/2025/04/steam-logo.jpg"
+    },
+    {
+      "id": "2026-10-29-modern-warfare-4-itaewon",
+      "theme": "games",
+      "source": "Video Game Chronicle",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Polémique sur ",
+        "hl": "Modern Warfare 4",
+        "post": " et la tragédie d'Itaewon"
+      },
+      "summary": "Des images d'archives de la bousculade d'Itaewon seraient utilisées dans la séquence d'ouverture de Modern Warfare 4. Les familles de victimes exigent leur retrait ; Activision dit n'avoir eu aucune intention de s'y référer.",
+      "detail": "Un bref plan de la séquence de titre de Call of Duty: Modern Warfare 4 montre un secouriste pratiquant un massage cardiaque. Des joueurs sud-coréens y ont reconnu des images d'actualités de la bousculade d'Itaewon, à Séoul, en 2022, qui a fait 159 morts et 196 blessés. L'association des familles des victimes demande à Activision de retirer ce passage, jugé très inapproprié dans un jeu de divertissement. La Korea Game Users Association réclame des explications, des excuses et une mise à jour remplaçant les images. Activision reconnaît l'usage de la séquence, destinée selon elle à servir le récit fictif, et affirme n'avoir « aucune intention » de faire référence à des événements tragiques réels. Aucun retrait n'a été annoncé à ce stade.",
+      "tags": [
+        "industrie"
+      ],
+      "points": [
+        "Images apparentes de la tragédie d'Itaewon (2022)",
+        "Les familles de victimes demandent le retrait",
+        "Activision nie toute intention de référence",
+        "Aucune mise à jour annoncée pour l'instant"
+      ],
+      "url": "https://www.videogameschronicle.com/news/cod-modern-warfare-4-uses-real-news-footage-from-south-korean-tragedy-is-urged-by-families-to-remove-it/",
+      "image": "https://www.videogameschronicle.com/files/2026/10/cod-modern-warfare-4.jpg"
+    },
+    {
+      "id": "2026-10-29-ps5-collection-prism",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Sony ressuscite le transparent avec la ",
+        "hl": "PS5",
+        "post": " Prism"
+      },
+      "summary": "Sony lance la collection Prism : manettes DualSense et façades de PS5 transparentes en orange, vert et gris. Précommandes le 10 novembre, sortie le 4 février 2027.",
+      "detail": "La collection Prism fait revenir le plastique translucide des années 90 sur les accessoires PS5, en trois coloris : Flare Orange, Emerald Green et Graphite Gray. Le designer Leo Cardoso explique vouloir raviver cette tendance emblématique. Les manettes coûtent 84,99 $ / 84,99 € / 74,99 £ et les façades 74,99 $ / 74,99 € / 64,99 £. Les précommandes ouvrent le 10 novembre 2026 et la commercialisation débute le 4 février 2027. Les façades ne concernent que la PS5 standard, pas la PS5 Pro. Dans un sondage de 620 votes, 58 % des lecteurs adorent ; les commentaires saluent les couleurs mais regrettent l'absence de compatibilité Pro.",
+      "tags": [
+        "playstation"
+      ],
+      "points": [
+        "Trois coloris : orange, vert, gris",
+        "Manette à 84,99 $, façade à 74,99 $",
+        "Précommandes le 10 novembre 2026",
+        "Sortie le 4 février 2027, pas de version PS5 Pro"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/10/ps5-revives-retro-transparent-hardware-with-3-new-gorgeous-accessory-colours",
+      "image": "https://images.pushsquare.com/8c462d5cfeee8/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-29-xbox-25-jeux-offerts-pc",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "",
+        "hl": "Xbox",
+        "post": " offre 25 jeux aux acheteurs de PC"
+      },
+      "summary": "Xbox propose un bundle numérique de 25 jeux aux acheteurs de certains PC Windows 11 aux États-Unis, du 2 novembre au 31 décembre 2026. Les conditions complètes ne sont pas encore publiées.",
+      "detail": "Pour son 25e anniversaire, Xbox annonce un lot de 25 jeux numériques, présenté comme valant plus de 500 $. Parmi les titres cités figurent Skyrim Special Edition, Halo: Combat Evolved Anniversary, Age of Empires II: Definitive Edition, Minecraft Dungeons et Gears of War: Reloaded. L'offre concerne les PC Windows 11 éligibles achetés aux États-Unis chez des revendeurs participants entre le 2 novembre et le 31 décembre, dans la limite des stocks. Le bundle doit être réclamé dans l'app Microsoft Store au plus tard le 30 novembre et le PC activé avant le 12 février 2027. Certains jeux fonctionnent aussi sur Xbox Series X|S via Play Anywhere. Pure Xbox précise que la page des conditions ne fonctionnait pas encore et que les détails sont attendus le 2 novembre ; certains joueurs ont déjà pu réclamer le lot sans explication.",
+      "tags": [
+        "xbox",
+        "pc"
+      ],
+      "points": [
+        "25 jeux numériques, plus de 500 $ de valeur",
+        "Achat de PC éligibles aux États-Unis uniquement",
+        "Achats du 2 novembre au 31 décembre 2026",
+        "Conditions complètes attendues le 2 novembre"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/xbox-is-giving-away-25-free-games-to-eligible-pc-buyers-until-the-end-of-2026",
+      "image": "https://images.purexbox.com/972041cfa93ed/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-29-xbox-cto-reviews-mw4",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Un dirigeant ",
+        "hl": "Xbox",
+        "post": " réagit au manque de tests"
+      },
+      "summary": "Le CTO de Xbox admet que tester un jeu sur Xbox demande trop d'étapes, après le peu de critiques de Modern Warfare 4 sur la console. Des premières améliorations sont promises prochainement.",
+      "detail": "Modern Warfare 4 a reçu très peu de tests sur Xbox : Pure Xbox en compte deux, contre plus de 30 sur PS5 et PC. Le sujet a fait réagir sur les réseaux sociaux. Scott Van Vliet, CTO de Xbox, a écrit sur X que tester un jeu sur Xbox demande trop d'étapes aujourd'hui, que l'objectif est de permettre à la presse et aux créateurs de récupérer et jouer facilement, et que les premières évolutions arrivent bientôt. Pure Xbox rappelle que l'accès est bien géré pour les jeux des Xbox Game Studios, mais plus compliqué pour les titres tiers, et que la base installée plus large de la PS5 joue aussi. Les commentaires saluent la réponse, certains demandant pourquoi le problème n'a pas été réglé plus tôt.",
+      "tags": [
+        "xbox",
+        "industrie"
+      ],
+      "points": [
+        "Deux tests Xbox contre plus de 30 sur PS5 et PC",
+        "Scott Van Vliet reconnaît un processus trop long",
+        "Premières évolutions promises « bientôt »"
+      ],
+      "url": "https://www.purexbox.com/news/2026/10/xbox-exec-issues-statement-in-response-to-review-controversy",
+      "image": "https://images.purexbox.com/37d2003a9a2f3/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-29-walmart-zelda-switch-2-precommandes",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-29",
+      "headline": {
+        "pre": "Walmart annule des précommandes de ",
+        "hl": "Zelda",
+        "post": " Switch 2"
+      },
+      "summary": "Walmart a annulé des précommandes d'Ocarina of Time sur Switch 2 la veille de la livraison, invoquant une rupture de stock. Les clients n'ont pas été débités.",
+      "detail": "Selon Nintendo Life, qui s'appuie sur Kotaku et Reddit, des acheteurs ont reçu un message d'annulation pour cause de stock épuisé environ un jour avant la livraison prévue. Certains conseillers leur auraient dit que Walmart avait « survendu » les précommandes. Aucune déclaration officielle de Walmart n'est citée. De nouvelles annonces à prix plus élevés sont apparues, peut-être posées par des vendeurs tiers selon Kotaku. Nintendo répète que des réapprovisionnements arrivent, et l'Australian Nintendo Store aurait reçu du stock cette semaine. Les commentaires sont partagés : certains blâment Walmart, d'autres les revendeurs tiers, et plusieurs disent qu'ils ne précommanderont plus chez lui.",
+      "tags": [
+        "nintendo"
+      ],
+      "points": [
+        "Annulations pour rupture de stock, la veille de la livraison",
+        "Clients non débités",
+        "Pas de déclaration officielle de Walmart",
+        "Nintendo promet des réapprovisionnements"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/10/walmart-cancels-zelda-switch-2-pre-orders-a-day-before-release",
+      "image": "https://images.nintendolife.com/d43705266c429/1280x720.jpg"
+    },
+    {
+      "id": "2026-10-29-rumeur-switch-2-lite-samsung",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-10-28",
+      "headline": {
+        "pre": "Rumeur : une ",
+        "hl": "Switch 2",
+        "post": " Lite portée par Samsung ?"
+      },
+      "summary": "Rumeur : le futur procédé 8LPU+ de Samsung relance les spéculations sur une Switch 2 Lite. Rien n'est confirmé par Nintendo.",
+      "detail": "Notebook Check, relayant un compte Bluesky consacré aux brevets Nintendo, évoque un nouveau procédé de gravure de Samsung, le 8LPU+, qui pourrait rendre la puce Nvidia de la Switch 2 plus compacte et économe. Les chiffres rapportés sont +12 % de performances, −15 % de consommation et −8 % de surface. La puce serait présentée à l'IEDM 2026, peut-être dès décembre selon Electronic Times. Nintendo Life en déduit une possible Switch 2 Lite, mais précise que rien n'est confirmé. La Switch Lite originale étant arrivée environ deux ans et demi après la console de base, une sortie fin 2028 est évoquée. Les lecteurs sont partagés : certains veulent une version moins chère, d'autres doutent de sa viabilité avec le prix de la RAM et du stockage.",
+      "tags": [
+        "nintendo"
+      ],
+      "points": [
+        "Procédé Samsung 8LPU+ : +12 % de performances",
+        "Présentation possible à l'IEDM 2026",
+        "Aucune confirmation de Nintendo",
+        "Sortie spéculée vers fin 2028"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/10/rumour-samsungs-new-chip-process-kicks-off-nintendo-switch-2-lite-speculation",
+      "image": "https://images.nintendolife.com/e665b434a508b/1280x720.jpg"
+    },
     {
       "id": "2026-10-27-openai-preuves-ia-eth-physique",
       "theme": "ai",
@@ -1956,424 +2495,6 @@
       "image": "https://images.purexbox.com/461329d8a253c/1280x720.jpg"
     },
     {
-      "id": "2026-10-22-openai-levee-30-milliards",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "",
-        "hl": "OpenAI",
-        "post": " viserait 30 milliards à 1 250 Md$"
-      },
-      "summary": "Rumeur : selon CNBC, OpenAI négocierait une nouvelle levée de 30 milliards de dollars à une valorisation de 1 250 milliards avant investissement. Le tour serait mené par Coatue et des investisseurs des Émirats arabes unis. Les termes peuvent encore changer et OpenAI n'a pas commenté.",
-      "detail": "OpenAI aurait presque bouclé un nouveau méga-tour de financement privé plutôt que de précipiter son entrée en bourse, d'après CNBC relayé par TechCrunch. La somme visée atteindrait 30 milliards de dollars, pour une valorisation de 1 250 milliards avant investissement, menée par Coatue et des investisseurs émiratis. Le financement émirati pourrait s'accompagner d'un accord garantissant à OpenAI davantage de capacité de calcul aux Émirats. Bloomberg avait fait état fin septembre d'un tour de même montant mais à 1 400 milliards, ce qui montre que les chiffres bougent. Pour mémoire, OpenAI avait levé en mars 2026 à 852 milliards post-money et déposé confidentiellement un dossier d'introduction en bourse en juin. Rien n'est confirmé par l'entreprise à ce stade.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "Jusqu'à 30 Md$ levés, selon CNBC",
-        "Valorisation de 1 250 Md$ avant investissement",
-        "Coatue et investisseurs émiratis en tête",
-        "OpenAI a refusé de commenter"
-      ],
-      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-      "image": "https://techcrunch.com/wp-content/uploads/2023/11/Sam-Altman-OpenAI.jpg?resize=1200,680"
-    },
-    {
-      "id": "2026-10-22-claude-duet-agent-anthropic",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Anthropic lance ",
-        "hl": "Claude Duet",
-        "post": ", son app d'agent"
-      },
-      "summary": "Anthropic lance Claude Duet, une application d'agent pour les professionnels et petites entreprises, basée sur Claude Opus 5.5. Elle exécute des tâches en arrière-plan sur sa propre machine virtuelle et demande une approbation pour les étapes sensibles.",
-      "detail": "Duet est présenté comme le pari d'Anthropic sur les agents grand public et pro, face à Meta Muse, OpenAI Dots ou Grok Bot. L'agent prépare un briefing quotidien, des tableaux de bord et des suggestions à partir des données de l'utilisateur, et suit les tâches en cours avec des recommandations proactives. Il se connecte à plus de 6 000 connecteurs de la Claude Marketplace et peut acheter en ligne via Stripe Link ou Shopify Shop Pay, avec validation humaine des paiements. Un nouveau classifieur vérifie chaque message pour empêcher les fuites d'informations sensibles, et l'agent refuse par défaut les numéros de carte et pièces d'identité. Il est disponible sur iOS, Android et sur le web en préversion de recherche, réservée aux abonnés Pro et Max sur liste d'attente. Aucun prix n'est indiqué.",
-      "tags": [
-        "agents",
-        "modeles"
-      ],
-      "points": [
-        "Basé sur Claude Opus 5.5",
-        "Plus de 6 000 connecteurs via la Claude Marketplace",
-        "Achats via Stripe Link ou Shop Pay, avec approbation",
-        "Préversion sur liste d'attente pour Pro et Max"
-      ],
-      "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Claude-Duet.jpg?resize=1200,675"
-    },
-    {
-      "id": "2026-10-22-canva-craft-image",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Canva dévoile ",
-        "hl": "Craft",
-        "post": ", son modèle d'images"
-      },
-      "summary": "Canva sort Canva Craft, son premier modèle de génération d'images, disponible pour tous les utilisateurs dans Dream Lab et via l'API. Il planifie la composition avant de générer des images jusqu'en 2K.",
-      "detail": "Canva utilisait jusqu'ici plusieurs modèles tiers et cherche à réduire ses coûts d'API tout en gagnant en contrôle. Craft fonctionne en deux étapes : il interprète le prompt pour établir un plan (relations spatiales, hiérarchie visuelle, texte), puis génère l'image jusqu'à 2K dans 30 formats. Il a été entraîné sur des modèles de design créés par des humains issus de la bibliothèque Canva, avec la contribution de chercheurs de Leonardo.ai. Les images peuvent être converties en designs à calques via Canva Magic, et des retouches ciblées sont possibles. Canva prévoit d'ajouter la génération d'images dans ChatGPT et Gemini via son MCP, et annonce deux versions plus économiques, Craftfast et Craft-ultrafast, sans date précise. Aucun prix n'est communiqué.",
-      "tags": [
-        "design"
-      ],
-      "points": [
-        "Disponible dans Dream Lab et via l'API Canva",
-        "Jusqu'à 2K, 30 formats d'image",
-        "Conversion en designs à calques via Canva Magic",
-        "Versions Craftfast et Craft-ultrafast annoncées"
-      ],
-      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Sample-Outputs.jpeg?resize=1200,675"
-    },
-    {
-      "id": "2026-10-22-google-agent-compute-engine",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Google isole chaque agent dans une ",
-        "hl": "microVM",
-        "post": ""
-      },
-      "summary": "Google présente Agent Compute Engine, qui donne à chaque agent Gemini sa propre microVM isolée au niveau matériel. Le service doit passer en préversion dans les prochains mois.",
-      "detail": "Le service fait déjà tourner Gemini et repose sur la puce Titanium de Google. Une VM se met en pause quand l'agent est inactif et la mémoire partagée entre VM réduit le coût. Google annonce aussi Agent Substrate, un runtime Kubernetes open source censé héberger dix fois plus d'agents par serveur. Lors d'un test avec 200 000 agents, suspension et reprise ont pris moins de 500 ms selon Google. S'ajoutent le suivi des tokens, le routage de modèles et la prise en charge de fournisseurs d'identité tiers comme Ping Identity et SailPoint, bientôt étendus à Cloud Run et GKE. Les prix ne sont pas précisés.",
-      "tags": [
-        "agents",
-        "business"
-      ],
-      "points": [
-        "Une microVM isolée par agent, sur puce Titanium",
-        "Agent Substrate : runtime Kubernetes open source",
-        "Reprise en moins de 500 ms avec 200 000 agents",
-        "Préversion dans les prochains mois"
-      ],
-      "url": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/06/google_logo_wall-2.png"
-    },
-    {
-      "id": "2026-10-22-banques-bloquent-agents-ia",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Les banques américaines bloquent les ",
-        "hl": "agents IA",
-        "post": ""
-      },
-      "summary": "Selon Axios relayé par The Decoder, Morgan Stanley, JPMorgan, Bank of America et Wells Fargo restreignent l'accès des agents IA qui se connectent avec les identifiants des clients. La plupart veulent limiter ces agents à la lecture seule.",
-      "detail": "Les agents utilisent des identifiants fournis par les clients, via des outils comme Computer Use ou le logiciel open source OpenClaw, ce qui contrevient aux règles exigeant que le titulaire se connecte lui-même. Les banques ont du mal à savoir si un agent agit sur demande de l'utilisateur ou de sa propre initiative. Morgan Stanley bloque entièrement ces agents et dit n'avoir détecté aucun agent incontrôlé. Les banques jugent le risque de sécurité trop élevé pour l'instant, même si leurs clients veulent ces usages. The Decoder estime qu'un blocage sera difficile à mettre en place. Pendant ce temps, OpenAI propose aux États-Unis un service ChatGPT financier en lecture seule.",
-      "tags": [
-        "agents",
-        "business"
-      ],
-      "points": [
-        "Morgan Stanley, JPMorgan, BofA et Wells Fargo concernés",
-        "Accès en lecture seule privilégié",
-        "Difficile de distinguer agent autonome et demande utilisateur",
-        "Source primaire : Axios"
-      ],
-      "url": "https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/ai_bank_accounts.png"
-    },
-    {
-      "id": "2026-10-22-1password-agents-connexion",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "",
-        "hl": "1Password",
-        "post": " connecte les agents sans leur révéler les mots de passe"
-      },
-      "summary": "1Password lance 1Password for Agents : un agent peut se connecter aux comptes d'un utilisateur sans jamais voir ses identifiants. L'utilisateur confirme chaque demande et 1Password saisit les identifiants à sa place.",
-      "detail": "Quand un agent veut se connecter, il envoie une clé numérique unique à 1Password pour prouver son identité. L'utilisateur reçoit une alerte et doit valider, puis 1Password remplit les identifiants. Les agents compatibles cités sont Claude Duet, OpenAI Dots et ChatGPT Work, Grok Bot, Meta Muse et les agents de Town. D'autres partenaires sont en discussion. L'article ne donne ni prix ni date de disponibilité générale. Le lancement intervient le jour où Axios rapporte que des banques américaines détectent une activité agentique dans les comptes clients.",
-      "tags": [
-        "agents",
-        "business"
-      ],
-      "points": [
-        "L'agent ne voit jamais les identifiants",
-        "Validation de l'utilisateur à chaque connexion",
-        "Compatible Claude Duet, Dots, ChatGPT Work, Muse",
-        "Prix et disponibilité non précisés"
-      ],
-      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/AI-agents.jpg?resize=1200,675"
-    },
-    {
-      "id": "2026-10-22-deepseek-levee-15-milliards",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "",
-        "hl": "DeepSeek",
-        "post": " lèverait 15 milliards de dollars"
-      },
-      "summary": "Rumeur : selon Bloomberg, DeepSeek aurait levé environ 15 milliards de dollars (100 milliards de yuans), deux jours après l'ordre américain de retirer ses outils des agences fédérales. DeepSeek n'a pas confirmé.",
-      "detail": "Les investisseurs cités incluent CATL et Tencent. Le tour précédent datait de juin 2026, avec plus de 7 milliards de dollars à 50 milliards de valorisation selon Reuters. Une introduction en bourse en Chine serait envisagée dès l'an prochain. Le fondateur Liang Wenfeng détiendrait environ 81,6 % de l'entité chinoise selon WireScreen. L'entreprise de Hangzhou accélère ses dépenses d'infrastructure et ses modèles ouverts. Les chiffres sont rapportés sans confirmation officielle et DeepSeek n'a pas répondu à TechCrunch.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "Environ 15 Md$ (100 Md¥), selon Bloomberg",
-        "CATL et Tencent parmi les investisseurs cités",
-        "Arrive après les restrictions américaines du 20 octobre",
-        "Aucune confirmation de DeepSeek"
-      ],
-      "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/01/deepseek-2.jpg?resize=1200,800"
-    },
-    {
-      "id": "2026-10-23-mass-effect-universe-trailer-fuite",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Le trailer fuité de ",
-        "hl": "Mass Effect",
-        "post": " Universe est authentique"
-      },
-      "summary": "Un trailer en moteur du jeu annulé de BioWare, nommé « Mass Effect Universe », a fuité sur Reddit. Jason Schreier (Bloomberg) a confirmé qu'il s'agit bien d'une vidéo réelle du projet, et IGN l'a aussi vérifiée.",
-      "detail": "EA a fermé BioWare cette semaine et annulé le prochain Mass Effect, ce qui représente une cinquantaine de personnes sur environ 400 postes supprimés au total. Le trailer, publié sur le subreddit r/masseffect, présente un jeu au nom de code « Mass Effect Universe », situé dans la Voie lactée des milliers d'années après Mass Effect 3, avec Liara, plus âgée, et se termine sur un « coming soon ». Jason Schreier a confirmé sur Bluesky, le 22 octobre, que c'était un vrai trailer du jeu en cours de développement, et l'autrice Catherynne M. Valente a dit que l'équipe travaillait sur « un super jeu ». Les images utiliseraient des assets de préproduction et le projet aurait mobilisé une petite équipe ; la façon dont la vidéo a fuité n'est pas claire, Push Square évoquant un ancien employé. Les fans saluent les vaisseaux, la musique et les animations faciales, mais certains doutent de la qualité du jeu final ou parlent d'un simple cinéma. Une pétition Change.org, évoquée sur Reddit, avait environ 15 000 signatures, et des fans imaginent un rachat de la licence par Sony, Larian ou Guerrilla, ce que rien ne confirme.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Nom de code du projet : Mass Effect Universe",
-        "Authenticité confirmée par Jason Schreier et IGN",
-        "Action située des milliers d'années après Mass Effect 3",
-        "Pétition de fans à environ 15 000 signatures"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/leaked-mass-effect-5-trailer-is-real-offers-glimpse-of-cancelled-game",
-      "image": "https://images.pushsquare.com/fa29e5ef2e74e/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-23-capcom-fuite-donnees-capcom-id",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Fuite de données chez ",
-        "hl": "Capcom",
-        "post": " : 11,7 millions de comptes"
-      },
-      "summary": "Capcom annonce qu'un tiers a accédé sans autorisation aux données de 11 774 247 comptes Capcom ID. Les mots de passe des utilisateurs et les cartes bancaires ne sont pas concernés, mais 196 comptes ont vu leur mot de passe modifié par l'attaquant.",
-      "detail": "Capcom ID est le compte gratuit servant aux fonctions en ligne de certains jeux de l'éditeur, comme Street Fighter 6. Pour la plupart des comptes, l'attaquant a obtenu l'adresse e-mail et des identifiants système : date de création, dernière connexion, nombre de connexions et adresse IP de la dernière connexion. Pour 43 comptes, la date de naissance, le genre, le pays ou la région et le pseudo ont aussi été exposés. Capcom a réinitialisé les 196 comptes dont le mot de passe avait été changé, présente ses excuses et préviendra les personnes touchées ; les autres joueurs peuvent continuer à utiliser leur Capcom ID normalement. L'éditeur met en garde contre des e-mails frauduleux se faisant passer pour lui et poursuit son enquête afin de renforcer ses mesures de sécurité. C'est sa deuxième grande fuite après l'attaque par rançongiciel de novembre 2020. Nintendo Life a relayé les mêmes chiffres.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "11 774 247 comptes Capcom ID concernés",
-        "Données exposées : e-mail, IP, dates de connexion",
-        "196 mots de passe modifiés puis réinitialisés",
-        "Aucune donnée de carte bancaire touchée"
-      ],
-      "url": "https://www.videogameschronicle.com/news/capcom-says-a-data-breach-affected-more-than-11-million-capcom-id-accounts-credit-card-details-unaffected/",
-      "image": "https://www.videogameschronicle.com/files/2026/10/capcom-id.jpg"
-    },
-    {
-      "id": "2026-10-23-gears-of-war-e-day-500-millions",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Rumeur : ",
-        "hl": "Gears of War: E-Day",
-        "post": " aurait coûté 500 M$"
-      },
-      "summary": "Rumeur : selon Kotaku, Gears of War: E-Day aurait coûté environ 500 millions de dollars, et Microsoft aurait annulé au dernier moment une version PS5 presque terminée. Microsoft n'a pas commenté et les sources divergent sur la répartition du budget.",
-      "detail": "Kotaku, citant des sources, avance le chiffre de 500 M$, bien au-dessus des quelque 300 M$ rapportés pour Spider-Man 2 et Wolverine, licences Disney comprises. Chris Dring (The Game Business) dit que le chiffre correspond à ce qu'on lui a dit, tandis que Jez Corden (Windows Central) estime le total exact mais affirme que ses sources divergent sur la part réellement imputable à E-Day par rapport aux activités plus larges de The Coalition et d'ATG. Andy Robinson (VGC) juge que le silence de Xbox, habituellement prompt à démentir, plaide pour la véracité des informations. Alinea Analytics estime les ventes à environ 311 000 exemplaires, surtout via le Game Pass. Push Square rappelle que plusieurs rumeurs de budgets récentes ont été vite démenties, et reste prudent. Les lecteurs se partagent entre ceux qui dénoncent un gâchis et ceux qui défendent les exclusivités comme moteur d'écosystème.",
-      "tags": [
-        "xbox",
-        "playstation",
-        "industrie"
-      ],
-      "points": [
-        "Budget avancé : environ 500 M$ selon Kotaku",
-        "Version PS5 presque finie, annulée à la dernière minute",
-        "Alinea estime environ 311 000 ventes",
-        "Microsoft n'a pas réagi publiquement"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/gears-of-war-e-day-cancelled-last-minute-for-ps5-may-have-cost-half-a-billion-to-make",
-      "image": "https://images.pushsquare.com/9f8ab112b5381/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-23-ventes-us-septembre-wolverine-ps5",
-      "theme": "games",
-      "source": "Pure Xbox",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Ventes US : ",
-        "hl": "PS5",
-        "post": " progresse, Xbox et Switch 2 reculent"
-      },
-      "summary": "Selon Circana, les ventes de consoles aux États-Unis ont baissé de 3 % en septembre. La PS5 progresse de 22 % en unités, tandis que la Xbox Series chute de 27 % et la Switch 2 de 14 %.",
-      "detail": "Les chiffres de Circana comparent septembre 2026 à septembre 2025. Le prix moyen vendu est de 646 $ pour la PS5, 663 $ pour la Xbox Series et 498 $ pour la Switch 2, dans un contexte de hausse des prix et de crise des composants. La Xbox atteint un nouveau plus bas pour un mois de septembre ; l'analyste Mat Piscatella évoque des variations liées à l'offre. En dollars, la PS5 gagne 43 %, son meilleur mois depuis mai 2025, selon VGC. Côté jeux, Marvel's Wolverine est numéro un, avec le meilleur lancement d'un jeu édité par Sony depuis Helldivers II en février 2024, devant NBA 2K27 et EA Sports FC 27. Xbox aurait cessé de partager ses données de ventes numériques avec Circana, qui devra davantage estimer les chiffres first-party Xbox. Les lecteurs attribuent la hausse de PlayStation au marketing de GTA 6 et la baisse de Xbox aux pénuries.",
-      "tags": [
-        "playstation",
-        "xbox",
-        "nintendo"
-      ],
-      "points": [
-        "PS5 : +22 % en unités, +43 % en dollars",
-        "Xbox Series : -27 % en unités, plus bas de septembre",
-        "Switch 2 : -14 % en unités",
-        "Marvel's Wolverine est le jeu le plus vendu"
-      ],
-      "url": "https://www.purexbox.com/news/2026/10/xbox-and-nintendo-console-sales-suffer-yoy-decreases-in-new-september-2026-us-report",
-      "image": "https://images.purexbox.com/2b5d4a309e10e/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-23-sony-quitte-lecteurs-uhd-blu-ray",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "",
-        "hl": "Sony",
-        "post": " semble quitter les lecteurs Blu-ray 4K"
-      },
-      "summary": "Sony aurait cessé d'expédier son lecteur UHD Blu-ray UBP-X700/K, sans remplaçant annoncé. Aucun communiqué officiel, mais la boutique japonaise de Sony le liste en rupture sans réapprovisionnement prévu.",
-      "detail": "L'information vient de Kunkoku, un blog et revendeur officiel Sony, et le magasin japonais de la marque indique le lecteur en rupture sans nouvelles livraisons. Quelques unités restent disponibles en Europe et aux États-Unis, mais pourraient ne pas être réapprovisionnées. Panasonic semble être le seul grand fabricant à produire encore des lecteurs UHD Blu-ray, même si des marques chinoises arrivent sur ce marché. Push Square rappelle que Sony a dit qu'il cesserait d'expédier des jeux PlayStation sur disque en janvier 2028 et doute que la PS6 ait un lecteur de disques. Sony a aussi cédé son activité TV à une coentreprise avec TCL. Les lecteurs se divisent entre regret de la fin des choix pour les consommateurs et acceptation d'un marché en déclin.",
-      "tags": [
-        "playstation"
-      ],
-      "points": [
-        "Modèle concerné : UBP-X700/K",
-        "Aucun remplaçant ni communiqué officiel",
-        "Panasonic reste le principal fabricant restant",
-        "Inquiétude sur un lecteur de disques sur PS6"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/sony-exits-uhd-blu-ray-player-market-as-pull-back-from-physical-media-continues",
-      "image": "https://images.pushsquare.com/78ea29f1c0520/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-23-atari-vcs-fin-du-support",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Atari arrête le support de sa ",
-        "hl": "VCS",
-        "post": ""
-      },
-      "summary": "Atari met fin au support de sa console VCS lancée en 2021. La boutique fermera le 1er février 2027, et une application Home Brew permettra de continuer à ajouter des jeux.",
-      "detail": "La VCS est née d'un Kickstarter en 2020 et proposait sa propre boutique ainsi qu'un mode PC sous Linux ou Windows, mais ses ventes sont restées modestes. L'annonce a été faite par la community manager Carly Francis sur le Discord officiel d'Atari. Les jeux resteront achetables jusqu'au 31 janvier 2027. Ensuite, une mise à jour du système rendra la console fonctionnelle en local, sans dépendre des serveurs d'Atari pour l'authentification et les logiciels, avant la fin du support de la plateforme. L'application Atari Home Brew sera poussée à tous les joueurs pour installer des jeux sans la boutique et permettre aux développeurs de continuer à publier. Atari publiera les instructions de migration début 2027 ; Francis qualifie la nouvelle d'« unwelcome ».",
-      "tags": [
-        "pc"
-      ],
-      "points": [
-        "Boutique fermée le 1er février 2027",
-        "Achats possibles jusqu'au 31 janvier 2027",
-        "Application Home Brew pour jeux et développeurs",
-        "Console utilisable hors serveurs Atari"
-      ],
-      "url": "https://www.videogameschronicle.com/news/atari-is-ending-support-for-its-2021-vcs-console-will-release-a-homebrew-app-to-let-players-keep-making-and-adding-games/",
-      "image": "https://www.videogameschronicle.com/files/2021/03/atari-vcs.jpg"
-    },
-    {
-      "id": "2026-10-23-beyond-good-evil-2-preproduction",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Rumeur : ",
-        "hl": "Beyond Good & Evil 2",
-        "post": " toujours en préproduction"
-      },
-      "summary": "Rumeur : selon Origami, Beyond Good & Evil 2 reste en préproduction 18 ans après son annonce. Plusieurs centaines de personnes y travaillent, mais la nature du jeu change encore.",
-      "detail": "VGC relaie le média français Origami, qui avait correctement annoncé la dissolution de l'équipe de Prince of Persia: The Lost Crown, sans vérifier lui-même les détails. Le jeu serait développé surtout à Ubisoft Montpellier. Prévu entre 2019 et 2022 comme un jeu multijoueur sur plusieurs planètes, il serait passé à quatre joueurs, puis deux, et serait désormais pensé « solo d'abord » avec coopération possible. Son ton, d'abord décrit comme « Zelda dans l'espace », se rapprocherait des Spider-Man d'Insomniac. Le projet aurait résisté aux annulations, mais la restructuration d'Ubisoft et les licenciements pourraient changer la donne, sans signe d'annulation pour l'instant. Le directeur créatif Fawzi Mesmar dit que l'équipe reste engagée à livrer un jeu remarquable.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Annoncé en 2008, re-révélé en 2017",
-        "Plusieurs centaines de développeurs, surtout à Montpellier",
-        "Vision passée du multijoueur au solo d'abord",
-        "Aucun signe d'annulation à ce stade"
-      ],
-      "url": "https://www.videogameschronicle.com/news/beyond-good-evil-2-is-still-in-pre-production-after-18-years-as-its-vision-keeps-changing-report-claims/",
-      "image": "https://www.videogameschronicle.com/files/2019/03/Beyond-Good-and-Evil-2-feature-image.jpg"
-    },
-    {
-      "id": "2026-10-23-xbox-quatre-jours-au-bureau",
-      "theme": "games",
-      "source": "Pure Xbox",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "",
-        "hl": "Xbox",
-        "post": " impose quatre jours de bureau par semaine"
-      },
-      "summary": "Xbox exigera de certains salariés quatre jours de présence au bureau par semaine, contre trois jusqu'ici. La mesure, révélée par The Verge, entre en vigueur le 1er février 2027.",
-      "detail": "Elle concerne les employés de la région de Puget Sound vivant à moins de 50 miles de trajet de Studio D, le campus de Microsoft à Redmond ; la note interne parle de « milliers » de personnes. La Chief People Officer Jacinda Chislum Pearson y explique que le présentiel facilite la revue du travail et les décisions sans réunions supplémentaires, et que les dirigeants doivent aussi être présents. Des exceptions sont possibles pour des pratiques établies dans certains studios. Cela renforce l'attente de trois jours fixée l'an dernier par Microsoft. Les lecteurs sont partagés : certains y voient de la collaboration utile, d'autres un moyen de pousser au départ ou de coûts pour ceux qui ont déménagé.",
-      "tags": [
-        "xbox",
-        "industrie"
-      ],
-      "points": [
-        "Quatre jours de bureau, contre trois précédemment",
-        "Applicable à partir du 1er février 2027",
-        "Salariés à moins de 50 miles de Redmond",
-        "Révélé par The Verge via une note interne"
-      ],
-      "url": "https://www.purexbox.com/news/2026/10/xbox-mandates-four-day-office-work-for-certain-employees-said-to-affect-thousands",
-      "image": "https://images.purexbox.com/d1449d8bb818a/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-23-gta-6-miami-vice-city-marketing",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Rockstar transforme Miami en ",
-        "hl": "GTA 6",
-        "post": " Vice City"
-      },
-      "summary": "Rockstar mène une vaste campagne à Miami : le Heat devient « Vice City » pour un événement, et pubs, enseignes et voitures aux couleurs du jeu apparaissent partout. GTA 6 sort le 19 novembre 2026 sur PS5 et Xbox Series.",
-      "detail": "Le Miami Heat jouera sur un parquet « Vice City Court » lors de « A Night In Vice City », la veille de la sortie, avec maillots repensés et produits dérivés vendus au Kaseya Center. Des fans ont repéré dans l'arène Burger Shot et Cluckin' Bell, ainsi que dizaines de promotions en ville : dirigeable, fresques, bus, taxis, parasols sur Miami Beach, marques fictives comme Weazel News ou eCola. Une Corvette a été habillée en Coquette et une Lamborghini en voiture de la Vice Beach Police. Un dépôt d'étiquettes de la brasserie Tripping Animals suggère de vraies bières Pißwasser et Patriot. La plupart de ces observations viennent de fans sur les réseaux sociaux, et VGC les présente comme telles. Game Informer aurait indiqué que la carte fait le double de celle de GTA 5.",
-      "tags": [
-        "playstation",
-        "xbox"
-      ],
-      "points": [
-        "GTA 6 sort le 19 novembre 2026",
-        "Le Miami Heat se rebaptise Vice City pour un soir",
-        "Burger Shot et Cluckin' Bell repérés dans l'arène",
-        "Bières Pißwasser et Patriot apparemment en préparation"
-      ],
-      "url": "https://www.videogameschronicle.com/news/rockstar-is-quietly-transforming-the-real-miami-into-gta-6s-vice-city/",
-      "image": "https://www.videogameschronicle.com/files/2026/10/social-basic.jpg.jpg"
-    },
-    {
-      "id": "2026-10-23-mass-effect-serie-amazon-maintenue",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "La série ",
-        "hl": "Mass Effect",
-        "post": " d'Amazon est maintenue"
-      },
-      "summary": "Malgré la fermeture de BioWare, la série live-action Mass Effect d'Amazon MGM Studios resterait en développement, selon IGN cité par VGC. Michael Gamble, de BioWare, a remercié les fans.",
-      "detail": "Tous les créatifs annoncés restent attachés au projet, dont les producteurs exécutifs Karim Zreik, Ari Arad et Michael Gamble de BioWare. La série, évoquée dès 2021, a été confirmée en développement en novembre 2024. Gamble, qui supervisait le prochain Mass Effect, disait que la série se passerait après la trilogie originale sans refaire l'histoire du commandant Shepard. Après la fermeture, il a remercié les fans pour ses 17 ans chez BioWare, demandé des pistes d'emploi pour son équipe et plaisanté sur GTA 6 : il n'aura plus à se déclarer malade à sa sortie. La fermeture est survenue deux mois après le rachat d'EA pour 55 milliards de dollars par le fonds saoudien PIF, qui laisse EA avec environ 18 Md$ de dette.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Série d'Amazon MGM Studios toujours en production",
-        "Création confirmée en développement en novembre 2024",
-        "Intrigue prévue après la trilogie originale",
-        "Gamble cherche des postes pour son équipe"
-      ],
-      "url": "https://www.videogameschronicle.com/news/mass-effect-tv-series-still-in-production-despite-bioware-closure-as-game-director-writes-at-least-i-can-play-gta-6/",
-      "image": "https://www.videogameschronicle.com/files/2020/08/Mass-Effect-2-a.jpg"
-    },
-    {
       "id": "2026-10-23-switch-2-jailbreak-logiciel",
       "theme": "games",
       "source": "Nintendo Life",
@@ -2396,129 +2517,6 @@
       ],
       "url": "https://www.nintendolife.com/news/2026/10/switch-2-supposedly-jailbroken-via-software-only-exploit",
       "image": "https://images.nintendolife.com/6888cfa4ddfb2/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-23-ps-plus-coree-cloud-streaming",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Le cloud ",
-        "hl": "PS Plus",
-        "post": " arrive en Corée le 28 octobre"
-      },
-      "summary": "Sony lance le streaming cloud de PS Plus Premium en Corée le 28 octobre 2026. Tous les abonnés Deluxe coréens passent à Premium gratuitement.",
-      "detail": "Le Deluxe est un palier propre à la Corée, qui ajoute des jeux rétro aux avantages d'Extra. Le service coréen ne propose que des jeux PS5, sans titres PS3 ni PS4 contrairement au Royaume-Uni et aux États-Unis. Sony promet des milliers de jeux compatibles, sans tarif horaire ni limite d'usage. Le prix de Premium en Corée n'est pas indiqué dans l'article. L'auteur oppose ce modèle aux nouveaux paliers « à l'heure » de Microsoft et juge le streaming mieux adapté aux visual novels et JRPG qu'aux jeux d'action. Il s'interroge sur l'économie du service, l'infrastructure étant coûteuse. Les lecteurs craignent notamment que Sony adopte une facturation façon Xbox.",
-      "tags": [
-        "playstation"
-      ],
-      "points": [
-        "Lancement du cloud coréen le 28 octobre 2026",
-        "Mise à niveau gratuite Deluxe vers Premium",
-        "Uniquement des jeux PS5",
-        "Pas de limite d'heures annoncée"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/all-ps-plus-deluxe-members-in-korea-get-a-free-upgrade-as-cloud-streaming-arrives",
-      "image": "https://images.pushsquare.com/9afdcf6bb544a/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-23-shadow-of-the-tomb-raider-switch-2",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "",
-        "hl": "Shadow of the Tomb Raider",
-        "post": " débarque par surprise sur Switch 2"
-      },
-      "summary": "Shadow of the Tomb Raider: Definitive Edition est sorti sans préavis sur Switch 2 pour 39,99 $. Une trilogie à 69,99 $ est aussi disponible.",
-      "detail": "Le portage est assuré par Aspyr, déjà responsable des deux premiers épisodes de la trilogie sur Switch 2. L'édition inclut le jeu de base, les sept tombeaux-défis, la coopération en ligne à deux joueurs et les armes, tenues et compétences téléchargeables. Jusqu'au 4 novembre, l'eShop propose 10 % de réduction. Le bundle Tomb Raider: Definitive Survivor Trilogy, à 69,99 $, regroupe les trois jeux. Nintendo Life avait noté les deux premiers épisodes Switch 2 à 8/10 chacun. Les pages eShop n'étaient pas encore en ligne à la rédaction de l'article.",
-      "tags": [
-        "nintendo"
-      ],
-      "points": [
-        "Édition Definitive à 39,99 $ avec les sept tombeaux",
-        "Trilogie Definitive Survivor à 69,99 $",
-        "10 % de réduction jusqu'au 4 novembre",
-        "Portage par Aspyr"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/surprise-shadow-of-the-tomb-raider-definitive-edition-has-shadow-dropped-on-switch-2",
-      "image": "https://images.nintendolife.com/96740580ac34c/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-22-ea-plan-restructuration-400-postes",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "EA dévoile son plan après ",
-        "hl": "400",
-        "post": " suppressions de postes"
-      },
-      "summary": "Une note interne rapportée par Bloomberg détaille les priorités d'EA après la fermeture de BioWare : sports, Apex Legends, Star Wars Jedi, Iron Man et Battlefield. Le projet Sims « Lotus » est annulé au profit d'« Evergreen », et l'équipe Skate est réduite.",
-      "detail": "EA est passée sous contrôle privé en août 2026 après un rachat à effet de levier de 55 milliards de dollars mené par le PIF, avec Silver Lake et Affinity Partners. Environ 18 milliards de dollars de dette ont été transférés sur les comptes d'EA, et selon Bloomberg ces coupes permettraient d'économiser jusqu'à 700 millions de dollars de coûts de R&D. Outre BioWare, l'équipe de Skate subit des réductions d'effectifs et Project Lotus, un projet Les Sims, est annulé au profit de Project Evergreen. La note affirme que les sports (dont EA FC) et Apex Legends restent prioritaires, que le prochain Star Wars Jedi et un jeu Marvel avec Iron Man sont maintenus et que Battlefield a reçu le feu vert. Respawn et DICE collaboreront sur un nouveau projet qui serait probablement un Star Wars Battlefront. Dans les commentaires, de nombreux lecteurs disent boycotter EA et redoutent un virage vers le free-to-play et la monétisation agressive.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Project Lotus (Sims) annulé, remplacé par Project Evergreen",
-        "Apex Legends, EA FC, Star Wars Jedi et Iron Man maintenus",
-        "Jusqu'à 700 M$ d'économies de R&D selon Bloomberg",
-        "Respawn et DICE collaborent sur un nouveau projet"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/ea-outlines-future-development-plans-as-it-prepares-to-cut-around-400-jobs",
-      "image": "https://images.nintendolife.com/58aa8fc3966d8/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-22-cyberpunk-2077-patch-2-5-notes",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "Le patch 2.5 de ",
-        "hl": "Cyberpunk 2077",
-        "post": " détaillé"
-      },
-      "summary": "CD Projekt RED publie les notes complètes du patch 2.5, gratuit, disponible le 22 octobre sur PC, PS5 et Xbox Series. Switch 2 et Mac suivront dans les jours qui viennent.",
-      "detail": "Après la fuite et l'annonce du livestream, les notes officielles confirment un patch gratuit centré sur Edgerunners 2. Il ajoute la quête secondaire Clampdown (qui se déroule avant Edgerunners 2), un ensemble inspiré de King, la radio HKGN 102.0 FM, la quête Welcome to Paradise et 12 nouvelles cartes de tarot. Le patch apporte aussi le support des mods multiplateformes via mod.io sur PC, Mac, PS5, Xbox Series et Switch 2, ainsi qu'un nouveau perk Double Trouble pour manier deux pistolets. Côté technique : DLSS 4.5 avec Multi Frame Generation jusqu'à 6X, FSR 4, MetalFX, un curseur de FOV sur consoles et des optimisations PS5 Pro. Les sauvegardes modifiées ne débloquent ni trophées ni succès sur console, et une erreur « Save failed » est corrigée sur Switch 2. La date précise des versions Switch 2 et Mac n'est pas communiquée.",
-      "tags": [
-        "pc",
-        "playstation",
-        "xbox",
-        "nintendo"
-      ],
-      "points": [
-        "Disponible le 22 octobre sur PC, PS5 et Xbox Series",
-        "Switch 2 et Mac « dans les jours qui suivent »",
-        "Quête Clampdown, radio HKGN et 12 cartes de tarot",
-        "Mods multiplateformes via mod.io et DLSS 4.5"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/cyberpunk-2077-edgerunners-2-update-2-5-officially-revealed-here-are-the-full-patch-notes",
-      "image": "https://images.nintendolife.com/ee2d1b6c4e3bc/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-22-phantom-blade-zero-version-physique",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-22",
-      "headline": {
-        "pre": "",
-        "hl": "Phantom Blade Zero",
-        "post": " aura une version physique en 2027"
-      },
-      "summary": "S-GAME annonce, à la fin de la bande-annonce de lancement, une version physique de Phantom Blade Zero sur PS5 pour 2027, en trois éditions. Le jeu sort en numérique le 29 octobre 2026.",
-      "detail": "L'information apparaît dans un petit message final de la nouvelle bande-annonce. Trois éditions sont prévues : Standard, Deluxe et Ultimate, cette dernière avec un boîtier en acier de collection. La date précise et les prix physiques ne sont pas communiqués ; en numérique, le jeu coûte 59,99 $ (54,99 £), la Deluxe ajoutant 10 $. Le jeu occupe jusqu'à 134 Go sur PS5, soit plus qu'un Blu-ray, donc la version physique nécessitera deux disques ou un téléchargement complémentaire. Le journaliste note que l'image de fin de trailer ne montre qu'un seul disque, sans que cela prouve quoi que ce soit. Il précise que certains joueurs PlayStation considéraient le jeu comme perdu faute d'édition physique.",
-      "tags": [
-        "playstation"
-      ],
-      "points": [
-        "Sortie physique PS5 prévue en 2027",
-        "Éditions Standard, Deluxe et Ultimate (boîtier acier)",
-        "Sortie numérique le 29 octobre 2026",
-        "Jusqu'à 134 Go : disque supplémentaire ou téléchargement"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/phantom-blade-zero-physical-version-set-for-2027-3-ps5-editions-revealed",
-      "image": "https://images.pushsquare.com/c8caed9539628/1280x720.jpg"
     }
   ]
 }
