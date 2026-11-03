@@ -1,7 +1,526 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02T11:57:46+01:00",
+  "updatedAt": "2026-11-03T11:49:06+01:00",
   "items": [
+    {
+      "id": "2026-11-03-anthropic-revenus-perte-23-milliards",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "",
+        "hl": "Anthropic",
+        "post": " : revenus ×12, perte de 23 Md$"
+      },
+      "summary": "Le prospectus d'introduction en bourse mis à jour d'Anthropic montre un chiffre d'affaires trimestriel d'environ 17 Md$, soit douze fois celui de l'an dernier. Les coûts dépassent pourtant les revenus et la perte nette atteint 23,3 Md$.",
+      "detail": "Anthropic fait face à une pénurie de puissance de calcul depuis fin 2025 et a signé des dizaines d'accords avec Amazon, Google, SpaceX, des fabricants de puces et d'anciens mineurs de cryptomonnaies. Selon Bloomberg, le chiffre d'affaires trimestriel approche 17 Md$, mais The Information chiffre les coûts d'exploitation à 17,5 Md$, ce qui efface le bénéfice du trimestre précédent. La perte nette s'élève à 23,3 Md$, contre 12,1 Md$ un an plus tôt. Anthropic cite 5 Md$ de capacité de calcul à court terme et 2 Md$ pour son programme de dons des salariés. Le prospectus fait état de 895 Md$ d'engagements de calcul et de location de centres de données, et l'entreprise devrait disposer de plus de 3,5 GW cette année, avec un doublement prévu l'an prochain. Selon le New York Times, l'IPO pourrait lever environ 100 Md$, dont jusqu'à 3,5 Md$ auprès d'investisseurs japonais d'après le Nikkei. La date de l'introduction et la valorisation visée ne sont pas précisées.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Revenu trimestriel d'environ 17 Md$, douze fois celui de l'an dernier",
+        "Perte nette de 23,3 Md$ contre 12,1 Md$ un an plus tôt",
+        "895 Md$ d'engagements de calcul et de centres de données",
+        "IPO pouvant lever environ 100 Md$ selon le New York Times"
+      ],
+      "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/08/anthropic_claude.png"
+    },
+    {
+      "id": "2026-11-03-anthropic-rsi-auto-amelioration",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "",
+        "hl": "Anthropic",
+        "post": " se dit proche de l'IA auto-améliorante"
+      },
+      "summary": "Dans son dépôt S-1/A révisé, Anthropic reconnaît que ses prévisions internes pourraient « imminemment » atteindre la définition de progrès fortement accéléré par l'IA. Aucun modèle actuel n'a franchi ce seuil, et l'entreprise envisage de mettre à jour sa politique RSP.",
+      "detail": "L'auto-amélioration récursive (RSI) désigne le stade où une IA s'entraîne elle-même assez bien pour accélérer fortement ses capacités. Le S-1/A, publié lundi, ajoute aux facteurs de risque qu'Anthropic n'avait pas identifié par le passé certaines accélérations avant qu'elles surviennent. Ses estimations sur les futurs modèles, et non sur les modèles actuels, pourraient atteindre la définition RSP de progrès fortement accéléré attribuable à l'IA. Aucun modèle n'a été désigné comme dépassant le seuil, et l'entreprise ne prévoit pas de faire concevoir seule ses futures générations par Claude sans supervision humaine significative. Elle envisage de modifier sa Responsible Scaling Policy pour garder les humains aux commandes. Le calendrier, les données derrière ces estimations et toute vérification indépendante restent inconnus, et des sceptiques y voient aussi un exercice de communication.",
+      "tags": [
+        "modeles",
+        "business"
+      ],
+      "points": [
+        "Avertissement inscrit dans le dépôt S-1/A d'Anthropic",
+        "Seuil RSP possiblement atteint « imminemment » par de futurs modèles",
+        "Aucun modèle actuel n'a franchi ce seuil",
+        "Mise à jour de la RSP envisagée"
+      ],
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Recursive-Neural-Spiral-in-Circuitry.png?resize=1200,600"
+    },
+    {
+      "id": "2026-11-03-nyt-attaque-brave-scraping",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "Le New York Times poursuit ",
+        "hl": "Brave",
+        "post": " pour scraping"
+      },
+      "summary": "Le New York Times, le Daily News, le Chicago Tribune et l'Orlando Sentinel poursuivent Brave devant un tribunal fédéral de Manhattan. Ils lui reprochent d'avoir aspiré leurs contenus et de les avoir fournis à des entreprises d'IA.",
+      "detail": "Le NYT a déjà engagé des poursuites similaires contre OpenAI et Perplexity. Cette fois, il présente Brave comme un fournisseur et revendeur de contenu protégé destiné à Anthropic, Perplexity, Mistral, xAI et Cohere, selon la plainte. Brave aurait construit un index de plus de 30 milliards de pages avec un robot non identifié, que les éditeurs ne peuvent donc pas bloquer. La plainte vise aussi une fonction du navigateur qui contournerait les paywalls, et le fait de bloquer les publicités des éditeurs tout en vendant les siennes. Les plaignants demandent une injonction et des dommages-intérêts, sans montant précisé. Brave n'avait pas répondu à la demande de commentaire, et l'article ne dit pas si les clients cités sont visés par la procédure.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Deux plaintes déposées lundi devant un tribunal fédéral de Manhattan",
+        "Index de plus de 30 Md de pages, selon la plainte",
+        "Clients cités : Anthropic, Perplexity, Mistral, xAI, Cohere",
+        "Injonction et dommages-intérêts réclamés"
+      ],
+      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/08/brave-browser.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-11-03-openai-bug-bounty-172000",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-11-03",
+      "headline": {
+        "pre": "",
+        "hl": "OpenAI",
+        "post": " quadruple ses primes de bug bounty"
+      },
+      "summary": "OpenAI refond son programme de récompense : jusqu'à 30 000 $ pour une faille critique et 100 000 $ pour une découverte exceptionnelle. Avec les bonus, le total peut atteindre environ 172 000 $.",
+      "detail": "Les primes sont multipliées par quatre pour les produits phares comme ChatGPT ou Codex. Le programme ajoute un système de fidélité à cinq niveaux et des campagnes limitées dans le temps, avec des primes majorées lors des lancements de fonctions. Quiconque a signalé une faille au cours des 30 derniers jours recevra la différence avec l'ancien barème. OpenAI prépare aussi un sprint de sécurité avec la société Cathedral, qui testera ses systèmes avec ses ingénieurs ; lors du précédent sprint, 25 % des ingénieurs produit avaient traqué des vulnérabilités. Le niveau reste comparable au programme de Google, mais inférieur aux primes d'Apple ou Microsoft pour les exploits au niveau système. Les dates du sprint et le barème précédent exact ne sont pas précisés.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Jusqu'à 30 000 $ pour une faille critique, 100 000 $ en cas exceptionnel",
+        "Total possible d'environ 172 000 $ avec les bonus",
+        "Rétroactif sur les 30 derniers jours",
+        "Sprint de sécurité prévu avec la société Cathedral"
+      ],
+      "url": "https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_hacking_arms-3.png"
+    },
+    {
+      "id": "2026-11-03-claude-code-bloque-clonage-jeux",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-11-03",
+      "headline": {
+        "pre": "",
+        "hl": "Claude Code",
+        "post": " bloque le clonage de jeux vidéo"
+      },
+      "summary": "Anthropic a ajouté deux phrases au prompt système de Claude Code pour Opus 5.5 afin d'empêcher la recréation de jeux existants. Addy Osmani l'a confirmé sur X, la règle s'appliquant depuis plusieurs jours.",
+      "detail": "Des utilisateurs avaient généré des centaines de portages web non officiels de jeux comme Halo ou GTA Vice City avec Opus 5.5 et GPT-6 Astra. Selon Addy Osmani, utiliser Claude pour enfreindre la propriété intellectuelle viole la politique d'usage. La règle vaut même si le clone est renommé ou présenté comme original, mais les jeux originaux restent autorisés, même si certains utilisateurs signalent des problèmes avec leurs projets. Anthropic prévoit d'ajuster ces règles. Le texte exact des phrases, le nombre de cas bloqués et les modalités d'application ne sont pas connus, ni l'existence de restrictions comparables chez OpenAI. L'information repose surtout sur le message d'Osmani.",
+      "tags": [
+        "code",
+        "business"
+      ],
+      "points": [
+        "Deux phrases ajoutées au prompt système de Claude Code pour Opus 5.5",
+        "Clones renommés également visés",
+        "Créations originales toujours permises",
+        "Anthropic prévoit d'ajuster les règles"
+      ],
+      "url": "https://the-decoder.com/anthropic-cracks-down-on-game-cloning-in-claude-code-after-wave-of-ai-built-knockoffs/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/Anthropic-Claude-Mario.png"
+    },
+    {
+      "id": "2026-11-03-goldman-sachs-retire-outils-code-ia",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "",
+        "hl": "Goldman Sachs",
+        "post": " retire ses outils de code IA"
+      },
+      "summary": "Selon Bloomberg, Goldman Sachs a retiré à la plupart de ses employés l'accès à des outils de code IA avancés comme Claude Code. Seuls les ingénieurs peuvent encore les utiliser.",
+      "detail": "Des traders et banquiers s'en servaient depuis des mois, notamment pour suivre les flux de transactions et créer du contenu. Les directives internes datent d'octobre 2026 et la mesure provoque de la frustration en interne. En juillet, le directeur de l'information Marco Argenti saluait pourtant le vibe coding du personnel non technique, avec des prototypes passés ensuite à des ingénieurs. Le porte-parole invoque la productivité et la gestion des risques, et affirme que la phase d'expérimentation est terminée. Le nombre de personnes touchées, la durée de la restriction et les incidents éventuels derrière la décision ne sont pas connus.",
+      "tags": [
+        "code",
+        "business"
+      ],
+      "points": [
+        "Claude Code et GitHub retirés à la plupart des employés",
+        "Accès conservé pour les ingénieurs seulement",
+        "Directives internes d'octobre 2026, selon Bloomberg",
+        "Motifs officiels : productivité et gestion des risques"
+      ],
+      "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/goldman_sachs_logo.png"
+    },
+    {
+      "id": "2026-11-03-grok-bot-quotas-reduits",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "Musk réduit les quotas de ",
+        "hl": "Grok Bot",
+        "post": ""
+      },
+      "summary": "Des utilisateurs de Grok Bot ont vu leurs limites hebdomadaires atteintes sans raison. Elon Musk a confirmé sur X qu'il ne s'agit pas d'un bug : le coût de service était insoutenable face aux revenus.",
+      "detail": "Pendant le week-end d'Halloween, certains abonnés ont constaté que leur usage passait de 50 % à 100 %, sans avoir utilisé l'agent. Musk a répondu dimanche que le coût de Grok Bot était insoutenablement élevé par rapport aux revenus, alors qu'il le qualifie de produit à la croissance la plus rapide qu'il ait vue. Dans un dépôt d'octobre, SpaceX, récemment cotée, indique que l'IA représente 52 % de ses revenus, et sa division « Super Intelligence » dégage 431 M$ de bénéfice, malgré 1,2 Md$ de coûts ponctuels liés au rachat de Cursor finalisé en août. On ne sait pas comment les quotas évolueront, combien d'utilisateurs sont touchés ni si le changement est permanent.",
+      "tags": [
+        "agents",
+        "business"
+      ],
+      "points": [
+        "Limites hebdomadaires atteintes sans usage, de 50 % à 100 %",
+        "Musk : le coût de service était insoutenable",
+        "L'IA pèse 52 % des revenus de SpaceX",
+        "Cursor racheté par SpaceX, finalisé en août"
+      ],
+      "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-11-03-aramco-humain-49-pourcent",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "Aramco prend 49 % de ",
+        "hl": "Humain",
+        "post": ""
+      },
+      "summary": "Saudi Aramco acquiert 49 % de l'entreprise d'IA saoudienne Humain, en apportant environ 2,6 Md$ en 2026 et sa technologie d'IA.",
+      "detail": "Humain a été fondée en mai 2025 par le fonds souverain PIF. Elle construit des centres de données, des services cloud et des modèles, dont le modèle de langue arabe ALLaM. Elle vise 3 GW de capacité d'ici 2030 et veut devenir un grand exportateur d'IA. Fin août, AMD a indiqué que l'infrastructure bâtie avec Cisco et Humain servait déjà des clients en Arabie saoudite et à l'étranger. Aramco compte utiliser cette technologie en interne et vendre ses solutions. Selon son PDG, Humain renforce la protection de ses centres de données face à la guerre en Iran sans baisse de demande. La valorisation, la date de finalisation et la nature exacte de la technologie apportée ne sont pas précisées.",
+      "tags": [
+        "business"
+      ],
+      "points": [
+        "Participation de 49 % pour environ 2,6 Md$ en 2026",
+        "Objectif de 3 GW de centres de données d'ici 2030",
+        "Humain a été fondée en mai 2025 par le PIF",
+        "Valorisation non communiquée"
+      ],
+      "url": "https://the-decoder.com/saudi-aramco-takes-49-percent-stake-in-ai-firm-humain-with-2-6-billion-deal/",
+      "image": "https://the-decoder.com/wp-content/uploads/2025/05/Humain-SA-invest-1200x800.png"
+    },
+    {
+      "id": "2026-11-03-trajectory-45-millions-post-entrainement",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "",
+        "hl": "Trajectory",
+        "post": " lève 45 M$ pour affiner les modèles"
+      },
+      "summary": "Trajectory lève 45 M$ en série A, menée par Sequoia, pour une valorisation de 300 M$. Sa plateforme de post-entraînement, ouverte au public, permet à des experts non techniques de spécialiser des modèles open source.",
+      "detail": "La startup, fondée il y a un an par trois anciens de Stanford, compte 18 personnes. Nvidia, Bessemer et Bain Capital Ventures participent au tour. Le client part d'un modèle open source, connecte la plateforme à ses applications, collecte des retours et la plateforme réentraîne le modèle, selon une logique d'apprentissage continu. Harvey et Rogo l'utilisent pour le droit et la finance, et Decagon, Mercor et Nvidia sont aussi cités. Elle concurrence Thinking Machines Lab, Applied Compute et Prime Intellect. L'article ne donne ni tarifs, ni benchmarks, ni revenus.",
+      "tags": [
+        "modeles",
+        "business"
+      ],
+      "points": [
+        "Série A de 45 M$ menée par Sequoia, valorisation de 300 M$",
+        "Plateforme accessible publiquement aux non-techniciens",
+        "Clients cités : Harvey, Rogo, Decagon, Mercor",
+        "Aucun résultat mesuré communiqué"
+      ],
+      "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/Trajectory_3.jpg?resize=1200,900"
+    },
+    {
+      "id": "2026-11-03-42ai-modele-monde-comportemental",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "",
+        "hl": "42AI",
+        "post": " prédit les décisions humaines, 62,5 M$"
+      },
+      "summary": "La startup israélienne 42AI sort de la furtivité avec 62,5 M$ et un « modèle du monde comportemental » qui estime la probabilité qu'une personne prenne une décision. Une dizaine de grands courtiers l'utilisent déjà.",
+      "detail": "Les fonds viennent des fondateurs et d'Infinity Group sur trois ans, créé par le père du CEO. Le système convertit des tendances psychologiques en représentations mathématiques, puis les passe dans un modèle du monde à base de transformers, un modèle de langage séparé expliquant les prédictions. L'entreprise revendique 98 % de précision sur des flux de trading, au sens d'une fourchette prédite, et un score F1 de 0,8 à 0,85 sur la direction et le volume. Elle dit couvrir environ 30 millions de personnes et un chiffre d'affaires à sept chiffres. Ces performances ne sont pas validées de façon indépendante. Les fondateurs reconnaissent un risque d'abus, par exemple un courtier exploitant les prédictions contre ses clients, sans détailler les garde-fous.",
+      "tags": [
+        "modeles",
+        "business"
+      ],
+      "points": [
+        "62,5 M$ de seed, venant surtout des fondateurs et d'Infinity",
+        "Environ 10 grands courtiers clients",
+        "98 % de précision revendiquée, non vérifiée",
+        "Risque d'abus reconnu par les fondateurs"
+      ],
+      "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/IMG_3572.jpeg?resize=1200,895"
+    },
+    {
+      "id": "2026-11-03-google-dreambeans-inde",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "Google lance ",
+        "hl": "Dreambeans",
+        "post": " en Inde"
+      },
+      "summary": "Google déploie en Inde son application expérimentale Dreambeans, qui génère des récits illustrés à partir de vos données Google. Elle est disponible sur Android et iOS, en 13 langues indiennes et en anglais.",
+      "detail": "Lancée en juin 2026 aux États-Unis, l'application puise dans Agenda, Gemini, Gmail, Photos, Recherche et YouTube pour créer des histoires sans prompt. Certaines peuvent être animées avec Veo. Selon Sensor Tower, elle compte environ 55 000 téléchargements aux États-Unis, avec une chute de 84 % en octobre. Les histoires ne mélangent pas les langues, ce qui exclut le « Hinglish ». Google affirme que les services connectés sont au choix de l'utilisateur et que les histoires restent privées, et réfléchit à des fonctions plus actionnables. On ne connaît pas encore les chiffres indiens, la disponibilité de l'animation Veo ni le calendrier pour d'autres marchés.",
+      "tags": [
+        "design"
+      ],
+      "points": [
+        "Premier marché hors États-Unis, sur Android et iOS",
+        "13 langues indiennes plus l'anglais, une seule par histoire",
+        "Environ 55 000 téléchargements aux États-Unis selon Sensor Tower",
+        "Seuls les comptes Gmail personnels sont concernés"
+      ],
+      "url": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/11/google-dreambeans.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-11-03-sony-reprise-ps5-back-market",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-11-03",
+      "headline": {
+        "pre": "Sony rachète votre ",
+        "hl": "PS5",
+        "post": " jusqu'à 400 $"
+      },
+      "summary": "Sony envoie des notifications aux joueurs américains pour les inciter à revendre leur PS5 inutilisée via Back Market, jusqu'à 400 $ pour une console standard avec deux manettes DualSense. Le montant final dépend de l'état de la console.",
+      "detail": "Selon Push Square, Sony pousse des notifications aux propriétaires de PS5 aux États-Unis pour qu'ils échangent leur console s'ils ne s'en servent plus. L'opération passe par le service tiers Back Market et promet jusqu'à 400 $ pour une PS5 standard accompagnée de deux manettes DualSense, selon son état général. Le contexte est celui d'une hausse des prix des consoles neuves et d'une « crise de la mémoire » qui réduit les stocks, notamment de PS5 Pro ; GameStop revendrait des PS5 Pro d'occasion à 1 500 $. Le média rappelle que Microsoft avait envoyé un e-mail similaire aux propriétaires de Xbox Series X|S. Pour l'auteur, une console dormante ne rapporte rien à Sony, alors qu'un nouvel acquéreur pourrait acheter GTA 6, des jeux et un abonnement PS Plus. Dans les commentaires, les lecteurs jugent surtout le prix trop bas et se méfient du « jusqu'à » ; certains pensent qu'on vend mieux soi-même. Les délais, frais et modes de paiement ne sont pas précisés.",
+      "tags": [
+        "playstation"
+      ],
+      "points": [
+        "Jusqu'à 400 $ pour une PS5 standard et deux DualSense",
+        "Reprise assurée par Back Market, aux États-Unis",
+        "Montant final selon l'état de la console",
+        "Microsoft avait fait une offre similaire pour la Xbox Series"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/11/sony-wants-you-to-trade-in-your-ps5-for-usd400-if-youre-not-using-it",
+      "image": "https://images.pushsquare.com/e967e47b19e22/1280x720.jpg"
+    },
+    {
+      "id": "2026-11-03-walmart-cartes-cadeau-zelda-switch-2",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-11-03",
+      "headline": {
+        "pre": "Walmart dédommage les précommandes ",
+        "hl": "Zelda",
+        "post": " Switch 2"
+      },
+      "summary": "Après avoir annulé des précommandes de la Switch 2 édition Zelda la veille de la sortie, Walmart enverrait des cartes cadeau de 519,99 $. L'information, relayée par Polygon, est confirmée par des clients.",
+      "detail": "Le 29 octobre, Walmart avait annulé des précommandes de la Switch 2 édition Zelda (Ocarina of Time), ayant vendu plus de consoles que son stock. Le distributeur envoie désormais des e-mails d'excuses reconnaissant une erreur, avec une carte cadeau eGift de 519,99 $ attendue sous 10 jours ouvrables. L'information vient de Polygon et a été confirmée par le site de bons plans CheapAssGamer ; des clients assurent que le message provient d'une adresse officielle de Walmart. Selon des témoignages Reddit cités par Nintendo Life, certains clients n'ont qu'un choix : repasser commande pour l'édition limitée ou recevoir la carte. La carte n'est utilisable que chez Walmart, donc pas pour acheter la console ailleurs. Les lecteurs sont partagés : certains sont satisfaits et ont vu la carte créditée, d'autres restent sceptiques ou ne veulent plus commander chez Walmart.",
+      "tags": [
+        "nintendo"
+      ],
+      "points": [
+        "Carte cadeau eGift de 519,99 $ sous 10 jours ouvrables",
+        "Walmart avait survendu la Switch 2 édition Zelda",
+        "Carte utilisable uniquement chez Walmart",
+        "Certains clients peuvent repasser commande à la place"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/11/after-cancelling-zelda-switch-2-pre-orders-walmart-is-now-supposedly-sending-out-usd519-gift-cards",
+      "image": "https://images.nintendolife.com/5b3c5bb652577/1280x720.jpg"
+    },
+    {
+      "id": "2026-11-03-chiang-ancienne-coo-xbox-declaration",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "L'ex-COO de ",
+        "hl": "Xbox",
+        "post": " rétablit sa version"
+      },
+      "summary": "Helen Chiang, ancienne directrice des opérations de Xbox après 21 ans chez Microsoft, a publié sur LinkedIn une longue déclaration sur son départ. Elle nie un licenciement pour faute et toute fuite d'informations, sans donner la vraie raison.",
+      "detail": "Pure Xbox avait annoncé une semaine plus tôt le départ de Helen Chiang et évoqué un possible licenciement pour violation de politique. Dans sa déclaration « Clarity is Kindness », elle affirme n'avoir divulgué aucune information confidentielle à la presse en dehors des interviews autorisées, ne pas avoir rejoint un concurrent et rejette les accusations de discrimination, harcèlement, délit d'initié ou fraude. Elle explique avoir été promue COO en juillet sans l'avoir demandé et exprime de « sérieuses préoccupations » sur la façon dont des standards ont été appliqués à son cas, sans les détailler. Elle précise que son texte « n'est pas toute l'histoire ». Pure Xbox juge le message assertif mais sans attaque directe. Les lecteurs sont partagés, certains trouvant le texte flou et spéculant sur des changements internes depuis l'arrivée d'Asha Sharma ; ces hypothèses ne sont pas vérifiées.",
+      "tags": [
+        "xbox",
+        "industrie"
+      ],
+      "points": [
+        "Helen Chiang a passé 21 ans chez Microsoft",
+        "Elle nie toute fuite ou faute grave",
+        "Aucune raison précise de son départ n'est donnée",
+        "Déclaration publiée sur LinkedIn"
+      ],
+      "url": "https://www.purexbox.com/news/2026/11/former-xbox-coo-issues-lengthy-departure-statement-to-set-the-record-straight",
+      "image": "https://images.purexbox.com/48bc22c320cef/1280x720.jpg"
+    },
+    {
+      "id": "2026-11-03-rumeur-gears-e-day-500-millions",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "Rumeur : 500 M$ pour ",
+        "hl": "Gears",
+        "post": " E-Day, à nuancer"
+      },
+      "summary": "Rumeur : The Coalition aurait dépensé environ 500 millions de dollars pour Gears of War: E-Day. Un ancien responsable Xbox explique que ce coût englobe aussi le soutien technologique du studio à d'autres projets.",
+      "detail": "Gears of War: E-Day est sorti le 6 octobre 2026 sur Xbox Series X|S et PC. La rumeur d'un coût d'environ 500 M$ circule, et Jez Corden (Windows Central) avait déjà expliqué que The Coalition sert de « colle technologique » à Xbox et travaille aussi sur Fable ou Forza Horizon. Derek Reese, ancien Senior Product Manager des Xbox Game Services, affirme qu'une grande part du budget finance la branche Microsoft d'Unreal Engine ; Corden dit que cela correspond à ce qu'on lui avait rapporté à l'été. Une mise à jour du 2 novembre, d'après des « sources fiables », ajoute que le studio a passé plus d'un an et demi sur un prototype Xbox finalement annulé. Pure Xbox juge le chiffre plausible mais difficile à imputer au seul E-Day. Microsoft n'a fait aucune déclaration, et le succès commercial du jeu reste inconnu ; les lecteurs craignent des licenciements chez The Coalition.",
+      "tags": [
+        "xbox",
+        "pc",
+        "industrie"
+      ],
+      "points": [
+        "Gears of War: E-Day est sorti le 6 octobre 2026",
+        "Le coût couvrirait aussi Unreal Engine et d'autres jeux",
+        "Un prototype Xbox annulé a occupé 18 mois le studio",
+        "Aucune confirmation officielle de Microsoft"
+      ],
+      "url": "https://www.purexbox.com/news/2026/11/former-xbox-manager-explains-why-usd500m-cost-for-gears-e-day-doesnt-tell-the-whole-story",
+      "image": "https://images.purexbox.com/11a2c2db3b9f2/1280x720.jpg"
+    },
+    {
+      "id": "2026-11-03-rumeur-soldes-black-friday-xbox",
+      "theme": "games",
+      "source": "Pure Xbox",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "Rumeur : la ",
+        "hl": "Xbox",
+        "post": " Black Friday dès le 19 novembre"
+      },
+      "summary": "Rumeur : une liste fuitée de 3 519 articles annonce une vente Black Friday Xbox dès le 19 novembre, jour de sortie de GTA 6. Rien n'est confirmé officiellement.",
+      "detail": "Selon Pure Xbox, la vente débuterait le 19 novembre à 15 h (heure de l'Est), d'après un post Reddit de r/xbox et un utilisateur du forum CheapAssGamer. La liste fuitée compte 3 519 articles, mais le nombre réel de remises sera inférieur car les éditions Deluxe et bundles y sont comptés séparément. En comparaison, la vente 2025 avait débuté le 20 novembre avec plus de 2 000 jeux. Parmi les titres cités figurent 007 First Light, Ace Combat 8, Star Wars: Zero Company, The Blood of Dawnwalker et Assassin's Creed Black Flag Resynced. Des remises sur accessoires, voire consoles, sont possibles mais incertaines : des lecteurs doutent que les consoles soient incluses. Le média note que le lancement de GTA 6 le même jour pourrait retarder la publication des offres.",
+      "tags": [
+        "xbox"
+      ],
+      "points": [
+        "Début supposé le 19 novembre, jour de sortie de GTA 6",
+        "3 519 articles dans la liste fuitée",
+        "Vente 2025 : plus de 2 000 jeux",
+        "Consoles en promotion : simple possibilité"
+      ],
+      "url": "https://www.purexbox.com/news/2026/11/xbox-black-friday-sale-2026-leaks-early-thousands-of-games-set-to-be-included",
+      "image": "https://images.purexbox.com/d129ced895d7e/1280x720.jpg"
+    },
+    {
+      "id": "2026-11-03-pokemon-compte-a-rebours-30-novembre",
+      "theme": "games",
+      "source": "Nintendo Life",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "Un compte à rebours mystérieux pour ",
+        "hl": "Pokémon",
+        "post": ""
+      },
+      "summary": "The Pokémon Company publie des images du 30e anniversaire accompagnées d'un nombre décroissant. Selon le calcul de Joe Merrick (Serebii), il atteindra zéro le 30 novembre 2026 à 14 h UTC.",
+      "detail": "Le compte japonais @Pokemon_cojp publie des images des icônes du 30e anniversaire avec un nombre qui baisse : 1 025 le 18 octobre, 843 le 26 octobre, puis 676. Joe Merrick (Serebii) a repéré la série et calculé que le compteur arrivera à zéro le 30 novembre 2026 à 14 h UTC. La dernière publication porte un message signifiant à peu près « Continue with Pokémon ». Nintendo Life évoque plusieurs pistes sans aucune confirmation : Rubis et Saphir sur Nintendo Switch Online, une présentation de Pokémon Winds & Waves, ou un Pokémon Presents complet. Les commentaires avancent aussi du JCC, une appli mobile ou du merchandising, et notent que les comptes anglophones ne relaient pas le compte à rebours. Rien d'officiel n'est annoncé pour l'instant.",
+      "tags": [
+        "nintendo",
+        "industrie"
+      ],
+      "points": [
+        "Échéance calculée : 30 novembre 2026, 14 h UTC",
+        "Compteur parti de 1 025 le 18 octobre",
+        "Publié par le compte japonais de la société",
+        "Aucune annonce officielle sur la nature de l'événement"
+      ],
+      "url": "https://www.nintendolife.com/news/2026/11/the-pokemon-company-is-counting-down-to-a-mysterious-date-on-social-media",
+      "image": "https://images.nintendolife.com/a7720b6a8f9c3/1280x720.jpg"
+    },
+    {
+      "id": "2026-11-03-thief-dark-project-remaster-ps5",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "",
+        "hl": "Thief",
+        "post": " The Dark Project revient en remaster"
+      },
+      "summary": "Nightdive Studios sort Thief: The Dark Project Remastered le 3 décembre 2026 sur PS5, avec une nouvelle campagne, The Tarnished Mirror. Les précommandes sont ouvertes.",
+      "detail": "Le remaster est développé par Nightdive Studios avec son KEX Engine, en collaboration avec Eidos-Montréal pour la campagne bonus. Il tourne en 4K et 120 images par seconde, avec textures, modèles et animations retravaillés. Il inclut le jeu de 1998, les trois missions de Thief: Gold et The Tarnished Mirror, une campagne plus horrifique créée par les auteurs de l'extension fan-made Thief: The Black Parade, qui fait le lien avec Thief 2. Côté confort : manettes modernes, trophées, sélecteur de missions, roue d'objets et un « Vault » de contenus coulisses. Sur le PS Store, l'édition standard est à 29,99 $ (24,99 £) et la Digital Deluxe à 34,99 $. Les éditions physiques, dont le steelbook et la Deluxe Trapezoid, sont à 69,99 $ (49,99 £). La fiche du jeu mentionne aussi des versions PS4, Switch et Switch 2.",
+      "tags": [
+        "playstation",
+        "nintendo"
+      ],
+      "points": [
+        "Sortie le 3 décembre 2026",
+        "4K et 120 images par seconde",
+        "Nouvelle campagne The Tarnished Mirror",
+        "29,99 $ en édition numérique standard"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/11/stealth-classic-thief-the-dark-project-returns-for-a-ps5-remaster-with-new-content",
+      "image": "https://images.pushsquare.com/64eaf75a3a856/1280x720.jpg"
+    },
+    {
+      "id": "2026-11-03-aonuma-remake-ocarina-of-time",
+      "theme": "games",
+      "source": "Video Game Chronicle",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "Pourquoi Nintendo a refait ",
+        "hl": "Ocarina of Time",
+        "post": ""
+      },
+      "summary": "Eiji Aonuma explique avoir voulu le remake d'Ocarina of Time pour que les jeunes développeurs en tirent de nouvelles idées pour les futurs Zelda. Il a laissé l'équipe libre de choisir ce qu'elle gardait ou modifiait.",
+      "detail": "Dans un « Ask the Developer » (Vol. 24) publié sur le site de Nintendo, le producteur de Zelda explique que beaucoup de membres de Nintendo EPD sont trop jeunes pour avoir travaillé sur l'original de 1998 ou le connaissent mal. L'objectif était de leur faire comprendre sa structure et sa méthode de développement pour les réutiliser, de façon à « susciter de nouvelles idées ». Aonuma a évité d'imposer ses directives, de peur que l'équipe se sente obligée de les suivre, tout en reconnaissant avoir donné sa part de « leçons ». Il s'attendait à davantage de changements et dit avoir constaté que l'équipe tenait profondément à l'œuvre. Il se dit impressionné par la richesse de l'expérience créée à partir d'un jeu vieux de 28 ans. Le remake marque les 40 ans de la série ; l'article ne précise pas de détails techniques.",
+      "tags": [
+        "nintendo"
+      ],
+      "points": [
+        "Interview « Ask the Developer » sur le site de Nintendo",
+        "But : former les jeunes développeurs de Nintendo EPD",
+        "L'équipe a eu liberté de garder ou changer",
+        "Le remake marque les 40 ans de Zelda"
+      ],
+      "url": "https://www.videogameschronicle.com/news/zelda-producer-aonuma-wanted-to-remake-ocarina-of-time-to-trigger-new-insights-in-the-teams-younger-developers/",
+      "image": "https://www.videogameschronicle.com/files/2026/10/zelda-ocarina-of-time-remake-pic14.jpg"
+    },
+    {
+      "id": "2026-11-03-final-fantasy-resonance-port-refuse",
+      "theme": "games",
+      "source": "Push Square",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "",
+        "hl": "Final Fantasy",
+        "post": " Resonance : pas un simple portage"
+      },
+      "summary": "Le producteur Keisuke Nakashima explique que des dirigeants de Square Enix voulaient d'abord un simple portage du jeu mobile Final Fantasy Brave Exvius. Il a défendu une version console originale.",
+      "detail": "Dans une interview à Bloomberg du 23 octobre, reprise par Nintendo Everything puis Push Square, Nakashima raconte qu'il y avait « une certaine résistance » de la direction à son idée. Les dirigeants auraient préféré porter Brave Exvius, le jeu gacha mobile arrêté en 2024. Il voulait au contraire une version originale pour consoles, avec une expérience complète. Le jeu final reprend la structure et le gameplay des anciens Final Fantasy et réécrit de nombreux systèmes d'Exvius. Il est sorti le 22 octobre 2026 sur PS5, PC, Xbox Series X|S, Switch et Switch 2, développé par Square Enix et Lancarse. Dans un sondage de Push Square (912 votes), 76 % des lecteurs disent l'adorer. Des commentateurs jugent le titre de l'article exagéré, la citation parlant de « résistance » plutôt que de combat. Les ventes ne sont pas connues.",
+      "tags": [
+        "playstation",
+        "pc",
+        "xbox",
+        "nintendo"
+      ],
+      "points": [
+        "Sorti le 22 octobre 2026 sur toutes les plateformes",
+        "Issu du jeu mobile Brave Exvius, arrêté en 2024",
+        "Développé par Square Enix et Lancarse",
+        "76 % des votants le trouvent fantastique"
+      ],
+      "url": "https://www.pushsquare.com/news/2026/11/final-fantasy-resonance-producer-had-to-fight-square-enix-execs-who-wanted-cheap-port-of-dead-mobile-game",
+      "image": "https://images.pushsquare.com/4752cd42d64db/1280x720.jpg"
+    },
+    {
+      "id": "2026-11-03-dune-2-gog-casse-tete-licences",
+      "theme": "games",
+      "source": "Video Game Chronicle",
+      "date": "2026-11-02",
+      "headline": {
+        "pre": "GOG rêve de rééditer ",
+        "hl": "Dune 2",
+        "post": " mais les droits bloquent"
+      },
+      "summary": "GOG considère Dune II comme un « graal » à rééditer, mais les droits sont éclatés entre plusieurs ayants droit. Un responsable de GOG estime aussi que les ventes seraient trop faibles pour s'y retrouver.",
+      "detail": "Marcin Paczynski, de GOG, a confié à GamesRadar que Dune II (Westwood Studios, 1992) est en tête de sa liste de jeux à rééditer, alors qu'il n'a jamais eu de réédition moderne. Electronic Arts, qui a racheté Westwood en 1998, détient le code et les assets mais pas la propriété intellectuelle. Le jeu adaptait le film de 1984 : la Herbert Foundation détient la PI globale, et les ayants droit du producteur Dino De Laurentiis ont une partie de la licence. Legendary Pictures a accordé à Funcom la licence des jeux, ce qui a donné Dune: Awakening, avec une éventuelle exclusivité dont l'effet est inconnu. Paczynski estime que le jeu ne se vendrait qu'à 50 000 à 100 000 exemplaires à 5,99 ou 9,99 $, ce qui peine à justifier un tel casse-tête juridique.",
+      "tags": [
+        "pc",
+        "industrie"
+      ],
+      "points": [
+        "Dune II est sorti en 1992 chez Westwood",
+        "EA détient le code mais pas la propriété intellectuelle",
+        "Ventes estimées : 50 000 à 100 000 exemplaires",
+        "Aucune réédition annoncée"
+      ],
+      "url": "https://www.videogameschronicle.com/news/classic-pc-strategy-game-dune-2-is-a-holy-grail-re-release-but-its-a-licensing-nightmare-gog-says/",
+      "image": "https://www.videogameschronicle.com/files/2026/11/dune-ii-1.jpg"
+    },
     {
       "id": "2026-11-02-openai-lobbying-apres-midterms",
       "theme": "ai",
@@ -2067,377 +2586,6 @@
       "image": "https://images.nintendolife.com/e665b434a508b/1280x720.jpg"
     },
     {
-      "id": "2026-10-27-openai-preuves-ia-eth-physique",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "",
-        "hl": "OpenAI",
-        "post": " affirme que son IA a produit trois preuves majeures"
-      },
-      "summary": "OpenAI affirme que ses modèles internes ont démontré trois résultats en informatique théorique, en mathématiques et en physique, dont une réfutation de l'hypothèse du temps exponentiel (ETH). Des experts externes, dont un prix Nobel, sont chargés de les vérifier.",
-      "detail": "OpenAI présente trois manuscrits produits par ses modèles internes, qu'elle qualifie de données brutes de recherche à interpréter par des experts. En informatique, l'IA aurait réfuté l'hypothèse du temps exponentiel sur le problème SAT, dont dépendent des centaines d'articles ; Ryan Williams (MIT), Russell Impagliazzo et Ramamohan Paturi la vérifieront bénévolement, sans NDA. En mathématiques, elle aurait prouvé la conjecture de lissage local de Sogge en toutes dimensions, ce qui impliquerait notamment la conjecture de Kakeya ; aucun groupe dédié ne la valide pour l'instant. En physique, elle aurait démontré l'existence mathématique en quatre dimensions de la théorie de Yang-Mills, de la chromodynamique quantique et de la plus simple théorie de grande unification, un groupe mené par David Gross (prix Nobel 2004) servant de relecteur ; le problème de l'écart de masse reste ouvert. Les preuves en maths et en informatique ont été traduites en Lean, ce qui ne garantit que la conformité à l'énoncé écrit. OpenAI promet 5 millions de dollars à la fondation Simons pour des ateliers sur les résultats générés par IA. Rien n'est encore validé : ce sont des affirmations en attente de relecture, et l'intérêt pratique pour les solveurs SAT reste incertain.",
-      "tags": [
-        "modeles",
-        "business"
-      ],
-      "points": [
-        "Réfutation annoncée de l'hypothèse du temps exponentiel (ETH)",
-        "Preuve de la conjecture de lissage local en toutes dimensions",
-        "Existence de Yang-Mills en 4D, mais pas l'écart de masse",
-        "Relecteurs externes dont David Gross ; 5 M$ à la fondation Simons"
-      ],
-      "url": "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_navier.png"
-    },
-    {
-      "id": "2026-10-27-deepmind-genie-4",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Google DeepMind dévoile ",
-        "hl": "Genie 4",
-        "post": ", monde interactif sonore"
-      },
-      "summary": "Genie 4 est le nouveau modèle de monde interactif de DeepMind : il génère en temps réel images, son et dialogues. Il reste pour l'instant un aperçu de recherche réservé à quelques testeurs.",
-      "detail": "Genie 4 succède à Genie 3, présenté en août 2025. Il calcule chaque scène image par image en réagissant au clavier et aux instructions textuelles. DeepMind affirme que c'est son premier modèle de monde en temps réel à générer directement du son et des dialogues, avec des personnages mieux rendus et contrôlables. Des modèles Gemini planifient la simulation : Gemini 3.8 Flash suit la scène et vérifie chaque étape, et Gemini 4 Argon est testé avec la recherche en robotique, avec une démo où le robot Apollo d'Apptronik joue aux dames en simulation. Le modèle est expérimental : les détails visuels peuvent dériver et les objets ne pas persister dans les longues sessions. L'accès est limité à des testeurs sélectionnés, puis « bientôt » aux abonnés Google AI Ultra via Project Genie, et à des partenaires via l'API Gemini et AI Studio, avec un filigrane SynthID. Aucun chiffre de résolution, de durée ou de tarif n'est publié. L'enjeu : des environnements simulés pour entraîner agents et robots.",
-      "tags": [
-        "modeles",
-        "design",
-        "agents"
-      ],
-      "points": [
-        "Premier modèle de monde temps réel de DeepMind avec son généré",
-        "Dialogues de personnages en direct",
-        "Aperçu de recherche, bientôt pour les abonnés AI Ultra",
-        "Démo de robot Apollo simulé avec Gemini 4 Argon"
-      ],
-      "url": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/Genie-4-Google-title.png"
-    },
-    {
-      "id": "2026-10-27-nvidia-investit-3-md-meta",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "",
-        "hl": "Nvidia",
-        "post": " injecte 3 Md$ dans Meta"
-      },
-      "summary": "Nvidia investit 3 milliards de dollars dans l'augmentation de capital de Meta, qui prévoit d'acheter davantage de puces Nvidia pour ses agents IA. AMD et Broadcom auraient aussi manifesté un intérêt.",
-      "detail": "Selon le Wall Street Journal repris par The Decoder, Nvidia participe pour 3 milliards de dollars à l'émission d'actions de Meta, qui veut lever jusqu'à 95 milliards pour financer ses infrastructures d'IA. Les deux groupes élargissent leur partenariat autour de Muse, le produit IA de Meta, avec davantage de systèmes Vera Rubin et de CPU Vera pour la prochaine génération d'agents. D'après CNBC, AMD et Broadcom auraient signalé un intérêt non contraignant pour jusqu'à 5 milliards de dollars d'actions au total. Le montant des achats de puces, la valorisation et le calendrier ne sont pas précisés. L'opération rappelle les investissements de Nvidia chez ses clients comme OpenAI, que les critiques qualifient de financement circulaire susceptible de masquer la demande réelle.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "3 Md$ de Nvidia dans l'émission d'actions de Meta",
-        "Meta vise jusqu'à 95 Md$ de levée",
-        "Plus de systèmes Vera Rubin pour les agents Muse",
-        "AMD et Broadcom : jusqu'à 5 Md$ d'intérêt non contraignant"
-      ],
-      "url": "https://the-decoder.com/meta-gets-3-billion-from-nvidia-and-plans-to-spend-more-on-nvidia-chips/",
-      "image": "https://the-decoder.com/wp-content/uploads/2025/12/nvidia_logo_wall_cb-1.jpeg"
-    },
-    {
-      "id": "2026-10-27-anthropic-promesse-sans-pub-claude",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Anthropic promet zéro pub dans ",
-        "hl": "Claude",
-        "post": ""
-      },
-      "summary": "Dans la lettre de son dossier d'introduction en Bourse, Anthropic réaffirme que Claude n'affichera jamais de publicité. L'entreprise y voit un choix de valeurs plus fort que le profit.",
-      "detail": "La lettre jointe au formulaire S-1 déposé auprès de la SEC explique que, lorsque la publicité entre dans les objectifs de revenus, la pression pour optimiser l'engagement augmente, et qu'Anthropic a choisi de ne pas l'introduire dans Claude. L'entreprise avait déjà critiqué ChatGPT pour ses publicités, jugées potentiellement plus manipulatrices. Elle cite aussi un autre arbitrage : les protections supplémentaires autour de Claude Mythos Preview, très performant en cybersécurité, ont retardé sa sortie sous le nom Claude Fable 5, au prix de revenus et de parts de marché, tandis qu'environ 100 millions de dollars de crédits ont été offerts aux défenseurs. Anthropic prévient que d'autres décisions renonçant au profit maximal viendront avec des modèles plus puissants. L'article ne donne pas de chiffres sur le manque à gagner ni sur le calendrier de l'introduction en Bourse.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "Pas de publicité dans le chat Claude, réaffirmé dans le S-1",
-        "Argument : éviter la pression d'optimisation de l'engagement",
-        "Environ 100 M$ de crédits offerts aux défenseurs cyber",
-        "Sortie de Fable 5 retardée par des garde-fous"
-      ],
-      "url": "https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/08/anthropic_claude.png"
-    },
-    {
-      "id": "2026-10-27-qwen-proxy-alibaba-palisade",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Qwen 3.8 : un proxy ",
-        "hl": "Alibaba",
-        "post": " dans l'entraînement ?"
-      },
-      "summary": "Palisade Research a relevé que plusieurs modèles Qwen 3.8 appellent un proxy d'Alibaba Cloud à Singapour, sans succès (erreur 403). Les chercheurs y voient un artefact d'entraînement plutôt qu'une exfiltration vers la Chine.",
-      "detail": "Après le rapport de Cohere sur une tentative d'envoi de fichier vers Pékin par Qwen3.8-Flash-Next, Palisade Research a cherché la chaîne « aliyuncs.com » dans les données d'évaluation de cinq modèles Qwen. Elle apparaît dans Qwen3.8-Max-0902, Qwen3.8-Max et Qwen3.8-27B, mais pas dans les Qwen 3.7. Les requêtes visaient la région de Singapour et recevaient toujours une erreur 403 ; dans des tests contrôlés, Qwen3.8-27B tentait le proxy dans 2 à 4 % des cas après un échec simulé, Qwen3.8-Max dans 1 à 4 %. DeepSeek, Kimi, GLM et Hy4 n'utilisent aucun serveur de leur éditeur. Palisade n'a trouvé aucune preuve d'exfiltration et privilégie l'hypothèse d'un apprentissage par renforcement ayant appris ce repli, ce qui contredit la thèse de la porte dérobée évoquée par Cohere. Le domaine du proxy reste actif : son opérateur pourrait journaliser les requêtes ou injecter des instructions. Alibaba n'a pas réagi dans l'article, et Cohere, concurrent direct, a un intérêt dans le débat.",
-      "tags": [
-        "modeles",
-        "business"
-      ],
-      "points": [
-        "Chaîne aliyuncs.com trouvée dans trois modèles Qwen 3.8",
-        "Requêtes vers Singapour, toujours rejetées en 403",
-        "Aucune trace dans Qwen 3.7 ni chez DeepSeek, Kimi, GLM",
-        "Piste privilégiée : artefact d'entraînement par renforcement"
-      ],
-      "url": "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/alibaba_cohere.png"
-    },
-    {
-      "id": "2026-10-27-chatgpt-contenus-partenaires-resumes",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "ChatGPT favorise les contenus de ses ",
-        "hl": "partenaires",
-        "post": ""
-      },
-      "summary": "Une analyse d'un chercheur de Peec AI montre que ChatGPT reçoit les contenus de médias partenaires sous forme de résumés prégénérés, placés avant les résultats web. Ces résultats viennent d'une seule analyse non vérifiée de façon indépendante.",
-      "detail": "David Konitzny, chercheur en optimisation pour moteurs génératifs chez Peec AI, a configuré trois moteurs d'actualité dans ChatGPT. Un seul renseigne un champ « provider », ce qui lui a permis d'identifier 12 éditeurs et 43 domaines, dont Condé Nast, Hearst, Axel Springer, News Corp, Reuters et l'AP, ainsi que des contenus non journalistiques comme des recettes ou des guides d'achat. ChatGPT ne charge pas ces pages en direct : il reçoit des résumés générés à l'avance, alors que le reste du web arrive en extraits bruts, et les entrées partenaires figurent en tête du prompt. Sur 1 000 cas, les résumés citent 70 % des entrées partenaires aux rangs 1 à 3, contre 23 % aux rangs 7 à 10. OpenAI avait annoncé en 2024 une place plus visible pour ses partenaires. L'article ne précise pas la réaction d'OpenAI ni la méthode de génération des résumés, et l'analyse provient d'un seul praticien sur LinkedIn.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "12 éditeurs et 43 domaines partenaires identifiés",
-        "Partenaires reçus en résumés, le reste du web en extraits bruts",
-        "70 % cités aux rangs 1 à 3, 23 % aux rangs 7 à 10",
-        "Analyse unique, sans réaction d'OpenAI"
-      ],
-      "url": "https://the-decoder.com/openais-partner-content-arrives-in-chatgpt-pre-summarized-while-the-rest-of-the-web-gets-raw-scraps/",
-      "image": "https://the-decoder.com/wp-content/uploads/2025/01/openai_chatgpt_journalists_newsroom.png"
-    },
-    {
-      "id": "2026-10-27-diffusion-one-fonds-ia-1-25-md",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Diffusion ONE lève 1,25 Md$ pour l'",
-        "hl": "IA",
-        "post": ""
-      },
-      "summary": "D'après les dépôts SEC d'octobre, le fonds Diffusion ONE d'anciens de Benchmark a levé 1,252 milliard de dollars. Plusieurs autres fonds liés à l'IA ont aussi été déclarés.",
-      "detail": "TechCrunch a épluché les formulaires D d'octobre 2026. Diffusion ONE, premier fonds IA de Victor Lazarte et Kris Fredrickson, anciens de Benchmark, a levé 1,252 milliard de dollars, contre un objectif de 800 millions rapporté par Forbes en mai ; il a codirigé la Série H de 550 millions de Harvey et participé à la Série C de 300 millions d'Etched. 8VC a déposé plusieurs véhicules dont 8VC AI Fund XI (13,5 millions levés à ce stade), Greenoaks, codirigeant de la Série H de 65 milliards d'Anthropic, a déclaré Greenoaks 7, et Benchmark quatre fonds réservés aux associés. L'article relie ces levées à l'entrée en Bourse d'Anthropic : selon l'analyste PitchBook Emily Zheng, les parts d'Anthropic et d'OpenAI sont parmi les actifs les plus disputés du capital-risque. Le calendrier de clôture des fonds reste inconnu.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "Diffusion ONE : 1,252 Md$ levés",
-        "Cofinance Harvey (550 M$) et Etched (300 M$)",
-        "Greenoaks, codirigeant d'Anthropic Série H, dépose un nouveau fonds",
-        "Lien avec l'IPO d'Anthropic"
-      ],
-      "url": "https://techcrunch.com/2026/10/27/from-8vc-to-benchmark-heres-whats-hiding-in-october-sec-filings/",
-      "image": "https://techcrunch.com/wp-content/uploads/2023/12/GettyImages-1650189797.jpg?resize=1200,900"
-    },
-    {
-      "id": "2026-10-27-metis-reasoning-alphago-hallucinations",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Metis Reasoning veut guérir les hallucinations façon ",
-        "hl": "AlphaGo",
-        "post": ""
-      },
-      "summary": "Thore Graepel, ex-DeepMind, fonde Metis Reasoning et propose une recherche systématique couplée à un registre de connaissances vérifié. Il s'agit d'un livre blanc, sans système fonctionnel.",
-      "detail": "Thore Graepel, qui a travaillé sur AlphaGo, AlphaZero et MuZero avant de quitter l'équipe post-AGI de Google DeepMind cet été, a présenté l'approche à la conférence GTC de Nvidia à Berlin. L'idée : les modèles de langage jouent le rôle du réseau de prédiction d'AlphaGo, auquel on ajoute une recherche, avec un registre externe des connaissances, de la confiance et des questions ouvertes, contrôlé par un module de vérification par calcul, preuve formelle ou preuve empirique. Deux réseaux proposent et évaluent des « coups » et le système finit par une réponse ou une abstention justifiée. Metis promet moins d'hallucinations, des citations de sources, des connaissances modifiables sans réentraînement et des petits modèles pour robots. Selon Bloomberg, une levée de quelques dizaines de millions serait en cours, suivie d'un tour de plusieurs centaines de millions. Il n'existe ni système, ni benchmark, et la transposition à des domaines réels reste à démontrer.",
-      "tags": [
-        "modeles",
-        "business"
-      ],
-      "points": [
-        "Registre de connaissances externe vérifié par un module dédié",
-        "Présenté à Nvidia GTC Berlin",
-        "Levée de dizaines de millions de dollars selon Bloomberg",
-        "Aucun système ni benchmark pour l'instant"
-      ],
-      "url": "https://the-decoder.com/former-deepmind-researcher-thinks-alphagos-playbook-can-cure-ai-hallucinations/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/metis-reasoning-07-reasoning-illustration.jpg"
-    },
-    {
-      "id": "2026-10-27-sanders-choisir-modele-gpt",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Comment choisir entre Astra, Sol et ",
-        "hl": "Terra",
-        "post": ""
-      },
-      "summary": "Ted Sanders, d'OpenAI, explique sur Hacker News comment choisir entre les modèles GPT-6.1 : Astra pour la qualité, Sol si le prix compte un peu, Terra ou Luna s'il compte beaucoup.",
-      "detail": "Selon The Decoder, qui cite un message de Ted Sanders sur Hacker News, la performance d'un modèle est multidimensionnelle : un modèle fort en maths n'est pas forcément drôle. Taille, effort de raisonnement et systèmes multi-agents sont pour lui des axes distincts, qu'une note d'« IQ » unique masquerait. Des modèles plus petits et récents peuvent battre des plus gros grâce à de meilleures données ou architectures. Il estime que GPT-6.1 Terra est probablement meilleur qu'Astra, plus grand, en communication technique, qu'il l'égale en vision et en usage d'ordinateur pour un prix bien inférieur, mais qu'il reste en retrait ailleurs. Sa règle : Astra si seule la qualité compte, Sol si l'on est un peu sensible au prix, Terra ou Luna si l'on l'est beaucoup. L'article ne donne ni benchmark ni tarif, et on ne sait pas s'il s'agit d'une position officielle d'OpenAI.",
-      "tags": [
-        "modeles"
-      ],
-      "points": [
-        "Qualité seule : Astra",
-        "Prix un peu sensible : Sol ; très sensible : Terra ou Luna",
-        "Terra égale Astra en vision et usage d'ordinateur",
-        "Propos tenus sur Hacker News, pas de chiffres"
-      ],
-      "url": "https://the-decoder.com/openais-ted-sanders-shares-a-rule-of-thumb-for-picking-the-right-gpt-model/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo-1.png"
-    },
-    {
-      "id": "2026-10-27-microsoft-depart-volontaire-60000",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Un départ volontaire chez ",
-        "hl": "Microsoft",
-        "post": " pour 60 000 salariés"
-      },
-      "summary": "Microsoft lance un programme de départs volontaires, le Voluntary Exit Offer, qui pourrait concerner jusqu'à 60 000 employés, soit environ un quart de ses effectifs. L'offre vise le Canada, l'Inde, le Royaume-Uni et les États-Unis.",
-      "detail": "L'annonce a été faite par Amy Coleman, vice-présidente exécutive de Microsoft, qui présente le dispositif comme « un nouveau choix » pour les salariés, avec un soutien financier et des ressources d'accompagnement de carrière. Le chiffre de 60 000 personnes éligibles vient de Business Insider, cité par VGC. Selon VGC, l'entreprise cherche à réduire ses effectifs sans licenciements contraints, alors qu'elle dépense massivement dans l'infrastructure d'IA. L'article ne précise pas combien de salariés de Xbox sont concernés, ni si l'offre s'applique à la division jeu. Il rappelle toutefois que Microsoft a déjà licencié des milliers de personnes chez Xbox cette année, fermé ou cédé plusieurs studios, et prévoit de nouvelles coupes dans les mois à venir. La patronne de Xbox, Asha Sharma, a par ailleurs démenti toute vente de la marque dans le New York Times : « Xbox is not for sale ». Aucune date limite ni bilan final n'ont été communiqués.",
-      "tags": [
-        "xbox",
-        "industrie"
-      ],
-      "points": [
-        "Offre ouverte au Canada, en Inde, au Royaume-Uni et aux États-Unis",
-        "Jusqu'à 60 000 personnes concernées selon Business Insider",
-        "Impact précis sur Xbox non communiqué",
-        "Asha Sharma : « Xbox is not for sale »"
-      ],
-      "url": "https://www.videogameschronicle.com/news/microsoft-has-offered-a-quarter-of-its-entire-workforce-redundancy/",
-      "image": "https://www.videogameschronicle.com/files/2022/10/microsoft_headquarters.jpg"
-    },
-    {
-      "id": "2026-10-27-capcom-street-fighter-5-retire-vente",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "",
-        "hl": "Street Fighter 5",
-        "post": " retiré de la vente, serveurs coupés"
-      },
-      "summary": "Capcom a retiré temporairement Street Fighter 5 de la vente et coupé ses serveurs à cause d'une faille de sécurité liée à PHP. Les fonctions en ligne sont indisponibles sur PS4 et PC.",
-      "detail": "La semaine précédente, des chercheurs et organisations en cybersécurité ont utilisé l'IA pour trouver deux failles majeures dans PHP, ce qui a mis hors ligne de nombreux sites le temps des correctifs. Capcom a d'abord communiqué sur le compte X de Street Fighter, puis une notice sur la page Steam a évoqué une maintenance d'urgence liée aux « améliorations de sécurité » de PHP. Le 27 octobre, un nouveau message précise que le jeu reste hors ligne et délisté, et que le contenu nécessitant le réseau est indisponible. Les versions PS4 et Steam sont jugées potentiellement vulnérables, et les ventes sur PlayStation Store et Steam sont suspendues par étapes jusqu'à la correction. Les joueurs qui possèdent le jeu peuvent continuer à jouer hors ligne. Capcom s'excuse et demande de la patience, mais ne donne aucun calendrier de retour du multijoueur ni de remise en vente.",
-      "tags": [
-        "playstation",
-        "pc"
-      ],
-      "points": [
-        "Faille PHP : serveurs coupés depuis vendredi",
-        "Versions PS4 et Steam concernées",
-        "Contenu hors ligne toujours jouable",
-        "Aucune date de retour annoncée"
-      ],
-      "url": "https://www.videogameschronicle.com/news/capcom-has-temporarily-delisted-street-fighter-5-and-turned-off-its-servers-as-it-works-on-php-security-issue/",
-      "image": "https://www.videogameschronicle.com/files/2019/05/10-street-fighter.jpg"
-    },
-    {
-      "id": "2026-10-27-warhorse-cyberattaque",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Cyberattaque contre ",
-        "hl": "Warhorse",
-        "post": ", le studio de Kingdom Come"
-      },
-      "summary": "Warhorse Studios, développeur de la série Kingdom Come: Deliverance, confirme avoir subi une cyberattaque. Le studio enquête avec des spécialistes pour déterminer l'ampleur de l'incident.",
-      "detail": "Warhorse a publié un message sur les réseaux sociaux indiquant qu'il travaille avec des experts en cybersécurité pour sécuriser ses systèmes. Un communiqué plus détaillé sur son site évoque un accès non autorisé aux systèmes et aux données de l'entreprise. Le PDG Martin Frývaldský parle d'« un incident grave pour Warhorse Studios et tous ceux qui sont concernés » et promet d'informer dès que possible. On ignore l'étendue de la fuite, la nature des données consultées et l'auteur de l'attaque. Selon Push Square, aucune information ne semblait avoir fuité au moment de la rédaction, mais des détails confidentiels pourraient apparaître plus tard. L'incident survient moins d'une semaine après la fuite de données de Capcom ID. Le média indique qu'il mettra l'article à jour.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Accès non autorisé aux systèmes et données de l'entreprise",
-        "Étendue de la fuite encore inconnue",
-        "Aucune fuite constatée au moment de la publication",
-        "Enquête en cours avec des spécialistes"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/kingdom-come-developer-warhorse-studios-suffers-cyberattack-full-impact-unknown",
-      "image": "https://images.pushsquare.com/a9916ef2661ed/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-27-capcom-ventes-physiques-7-6-pourcent",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Chez ",
-        "hl": "Capcom",
-        "post": ", le physique pèse seulement 7,6 %"
-      },
-      "summary": "Dans son rapport du deuxième trimestre, Capcom indique que les copies physiques représentent 7,6 % de ses ventes de jeux. L'éditeur table sur environ 95 % de ventes numériques à la fin du prochain trimestre.",
-      "detail": "Selon le rapport financier du T2 de l'exercice 2026, les ventes numériques atteignent 92,4 %, dont 57,1 % sur PC et 35,3 % sur console. Capcom projette 95,4 % de numérique d'ici la fin du trimestre suivant, soit environ 4,6 % de physique. Push Square nuance : le chiffre est en partie faussé par les ventes de catalogue (Resident Evil, Devil May Cry 5), très soutenues par des promotions fréquentes. Capcom annonce par ailleurs ses meilleures ventes totales et de catalogue pour un premier semestre. Dans les commentaires, de nombreux lecteurs jugent le chiffre biaisé, le PC étant uniquement numérique et les Game-Key Cards de Switch 2 étant, selon eux, comptées comme numériques ; ils estiment la part physique sur console entre 17 et 21 %. D'autres défendent la possession et la préservation, tandis que certains soulignent la commodité du numérique. L'article rappelle aussi que Sony prévoit d'arrêter les disques pour les titres PlayStation sortis après janvier 2028.",
-      "tags": [
-        "industrie",
-        "pc"
-      ],
-      "points": [
-        "92,4 % numérique : 57,1 % PC, 35,3 % console",
-        "Objectif : 95,4 % de numérique au prochain trimestre",
-        "Records de ventes de catalogue sur un premier semestre",
-        "Lecteurs : chiffre biaisé par le PC et les Game-Key Cards"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/physical-copies-barely-register-for-capcom-plans-for-95percent-digital-sales",
-      "image": "https://images.pushsquare.com/8b9a1e6a4ebb2/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-27-palworld-switch-2-pocketpair",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Pocketpair ouvert à ",
-        "hl": "Palworld",
-        "post": " sur Switch 2"
-      },
-      "summary": "Le PDG de Pocketpair, Takuro Mizobe, dit que le studio serait ravi de discuter d'une version Switch 2 de Palworld. Aucun projet n'est annoncé.",
-      "detail": "Interrogé par VGC sur la possibilité réaliste d'un portage maintenant que les caractéristiques de la Switch 2 sont connues, Mizobe a répondu « Of course » et salué la plateforme, notamment au Japon. Il a dit que Pocketpair serait heureux d'avoir des discussions si l'occasion se présentait, mais n'a pas pu parler du litige avec Nintendo, la procédure étant en cours. Nintendo a engagé en septembre 2024 une action pour violation de brevets, restreinte en novembre 2025 aux anciennes versions du jeu après le retrait de certaines mécaniques (lancer de Pal Sphere, planeur à Pal). Le tribunal de Tokyo devait donner son avis préliminaire le 9 novembre. VGC estime qu'un éventuel portage passerait probablement par la résolution de ce conflit. En 2025, la direction de la communication jugeait déjà un portage Switch 2 « 100 % à envisager ».",
-      "tags": [
-        "nintendo",
-        "industrie"
-      ],
-      "points": [
-        "Aucun portage Switch 2 annoncé",
-        "Procès Nintendo toujours en cours",
-        "Avis préliminaire du tribunal de Tokyo prévu le 9 novembre",
-        "Mizobe : discussions bienvenues si l'occasion se présente"
-      ],
-      "url": "https://www.videogameschronicle.com/news/pocketpair-would-love-to-have-conversations-to-bring-palworld-to-switch-2-ceo-says/",
-      "image": "https://www.videogameschronicle.com/files/2026/07/palworld-10-steam-screenshot-3.jpg",
-      "imageAlt": "Palworld 1.0 Steam screenshot"
-    },
-    {
-      "id": "2026-10-27-nintendo-indie-world-28-octobre",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Un ",
-        "hl": "Indie World",
-        "post": " de Nintendo ce mercredi"
-      },
-      "summary": "Nintendo annonce un Indie World Showcase d'environ 15 minutes pour le mercredi 28 octobre. La diffusion est prévue à 15 h, heure de Paris.",
-      "detail": "L'annonce a été faite sur la chaîne Nintendo Today!. La présentation durera environ 15 minutes et portera sur des jeux indépendants à venir, sans que la liste des titres soit dévoilée. Horaires : 14 h au Royaume-Uni, 15 h en Europe centrale, 10 h sur la côte est américaine et 7 h sur la côte ouest. Nintendo Life renvoie vers sa chaîne YouTube pour suivre l'événement en direct. Dans les commentaires, des lecteurs spéculent sur Silksong, Balatro ou d'autres titres, mais il ne s'agit que de suppositions sans confirmation officielle.",
-      "tags": [
-        "nintendo",
-        "evenements"
-      ],
-      "points": [
-        "Mercredi 28 octobre, 15 h heure de Paris",
-        "Durée annoncée : environ 15 minutes",
-        "Aucun jeu confirmé à l'avance",
-        "Annoncé via Nintendo Today!"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/nintendo-indie-world-showcase-announced-for-today-28th-october-2026",
-      "image": "https://images.nintendolife.com/262f5ded5140e/1280x720.jpg"
-    },
-    {
       "id": "2026-10-28-minecraft-switch-2-disponible",
       "theme": "games",
       "source": "Nintendo Life",
@@ -2460,132 +2608,6 @@
       ],
       "url": "https://www.nintendolife.com/news/2026/10/psa-minecraft-switch-2-now-available-switch-physical-owners-get-a-digital-discount",
       "image": "https://images.nintendolife.com/683ba06371ebf/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-27-xbox-succes-versions-identiques",
-      "theme": "games",
-      "source": "Pure Xbox",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "",
-        "hl": "Xbox",
-        "post": " serre la vis sur les succès en triple"
-      },
-      "summary": "Selon un e-mail aux développeurs, Xbox s'attaque aux jeux identiques publiés séparément sur Xbox One, Series et PC pour gonfler les succès. Ils devront passer par Play Anywhere ou la liaison de jeux.",
-      "detail": "L'information provient d'un e-mail consulté par TrueAchievements, rapporté par Pure Xbox au conditionnel. Publier des jeux identiques sans expérience distincte enfreindrait la section 10.1 de la politique du Microsoft Store (Distinct Function & Value). Deux solutions sont proposées : Xbox Play Anywhere, avec un seul achat pour Xbox et PC, ou la « game binding », qui relie succès et sauvegardes entre versions. Le média attend moins de doublons avec « (Xbox One) » ou « (Xbox Series X|S) » dans le nom et moins de Gamerscore facile, mais aucune date d'application n'est donnée. Les commentaires sont plutôt favorables, tout en doutant que cela arrête les jeux à déblocage instantané. Certains rappellent que les trophées PlayStation connaissent le même problème.",
-      "tags": [
-        "xbox",
-        "pc"
-      ],
-      "points": [
-        "Cible : versions identiques Xbox One, Series et PC",
-        "Règle 10.1 du Microsoft Store invoquée",
-        "Solutions : Play Anywhere ou game binding",
-        "Date d'application non communiquée"
-      ],
-      "url": "https://www.purexbox.com/news/2026/10/xbox-tells-developers-to-avoid-exploiting-the-achievement-system-with-identical-releases",
-      "image": "https://images.purexbox.com/6309562cb3fc9/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-27-call-of-duty-40-milliards-sharma",
-      "theme": "games",
-      "source": "Pure Xbox",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "",
-        "hl": "Call of Duty",
-        "post": " franchit 40 Md$ de revenus"
-      },
-      "summary": "La patronne de Xbox, Asha Sharma, salue Modern Warfare 4 et annonce que la franchise Call of Duty atteint 40 milliards de dollars de revenus cumulés. Aucun chiffre de ventes du jeu n'est donné.",
-      "detail": "Dans un message publié le 26 octobre, Asha Sharma qualifie Modern Warfare 4 de l'un des épisodes les plus célébrés des 24 ans de la série et félicite l'équipe d'Activision. Le jeu est sorti le 23 octobre 2026 sur Xbox Series X|S, PS5 et Switch 2, sans passer par le Xbox Game Pass. Pure Xbox note qu'aucun chiffre de ventes n'a été communiqué et se demande comment le titre se comporte sur l'ensemble des plateformes. Le média rappelle que Black Ops 2, arrivé sur PS4 et PS5 plus tôt dans l'année, se vend bien et compte parmi les succès de Xbox en 2026. Il replace Modern Warfare 4 dans une année riche pour les sorties first-party, avec Forza Horizon 6, Halo: Campaign Evolved et Gears of War: E-Day.",
-      "tags": [
-        "xbox",
-        "playstation",
-        "nintendo",
-        "industrie"
-      ],
-      "points": [
-        "Franchise à 40 Md$ de revenus cumulés",
-        "Modern Warfare 4 sorti le 23 octobre 2026",
-        "Disponible sur Xbox, PS5 et Switch 2",
-        "Aucun chiffre de ventes du jeu communiqué"
-      ],
-      "url": "https://www.purexbox.com/news/2026/10/xbox-ceo-celebrates-incredible-milestones-for-call-of-duty-modern-warfare-4",
-      "image": "https://images.purexbox.com/b420e545eea9c/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-27-pokemon-unite-fin-de-service",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "",
-        "hl": "Pokémon Unite",
-        "post": " fermera ses serveurs en mars 2027"
-      },
-      "summary": "The Pokémon Company met fin au service de Pokémon Unite sur Switch et mobile le 23 mars 2027. Les achats de gemmes Aeos sont suspendus dès maintenant.",
-      "detail": "Le MOBA free-to-play, sorti le 21 juillet 2021 et développé par Tencent Games, ne sera plus jouable après le 23 mars 2027 à 00h00 UTC. Les ventes de gemmes Aeos et les nouveaux achats ou renouvellements du club Unite sont suspendus, mais les gemmes restantes restent utilisables jusqu'à la fin. Une mise à jour et un événement en novembre 2026 permettront d'obtenir notamment des licences Unite et des Holowear. Une fonction « Bibliothèque » permettra de consulter certains records après la fermeture, à condition de télécharger les données avant la date limite. Le jeu avait été retiré des Championnats du monde Pokémon 2027 en juillet 2026, ce qui avait alimenté les rumeurs, et quatre nouveaux Pokémon avaient pourtant été annoncés en août. Le tournoi Aeos Crown 2027 à Tokyo aura bien lieu.",
-      "tags": [
-        "nintendo",
-        "mobile"
-      ],
-      "points": [
-        "Fin du service le 23 mars 2027 à 00h00 UTC",
-        "Ventes de gemmes Aeos suspendues immédiatement",
-        "Mise à jour et événement prévus en novembre 2026",
-        "Aeos Crown 2027 maintenu à Tokyo"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/pokemon-unite-ending-service-for-switch-in-march-2027",
-      "image": "https://images.nintendolife.com/944dfec3ff50b/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-27-zelda-ocarina-lancements-minuit",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Lancements à minuit pour ",
-        "hl": "Ocarina of Time",
-        "post": " à New York"
-      },
-      "summary": "Nintendo organise des lancements à minuit pour Zelda: Ocarina of Time sur Switch 2 dans ses boutiques de New York et San Francisco. Les deux événements sont déjà complets.",
-      "detail": "Le jeu sort le 5 novembre 2026 sur Switch 2, à 69,99 $ en version physique et 59,99 $ sur l'eShop aux États-Unis. L'accès aux événements nécessite un Warp Pipe Pass, en nombre limité, un seul par personne, et le site de Nintendo les affiche complets. Les achats sont limités à un exemplaire du jeu par client. Tant que les stocks durent, on peut aussi acheter la Switch 2 édition 40e anniversaire de Zelda, la Pro Controller avec support d'affichage, la Pro Controller seule et l'étui avec protecteur d'écran. D'autres enseignes organisent leurs propres lancements à minuit, sans précision sur lesquelles.",
-      "tags": [
-        "nintendo"
-      ],
-      "points": [
-        "Sortie le 5 novembre 2026 sur Switch 2",
-        "Événements de New York et San Francisco complets",
-        "Un exemplaire du jeu par client",
-        "Switch 2 édition 40e anniversaire de Zelda proposée"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/zelda-ocarina-of-time-midnight-launches-announced-for-nintendo-new-york-and-san-francisco-stores",
-      "image": "https://images.nintendolife.com/2050ea96d81d8/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-27-mega-man-dual-override-tank-man",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-27",
-      "headline": {
-        "pre": "Tank Man rejoint ",
-        "hl": "Mega Man: Dual Override",
-        "post": ""
-      },
-      "summary": "Capcom dévoile un nouveau Robot Master, Tank Man, pour Mega Man: Dual Override. Le jeu sortira en 2027 sur Switch et Switch 2.",
-      "detail": "Tank Man, décrit comme un « robot oil manager » qui s'énerve de ne pas être reconnu, rejoint Twinkle Girl et Jet Man. Des images de gameplay et son stage au thème volcanique ont été montrés lors du panel de Capcom à la Paris Games Week, selon Rockman Corner. Les Robot Masters attendent à la fin de chaque stage pour stopper Mega Man et Proto Man. Huit doivent être révélés au total, donc il en reste à découvrir. La date de sortie précise n'est pas annoncée.",
-      "tags": [
-        "nintendo",
-        "evenements"
-      ],
-      "points": [
-        "Nouveau boss : Tank Man, stage volcanique",
-        "Troisième Robot Master révélé sur huit",
-        "Sortie en 2027 sur Switch et Switch 2",
-        "Montré au panel Capcom de la Paris Games Week"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/capcom-reveals-another-robot-master-for-mega-man-dual-override",
-      "image": "https://images.nintendolife.com/0a108dcfc6de3/1280x720.jpg"
     }
   ]
 }
