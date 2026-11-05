@@ -1,7 +1,157 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T11:51:34+01:00",
+  "updatedAt": "2026-11-05T11:48:17+01:00",
   "items": [
+    {
+      "id": "2026-11-05-openai-images-2-6-gif",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-11-04",
+      "headline": {
+        "pre": "ChatGPT crée des GIF animés avec ",
+        "hl": "Images 2.6",
+        "post": ""
+      },
+      "summary": "OpenAI déploie dans ChatGPT et Codex la génération de GIF animés à partir d'un texte ou d'une photo, grâce à son modèle Images 2.6. Côté API, deux variantes, Flare et Sunburst, sont proposées aux développeurs.",
+      "detail": "ChatGPT sait désormais produire des GIF animés à partir d'un prompt ou d'une photo importée, via le modèle Images 2.6 d'OpenAI. La fonction est déployée pour tous les utilisateurs de ChatGPT et de Codex sur web, bureau et mobile. Le modèle génère plusieurs variations légères d'un personnage et les enchaîne comme un folioscope, en gardant le personnage reconnaissable d'une image à l'autre, ce que les modèles précédents faisaient mal. L'utilisateur peut régler la vitesse de l'animation ou retoucher chaque image. Pour les développeurs, OpenAI publie GPT-Image-2.6 « Flare », orienté efficacité, et « Sunburst », orienté qualité, déjà présentes avec Images 2.5. OpenAI affirme que ChatGPT et l'API génèrent désormais bien plus de quatre milliards d'images par semaine, soit un milliard de plus qu'en septembre. Les tarifs API ne sont pas détaillés dans l'article.",
+      "tags": [
+        "design",
+        "modeles"
+      ],
+      "points": [
+        "GIF générés depuis un texte ou une photo",
+        "Déploiement sur web, bureau et mobile, ChatGPT et Codex",
+        "Variantes API : Flare (efficacité) et Sunburst (qualité)",
+        "Plus de 4 milliards d'images générées par semaine"
+      ],
+      "url": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_gif_cat.png"
+    },
+    {
+      "id": "2026-11-05-openai-rachete-pierre-computer",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-11-04",
+      "headline": {
+        "pre": "",
+        "hl": "OpenAI",
+        "post": " rachète Pierre pour adapter Git aux agents"
+      },
+      "summary": "OpenAI rachète Pierre Computer Company, la startup derrière Code Storage et plusieurs outils open source déjà utilisés par Codex. L'objectif est d'améliorer les workflows Git quand développeurs et agents codent ensemble.",
+      "detail": "OpenAI acquiert Pierre Computer Company, Inc., éditeur de Code Storage et de bibliothèques open source qui alimentent déjà Codex. Pierre propose Trees (navigation dans les fichiers), Diffs (affichage et correction de modifications), Highlights (coloration syntaxique en temps réel, y compris pendant la génération par un agent) et Code Storage (stockage de code avec historique Git). Selon OpenAI, à mesure que les agents traitent plus de tâches en parallèle, l'outillage Git doit suivre. L'entreprise dispose déjà de Pando, son propre backend de gestion de versions pensé pour humains et agents. Les projets open source de Pierre le resteront. Le prix n'est pas communiqué et l'opération doit encore recevoir l'aval des autorités de régulation.",
+      "tags": [
+        "code",
+        "business"
+      ],
+      "points": [
+        "Les bibliothèques de Pierre alimentent déjà Codex",
+        "Prix non communiqué, approbation réglementaire requise",
+        "Les projets open source de Pierre restent ouverts",
+        "OpenAI possède déjà Pando, un backend de versions pour agents"
+      ],
+      "url": "https://the-decoder.com/openai-acquires-pierre-computer-company-to-make-git-keep-up-with-ai-coding-agents/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/03/openai_logo_wall.png"
+    },
+    {
+      "id": "2026-11-05-meta-rachete-conductor",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-04",
+      "headline": {
+        "pre": "Meta rachète la startup de code ",
+        "hl": "Conductor",
+        "post": ""
+      },
+      "summary": "Meta a confirmé le rachat de Conductor, outil qui déploie plusieurs agents de code dans des espaces de travail parallèles. Le service cloud fermera le 20 novembre 2026.",
+      "detail": "Révélée par Axios puis annoncée par Conductor sur son blog, l'acquisition a été confirmée par Meta à TechCrunch sans autre détail financier. Fondée en 2024, la startup a lancé son produit à l'été 2025 : des équipes d'agents, issus d'Anthropic ou d'OpenAI, travaillent en parallèle sur des parties séparées d'un projet, dans le cloud, en local ou depuis un téléphone. Le CEO Charlie Holtz annonce que Conductor rejoint Meta et promet « quelque chose de nouveau » d'ici début 2027, en travaillant avec Alexandr Wang et Nat Friedman. Les fonctions principales continueront de marcher jusqu'à début 2027, mais le cloud s'arrête le 20 novembre 2026 et les données cloud seront ensuite supprimées. Meta, qui a lancé son agent de code Muse Code le 5 août 2026, renforce ainsi son offre pour développeurs.",
+      "tags": [
+        "code",
+        "agents",
+        "business"
+      ],
+      "points": [
+        "Montant du rachat non communiqué",
+        "Cloud Conductor fermé le 20 novembre 2026",
+        "Fonctions principales maintenues jusqu'à début 2027",
+        "Meta a lancé Muse Code le 5 août 2026"
+      ],
+      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/mark-zuckerberg-ray-bans.png?resize=1200,653"
+    },
+    {
+      "id": "2026-11-05-gpt-6-astra-reprogramme-poids",
+      "theme": "ai",
+      "source": "The Decoder",
+      "date": "2026-11-04",
+      "headline": {
+        "pre": "",
+        "hl": "GPT-6 Astra",
+        "post": " réécrit les poids d'autres modèles"
+      },
+      "summary": "Des chercheurs du MIT montrent que GPT-6 Astra peut analyser et modifier directement les poids d'autres modèles, sans entraînement classique. Sur Qwen3.5-0.8B, la précision MATH-500 passe de 7,9 à 48,1 %.",
+      "detail": "La méthode, baptisée « Weight-Space Programming », permet à Astra de lire les poids bruts de réseaux : il a identifié le jeu auquel un réseau était entraîné et la langue d'entraînement de petits modèles. Il a aussi écrit sans entraînement les poids de modèles jouant à trois jeux simples ; à Breakout, sa version fait 517 points contre 25 pour la référence entraînée. Sur Qwen3.5-0.8B, il a corrigé les « boucles de réflexion » en ne modifiant que 0,016 % des poids : MATH-500 passe de 7,9 à 48,1 % et le suivi d'instructions de 21 à 62 %. Environ un tiers des réponses atteignent encore la longueur maximale, contre 93 % avant. Sur Gemma 3 270M, aucun gain mesurable, et la méthode ne peut pas créer de compétences absentes. Jürgen Schmidhuber a jugé l'idée « old hat » sur X, tandis que les auteurs citent ses travaux. Les chercheurs y voient un potentiel d'audit de sécurité sur les poids.",
+      "tags": [
+        "modeles"
+      ],
+      "points": [
+        "Seulement 0,016 % des poids de Qwen3.5-0.8B modifiés",
+        "MATH-500 : 7,9 % à 48,1 %",
+        "Aucun gain sur Gemma 3 270M",
+        "Journaux d'expériences sur GitHub, modèle sur Hugging Face"
+      ],
+      "url": "https://the-decoder.com/gpt-6-astra-sees-the-matrix-and-reprograms-other-ai-models-directly-through-their-weights/",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/Weight-Space-Programming-1200x670.png"
+    },
+    {
+      "id": "2026-11-05-uber-agents-ia-quasi-absents",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-04",
+      "headline": {
+        "pre": "Chez ",
+        "hl": "Uber",
+        "post": ", les agents IA réservent presque rien"
+      },
+      "summary": "Uber indique que seulement quatre courses ont été commandées via un agent IA pendant sa semaine la plus chargée d'octobre. Côté Uber Eats, 500 commandes sur environ 320 millions d'opérations.",
+      "detail": "Lors des résultats du troisième trimestre 2026, le CEO Dara Khosrowshahi a qualifié la traction des agents de « très, très précoce et très limitée ». Pendant la semaine d'Halloween, Uber a traité environ 320 millions de trajets et commandes, dont quatre courses et 500 commandes Uber Eats passées par un agent. Selon lui, réserver une course dans l'app prend en moyenne 50 secondes et recommander un plat favori 90 secondes, ce qui limite le gain de temps des agents. Il reste optimiste : les agents pourraient augmenter la demande, et « chaque entreprise d'IA » discute avec Uber. Le chiffre rappelle celui de DoorDash, qui avait cité quelques centaines de commandes d'agents la semaine précédente.",
+      "tags": [
+        "agents",
+        "business"
+      ],
+      "points": [
+        "Quatre courses via agent IA la semaine d'Halloween",
+        "500 commandes Uber Eats sur 320 millions d'opérations",
+        "Réservation en app : 50 s, recommande un plat : 90 s",
+        "Même constat que DoorDash la semaine précédente"
+      ],
+      "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/07/uber-getty.jpg?resize=1200,800"
+    },
+    {
+      "id": "2026-11-05-apple-reduit-budgets-ia-internes",
+      "theme": "ai",
+      "source": "TechCrunch",
+      "date": "2026-11-04",
+      "headline": {
+        "pre": "",
+        "hl": "Apple",
+        "post": " réduirait les budgets IA de ses équipes"
+      },
+      "summary": "Selon Bloomberg, Apple abaisse le plafond quotidien de dépenses IA de ses ingénieurs, de 300 à 200 dollars, avec d'autres baisses prévues. Apple n'avait pas encore réagi.",
+      "detail": "Bloomberg rapporte qu'en octobre 2026 Apple a ramené le plafond quotidien d'usage de l'IA de ses équipes d'ingénierie de 300 à 200 dollars. D'autres coupes sont prévues, certaines enveloppes tombant à 100 dollars par jour. Hors ingénierie, Apple envisagerait une limite aussi basse que 25 dollars par jour. TechCrunch, qui relaie l'information sans confirmation d'Apple, y voit la fin de la logique de « tokenmaxxing » poussée plus tôt en 2026, remplacée par un rationnement des tokens. Cela illustre le doute sur l'écart entre le coût de l'IA et les gains de productivité.",
+      "tags": [
+        "business",
+        "code"
+      ],
+      "points": [
+        "Plafond quotidien : de 300 à 200 dollars en octobre",
+        "Certaines enveloppes iraient à 100 dollars par jour",
+        "Limite envisagée hors ingénierie : 25 dollars par jour",
+        "Information de Bloomberg, non confirmée par Apple"
+      ],
+      "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/iphone-usb-cable.jpg?resize=1200,800"
+    },
     {
       "id": "2026-11-04-anthropic-message-threads",
       "theme": "ai",
@@ -2066,382 +2216,6 @@
       "image": "https://images.pushsquare.com/393cf90cd881d/1280x720.jpg"
     },
     {
-      "id": "2026-10-30-mistral-large-4-poids-ouverts",
-      "theme": "ai",
-      "source": "TechCrunch",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Mistral ouvre les poids de ",
-        "hl": "Large 4",
-        "post": " « Le Chonk »"
-      },
-      "summary": "Mistral publie les poids de Mistral Large 4, un modèle d'environ mille milliards de paramètres, sur Hugging Face et via son API. Il vise la cybersécurité et l'agentique de code, avec un déploiement possible sur site.",
-      "detail": "Mistral avait présenté Large 4, surnommé « Le Chonk », en préversion début octobre ; la version finale arrive environ trois semaines plus tard, avec des poids téléchargeables sur Hugging Face et un accès par l'API. Le modèle compte environ 1 000 milliards de paramètres dont 52 milliards actifs, accepte texte et images, et tourne sur huit GPU Nvidia B300 dans sa version standard. La licence est un MIT modifié : un fournisseur de cloud commercial doit obtenir une licence séparée. Mistral affirme qu'il égale GLM-5.3 en cyberdéfense avec 47 % de jetons en moins par tâche et qu'il domine les modèles ouverts sur le Coding Agent Index d'Artificial Analysis, des chiffres non vérifiés indépendamment dans l'article de TechCrunch. Selon The Decoder, il reste loin de Claude Opus 5.5 en code (41 % contre 67 % pour Kimi K3.1 Pro sur Terminal-Bench 4.0). Pour les entreprises et administrations, l'intérêt est de garder le contrôle de leurs données et de ne pas dépendre d'un accès pouvant être coupé.",
-      "tags": [
-        "modeles",
-        "code",
-        "business"
-      ],
-      "points": [
-        "Environ 1 000 Md de paramètres, 52 Md actifs",
-        "Poids sur Hugging Face et API Mistral",
-        "Licence MIT modifiée, licence séparée pour le cloud commercial",
-        "47 % de jetons en moins que GLM-5.3 selon Mistral"
-      ],
-      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-      "image": "https://techcrunch.com/wp-content/uploads/2024/06/GettyImages-1760104305.jpg?resize=1200,798"
-    },
-    {
-      "id": "2026-10-30-google-resultats-t3-cloud-ai-mode",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Résultats ",
-        "hl": "Google",
-        "post": " : le cloud explose, la recherche déçoit"
-      },
-      "summary": "Google Cloud double son chiffre d'affaires (+103 %) au troisième trimestre, mais la recherche ne progresse que de 12 %, sous les 15 % attendus. L'action a perdu jusqu'à 10 %, la direction pointant la monétisation plus faible d'AI Mode.",
-      "detail": "Alphabet a publié ses résultats du troisième trimestre : les revenus de Google Cloud atteignent 30,7 Md$ contre 15,2 Md$ un an plus tôt, avec une marge opérationnelle passée de 23,7 % à 36,2 %. La recherche et les autres publicités progressent de 12 % à 63,4 Md$, quand les analystes attendaient 15 %. Philipp Schindler explique que la forte croissance des requêtes d'AI Mode a pesé, car elles rapportent moins. Le volume annuel de requêtes progresse au plus haut depuis cinq ans, l'application Gemini atteint un milliard d'utilisateurs et les API traitent près de 32 milliards de jetons par minute. Les investissements du trimestre s'élèvent à 51,4 Md$, avec 195 à 205 Md$ prévus pour 2026 et un niveau « nettement plus élevé » en 2027. Google n'a pas précisé la marge sur la vente de TPU à des tiers, malgré deux questions.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "Cloud : 30,7 Md$, +103 % sur un an",
-        "Recherche : +12 % contre 15 % attendus, action jusqu'à -10 %",
-        "Gemini : un milliard d'utilisateurs",
-        "Capex 2026 : 195 à 205 Md$, 2027 nettement plus élevé"
-      ],
-      "url": "https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/06/google_logo_wall-2.png"
-    },
-    {
-      "id": "2026-10-30-nvidia-hugging-face-antitrust",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Washington scrute le rachat de ",
-        "hl": "Hugging Face",
-        "post": " par Nvidia"
-      },
-      "summary": "Selon Reuters, le département de la Justice américain examine le rachat de Hugging Face par Nvidia pour 12,93 Md$. Les enquêteurs craignent que Nvidia contrôle un point de distribution clé de l'IA.",
-      "detail": "Nvidia a annoncé le rachat de la plateforme open source Hugging Face, valorisé 12,93 Md$, avec une clôture attendue au premier semestre 2027. D'après deux sources citées par Reuters, les services antitrust demandent si l'opération donnerait à Nvidia le contrôle d'un hub majeur de diffusion de l'IA et si elle pourrait nuire à ses concurrents. Nvidia assure que Hugging Face continuera de travailler avec différents fournisseurs de puces, de cloud et d'IA. Cette question s'inscrit dans une enquête plus large, ouverte sous Joe Biden et poursuivie sous Donald Trump, sur les acquisitions, les ventes et d'éventuelles pressions sur les clients, notamment les rachats de SchedMD et Run:ai et l'accord de licence avec Groq. Les autorités vérifient aussi si Nvidia a proposé plus de puces aux clients achetant ses équipements réseau et les processeurs Groq. En France, l'Autorité de la concurrence mène une enquête distincte. Aucune plainte n'est déposée à ce stade.",
-      "tags": [
-        "business",
-        "modeles"
-      ],
-      "points": [
-        "Rachat valorisé 12,93 Md$, clôture attendue au S1 2027",
-        "Inquiétude : contrôle d'un hub de distribution de l'IA",
-        "Enquête plus large sur les ventes de puces de Nvidia",
-        "L'Autorité française de la concurrence enquête aussi"
-      ],
-      "url": "https://the-decoder.com/us-antitrust-regulators-are-scrutinizing-nvidias-hugging-face-deal-and-sales-practices/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/09/hf-nvidia-partner_hf-nvidia-partner-press-1920x1080-2-1536x864-1.png"
-    },
-    {
-      "id": "2026-10-30-openai-double-limites-pro",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "",
-        "hl": "OpenAI",
-        "post": " double les limites d'usage des offres Pro"
-      },
-      "summary": "OpenAI double les quotas Work et Codex des forfaits Pro 100 et Pro 500, et double aussi le quota inférieur du Pro 200 en renonçant à une baisse prévue. Le forfait Plus ne change pas.",
-      "detail": "OpenAI a relevé les limites de plusieurs abonnements payants de ChatGPT, dans un contexte de concurrence avec Anthropic, qui prépare son introduction en Bourse. Les quotas Work et Codex des offres Pro 100 et Pro 500 sont doublés ; sur le Pro 200, le quota inférieur est doublé et une réduction prévue est annulée après des plaintes d'utilisateurs. Les clients actuels et les nouveaux abonnés en bénéficient automatiquement. OpenAI précise que doubler un quota ne double pas le nombre de tâches accomplies, la consommation dépendant du modèle, de la tâche et des réglages. Les limites élargies des agents Dots restent en vigueur pour l'instant, avec un suivi d'usage séparé. L'entreprise met en avant l'efficacité de ses récents GPT-6.1 Terra et Sol pour augmenter la capacité utilisable.",
-      "tags": [
-        "business",
-        "code",
-        "agents"
-      ],
-      "points": [
-        "Quotas Work et Codex doublés sur Pro 100 et Pro 500",
-        "Pro 200 : quota inférieur doublé, baisse annulée",
-        "Plus inchangé",
-        "Usage des agents Dots suivi séparément"
-      ],
-      "url": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/07/openai_red_Logo.png"
-    },
-    {
-      "id": "2026-10-30-astra-cible-distillation-chinoise",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Les labos chinois distillent désormais ",
-        "hl": "GPT-6 Astra",
-        "post": ""
-      },
-      "summary": "Selon The Information, DeepSeek et Moonshot s'appuieraient surtout sur les sorties de GPT-6 Astra pour entraîner leurs derniers modèles, depuis qu'Anthropic a renforcé ses défenses. Information issue de sources anonymes.",
-      "detail": "Claude était jusqu'ici la cible principale de la distillation, technique qui exige d'amener un modèle à exposer son raisonnement, ce qu'OpenAI et Anthropic interdisent. Anthropic affirme que ses nouvelles méthodes réduisent de 90 à 99 % les données exploitables par les attaquants. D'après The Information, rapporté par The Decoder, DeepSeek et Moonshot AI auraient largement utilisé les sorties d'Astra pour Kimi K3.1 Pro et V4.1-Flash 1017. Fin septembre, OpenAI avait déjà signalé une campagne coordonnée liée à Moonshot. Moonshot n'a pas commenté et DeepSeek n'a pas répondu ; OpenAI dit prendre le sujet très au sérieux et note que les attaquants adaptent leurs tactiques à chaque défense. L'affirmation reste à confirmer, car elle repose sur des sources anonymes.",
-      "tags": [
-        "modeles",
-        "business"
-      ],
-      "points": [
-        "Astra devient la cible principale de la distillation",
-        "Concernés : DeepSeek et Moonshot, selon The Information",
-        "Anthropic dit réduire de 90 à 99 % les données extraites",
-        "Sources anonymes, pas de confirmation des labos"
-      ],
-      "url": "https://the-decoder.com/openais-astra-becomes-the-main-target-for-chinese-ai-labs-after-anthropic-tightens-its-defenses/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/09/openai_hacking_arms-1.png"
-    },
-    {
-      "id": "2026-10-30-anthropic-etude-deference-agent-ia",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Des experts adoptent les opinions d'un agent ",
-        "hl": "Anthropic",
-        "post": ""
-      },
-      "summary": "Une étude d'Anthropic sur 50 experts montre qu'ils suivent la préférence d'un agent IA dans 86 % des décisions analytiques et la prennent pour la leur. L'agent améliore pourtant la qualité des analyses.",
-      "detail": "Anthropic a demandé à 50 spécialistes d'inférence causale d'analyser les données d'une coopérative agricole fictive, avec cinq décisions comportant chacune deux options valables ; l'option préférée de l'agent était tirée à pièce. L'agent ne pouvait ni mentir ni cacher de données. Les participants ont choisi son option dans 86 % des quatre décisions analytiques, 52 % jugeant la recommandation finale plus à eux qu'à l'agent et seuls 15 % mentionnant l'IA. Expérience, expertise déclarée ou confiance en l'IA n'ont pas protégé, mais l'échantillon est petit. Avec l'agent, 6 % des analyses avaient de graves défauts contre 55 % sans, bien que le groupe témoin soit minuscule et moins expert. Anthropic craint un faux consensus si beaucoup d'équipes utilisent le même modèle, et recommande des agents qui défendent les deux côtés.",
-      "tags": [
-        "agents",
-        "modeles"
-      ],
-      "points": [
-        "50 experts, choix de l'agent suivi dans 86 % des cas",
-        "52 % jugent la recommandation plus à eux qu'à l'agent",
-        "Analyses gravement défaillantes : 6 % avec IA, 55 % sans",
-        "Risque : faux consensus entre équipes"
-      ],
-      "url": "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/neural_net_in_head-1200x670.png"
-    },
-    {
-      "id": "2026-10-30-nvidia-espionnage-megaspeed-huang",
-      "theme": "ai",
-      "source": "The Decoder",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Espionnage chinois dans l'entourage du patron de ",
-        "hl": "Nvidia",
-        "post": ""
-      },
-      "summary": "Selon le New York Times, les renseignements américains pensent qu'une dirigeante de Megaspeed, proche de Jensen Huang, informe Pékin. Donald Trump aurait été prévenu environ un an plus tôt sans réagir.",
-      "detail": "D'après le New York Times, rapporté par The Decoder, les agences américaines estiment qu'Alice Huang, dirigeante de Megaspeed, opérateur de centres de données basé à Singapour, transmet des informations à la Chine. Donald Trump aurait été informé environ un an avant l'article et n'aurait pas agi, pour ne pas perturber les ventes de puces de Nvidia ni les tensions commerciales. Jensen Huang n'aurait pas été prévenu. Washington soupçonne Megaspeed d'avoir aidé la Chine à accéder aux puces : une société sœur malaisienne a acheté au moins 4,8 Md$ de matériel contenant des puces Nvidia entre juin 2024 et février 2026. Nvidia répond que Megaspeed ne reçoit pas d'informations sensibles ; Megaspeed a ouvert une enquête interne et l'ambassade de Chine dénonce des accusations infondées. Ces éléments reposent sur des sources officielles non nommées.",
-      "tags": [
-        "business"
-      ],
-      "points": [
-        "Une dirigeante de Megaspeed soupçonnée d'informer Pékin",
-        "Au moins 4,8 Md$ de matériel Nvidia acheté via la Malaisie",
-        "Trump briefé environ un an plus tôt, sans action",
-        "Pékin dénonce des accusations infondées"
-      ],
-      "url": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/",
-      "image": "https://the-decoder.com/wp-content/uploads/2025/12/nvidia_logo_wall_cb-1.jpeg"
-    },
-    {
-      "id": "2026-10-30-duskbloods-reporte-2027",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "",
-        "hl": "The Duskbloods",
-        "post": " repoussé à 2027 sur Switch 2"
-      },
-      "summary": "FromSoftware annonce que son exclusivité Switch 2 The Duskbloods sortira finalement en 2027, alors qu'une fenêtre 2026 était visée. Le studio invoque des ajustements finaux sur les règles et l'équilibrage.",
-      "detail": "The Duskbloods, jeu d'action multijoueur exclusif à la Switch 2, était prévu sans date précise sur 2026. FromSoftware a confirmé le report dans un communiqué publié sur X : le développement est à « l'étape des ajustements finaux » et la fenêtre de sortie passe à 2027, sans date exacte. Le studio cite les retours du test réseau d'août, qui ont montré un intérêt marqué pour le combat, la profondeur stratégique et l'expression du joueur. Il veut consacrer ce temps supplémentaire aux règles du jeu et à l'équilibrage. FromSoftware s'est excusé auprès des joueurs et les a remerciés de leur patience. VGC note que les joueurs s'inquiétaient d'un report à mesure que la fin 2026 approchait sans date annoncée. L'article indique qu'il sera mis à jour.",
-      "tags": [
-        "nintendo"
-      ],
-      "points": [
-        "Sortie désormais prévue en 2027, sans date précise",
-        "Exclusivité Nintendo Switch 2",
-        "Ajustements des règles et de l'équilibrage après le test d'août",
-        "Annonce faite par FromSoftware sur X"
-      ],
-      "url": "https://www.videogameschronicle.com/news/fromsoftwares-switch-2-exclusive-the-duskbloods-has-been-delayed-to-2027/",
-      "image": "https://www.videogameschronicle.com/files/2026/08/The_Duskbloods_14.jpg"
-    },
-    {
-      "id": "2026-10-30-elder-scrolls-6-sentinel-rumeur",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Rumeur : ",
-        "hl": "The Elder Scrolls VI",
-        "post": " s'appellerait Sentinel"
-      },
-      "summary": "Rumeur : selon The Verge, relayé par VGC, Xbox dévoilerait le titre complet de The Elder Scrolls VI dès novembre. Le jeu s'appellerait « Sentinel » et se déroulerait à Hammerfell.",
-      "detail": "D'après un rapport de The Verge fondé sur des sources anonymes, que VGC présente comme non confirmé, Xbox s'apprêterait à annoncer officiellement le titre The Elder Scrolls VI: Sentinel dès novembre 2026. L'annonce pourrait coïncider avec les 15 ans de Skyrim, le 11 novembre. Le cadre du jeu serait révélé séparément du titre. Il s'agirait de Hammerfell, région déjà vue dans Daggerfall, Elder Scrolls Online et Redguard, ce qui rejoint les théories de fans sur la baie d'Iliac. Le vétéran de Bethesda Bruce Nesmith disait le mois dernier espérer ces théories vraies, car elles permettraient bateaux et exploration maritime. Pure Xbox, Push Square et Nintendo Life relaient aussi l'information ; rien n'est confirmé officiellement par Bethesda ou Microsoft.",
-      "tags": [
-        "xbox",
-        "pc",
-        "industrie"
-      ],
-      "points": [
-        "Rapport de The Verge, non confirmé officiellement",
-        "Titre supposé : The Elder Scrolls VI: Sentinel",
-        "Annonce possible autour du 11 novembre, 15 ans de Skyrim",
-        "Cadre supposé : Hammerfell, révélé séparément"
-      ],
-      "url": "https://www.videogameschronicle.com/news/xbox-is-reportedly-set-to-officially-name-the-elder-scrolls-6-sentinel-as-soon-as-next-month/",
-      "image": "https://www.videogameschronicle.com/files/2026/10/elder-scrolls-6.jpg"
-    },
-    {
-      "id": "2026-10-30-xbox-pdg-reagit-revenus",
-      "theme": "games",
-      "source": "Pure Xbox",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "La patronne de ",
-        "hl": "Xbox",
-        "post": " commente des revenus en baisse"
-      },
-      "summary": "Les revenus contenu et services de Xbox reculent de 2 % sur le trimestre clos fin septembre, contre -10 % le trimestre précédent. Le matériel chute de 14 %, et Asha Sharma met en avant la pénurie de consoles.",
-      "detail": "Microsoft a publié ses résultats du premier trimestre de l'exercice 2027, clos le 30 septembre 2026. Les revenus contenu et services de Xbox baissent de 2 % sur un an, contre 10 % de baisse le trimestre précédent, la chute venant surtout des contenus tiers et du Game Pass, partiellement compensés par le contenu first-party. Le matériel recule de 14 %. La directrice financière Amy Hood prévoit une croissance de 5 à 10 % des contenus et services au prochain trimestre, mais une nouvelle baisse du matériel. Dans sa déclaration du 28 octobre, la CEO Asha Sharma cite des records pour Minecraft et World of Warcraft Forever, la sortie « la plus saluée en plus de dix ans » de Call of Duty et une croissance à deux chiffres du PC. Elle affirme que les ventes de consoles restent limitées par l'approvisionnement et évoque un programme de reconditionnement élargi. Les commentaires des lecteurs sont sceptiques, certains jugeant l'argument de l'offre insuffisante comme du spin et notant l'absence de Gears of War: E-Day.",
-      "tags": [
-        "xbox",
-        "industrie"
-      ],
-      "points": [
-        "Contenu et services : -2 % sur un an, contre -10 % avant",
-        "Revenus matériel Xbox en baisse de 14 %",
-        "Sharma invoque une offre de consoles insuffisante",
-        "Prévision : contenu et services en hausse de 5 à 10 %"
-      ],
-      "url": "https://www.purexbox.com/news/2026/10/xbox-ceo-reacts-to-latest-revenue-figures-with-official-statement",
-      "image": "https://images.purexbox.com/307f65cac63db/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-30-gears-of-war-exclusivite-sans-effet",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "L'exclusivité de ",
-        "hl": "Gears of War",
-        "post": " ne relance pas Xbox"
-      },
-      "summary": "Selon Circana, l'exclusivité de Gears of War: E-Day sur Xbox n'a pas inversé la baisse des ventes de consoles. Les ventes matérielles ont reculé de 22 % au Royaume-Uni en octobre.",
-      "detail": "Sous la direction d'Asha Sharma, Xbox est revenue à l'exclusivité console : Gears of War: E-Day et Clockwork Revolution restent limités à PC et Xbox Series X|S, alors que des titres comme Halo: Campaign Evolved étaient sortis sur PS5 sous Phil Spencer. Une version PS5 de E-Day, notée et presque terminée, existerait selon le média. D'après The Game Business, la mesure n'a rien changé : le matériel britannique recule de 22 % en octobre et, selon l'analyste Mat Piscatella de Circana, la tendance américaine empire aussi. Il estime que le jeu est solide mais a perdu du potentiel en n'étant plus multiplateforme. The Verge évoque environ 400 000 exemplaires vendus dans le monde, et des sources parlent d'un coût pouvant atteindre 500 millions de dollars. Push Square suggère qu'un portage PS5 reste possible pour récupérer des revenus ; les lecteurs sont partagés entre patience et critique de la stratégie.",
-      "tags": [
-        "xbox",
-        "playstation",
-        "industrie"
-      ],
-      "points": [
-        "Ventes de matériel au Royaume-Uni : -22 % en octobre",
-        "E-Day : environ 400 000 exemplaires vendus selon The Verge",
-        "Coût estimé jusqu'à 500 M$ selon des sources",
-        "Un portage PS5 reste évoqué, sans confirmation"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/it-hasnt-made-any-difference-gears-of-war-ps5-cancellation-fails-to-boost-xbox",
-      "image": "https://images.pushsquare.com/0524c4c3fe9fe/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-30-destiny-2-unvaulting-2028",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "",
-        "hl": "Destiny 2",
-        "post": " : le contenu retiré reviendra en 2028"
-      },
-      "summary": "Bungie estime avoir besoin jusqu'à début 2028 pour restaurer le contenu retiré de Destiny 2. La pré-production court jusqu'en janvier ou février 2027.",
-      "detail": "Après la polémique sur le contenu « vaulté », Bungie s'était engagé en septembre 2026 à en restaurer une partie. Le studio détaille maintenant le calendrier : la pré-production durera jusqu'en janvier ou février 2027, puis environ douze mois de production complète. Le projet prévoit les campagnes Red War, Forsaken, Curse of Osiris et Warmind, leurs assauts, raids et Raid Lairs, ainsi que la Ménagerie avec ses récompenses. Des objectifs supplémentaires, comme des destinations en libre exploration, des activités saisonnières ou des cartes PvP, seront étudiés ensuite. Bungie dit être « dans les temps » et promet plus de détails en février 2027, avec des teasers sur une célébration de Destiny 2 et un « Destiny Legacy ». Le message lie aussi l'avenir du studio aux résultats de Marathon. Les lecteurs jugent le délai trop long et y voient un signe de pression financière.",
-      "tags": [
-        "playstation",
-        "pc",
-        "industrie"
-      ],
-      "points": [
-        "Restauration attendue début 2028",
-        "Pré-production jusqu'à janvier ou février 2027",
-        "Campagnes, assauts, raids et Ménagerie prévus",
-        "Plus de détails annoncés pour février 2027"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/destiny-2-content-unvaulting-wont-take-place-until-2028",
-      "image": "https://images.pushsquare.com/275dcc046b93a/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-30-celeste-retire-xbox-boycott-bds",
-      "theme": "games",
-      "source": "Pure Xbox",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "",
-        "hl": "Celeste",
-        "post": " retiré du Xbox Store pour le boycott BDS"
-      },
-      "summary": "Celeste et TowerFall Ascension ont disparu du Xbox Store sur Xbox One. La cocréatrice Maddy Thorson explique soutenir le boycott BDS visant Microsoft.",
-      "detail": "Les deux jeux du même développeur ont été retirés de la boutique Xbox sur Xbox One, mais restent disponibles sur PlayStation, Nintendo et PC. Maddy Thorson, cocréatrice de Celeste, a écrit sur Bluesky le 29 octobre : « We did this to support the BDS boycott ». Le mouvement BDS compte Microsoft parmi ses cibles de boycott. Selon Pure Xbox, il ne s'agit pas d'un retrait total : les propriétaires devraient toujours voir les jeux dans leur bibliothèque. L'article rapproche cette décision du cas de Big Walk, jamais sorti sur Xbox ; House House dit vouloir y donner accès seulement quand Microsoft ou Xbox ne seront plus visés par le boycott. Aucune réaction de Microsoft n'est mentionnée et les commentaires de l'article sont désactivés.",
-      "tags": [
-        "xbox",
-        "industrie"
-      ],
-      "points": [
-        "Celeste et TowerFall Ascension retirés du Xbox Store",
-        "Toujours disponibles sur PlayStation, Nintendo et PC",
-        "Annonce de Maddy Thorson sur Bluesky",
-        "Pas de réaction de Microsoft mentionnée"
-      ],
-      "url": "https://www.purexbox.com/news/2026/10/we-did-this-to-support-the-bds-boycott-two-xbox-games-delisted-as-celeste-developer-issues-statement",
-      "image": "https://images.purexbox.com/ce892f3cfcd9f/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-30-wow-forever-manette-xbox-helix",
-      "theme": "games",
-      "source": "Video Game Chronicle",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "",
-        "hl": "World of Warcraft",
-        "post": " Forever pense au-delà du PC"
-      },
-      "summary": "Blizzard présente la prise en charge native de la manette dans WoW: Forever comme un premier pas vers un jeu jouable « partout ». Aucune version console n'est confirmée.",
-      "detail": "World of Warcraft: Forever, nouvelle version fondée sur le cadre et le gameplay de l'original de 2004 avec des contenus inédits, sort le 4 novembre uniquement sur PC. Holly Longdale, productrice exécutive de Blizzard, a déclaré à GamesRadar vouloir que l'on puisse jouer « où l'on veut et, à un moment, sur ce que l'on veut ». Elle note que des joueurs le font déjà tourner sur ROG Ally X. Elle a évoqué le Project Helix de Xbox en parlant de plateformes plus « ubiquitaires », mais n'a pas dit que le jeu y tournerait. VGC relie ce propos à la future machine hybride console/PC. Aucune plateforme cible ni calendrier n'a été donné.",
-      "tags": [
-        "pc",
-        "xbox"
-      ],
-      "points": [
-        "Sortie de WoW: Forever le 4 novembre sur PC",
-        "Prise en charge native de la manette",
-        "Version console non confirmée",
-        "Project Helix cité sans engagement de Blizzard"
-      ],
-      "url": "https://www.videogameschronicle.com/news/world-of-warcraft-forever-controller-support-is-the-first-step-to-playing-anywhere-as-blizzard-prepares-for-xbox-helix/",
-      "image": "https://www.videogameschronicle.com/files/2026/10/world-of-warcraft-forever.jpg"
-    },
-    {
-      "id": "2026-10-30-konami-profit-en-hausse",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "",
-        "hl": "Konami",
-        "post": " affiche un profit en hausse de 75 %"
-      },
-      "summary": "Konami voit son profit grimper de 75,1 % et ses ventes de 44,3 % sur avril-septembre 2026. L'éditeur prévoit une hausse de 39,3 % de son bénéfice d'exploitation.",
-      "detail": "Les résultats semestriels de Konami sont portés par Metal Gear Solid: Master Collection Vol. 2, Silent Hill: Townfall, eBaseball: Pro Spirit 2026 et une grosse mise à jour d'eFootball. Le profit progresse de 75,1 % sur un an et les ventes de 44,3 % pour la période avril-septembre. Pour l'exercice, Konami table sur un bénéfice d'exploitation en hausse de 39,3 % et des ventes en croissance de 18,1 %. Parmi les projets confirmés figurent Rev. Noir, Rhapsody in Scarlet et un remake de Silent Hill 1. Push Square estime qu'un nouveau Metal Gear Solid pourrait être annoncé, sans qu'il soit confirmé. Le média salue le retour de l'éditeur aux jeux de qualité après des années centrées sur le pachinko et les clubs sportifs.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "Profit : +75,1 % sur avril-septembre 2026",
-        "Ventes : +44,3 % sur la période",
-        "Prévision : bénéfice d'exploitation +39,3 %",
-        "Remake de Silent Hill 1 confirmé"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/konami-records-strong-profit-having-made-excellent-games-again",
-      "image": "https://images.pushsquare.com/045c7b2ca19f4/1280x720.jpg"
-    },
-    {
       "id": "2026-10-30-harvest-moon-echoes-feuille-de-route",
       "theme": "games",
       "source": "Nintendo Life",
@@ -2464,80 +2238,6 @@
       ],
       "url": "https://www.nintendolife.com/news/2026/10/harvest-moon-echoes-of-teradea-reveals-its-roadmap-for-2027-includes-nine-dlc-packs-and-30th-anniversary-celebration",
       "image": "https://images.nintendolife.com/5c1e8ee266808/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-30-pokemon-happy-meal-mcdonalds",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Les cartes ",
-        "hl": "Pokémon",
-        "post": " reviennent chez McDonald's"
-      },
-      "summary": "McDonald's et The Pokémon Company confirment le retour des cartes et jouets Pokémon dans les Happy Meals, dans 75 marchés. Le déploiement débute en novembre aux États-Unis et en France.",
-      "detail": "La collaboration avait été évoquée par une rumeur quelques semaines plus tôt ; elle est désormais officielle. Sept marchés démarrent en novembre 2026, dont les États-Unis, le Canada, la France, l'Espagne et l'Australie. Quarante-trois autres suivent en décembre, dont l'Allemagne, puis 23 en janvier 2027 (Brésil, Italie, Mexique…) et enfin l'Irlande et le Royaume-Uni en février 2027. Trois boîtes sont prévues, avec Pikachu, Umbreon et Torchic, chacune contenant un jouet et deux cartes tirées d'un set de 15, dont sept holographiques. L'opération dure « tant que les stocks sont disponibles ». Nintendo Life rappelle que des promotions passées ont provoqué des limites d'achat et des ruptures dues aux revendeurs.",
-      "tags": [
-        "industrie"
-      ],
-      "points": [
-        "75 marchés concernés, de novembre 2026 à février 2027",
-        "France dans la première vague de novembre",
-        "Trois boîtes : Pikachu, Umbreon et Torchic",
-        "Set de 15 cartes dont sept holographiques"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/pokemon-cards-and-toys-are-officially-returning-to-mcdonalds-happy-meals-soon",
-      "image": "https://images.nintendolife.com/25bb7216fbbfa/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-29-gta-6-details-south-park",
-      "theme": "games",
-      "source": "Push Square",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "De nouveaux détails sur ",
-        "hl": "GTA 6",
-        "post": " avant son lancement"
-      },
-      "summary": "Du gameplay de GTA 6 est apparu dans un épisode de South Park et 13 nouvelles captures ont été dévoilées. Des détails sur la carte, la police ou la relation entre Jason et Lucia ont aussi filtré. Le jeu sort le 19 novembre 2026 sur PS5.",
-      "detail": "À quelques semaines du lancement, GTA 6 revient dans l'actualité avec une série de nouveautés. Un épisode de South Park montre du gameplay, avec un présentateur télé dont la voix serait celle de Tish Hicks, déjà entendue dans la bande-annonce de GTA 5. Treize captures d'écran inédites ont également été publiées. D'après Edge et GamesRadar, la carte serait à peu près aussi grande que celles de GTA 4, GTA 5 et Red Dead Redemption 2 réunies, avec des trains et des bus fonctionnels, une mécanique d'odeurs et des PNJ dont le comportement varie selon la région. On peut alterner à tout moment entre Jason et Lucia, dont la relation est mesurée sur une échelle à quatre niveaux. Push Square indique une sortie le 19 novembre 2026 sur PS5, à 79,99 $ ou 69,99 £. Dans les commentaires, des lecteurs apprécient cette approche plus orientée simulation, proche de RDR2, tout en avouant une certaine lassitude face au flot d'infos.",
-      "tags": [
-        "playstation",
-        "industrie"
-      ],
-      "points": [
-        "Sortie le 19 novembre 2026 sur PS5",
-        "Gameplay vu dans un épisode de South Park",
-        "13 nouvelles captures d'écran",
-        "Carte aussi grande que GTA 4, 5 et RDR2 réunis",
-        "Prix listé : 79,99 $ / 69,99 £"
-      ],
-      "url": "https://www.pushsquare.com/news/2026/10/new-gta-6-gameplay-screenshots-details-revealed-as-ps5-launch-nears",
-      "image": "https://images.pushsquare.com/98426c4608c94/1280x720.jpg"
-    },
-    {
-      "id": "2026-10-29-walmart-zelda-switch-2-precommandes",
-      "theme": "games",
-      "source": "Nintendo Life",
-      "date": "2026-10-29",
-      "headline": {
-        "pre": "Walmart annule des précommandes de ",
-        "hl": "Zelda",
-        "post": " Switch 2"
-      },
-      "summary": "Walmart a annulé des précommandes d'Ocarina of Time sur Switch 2 la veille de la livraison, invoquant une rupture de stock. Les clients n'ont pas été débités.",
-      "detail": "Selon Nintendo Life, qui s'appuie sur Kotaku et Reddit, des acheteurs ont reçu un message d'annulation pour cause de stock épuisé environ un jour avant la livraison prévue. Certains conseillers leur auraient dit que Walmart avait « survendu » les précommandes. Aucune déclaration officielle de Walmart n'est citée. De nouvelles annonces à prix plus élevés sont apparues, peut-être posées par des vendeurs tiers selon Kotaku. Nintendo répète que des réapprovisionnements arrivent, et l'Australian Nintendo Store aurait reçu du stock cette semaine. Les commentaires sont partagés : certains blâment Walmart, d'autres les revendeurs tiers, et plusieurs disent qu'ils ne précommanderont plus chez lui.",
-      "tags": [
-        "nintendo"
-      ],
-      "points": [
-        "Annulations pour rupture de stock, la veille de la livraison",
-        "Clients non débités",
-        "Pas de déclaration officielle de Walmart",
-        "Nintendo promet des réapprovisionnements"
-      ],
-      "url": "https://www.nintendolife.com/news/2026/10/walmart-cancels-zelda-switch-2-pre-orders-a-day-before-release",
-      "image": "https://images.nintendolife.com/d43705266c429/1280x720.jpg"
     }
   ]
 }
